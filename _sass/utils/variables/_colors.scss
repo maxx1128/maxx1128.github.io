@@ -1,0 +1,40 @@
+// ----- Color Variables ----- //
+
+// This map is the array of standard colors for the project. Uses the Color function to reference. For colors that are frequently changing values, key names that aren't colors are recommended over literal names (such as the name 'cute' instead of pink).
+$colors: (
+  white: #fff,
+  action: #477dca,
+  dark: #333,
+  medium: #999,
+  light: #ddd
+);
+
+// This is the function to pull colors out. It's here instead of on the functions sheet so the below color values can be set.
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+// This is the base color for all fonts, including headers.
+$base-font-color: color(dark);
+
+// This is the base color any text that is interactive and will create a change somehow, like clicking on a link.
+$action-color: color(action);
+
+// For any elements requiring borders, such as panels, this will be the standard border color.
+$base-border-color: color(light);
+
+// This is the base border style, including its color and thickness.
+$base-border: 1px solid $base-border-color;
+
+// -- Background Colors -- //
+
+/// Standard background color for the whole project. Light colors are recommended.
+$base-background-color: color(white);
+
+/// A tinted version of the standard background color. Slightly darker
+$secondary-background-color: tint($base-border-color, 75%);

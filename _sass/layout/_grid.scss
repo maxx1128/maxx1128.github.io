@@ -1,0 +1,10 @@
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  gutter-position: split,
+);
+
+html {
+	@include flexy-container(95%);
+}

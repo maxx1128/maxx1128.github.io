@@ -1,0 +1,39 @@
+// ----- Typography Variables ----- //
+
+// The default font family for all text except headers. Can be a specific font family or a Bourbon font stack variable.
+$base-font-family: $lucida-grande;
+
+// The default font family for only headers. Can be a specific font family or a Bourbon font variable. By default, it's the same as the base font.
+$heading-font-family: $base-font-family;
+
+// The font size that all other element font sizes are scaled off of. This is often the size of basic paragraph text, and is scaled up for headers.
+$base-font-size: 1em;
+
+// This is the initial scale of the modular scale ration you want your font sizes to begin at. Typically left at zero, which will make your basic text the same of your base font size. Header font sizes will scale up.
+$base-font-scale: 0;
+
+// This is the modular scale the fonts will use for sizes. It can be a Bourbon variable or an integer with decimals.
+$modular-scale-ratio: $minor-third;
+
+// This is the base font size to be used when creating all the other scaled font sizes. Best left as the base font size in most cases.
+$modular-scale-base: $base-font-size;
+
+// When the screen gets below a certain size, this is the percentage of the original font size the font becomes. For example, a value of .9 means the font shrinks to 90% of its size on smaller screens.
+$scaled-font-ratio: .9;
+
+// The base line height for all major text elements aside from headers.
+$base-line-height: 1.6;
+
+// The base line height for only headers.
+$heading-line-height: 1.1;
+
+// This uses the Bourbon modular-scale function to create the structure of how fonts will be sized in the modular scale. An each loop is used to generate the scaled font sizes.
+$modular-size-map: (
+   h1: $base-font-scale + 6,
+   h2: $base-font-scale + 5,
+   h3: $base-font-scale + 4,
+   h4: $base-font-scale + 3,
+   h5: $base-font-scale + 2,
+   h6: $base-font-scale + 1,
+   p: $base-font-scale,
+);
