@@ -44,10 +44,13 @@ $on-laptop:        800px;
 }
 
 
+@import
+	"components/bourbon/app/assets/stylesheets/bourbon",
+	"components/Ellisha/dist/Ellisha";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+	"base",
+	"layout",
+	"syntax-highlighting"
 ;

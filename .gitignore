@@ -2,5 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 
-_gulp/bower_components
-_gulp/node_modules
+_sass/components
