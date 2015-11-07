@@ -1,9 +1,20 @@
 /**
  * Syntax highlighting styles
  */
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: 30px / 2;
+}
+
 .highlight {
     background: #fff;
-    @extend %vertical-rhythm !optional;
+    @extend %vertical-rhythm;
 
     .highlighter-rouge & {
       background: #eef;
