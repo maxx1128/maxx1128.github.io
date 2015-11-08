@@ -1,0 +1,21 @@
+pre {
+	padding: $base-spacing;
+	margin: 1.5em auto;
+
+	overflow: scroll;
+
+	color: #DDD;
+	background-color: #222;
+	font-family: $monospace;
+
+	@include flexy-breakpoint($tablet-screen) {
+		display: block;
+		width: 75%;
+	}
+}
+
+tt {
+	padding: .25em .5em;
+	color: white;
+	background-color: black;
+}

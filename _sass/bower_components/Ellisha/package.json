@@ -1,0 +1,37 @@
+{
+  "name": "Plately",
+  "version": "2.0.0",
+  "description": "A starting workflow for web development projects using Gulp and Node.js",
+  "author": "Maxwell Antonucci <maxx1128@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxx1128/Plately.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxx1128/Maxwell_Workflow/issues"
+  },
+  "keywords": [
+    "gulp",
+    "front-end",
+    "boilerplate",
+    "bourbon",
+    "front-end development",
+    "Sass",
+    "Javascript",
+    "Jade"
+  ],
+  "devDependencies": {
+    "del": "^2.0.2",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-jade": "^1.0.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+  },
+  "license": "MIT"
+}

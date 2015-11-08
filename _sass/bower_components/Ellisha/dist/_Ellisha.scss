@@ -1,0 +1,224 @@
+// Shortcut to vertical centering?
+// Look up other flexbox functions to add in?
+
+$flexy-columns: 12 !default;
+$flexy-container-padding: 0rem !default;
+$flexy-span-padding: 0em !default;
+$flexy-row-padding: 0em !default;
+$flexy-center-padding: 0em !default;
+
+@function flexy($key) {
+  @if map-has-key($flexy, $key) {
+    @return map-get($flexy, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $flexy.";
+  @return null;
+}
+
+@mixin flexy-breakpoint($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin flexy-container($width) {
+  max-width: $width;
+  box-sizing: border-box;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: $flexy-container-padding;
+}
+
+@mixin flexy-row($direction: row) {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: $direction;
+
+  padding: $flexy-row-padding;
+
+  @if $direction == row {
+    -webkit-box-direction: normal;
+  } @else {
+    -webkit-box-direction: reverse;
+  }
+}
+
+@mixin flexy-span($col, $context: $flexy-columns, $padding: $flexy-span-padding) {
+  box-sizing: border-box;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 0;
+  flex: 1 1 auto;
+  padding: $padding;
+
+  @if $col == auto {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    -webkit-flex-basis: 0;
+    flex-basis: 0;
+    max-width: 100%;
+  
+  } @elseif $col == full {
+    -ms-flex-preferred-size: 100%;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+
+  } @elseif unitless($col) == true {
+    -ms-flex-preferred-size: percentage($col/$context);
+    -webkit-flex-basis: percentage($col/$context);
+    flex-basis: percentage($col/$context);
+    max-width: percentage($col/$context);
+  
+  } @else {
+    -ms-flex-preferred-size: $col;
+    -webkit-flex-basis: $col;
+    flex-basis: $col;
+    max-width: $col;
+  }
+}
+
+
+
+@mixin flexy-push($col) {
+  @if unitless($col) ==  true {
+    margin-left: percentage($col/$flexy-columns);
+  } @else {
+    margin-left: $col;
+  }
+}
+
+@mixin flexy-pull($col) {
+  @if unitless($col) ==  true {
+    margin-left: percentage(($col/$flexy-columns) * -1);
+  } @else {
+    margin-left: $col * -1;
+  }
+}
+
+@mixin flexy-end($col) {
+  @if unitless($col) ==  true {
+    margin-right: percentage(($col/$flexy-columns));
+  } @else {
+    margin-right: $col;
+  }
+}
+
+
+
+@mixin flexy-justify($justify) {
+
+  @if $justify == 'start' {
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  } @elseif $justify == 'end' {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  } @elseif $justify == 'center' {
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}
+
+
+@mixin flexy-align($align) {
+  @if $align == top {
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    align-items: flex-start;
+  } @elseif $align == middle {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+  } @elseif $align == bottom {
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+}
+
+@mixin flexy-spacing($space) {
+  @if $space == 'around' {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  } @elseif $space == 'between' {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@mixin flexy-position($position) {
+  -webkit-order: $position;
+  -ms-flex-order: $position;
+  -webkit-box-ordinal-group: NaN;
+          order: $position;
+}
+
+
+@mixin flexy-align-self($align) {
+  @if $align == top {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  } @elseif $align == middle {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  } @elseif $align == bottom {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  } 
+}
+
+// Pair this with a flexy-row, and the child must have a basic flex-span mixin
+@mixin flexy-center($padding, $height: null) {
+  min-height: $height;
+
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+
+  & > :first-child {
+    margin: 0 auto;
+  }
+
+  @if ($padding) {
+      padding: $padding;
+  }
+}

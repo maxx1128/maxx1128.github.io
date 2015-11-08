@@ -1,0 +1,174 @@
+.col-auto {
+	@include flexy-span(auto);
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		@include flexy-span($i);
+	}
+}
+
+@for $i from 15 through 45 {
+	$per: percentage($i/100);
+
+	.col-#{$i}p {
+		@include flexy-span($per);
+	}
+}
+
+$fixed: 10em, 15em, 25em, 200px, 300px;
+
+@each $length in $fixed {
+	.col-#{$length} {
+		@include flexy-span($length);
+	}
+}
+
+//Container Classes
+.container-800px {
+	@include flexy-container(800px);
+}
+
+.container-80 {
+	@include flexy-container(80%);
+}
+
+
+
+// Breakpoint classes
+.flexy-breakpoint {
+	.flexy-item {
+		@include flexy-span(12);
+
+		@include flexy-breakpoint($mobile-h-screen) {
+			@include flexy-span(6);
+		}
+
+		@include flexy-breakpoint($desktop-screen) {
+			@include flexy-span(4);
+		}
+	}
+}
+
+
+// Push classes
+.push-4 {
+	@include flexy-push(4);
+}
+
+.push-12 {
+	@include flexy-push(12em);
+}
+
+.push-50p {
+	@include flexy-push(50%);
+}
+
+
+
+.end-4 {
+	@include flexy-end(4);
+}
+
+.end-12 {
+	@include flexy-end(12em);
+}
+
+.end-50p {
+	@include flexy-end(50%);
+}
+
+
+// Pull Classes
+.pull-4 {
+	@include flexy-pull(4);
+}
+
+.pull-12 {
+	@include flexy-pull(12em);
+}
+
+.pull-50p {
+	@include flexy-pull(50%);
+}
+
+
+
+// Justify classes
+.left {
+	text-align: left;
+	padding: 0 7.5%;
+}
+
+.right {
+	text-align: right;
+	padding: 0 7.5%;
+}
+
+.justify-start {
+	@include flexy-justify(start);
+}
+
+.justify-end {
+	@include flexy-justify(end);
+}
+
+.justify-center {
+	@include flexy-justify(center);
+}
+
+
+
+// Align classes
+.align-top {
+	@include flexy-align(top);
+}
+
+.align-middle {
+	@include flexy-align(middle);
+}
+
+.align-bottom {
+	@include flexy-align(bottom);
+}
+
+
+// Spacing classes
+.spacing-around {
+	@include flexy-spacing(around);
+}
+
+.spacing-between {
+	@include flexy-spacing(between);
+}
+
+
+
+// Align-self classes
+.align-self-top {
+	@include flexy-align-self(top);
+}
+
+.align-self-middle {
+	@include flexy-align-self(middle);
+}
+
+.align-self-bottom {
+	@include flexy-align-self(bottom);
+}
+
+@for $i from 1 through 6 {
+	.flex-order-#{$i} {
+		@include flexy-position($i);
+	}
+}
+
+
+
+.flexy-center {
+	@include flexy-center(5em, 10em);
+}
+
+.flexy-center-2 {
+	@include flexy-center(10%);
+}

@@ -1,0 +1,578 @@
+doctype html
+
+html(lang="en")
+	include extends/header.jade
+	body
+		.title
+			h1 Ellisha
+			h5 A mixin collection for responsive Flexbox grids and layouts.
+
+		.links
+			.button
+				a.button-link(href="https://github.com/maxx1128/Ellisha/archive/master.zip") Download
+			.button
+				a.button-link(href="https://github.com/maxx1128/Ellisha") Github
+
+		section
+			article
+				h3 Basics
+				p Ellisha uses two main mixins for flexbox layouts
+				ol
+					li 
+						strong flexy-row()
+						| - Creates a row that will contain flexbox items.
+					li 
+						strong flexy-span()
+						| - Must be used on elements in a flexy-row, and controls the width of the flexboxes.
+
+			.example
+				h6 .flexy-row
+				hr
+
+				.flexy-row
+					.flexy-item.col-auto
+						p .flexy-item
+					.flexy-item.col-auto
+						p .flexy-item
+					.flexy-item.col-auto
+						p .flexy-item
+					.flexy-item.col-auto
+						p .flexy-item
+
+			pre.
+				.flexy-row {
+					@include flexy-row();
+				}
+
+				.flexy-item {
+					@include flexy-span();
+				}
+
+
+		section
+			article
+				h3 flexy-span
+				p Ellisha works on a 12-column system by default. Use the number of columns you want for each item with the flexy-span mixin.
+
+			.example
+				.flexy-row
+					.flexy-item.col-1
+						p flexy-span(1)
+					.flexy-item.col-11
+						p flexy-span(11)
+
+				.flexy-row
+					.flexy-item.col-2
+						p flexy-span(2)
+					.flexy-item.col-10
+						p flexy-span(10)
+
+				.flexy-row
+					.flexy-item.col-3
+						p flexy-span(3)
+					.flexy-item.col-9
+						p flexy-span(9)
+
+				.flexy-row
+					.flexy-item.col-4
+						p flexy-span(4)
+					.flexy-item.col-8
+						p flexy-span(8)
+
+				.flexy-row
+					.flexy-item.col-5
+						p flexy-span(5)
+					.flexy-item.col-7
+						p flexy-span(7)
+
+				.flexy-row
+					.flexy-item.col-6
+						p flexy-span(6)
+					.flexy-item.col-6
+						p flexy-span(6)
+			
+			article
+				p You can also change the total number of rows for each span by using it as a second argument. Good for grids you want to act separately from your overall grid system.
+
+			.example
+				.flexy-row
+					.flexy-item.col-3
+						p flexy-span(1,4)
+					.flexy-item.col-9
+						p flexy-span(3,4)
+
+				.flexy-row
+					.flexy-item.col-6
+						p flexy-span(1,2)
+					.flexy-item.col-6
+						p flexy-span(1,2)
+
+				.flexy-row
+					.flexy-item.col-9
+						p flexy-span(12,16)
+					.flexy-item.col-3
+						p flexy-span(4,16)
+
+			article
+				p There are three other units you can use instead of columns:
+				ol
+					li Percentage widths separate from the grid system.
+					li Set widths, such as px or em. Be warned these units may stack on different screen dimensions, so use carefully.
+					li Auto - All auto spans equally divide the remaining space in the row equally and share it. 
+						strong This is the only option that can always include margins without disrupting the layout.
+				p Feel free to mix and match for more complex layouts
+
+			.example
+				.flexy-row
+					.flexy-item.col-30p
+						p flexy-span(30%)
+					.flexy-item.col-25p
+						p flexy-span(25%)
+					.flexy-item.col-45p
+						p flexy-span(45%)
+
+				.flexy-row
+					.flexy-item.col-300px
+						p flexy-span(300px)
+					.flexy-item.col-15em
+						p flexy-span(15em)
+
+				.flexy-row
+					.flexy-item.col-auto
+						p flexy-span(auto)
+					.flexy-item.col-auto
+						p flexy-span(auto)
+					.flexy-item.col-auto
+						p flexy-span(auto)
+
+				.flexy-row
+					.flexy-item.col-auto
+						p flexy-span(auto)
+					.flexy-item.col-auto
+						p flexy-span(auto)
+					.flexy-item.col-auto
+						p flexy-span(auto)
+					.flexy-item.col-auto
+						p flexy-span(auto)
+
+				.flexy-row
+					.flexy-item.col-2
+						p flexy-span(2)
+					.flexy-item.col-20p
+						p flexy-span(20%)
+					.flexy-item.col-15em
+						p flexy-span(15em)
+					.flexy-item.col-auto
+						p flexy-span(auto)
+
+			.article
+				br
+				p Flexy-span can also accept a third argument to create inside padding. It's called differently depending on how it's declared. If you're not declaring a total number of columns, the 
+					tt $padding
+					|  variable should be called specifically.
+
+				pre.
+					@include flexy-span(1, 2, 1em)
+					@include flexy-span(9, $padding: 1em)
+		section
+			article
+				h3 flexy-row
+
+				p Can show the items in normal or reverse order, depending on the argument used.
+
+			.example
+				h6 flexy-row()
+				hr
+				.flexy-row
+					.flexy-item.col-2
+						p 1
+					.flexy-item.col-4
+						p 2
+					.flexy-item.col-6
+						p 3
+
+			.example
+				h6 flexy-row(row-reverse)
+				hr
+
+				.flexy-row-reverse
+					.flexy-item.col-2
+						p 1
+					.flexy-item.col-4
+						p 2
+					.flexy-item.col-6
+						p 3
+
+		section
+			article
+				h3 flexy-breakpoint
+
+				p Can trigger different layouts at different screen sizes for more responsive layouts. It's made to be mobile-first, so all breakpoints trigger new layouts for the specificied screen sizes and larger.
+
+			.example.flexy-breakpoint
+				.flexy-row
+					.flexy-item
+						p Full / Half / Third
+					.flexy-item
+						p Full / Half / Third
+					.flexy-item
+						p Full / Half / Third
+					.flexy-item
+						p Full / Half / Third
+					.flexy-item
+						p Full / Half / Third
+					.flexy-item
+						p Full / Half / Third
+
+			pre.
+				flexy-item {
+					@include flexy-span(12);
+					
+					@include flexy-breakpoint(480px) {
+						@include flexy-span(6);
+					}
+					
+					@include flexy-breakpoint(900px) {
+						@include flexy-span(4);
+					}
+				}
+
+		section
+			article
+				h3 flexy-container
+
+				p Usually used on the sity's body tag to limit the overall screen size, but can also be used on rows and spans.
+				p Good for limiting screen size on especially large screens.
+
+			.example
+				h6 flexy-container(800px)
+				hr
+				.flexy-row.container-800px
+					.flexy-item.col-auto
+						p I'm full-width but stop at 800px
+
+			.example
+				h6 flexy-container(80%)
+				hr
+				.flexy-row.container-80
+					.flexy-item.col-auto
+						p I'm 80% wide and centered at all times
+
+		section
+			article
+				h3 flexy-justify
+
+				p Moves the flex elements to different sides of the screen. Will have no effect on rows full of items.
+
+			.example
+				h6 flexy-justify(start)
+				hr
+				.flexy-row.justify-start
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+			
+			.example
+				h6 flexy-justify(end)
+				hr
+				.flexy-row.justify-end
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+			
+			.example
+				h6 flexy-justify(center)
+				hr
+				.flexy-row.justify-center
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+
+		section
+			article
+				h3 flexy-align
+
+				p Aligns the span items to the top, bottom, or middle of the row. Has no effect on rows that aren't taller than the containing spans. Best used with a min-height.
+
+			.example
+				h6 flexy-align(top)
+				hr
+				.flexy-row.height.align-top
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 4
+
+			.example
+				h6 flexy-align(middle)
+				hr
+				.flexy-row.height.align-middle
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 4
+
+			.example
+				h6 flexy-align(bottom)
+				hr
+				.flexy-row.height.align-bottom
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 4
+
+		section
+			article
+				h3 flexy-spacing
+
+				p Rearranges the extra space in a row around the flex items. No effect on rows full of items.
+
+			.example
+				h6 flexy-spacing(around)
+				hr
+				.flexy-row.spacing-around
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+			
+			.example
+				h6 flexy-spacing(between)
+				hr
+				.flexy-row.spacing-between
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+					.flexy-item.col-2
+						p 2
+
+		section
+			article
+				h3 flexy-position
+
+				p Use it on individual flex items to control what order they're in relative to the others.
+				p For complete control, will need to be used on all elements to define their positions relative to each other.
+
+			.example
+				.flexy-row
+					.flexy-item.col-auto
+						p 1
+					.flexy-item.col-auto
+						p 2
+					.flexy-item.col-auto
+						p 3
+					.flexy-item.col-auto
+						p 4
+					.flexy-item.col-auto
+						p 5
+					.flexy-item.col-auto
+						p 6
+			
+			.example
+				.flexy-row
+					.flexy-item.col-auto.flex-order-6
+						p 1
+						p flexy-position(6)
+					.flexy-item.col-auto.flex-order-1
+						p 2
+						p flexy-position(1)
+					.flexy-item.col-auto.flex-order-5
+						p 3
+						p flexy-position(5)
+					.flexy-item.col-auto.flex-order-2
+						p 4
+						p flexy-position(2)
+					.flexy-item.col-auto.flex-order-4
+						p 5
+						p flexy-position(4)
+					.flexy-item.col-auto.flex-order-3
+						p 6
+						p flexy-position(3)
+
+		section
+			article
+				h3 flexy-align-self
+
+				p Aligns individual flex items to the top, bottom, or middle of the row. Has no effect on rows that aren't taller than the containing spans. Best used with a min-height.
+
+			.example
+				.flexy-row.height
+					.flexy-item.col-auto.align-self-top
+						p flexy-align-self(top)
+					.flexy-item.col-auto.align-self-middle
+						p flexy-align-self(middle)
+					.flexy-item.col-auto.align-self-bottom
+						p flexy-align-self(bottom)
+
+		section
+			article
+				h3 flexy-push and flexy-pull
+
+				p Can add or remove space before or after flex items in a row. Can be based on columns, custom percentages or set lengths.
+
+			.example
+				h6 flexy-push
+				hr
+				.flexy-row
+					.flexy-item.col-3.push-4
+						p flexy-push(4)
+				.flexy-row
+					.flexy-item.col-3.push-12
+						p flexy-push(12em)
+				.flexy-row
+					.flexy-item.col-3.push-50p
+						p flexy-push(50%)
+
+			.example.half
+				h6 flexy-pull
+				hr
+				.flexy-row
+					.flexy-item.col-3.pull-4
+						p flexy-pull(4)
+				.flexy-row
+					.flexy-item.col-3.pull-12
+						p flexy-pull(12em)
+				.flexy-row
+					.flexy-item.col-3.pull-50p
+						p flexy-pull(50%)
+
+			.example
+				h6 flexy-end
+				hr
+				.flexy-row
+					.flexy-item.col-3.end-4
+						p flexy-end(4)
+					.flexy-item.col-3
+						p I'm four columns away!
+				.flexy-row
+					.flexy-item.col-3.end-12
+						p flexy-end(12em)
+					.flexy-item.col-3
+						p I'm 12em away!
+				.flexy-row
+					.flexy-item.col-3.end-50p
+						p flexy-end(50%)
+					.flexy-item.col-3
+						p I'm 50% away!
+
+		section
+			article
+				h3 flexy-center
+
+				p A shortcut for positioning elements in the center of a larger container. Accepts two arguments:
+				ol
+					li The container's minimum height
+					li The container's padding
+
+			.example
+				h6 flexy-center(7.5em, 5em)
+				hr
+
+				.flexy-center
+					h5 I'm always right in the center of this container, no matter what happens. This container at least 7.5em tall and has 5em of padding inside. You could give me a set height and width and I'd still be in the middle.
+			
+			p A flexy-container can also be paired with flexy-row and flexy-span to create layouts inside. The one below has padding but no set height.
+
+			.example
+				h6 flexy-center(10%)
+				hr
+
+				.flexy-center-2
+					h6 flexy-row
+					.flexy-row.align-middle
+						.flexy-item.col-6
+							p flexy-span(6)
+						.flexy-item.col-6
+							p flexy-span(6)
+						.flexy-item.col-3
+							p flexy-span(3)
+						.flexy-item.col-auto
+							p flexy-span(auto)
+
+		section
+			article
+				h3 Nesting
+
+				p Flex rows can be nested infinitely inside each other. Just be sure there's an extra container around any flexy-row inside a flexy-span.
+
+			.example
+				.flexy-row
+					.flexy-item.col-auto
+						p flexy-span(auto)
+						.extra-container
+							.flexy-row
+								.flexy-item.col-6
+									p flexy-span(6)
+									.nested
+										.flexy-row
+											.flexy-item.col-3
+												p flexy-span(3)
+											.flexy-item.col-3
+												p flexy-span(3)
+											.flexy-item.col-3
+												p flexy-span(3)
+											.flexy-item.col-3
+												p flexy-span(3)
+								.flexy-item.col-6
+									p flexy-span(6)
+									.nested
+										.flexy-row
+											.flexy-item.col-4
+												p flexy-span(4)
+											.flexy-item.col-3
+												p flexy-span(3)
+											.flexy-item.col-auto
+												p flexy-span(auto)
+
+			pre.
+				&lt;div class="flexy-row">
+					&lt;div class="flexy-span">
+						&lt;p>Content Here&lt;/p>
+						&lt;div class="extra-container">
+							&lt;div class="flexy-row">
+								&lt;div class="flexy-span">
+									&lt;p>Content Here&lt;/p>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+
+		section
+			article
+				h3 Variables
+				p These can be declared and redefined to customize several layout elements. All padding variables are set to 0 by default.
+
+				ul
+					li 
+						strong $flexy-columns: 
+						| Number of columns. Default is 12.
+					li 
+						strong $flexy-container-padding: 
+						| Default padding for flex-container.
+					li 
+						strong $flexy-row-padding: 
+						| Default padding on flex-row elements.
+					li 
+						strong $flexy-span-padding: 
+						| Default padding in flex-span elements. Can be overriden by padding called in specific mixins.
+					li 
+						strong $flexy-center-padding: 
+						| Default padding in containers with centered elements.
+
+
+
+
+		include extends/footer.jade
