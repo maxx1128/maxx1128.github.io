@@ -1,5 +1,8 @@
 - name: About
   link: '/about/'
 
-- name: Test
-  link: '/test/'
+- name: Portfolio
+  link: '/portfolio/'
+
+- name: Blog
+  link: '/blog/'

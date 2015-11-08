@@ -4,9 +4,6 @@
 @charset "utf-8";
 
 @import
-	"syntax-highlighting";
-
-@import
 	"bower_components/bourbon/app/assets/stylesheets/bourbon",
 	"bower_components/Ellisha/dist/Ellisha";
 
@@ -15,7 +12,6 @@
   'utils/variables/colors',
   'utils/variables/typography',
   'utils/variables/layout',
-  'utils/variables/forms',
   'utils/variables/animation';
 
 @import
@@ -30,15 +26,10 @@
   'layout/grid';
 
 @import
-  'components/tables',
-  'components/forms',
   'components/lists',
   'components/pre',
-  'components/buttons';
+  'components/buttons',
+  'components/syntax';
 
 @import
   'pages/home';
-
-@import
-  'themes/theme',
-  'themes/admin';

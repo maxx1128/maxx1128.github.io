@@ -1,8 +1,38 @@
+- name: Angular
+  img: 'img/tools/blinkist.png'
+
 - name: Blinkist
+  img: 'img/tools/blinkist.png'
+
+- name: Bourbon
   img: 'img/tools/blinkist.png'
 
 - name: Foundation
   img: 'img/tools/foundation.png'
 
+- name: Gulp
+  img: 'img/tools/blinkist.png'
+
+- name: Hootsuite
+  img: 'img/tools/blinkist.png'
+
+- name: IFTTT
+  img: 'img/tools/blinkist.png'
+
+- name: Jade
+  img: 'img/tools/blinkist.png'
+
+- name: jQuery
+  img: 'img/tools/blinkist.png'
+
+- name: Refills
+  img: 'img/tools/blinkist.png'
+
 - name: Sass
   img: 'img/tools/sass.png'
+
+- name: SourceTree
+  img: 'img/tools/blinkist.png'
+
+- name: Sublime Text
+  img: 'img/tools/blinkist.png'

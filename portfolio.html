@@ -1,0 +1,26 @@
+---
+layout: page
+title: Portfolio
+permalink: /portfolio/
+---
+
+<h3>My portfolio items go here</h3>
+
+<ul>
+	{% for portfolio in site.data.portfolio %}
+	<li>
+		<h5>
+			{{ portfolio.name }}
+		</h5>
+		<h6>
+			{{ portfolio.date }}, {{ portfolio.category }}
+		</h6>
+		<p>
+			{{ portfolio.description }}
+		</p>
+		<a href="{{ portfolio.link }}" target="_blank">
+			<p>Link here</p>
+		</a>
+	</li>
+	{% endfor %}
+</ul>

@@ -1,7 +1,0 @@
-// ----- Form Variables ----- //
-
-// The inner shadow that appears in form input elements, such as check boxes.
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-
-// When clicking and focusing on a form element, like an input box, this is the shadow that appears to show it's selected to fill out.
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

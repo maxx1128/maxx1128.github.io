@@ -2,11 +2,11 @@
 
 // This map is the array of standard colors for the project. Uses the Color function to reference. For colors that are frequently changing values, key names that aren't colors are recommended over literal names (such as the name 'cute' instead of pink).
 $colors: (
-  white: #fff,
-  action: #477dca,
-  dark: #333,
-  medium: #999,
-  light: #ddd
+  white: #DEE7EF,
+  action: #CE0000,
+  dark: #000043,
+  medium: #5A79A5,
+  light: #9CAAC6
 );
 
 // This is the function to pull colors out. It's here instead of on the functions sheet so the below color values can be set.

@@ -1,0 +1,38 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+<p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)</p>
+
+<ul>
+	{% for tool in site.data.tools %}
+	<li>
+		<h5>
+			{{ tool.name }}
+		</h5>
+		<p>
+			{{ tool.img }}
+		</p>
+	</li>
+	{% endfor %}
+</ul>
+
+<hr>
+
+<ul class="post-list">
+	{% for history in site.data.history %}
+	<li>
+		<h4>
+			{{ history.title }}
+		</h4>
+		<p>
+			{{ history.company }}, {{ history.time }}
+		</p>
+		<p>
+			{{ history.description }}
+		</p>
+	</li>
+	{% endfor %}
+</ul>
