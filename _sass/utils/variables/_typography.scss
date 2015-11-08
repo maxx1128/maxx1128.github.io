@@ -1,10 +1,10 @@
 // ----- Typography Variables ----- //
 
 // The default font family for all text except headers. Can be a specific font family or a Bourbon font stack variable.
-$base-font-family: $lucida-grande;
+$base-font-family: 'Droid Sans', 'Lucida Grande', Verdana, sans-serif;
 
 // The default font family for only headers. Can be a specific font family or a Bourbon font variable. By default, it's the same as the base font.
-$heading-font-family: $base-font-family;
+$heading-font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;;
 
 // The font size that all other element font sizes are scaled off of. This is often the size of basic paragraph text, and is scaled up for headers.
 $base-font-size: 1em;
@@ -13,16 +13,16 @@ $base-font-size: 1em;
 $base-font-scale: 0;
 
 // This is the modular scale the fonts will use for sizes. It can be a Bourbon variable or an integer with decimals.
-$modular-scale-ratio: $minor-third;
+$modular-scale-ratio: $major-third;
 
 // This is the base font size to be used when creating all the other scaled font sizes. Best left as the base font size in most cases.
 $modular-scale-base: $base-font-size;
 
 // When the screen gets below a certain size, this is the percentage of the original font size the font becomes. For example, a value of .9 means the font shrinks to 90% of its size on smaller screens.
-$scaled-font-ratio: .9;
+$scaled-font-ratio: .85;
 
 // The base line height for all major text elements aside from headers.
-$base-line-height: 1.6;
+$base-line-height: 1.7;
 
 // The base line height for only headers.
 $heading-line-height: 1.1;

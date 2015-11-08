@@ -1,0 +1,26 @@
+---
+layout: page
+title: Test
+permalink: /test/
+---
+
+<ul>
+	<li>is this rendering right?</li>
+	<li>is this rendering right?</li>
+	<li>is this rendering right?</li>
+	<li>is this rendering right?</li>
+	<li>is this rendering right?</li>
+</ul>
+
+<ul>
+	{% for tool in site.data.tools %}
+	  <li>
+	    <h2>
+	      {{ tool.name }}
+	    </h2>
+	    <p>
+	      {{ tool.img }}
+	    </p>
+	  </li>
+	{% endfor %}
+</ul>

@@ -2,4 +2,14 @@
 
   <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
+  <ul>
+    {% for menu in site.data.menu %}
+      <li>
+        <a href="{{ menu.link | prepend: site.baseurl }}">
+        	{{ menu.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
 </header>

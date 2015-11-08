@@ -1,8 +1,8 @@
 - name: Blinkist
-  img: 'assets/tools/blinkist.png'
+  img: 'img/tools/blinkist.png'
 
 - name: Foundation
-  img: 'assets/tools/foundation.png'
+  img: 'img/tools/foundation.png'
 
 - name: Sass
-  img: 'assets/tools/sass.png'
+  img: 'img/tools/sass.png'
