@@ -5,6 +5,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems: [jekyll-paginate]
+
 # Site settings
 title: Max Antonucci
 email: maxx1128@gmail.com
@@ -15,6 +17,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 permalink: :title
+paginate: 5,
+paginate_path: "/blog/page:num/"
 
 twitter_username: Maxwell_Dev
 github_username:  maxx1128
