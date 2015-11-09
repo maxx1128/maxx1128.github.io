@@ -1,14 +1,15 @@
 {
   "name": "Ellisha",
   "homepage": "https://github.com/maxx1128/Ellisha",
-  "_release": "ff6c64f440",
+  "version": "1.0.0",
+  "_release": "1.0.0",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
+    "type": "version",
+    "tag": "1.0.0",
     "commit": "ff6c64f4400f1eef096829abf9cd34ef573bded0"
   },
   "_source": "https://github.com/maxx1128/Ellisha.git",
-  "_target": "*",
+  "_target": "~1.0.0",
   "_originalSource": "https://github.com/maxx1128/Ellisha.git",
   "_direct": true
 }

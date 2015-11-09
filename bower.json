@@ -10,6 +10,8 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "bourbon": "~4.2.4"
+    "bourbon": "~4.2.4",
+    "hover": "Hover#~2.0.2",
+    "Ellisha": "https://github.com/maxx1128/Ellisha.git#~1.0.0"
   }
 }
