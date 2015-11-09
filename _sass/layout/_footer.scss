@@ -1,0 +1,28 @@
+footer {
+	@include padding(.5em 1em);
+}
+
+.footer-container {
+	@include flexy-container(em(1024px));
+	@include flexy-row();
+}
+
+.footer-contact, .footer-social {
+	@include flexy-span(12);
+
+	@include padding(null 1.5em);
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(auto);
+
+		@include padding(null 1.5em);
+	}
+}
+
+.footer-description {
+	@include flexy-span(12);
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(5);
+	}
+}

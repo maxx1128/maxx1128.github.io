@@ -23,14 +23,15 @@
   'base/typography';
 
 @import
-  'layout/grid';
+  'layout/grid',
+  'layout/footer',
+  'layout/nav';
 
 @import
   'components/lists',
   'components/pre',
   'components/buttons',
-  'components/syntax',
-  'components/nav';
+  'components/syntax';
 
 @import
   'pages/home';

@@ -1,5 +1,25 @@
 <footer>
-	<h5>Footer here!</h5>
+	<div class="footer-container">
+		<div class="footer-contact">
+			Contact info
+		</div>
+
+		<div class="footer-social">
+			<ul class="footer-social-links">
+		      {% for social in site.data.social %}
+		        <li>
+		          <a href="{{ social.url }}" target="_blank">
+		          	{{ social.name }}
+		          </a>
+		        </li>
+		      {% endfor %}
+		    </ul>
+		</div>
+
+		<div class="footer-description">
+			General description
+		</div>
+	</div>
 </footer>
 
   	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
