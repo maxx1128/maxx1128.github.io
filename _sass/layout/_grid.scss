@@ -1,7 +1,11 @@
 body {
+	margin: 0;
+}
+
+.wrapper {
 	@include flexy-container(90%);
 }
 
-header, footer {
+header, footer, .page-content {
 	width: 100%;
 }
