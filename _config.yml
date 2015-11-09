@@ -20,6 +20,9 @@ permalink: :title
 paginate: 5,
 paginate_path: "/blog/page:num/"
 
+sass:
+  style: compressed
+
 twitter_username: Maxwell_Dev
 github_username:  maxx1128
 
