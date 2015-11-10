@@ -18,21 +18,3 @@ permalink: /about/
 	</li>
 	{% endfor %}
 </ul>
-
-<hr>
-
-<ul class="post-list">
-	{% for history in site.data.history %}
-	<li>
-		<h4>
-			{{ history.title }}
-		</h4>
-		<p>
-			{{ history.company }}, {{ history.time }}
-		</p>
-		<p>
-			{{ history.description }}
-		</p>
-	</li>
-	{% endfor %}
-</ul>
