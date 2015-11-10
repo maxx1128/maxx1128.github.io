@@ -1,28 +1,35 @@
 footer {
-	@include padding(.5em 1em);
+	
 }
 
 .footer-container {
-	@include flexy-container(em(1024px));
 	@include flexy-row();
-}
-
-.footer-contact, .footer-social {
-	@include flexy-span(12);
-
-	@include padding(null 1.5em);
-
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto);
-
-		@include padding(null 1.5em);
-	}
+	@include flexy-container($max-width);
+	@include flexy-align(middle);
 }
 
 .footer-description {
 	@include flexy-span(12);
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(5);
+		@include flexy-span(auto);
+	}
+}
+
+.footer-social {
+	@include flexy-span(12);
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(2);
+	}
+}
+
+.footer-contact {
+	@include flexy-span(12);
+	@include flexy-position(2);
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(3);
+		@include flexy-position(0);
 	}
 }

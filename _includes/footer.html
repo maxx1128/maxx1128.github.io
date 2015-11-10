@@ -4,22 +4,23 @@
 			Contact info
 		</div>
 
-		<div class="footer-social">
-			<ul class="footer-social-links">
-		      {% for social in site.data.social %}
-		        <li>
-		          <a href="{{ social.url }}" target="_blank">
-		          	{{ social.name }}
-		          </a>
-		        </li>
-		      {% endfor %}
-		    </ul>
-		</div>
-
 		<div class="footer-description">
 			General description
+		</div>
+
+		<div class="footer-social">
+			<ul class="footer-social-links">
+			  {% for social in site.data.social %}
+				<a href="{{ social.url }}" target="_blank">
+					<li>
+					 	<i class="icon-{{ social.icon }}"></i>
+					 	{{ social.name }}
+					</li>
+				</a>
+			  {% endfor %}
+			</ul>
 		</div>
 	</div>
 </footer>
 
-  	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>

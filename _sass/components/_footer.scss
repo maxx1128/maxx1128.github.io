@@ -1,0 +1,14 @@
+.footer-social-links {
+	padding: 0;
+	margin: 0;
+
+	list-style-type: none;
+
+	li {
+		@include padding(.25em);
+	}
+
+	i {
+		padding-right: .5em;
+	}
+}

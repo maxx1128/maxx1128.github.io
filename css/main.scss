@@ -24,14 +24,15 @@
 
 @import
   'layout/grid',
-  'layout/footer',
-  'layout/nav';
+  'layout/footer';
 
 @import
   'components/lists',
   'components/pre',
   'components/buttons',
-  'components/syntax';
+  'components/syntax',
+  'components/footer',
+  'components/nav';
 
 @import
   'pages/home';

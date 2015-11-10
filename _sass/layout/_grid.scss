@@ -1,11 +1,24 @@
+$flexy-span-padding: 1em;
+$flexy-container-padding: 0 1em;
+$max-width: em(1024px);
+
 body {
 	margin: 0;
 }
 
+.page-content {
+	@include padding(1em);
+}
+
 .wrapper {
-	@include flexy-container(90%);
+	@include flexy-container($max-width);
 }
 
 header, footer, .page-content {
 	width: 100%;
+	box-sizing: border-box;
+}
+
+header, footer {
+	background-color: lightgray;
 }

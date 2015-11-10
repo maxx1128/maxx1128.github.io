@@ -1,3 +1,19 @@
 - name: Twitter
   url: http://www.twitter.com/Maxwell_Dev
   icon: twitter
+
+- name: Linkedin
+  url: http://www.twitter.com/Maxwell_Dev
+  icon: linkedin
+
+- name: Github
+  url: http://www.twitter.com/Maxwell_Dev
+  icon: github
+
+- name: Pinterest
+  url: http://www.twitter.com/Maxwell_Dev
+  icon: pinterest
+
+- name: Codepen
+  url: http://www.twitter.com/Maxwell_Dev
+  icon: code

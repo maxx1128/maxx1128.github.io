@@ -1,5 +1,5 @@
 header {
-	@include padding(1.5em null);
+	// @include padding(1em null 0 null);
 
 	@include transition(.5s);
 }
@@ -7,10 +7,10 @@ header {
 .header-container {
 	@include flexy-row();
 	@include flexy-spacing(between);
+	@include flexy-align(middle);
 
-	@include flexy-container(em(1024px));
+	@include flexy-container($max-width);
 
-	padding: .5em 1em;
 	text-align: left;
 
 	@include flexy-breakpoint($tablet-screen) {
@@ -24,33 +24,37 @@ header {
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(3);
+		@include flexy-end(2);
+
+		text-align: left;
 	}
 }
 
 .site-menu {
 	@include flexy-row();
-	@include flexy-span(12);
+	@include flexy-span(12, $padding: 0);
 
-	@include transition(.25s);
+	margin-bottom: 0;
+
+	// @include transition(.25s);
 
 	list-style: none;
 
 	li {
 		display: inline-block;
 		@include flexy-span(12);
-
-		@include padding(.5em);
+		@include flexy-align(center);
 
 		text-align: center;
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(6);
+		@include flexy-span(auto);
 
 		li {
 			@include flexy-span(auto);
 
-			@include padding(null .5em);
+			@include padding(.5em);
 		}
 	}
 }
@@ -59,6 +63,8 @@ header {
 	@include flexy-span(2);
 
 	text-align: center;
+	font-size: 1.25rem;
+	cursor: pointer;
 
 	@include flexy-breakpoint($tablet-screen) {
 		display: none;

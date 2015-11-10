@@ -13,7 +13,7 @@ $base-font-size: 1em;
 $base-font-scale: 0;
 
 // This is the modular scale the fonts will use for sizes. It can be a Bourbon variable or an integer with decimals.
-$modular-scale-ratio: $major-third;
+$modular-scale-ratio: $minor-third;
 
 // This is the base font size to be used when creating all the other scaled font sizes. Best left as the base font size in most cases.
 $modular-scale-base: $base-font-size;
