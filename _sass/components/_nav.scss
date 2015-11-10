@@ -62,12 +62,21 @@ header {
 .header-icon {
 	@include flexy-span(2);
 
+	@include transition(.5s);
+	@include transform(rotate(90deg));
+	@include transform-origin(center);
+
 	text-align: center;
 	font-size: 1.25rem;
 	cursor: pointer;
 
 	@include flexy-breakpoint($tablet-screen) {
 		display: none;
+	}
+
+	.hide-menu & {
+		@include transform(rotate(0deg));
+		@include transition(.5s);
 	}
 }
 
