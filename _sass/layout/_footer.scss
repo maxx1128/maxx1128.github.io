@@ -14,7 +14,8 @@ footer {
 	@include flexy-span(12);
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto);
+		@include flexy-span(6);
+		@include flexy-end(3);
 	}
 }
 
@@ -22,16 +23,6 @@ footer {
 	@include flexy-span(12);
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(2);
-	}
-}
-
-.footer-contact {
-	@include flexy-span(12);
-	@include flexy-position(2);
-
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(3);
-		@include flexy-position(0);
+		@include flexy-span(auto);
 	}
 }

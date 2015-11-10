@@ -1,6 +1,4 @@
 header {
-	// @include padding(1em null 0 null);
-
 	@include transition(.5s);
 
 	background-color: color(dark);
@@ -23,11 +21,16 @@ header {
 
 .site-title {	
 	@include padding(.5em);
+
 	@include flexy-span(8);
 
+	h2 {
+		margin: .5em 0;
+	}
+
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(3);
-		@include flexy-end(2);
+		@include flexy-span(5);
+		// @include flexy-end(2);
 
 		text-align: left;
 	}
@@ -63,7 +66,7 @@ header {
 }
 
 .header-icon {
-	@include flexy-span(2);
+	@include flexy-span(2, $padding: 0);
 
 	@include transition(.5s);
 	@include transform(rotate(90deg));
