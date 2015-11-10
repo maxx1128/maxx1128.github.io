@@ -12,3 +12,19 @@
 		padding-right: .5em;
 	}
 }
+
+// Makes the links contrast against the darker footer (and header)
+header, footer {
+	color: white;
+
+	a {
+		color: $dark-link;
+		font-weight: 700;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: darken($dark-link, 15%);
+		}
+	}
+}

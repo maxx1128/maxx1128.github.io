@@ -18,3 +18,5 @@ header, footer, .page-content {
 	width: 100%;
 	box-sizing: border-box;
 }
+
+$dark-link: lighten(color(action), 25%);
