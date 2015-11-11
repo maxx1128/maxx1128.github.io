@@ -1,12 +1,14 @@
-.page-content {
-	@include flexy-row();
+body.homepage {
 
-	.home-container {
-		@include flexy-center(1em);
-		width: 100%;
+	.page-content {
+		@include flexy-row();
+
+		.home-container {
+			@include flexy-center(1em);
+			width: 100%;
+		}
 	}
 }
-
 
 
 .home-content {
