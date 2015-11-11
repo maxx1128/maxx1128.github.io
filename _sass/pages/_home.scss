@@ -1,0 +1,56 @@
+body.homepage {
+	@include flexy-row();
+
+	.page-content {
+		@include flexy-center(5%);
+	}
+}
+
+
+
+.home-content {
+	@include flexy-row();
+}
+
+.home-content-text, .home-content-image {
+	@include flexy-span(12);
+
+	text-align: center;
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(auto);
+	}
+}
+
+
+
+.home-content-text {
+	@include padding(null 1em);
+	@include flexy-align-self(middle);
+}
+
+.home-content-image {
+
+}
+
+.home-nav {
+	@include flexy-row();
+	width: 100%;
+
+	margin-top: 2em;
+
+	list-style-type: none;
+	font-size: 1.25rem;
+}
+
+.home-nav-item {
+	@include flexy-span(12, $padding: .5em);
+
+	text-align: center;
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(auto, $padding: 1em);
+
+		display: inline-block;
+	}
+}

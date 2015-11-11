@@ -1,0 +1,21 @@
+.home-content {
+	@include flexy-row();
+}
+
+.home-content-text, .home-content-image {
+	@include flexy-span(12);
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(auto);
+	}
+}
+
+
+
+.home-content-text {
+
+}
+
+.home-content-image {
+
+}
