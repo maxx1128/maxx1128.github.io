@@ -11,9 +11,7 @@ gems: [jekyll-paginate]
 title: Max Antonucci
 email: maxx1128@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Making websites look pretty, filling them with good content, and spreading the word.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 permalink: :title
