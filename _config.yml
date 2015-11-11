@@ -14,15 +14,12 @@ description: > # this means to ignore newlines until "baseurl:"
   Making websites look pretty, filling them with good content, and spreading the word.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-permalink: :title
+permalink: pretty
 paginate: 5,
 paginate_path: "/blog/page:num/"
 
 sass:
   style: compressed
-
-twitter_username: Maxwell_Dev
-github_username:  maxx1128
 
 # Build settings
 markdown: kramdown

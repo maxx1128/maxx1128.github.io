@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Blog
-permalink: /blog/
 ---
 
 <div class="blog-subheader">
@@ -9,7 +8,7 @@ permalink: /blog/
 </div>
 
 <section class="blog-list">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="blog-list-item">
       <h4 class="blog-title">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -23,3 +22,20 @@ permalink: /blog/
     </article>
   {% endfor %}
 </section>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <p class="pagination-prev">
+      <a href="{{ paginator.previous_page_path }}">
+        Previous
+      </a>
+    </p>
+  {% endif %}
+  {% if paginator.next_page %}
+    <p class="pagination-next">
+      <a href="{{ paginator.next_page_path }}">
+        Next
+      </a>
+    </p>
+  {% endif %}
+</div>

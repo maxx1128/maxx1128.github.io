@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll! 6"
 date:   2015-11-06 07:40:02 -0500
 categories: jekyll update
 permalink: /blog/:title
