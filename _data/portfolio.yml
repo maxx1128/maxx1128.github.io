@@ -5,7 +5,7 @@
 
 - name: '"What Eeveelution are You" Quiz'
   date: 10/15/2015
-  description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS. As for why I made it a Pokemon themed quiz, I just thought it’d be more fun to make that way!'
+  description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS.'
   link: http://maxx1128.github.io/Which-Eeveelution-Are-You/
 
 - name: Guess the Number!
@@ -15,7 +15,7 @@
 
 - name: Plately
   date: 07/07/2015
-  description: 'For my web development projects, whether they’re WordPress or static sites, I’ve put together a personal workflow I enjoy using called Plately. It makes use of Gulp.js, Sass, Bower, and Jade to speed the process along. I’ve also put in some of my favorite ThoughtBot open-source tools in advance. Github’s hosting it, so I’m free to update it and others are free to try it out.'
+  description: 'For my web development projects, whether they’re WordPress or static sites, I’ve put together a personal workflow I enjoy using called Plately. It makes use of Gulp.js, Sass, Bower, and Jade to speed the process along. I’ve also put in some of my favorite ThoughtBot open-source tools in advance.'
   link: https://github.com/maxx1128/Plately
 
 - name: Frosted Glass Effect
