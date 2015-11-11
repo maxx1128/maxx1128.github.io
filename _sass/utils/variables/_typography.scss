@@ -13,7 +13,7 @@ $base-font-size: 1em;
 $base-font-scale: 0;
 
 // This is the modular scale the fonts will use for sizes. It can be a Bourbon variable or an integer with decimals.
-$modular-scale-ratio: $minor-third;
+$modular-scale-ratio: $major-third;
 
 // This is the base font size to be used when creating all the other scaled font sizes. Best left as the base font size in most cases.
 $modular-scale-base: $base-font-size;
@@ -22,7 +22,7 @@ $modular-scale-base: $base-font-size;
 $scaled-font-ratio: .85;
 
 // The base line height for all major text elements aside from headers.
-$base-line-height: 1.7;
+$base-line-height: 1.9;
 
 // The base line height for only headers.
 $heading-line-height: 1.1;
@@ -35,5 +35,5 @@ $modular-size-map: (
    h4: $base-font-scale + 3,
    h5: $base-font-scale + 2,
    h6: $base-font-scale + 1,
-   p: $base-font-scale + 1,
+   p: $base-font-scale,
 );

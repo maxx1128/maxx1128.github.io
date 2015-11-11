@@ -1,7 +1,7 @@
 header {
 	@include transition(.5s);
 
-	background-color: color(dark);
+	background-color: color(medium);
 	border-bottom: 1em solid color(light);
 }
 
@@ -20,17 +20,14 @@ header {
 }
 
 .site-title {	
-	@include padding(.5em);
-
-	@include flexy-span(8);
+	@include flexy-span(auto);
 
 	h2 {
 		margin: .5em 0;
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(5);
-		// @include flexy-end(2);
+		@include flexy-span(6);
 
 		text-align: left;
 	}
@@ -38,11 +35,9 @@ header {
 
 .site-menu {
 	@include flexy-row();
-	@include flexy-span(12, $padding: 0);
+	@include flexy-span(12);
 
 	margin-bottom: 0;
-
-	// @include transition(.25s);
 
 	list-style: none;
 
@@ -51,7 +46,11 @@ header {
 		@include flexy-span(12);
 		@include flexy-align(center);
 
+		@include padding(1em);
+
 		text-align: center;
+		border-top: 1px solid color(light);
+		border-bottom: 1px solid color(light);
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
@@ -61,19 +60,21 @@ header {
 			@include flexy-span(auto);
 
 			@include padding(.5em);
+
+			border: none;
 		}
 	}
 }
 
 .header-icon {
-	@include flexy-span(2, $padding: 0);
+	@include flexy-span(2);
 
 	@include transition(.5s);
-	@include transform(rotate(90deg));
+	@include transform(rotate(180deg));
 	@include transform-origin(center);
 
 	text-align: center;
-	font-size: 1.25rem;
+	font-size: 2rem;
 	cursor: pointer;
 
 	@include flexy-breakpoint($tablet-screen) {

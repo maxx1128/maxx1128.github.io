@@ -1,5 +1,4 @@
-$flexy-span-padding: 1em;
-$flexy-container-padding: 0 1em;
+$flexy-container-padding: 1em 1.5em;
 $max-width: em(1024px);
 
 body {
@@ -7,10 +6,6 @@ body {
 }
 
 .page-content {
-	@include padding(1em);
-}
-
-.wrapper {
 	@include flexy-container($max-width);
 }
 

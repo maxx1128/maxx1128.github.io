@@ -1,6 +1,6 @@
 footer {
 	
-	background-color: color(dark);
+	background-color: color(medium);
 	border-top: 1em solid color(light);
 }
 
@@ -12,6 +12,7 @@ footer {
 
 .footer-description {
 	@include flexy-span(12);
+	@include padding(1em null);
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(6);
