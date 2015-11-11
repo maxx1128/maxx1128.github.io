@@ -5,3 +5,9 @@ pre {
 
 	overflow: scroll;
 }
+
+p code {
+	background-color: color(dark);
+	color: color(light);
+	padding: .25em;
+}

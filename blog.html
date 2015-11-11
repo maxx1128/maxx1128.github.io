@@ -4,16 +4,22 @@ title: Blog
 permalink: /blog/
 ---
 
-<h3 class="page-heading">Posts</h3>
+<div class="blog-subheader">
+  <h6>We all have thoughts in our spare time. This is where I store mine for safe-keeping.</h6>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="blog-list">
+  {% for post in site.posts %}
+    <article class="blog-list-item">
+      <h4 class="blog-title">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h4>
 
-        <h4>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h4>
-      </li>
-    {% endfor %}
-  </ul>
+      <span class="blog-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      
+      <div class="blog-excerpt"> 
+        {{ post.excerpt }}
+      </div>
+    </article>
+  {% endfor %}
+</section>
