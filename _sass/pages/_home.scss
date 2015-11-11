@@ -1,8 +1,9 @@
-body.homepage {
+.page-content {
 	@include flexy-row();
 
-	.page-content {
-		@include flexy-center(5%);
+	.home-container {
+		@include flexy-center(1em);
+		width: 100%;
 	}
 }
 
