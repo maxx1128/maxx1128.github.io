@@ -15,6 +15,7 @@ ul, ol, dl, figure,
 .highlight {
     background: #fff;
     @extend %vertical-rhythm;
+    @include margin(null 0);
 
     .highlighter-rouge & {
       background: #eef;

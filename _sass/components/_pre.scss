@@ -2,4 +2,6 @@ pre {
 	background-color: $secondary-background-color;
 	padding: $base-spacing;
 	font-family: $monospace;
+
+	overflow: scroll;
 }
