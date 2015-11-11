@@ -5,7 +5,7 @@
 
 - name: '"What Eeveelution are You" Quiz'
   date: 10/15/2015
-  description: this is stuff about the item!
+  description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS. As for why I made it a Pokemon themed quiz, I just thought it’d be more fun to make that way!'
   link: http://maxx1128.github.io/Which-Eeveelution-Are-You/
 
 - name: Guess the Number!
