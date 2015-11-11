@@ -16,9 +16,11 @@ permalink: /about/
 	<ul>
 		{% for tool in site.data.tools %}
 		<li>
-			<h5>
-				{{ tool.name }}
-			</h5>
+			<a href="{{ tool.link }}" target="_blank">
+				<h5>
+					{{ tool.name }}
+				</h5>
+			</a>
 			<p>
 				{{ tool.img }}
 			</p>
