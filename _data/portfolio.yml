@@ -3,6 +3,11 @@
   description: A mixin collection for responsive Flexbox grids and layouts. It gives site layouts the new benefits of flexbox while keeping their grids lightweight and customizable.
   link: http://maxx1128.github.io/Ellisha/
 
+- name: Animated Viewport Items
+  date: 10/19/2019
+  description: 'An animation trick I made by combining Animate.css with Waypoints.JS, which lets developers create entrance animations for elements just by adding a class.'
+  link: http://codepen.io/max1128/pen/PPKXGz
+
 - name: '"What Eeveelution are You" Quiz'
   date: 10/15/2015
   description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS.'
