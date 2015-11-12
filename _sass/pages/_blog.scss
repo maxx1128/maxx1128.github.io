@@ -28,6 +28,8 @@
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(8);
 	}
+
+	// @include hang();
 }
 
 .blog-meta {

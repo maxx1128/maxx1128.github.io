@@ -5,14 +5,16 @@
 
 @import
 	"bower_components/bourbon/app/assets/stylesheets/bourbon",
-	"bower_components/Ellisha/dist/Ellisha";
+	"bower_components/Ellisha/dist/Ellisha",
+  "bower_components/hover/scss/hover.scss";
 
 @import
   'utils/variables/breakpoints',
   'utils/variables/colors',
   'utils/variables/typography',
   'utils/variables/layout',
-  'utils/variables/animation';
+  'utils/variables/animation',
+  'utils/variables/hover';
 
 @import
   'utils/functions',

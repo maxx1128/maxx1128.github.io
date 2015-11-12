@@ -12,6 +12,8 @@
 	@include flexy-center(1em);
 	height: auto;
 
+	@include overline-reveal();
+
 	color: color(dark);
 
 	&:hover,
