@@ -8,7 +8,7 @@ permalink: /portfolio/
 
 <section class="portfolio-list">
 	{% for portfolio in site.data.portfolio %}
-	<article class="portfolio-item">
+	<a class="portfolio-item" href="{{ portfolio.link }}" target="_blank">
 		<div class="portfolio-item-content">
 			<h5>
 				{{ portfolio.name }}
@@ -19,10 +19,7 @@ permalink: /portfolio/
 			<p>
 				{{ portfolio.description }}
 			</p>
-			<a href="{{ portfolio.link }}" target="_blank">
-				<p>Link here</p>
-			</a>
 		</div>
-	</article>
+	</a>
 	{% endfor %}
 </section>

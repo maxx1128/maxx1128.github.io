@@ -12,8 +12,24 @@
 	@include flexy-center(1em);
 	height: auto;
 
+	color: color(dark);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: color(dark);
+	}
+
+	&:nth-child(even) {
+		background-color: color(light);
+	}
+
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(1, 2, 1.5em);
+
+		&:nth-child(even) {
+			background-color: color(white);
+		}
 
 		&:nth-child(4n+1),
 		&:nth-child(4n+4) {
