@@ -27,14 +27,18 @@ title: Blog
   {% if paginator.previous_page %}
     <p class="pagination-prev">
       <a href="{{ paginator.previous_page_path }}">
-        Newer Posts
+        <button>
+          Newer Posts
+        </button>
       </a>
     </p>
   {% endif %}
   {% if paginator.next_page %}
     <p class="pagination-next">
       <a href="{{ paginator.next_page_path }}">
-        Older Posts
+        <button>
+          Older Posts
+        </button>
       </a>
     </p>
   {% endif %}

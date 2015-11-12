@@ -1,0 +1,32 @@
+.pagination {
+	@include clearfix();
+
+	p {
+		margin: 0
+	}
+}
+
+.pagination-next, .pagination-prev {
+	@include padding(1em null);
+
+	text-align: center;
+}
+
+.pagination-next {
+	
+	@include flexy-breakpoint($tablet-screen) {
+		width: 25%;
+		float: right;
+
+		text-align: right;
+	}
+}
+
+.pagination-prev {
+	@include flexy-breakpoint($tablet-screen) {
+		width: 25%;
+		float: left;
+
+		text-align: left;
+	}
+}
