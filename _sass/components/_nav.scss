@@ -42,27 +42,34 @@ header {
 	list-style: none;
 
 	li {
-		display: inline-block;
-		@include flexy-span(12);
-		@include flexy-align(center);
-
-		@include padding(1em);
-
-		text-align: center;
-		border-top: 1px solid color(light);
-		border-bottom: 1px solid color(light);
+		
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(auto);
+	}
+}
 
-		li {
-			@include flexy-span(auto);
+.site-menu-item {
+	display: inline-block;
+	@include flexy-span(12);
+	@include flexy-align(center);
 
-			@include padding(.5em);
+	@include padding(1em);
 
-			border: none;
-		}
+	@include wobble-skew();
+
+	text-align: center;
+	border-top: 1px solid color(light);
+	border-bottom: 1px solid color(light);
+
+	@include flexy-breakpoint($tablet-screen) {
+
+		@include flexy-span(auto);
+
+		@include padding(.5em);
+
+		border: none;
 	}
 }
 

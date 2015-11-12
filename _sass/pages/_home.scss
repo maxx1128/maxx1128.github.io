@@ -51,6 +51,15 @@ body.homepage {
 
 	text-align: center;
 
+	@include shutter-in-vertical();
+
+	&:hover,
+	&:focus,
+	&:active {
+		
+		color: color(light);
+	}
+
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(auto, $padding: 1em);
 

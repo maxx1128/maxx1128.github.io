@@ -11,11 +11,11 @@
 
     <ul class="site-menu">
       {% for menu in site.data.menu %}
-        <li>
-        <a href="{{ menu.link | prepend: site.baseurl }}">
-        	 {{ menu.name }}
+        <a class="site-menu-item" href="{{ menu.link | prepend: site.baseurl }}">
+          <li>
+            {{ menu.name }}
+          </li>
         </a>
-        </li>
       {% endfor %}
     </ul>
   </div>

@@ -12,8 +12,6 @@
 
 	@include padding(5%);
 
-	
-
 	&:nth-of-type(odd) {
 		background-color: color(light);
 	}
@@ -24,6 +22,8 @@
 
 	@include padding(.5em null);
 	margin: 0;
+
+	@include wobble-skew();
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(8);

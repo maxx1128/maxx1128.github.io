@@ -12,14 +12,24 @@
 	@include flexy-center(1em);
 	height: auto;
 
-	@include overline-reveal();
+	@include transition(.5s);
+	border-right: 0px solid color(dark);
+	border-left: 0px solid color(dark);
 
-	color: color(dark);
+	p {
+		color: color(dark);
+	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: color(dark);
+		p {
+			color: color(dark);
+		}
+
+		border-right: 10px solid color(dark);
+		border-left: 10px solid color(dark);
+		@include transition(.5s);
 	}
 
 	&:nth-child(even) {

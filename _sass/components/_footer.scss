@@ -8,6 +8,10 @@ $dark-link: lighten(color(light), 10%);
 
 	li {
 		@include padding(.25em);
+
+		width: 100%;
+
+		@include wobble-skew();
 	}
 
 	i {

@@ -17,11 +17,11 @@
 		  </div>
 		  <ul class="home-nav">
 			{% for menu in site.data.menu %}
-			  <li class="home-nav-item">
-				<a href="{{ menu.link | prepend: site.baseurl }}">
+			  <a class="home-nav-item" href="{{ menu.link | prepend: site.baseurl }}">
+			    <li>
 				  {{ menu.name }}
-				</a>
-			  </li>
+			    </li>
+			  </a>
 			{% endfor %}
 		  </ul>
 	  </div>
