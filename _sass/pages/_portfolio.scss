@@ -12,24 +12,8 @@
 	@include flexy-center(1em);
 	height: auto;
 
-	@include transition(.5s);
-	border-right: 0px solid color(dark);
-	border-left: 0px solid color(dark);
-
 	p {
 		color: color(dark);
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		p {
-			color: color(dark);
-		}
-
-		border-right: 10px solid color(dark);
-		border-left: 10px solid color(dark);
-		@include transition(.5s);
 	}
 
 	&:nth-child(even) {
@@ -39,13 +23,33 @@
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(1, 2, 1.5em);
 
+		@include transition(.25s);
+
 		&:nth-child(even) {
 			background-color: color(white);
+
+			border-right: 0px solid color(white);
+			border-left: 0px solid color(white);
 		}
 
 		&:nth-child(4n+1),
 		&:nth-child(4n+4) {
 			background-color: color(light);
+
+			border-right: 0px solid color(light);
+			border-left: 0px solid color(light);
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			p {
+				color: color(dark);
+			}
+
+			border-right: 10px solid color(action);
+			border-left: 10px solid color(action);
+			@include transition(.5s);
 		}
 	}
 }
