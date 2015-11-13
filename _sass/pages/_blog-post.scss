@@ -1,0 +1,64 @@
+.post-title {
+	text-align: center;
+}
+
+.post-meta {
+	text-align: center;
+	font-style: italic;
+}
+
+.post-content {
+	
+}
+
+
+
+// Any universal post styles here
+.post {
+
+	img {
+		display: block;
+		margin: 1em auto;
+	}
+}
+
+blockquote {
+	margin: 3%;
+	padding: 1.25em;
+
+	font-family: $heading-font-family;
+	text-align: center;
+	box-shadow: 0em 0em 1.25em color(dark);
+
+	border-top: 10px solid color(medium);
+	border-bottom: 10px solid color(medium);
+	background-color: color(white);
+	color: color(medium);
+
+	p {
+		margin: 0;
+	}
+
+	@include flexy-breakpoint($tablet-screen) {
+		width: 50%;
+		float: right;
+	}
+}
+
+.post-sig {
+	text-align: right;
+	font-style: italic;
+}
+
+// Classes for different image sizings
+@include flexy-breakpoint($tablet-screen) {
+	
+	.post-half-image {
+		max-width: 50%;
+	}
+
+	.post-three-quarter-image {
+		max-width: 75%;
+	}
+}
+

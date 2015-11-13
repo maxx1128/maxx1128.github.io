@@ -19,11 +19,11 @@ At that point, I’m forcing the content out. Forcing content dooms it all to be
 
 Even with drawing a picture for a post, nothing comes out right. For one post idea I had about how frustrating one’s 20’s are, I stopped this it was too rough and bland. You can see for yourself here.
 
-![Alt text](/img/posts/writing-workflow/drawing-awkward.jpg "Optional title")
+<img class="post-half-image" src="/img/posts/writing-workflow/drawing-awkward.jpg" alt="">
 
 Compare this to what I draw when I’m not focused on a post: much smoother and interesting (if at tons of different angles).
 
-![Alt text](/img/posts/writing-workflow/drawing-natural.jpg "Optional title")
+<img class="post-half-image" src="/img/posts/writing-workflow/drawing-natural.jpg" alt="">
 
 I think the key is finding a more natural workflow for writing. Since I’m often already on Internet overload, it’s important to develop content while away from the screen.
 

@@ -13,7 +13,7 @@
 	@include padding(5%);
 
 	&:nth-of-type(odd) {
-		background-color: color(light);
+		background-color: lighten(color(light), 10%);
 	}
 }
 

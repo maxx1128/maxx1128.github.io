@@ -17,7 +17,7 @@
 	}
 
 	&:nth-child(even) {
-		background-color: color(light);
+		background-color: lighten(color(light), 10%);
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
@@ -34,10 +34,10 @@
 
 		&:nth-child(4n+1),
 		&:nth-child(4n+4) {
-			background-color: color(light);
+			background-color: lighten(color(light), 10%);
 
-			border-right: 0px solid color(light);
-			border-left: 0px solid color(light);
+			border-right: 0px solid lighten(color(light), 10%);
+			border-left: 0px solid lighten(color(light), 10%);
 		}
 
 		&:hover,
