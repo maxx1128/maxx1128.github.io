@@ -22,7 +22,7 @@
 	@include wobble-skew();
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(8);
+		@include flexy-span(9);
 	}
 
 	// @include hang();
@@ -33,6 +33,8 @@
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(auto);
+
+		padding-left: 1em;
 	}
 }
 

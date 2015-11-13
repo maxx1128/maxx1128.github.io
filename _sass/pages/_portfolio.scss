@@ -25,11 +25,11 @@
 
 		@include transition(.25s);
 
+		border-right: 0px solid color(white);
+		border-left: 0px solid color(white);
+
 		&:nth-child(even) {
 			background-color: color(white);
-
-			border-right: 0px solid color(white);
-			border-left: 0px solid color(white);
 		}
 
 		&:nth-child(4n+1),
@@ -40,9 +40,8 @@
 			border-left: 0px solid lighten(color(light), 10%);
 		}
 
-		&:hover,
-		&:focus,
-		&:active {
+		&:hover {
+
 			p {
 				color: color(dark);
 			}

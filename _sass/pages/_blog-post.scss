@@ -1,14 +1,16 @@
-.post-title {
+.post-header {
+	@include margin(1.5em null 2.5em null);
+
 	text-align: center;
+}
+
+.post-title {
+	margin: .25em 0;
 }
 
 .post-meta {
 	text-align: center;
 	font-style: italic;
-}
-
-.post-content {
-	
 }
 
 

@@ -7,6 +7,7 @@ body {
 
 .page-content {
 	@include flexy-container($max-width);
+	@include padding(0 null);
 }
 
 header, footer, .page-content {
