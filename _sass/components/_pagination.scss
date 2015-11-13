@@ -16,7 +16,7 @@
 	
 	@include flexy-breakpoint($tablet-screen) {
 		width: 25%;
-		float: right;
+		float: left;
 
 		text-align: right;
 	}
@@ -25,7 +25,7 @@
 .pagination-prev {
 	@include flexy-breakpoint($tablet-screen) {
 		width: 25%;
-		float: left;
+		float: right;
 
 		text-align: left;
 	}

@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Meet Plately!"
+date:   2015-10-16 07:40:02 -0500
+categories: web-development
+permalink: /blog/:title
+---
+Every web project needs a good starting template. I’m sad to say mine wasn’t in good shape for a long time. It had the bare basics but wasn’t built for professional web development. I shouldn’t be too mad at myself for this, since made it only a year after I started coding.
+
+But in the last few weeks it got a much-needed revamp with some major guideline changes and a new name: Plately. Now all my future web projects will be more professional (hopefully) and built to last.
+
+Why is Plately better than my old starting template? Let’s count the ways…
+
+### More Documentation
+Like many web developers, I don’t document my code well enough. This is bad for endless reasons, mainly it makes updating code almost impossible. Code documentation is like eating veggies: we need it even though it’s boring and leaves a bad taste in our mouths. 
+
+> Code documentation is boring yet essential. The easier, the better.
+
+I started fixing this by adding SassDoc and JSDoc into Plately. These make solid documentation for Sass and jQuery as simple as adding inline comments. They use these to generate organized, understandable documentation in a few seconds.
+
+So while it’s is still a chore, documentation is much easier to manage with Plately.
+
+### More Structure
+The biggest flaw with my old workflow was organization. Every Sass and JS file was tossed in a few folders with vague labels and no system. Many files were huge masses of barely related code, and functions were impossible to sort through. I still get flashbacks…
+
+That changed when I adapted the 7-1 architecture style here. While it means more files, it also means easier code management.
+
+	sass/
+	|
+	– main.scss # Main file that puts all the Sass together
+	|
+	|– base/
+	|   |– _typography.scss    # Typography sizes and styles
+	|
+	|– components/
+	|   |– _buttons.scss       # Buttons
+	|   |– _forms.scss         # Forms
+	|   |– _lists.scss         # Lists
+	|   |– _pre.scss           # Preformatted text (like this)
+	|   |– _tables.scss        # Tables
+	|
+	|– layout/
+	|   |– _grid.scss          # Grid layouts
+	|
+	|– pages/
+	|   |– _home.scss          # Home styles
+	|
+	|– themes/
+	|   |– _theme.scss         # Default theme styles
+	|   |– _admin.scss         # Admin theme styles
+	|
+	|– utils/
+	|   |– _variables.scss     # Sass Variables
+	|   |– _functions.scss     # Sass Functions
+	|   |– _mixins.scss        # Sass Mixins
+	|   |– _placeholders.scss  # Placeholders and Helpers
+
+There’s another professional benefit: avoiding merge conflicts. When multiple people edit a project, more files means fewer chances there’ll be conflicting changes. Since I’m planning to use Plately for my work as well as side projects, it’ll come in handy plenty.
+
+### Separating Development and Production
+One smaller tweak was more of a mindset one: separating code in development from final production. This took the form of Plately’s “production” task.
+
+This effects only the CSS. In the development phase, CSS is expanded and includes sourcemaps so it’s easier to edit and read through.
+
+	pre - gulp prod
+
+After running this poorly named “production task”, the CSS is minimized, prefixed for multiple browsers, sourcemap-free, and cleansed of any styles not used in the HTML.
+
+### Custom Styles Structure
+This is basically a lot of built in Sass styles that give a blank project starting styles for common elements. It defines styles for headers, lists, tables, etc. It’s also easy to customize and control for any project’s needs.
+
+> Good starting styles get the basics done and are easy to customize.
+
+I won’t lie, much of this code is drawn from an open-source project called Bitters by ThoughtBot. But I did enhance it with some Sass maps and functions. Plus it includes preset grid breakpoints and is built into the new architecture already to save time.
+
+Any projects designed off a blank slate will have an easier start time with this preset Sass, whether it’s my custom Bitters, the original version, or your own version of it.
+
+###Cooler Name
+Last but most importantly, it has a cooler name. You can argue Plately isn’t the best name out there, but it beats no name at all.
+
+####Give Plately a Look!
+If you’re in web development yourself, I beg of encourage you to try it out! At least know it’s there next time you want to start a new project differently. As for me, I’ll keep updating and using it to make sure my code is well-documented, structured, and doesn’t waste time the beginning steps.
+
+So cheers to Plately!
