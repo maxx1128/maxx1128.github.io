@@ -2,13 +2,25 @@
 
 // This map is the array of standard colors for the project. Uses the Color function to reference. For colors that are frequently changing values, key names that aren't colors are recommended over literal names (such as the name 'cute' instead of pink).
 
+// Try a Metagross one?
+
 $colors: (
+  white: #ffffff,
+  action: #c5a400,
+  dark: #295241,
+  medium: #4a8373,
+  light: #94deb4
+);
+
+$colors-2: (
   white: #F5F5F5,
   action: #D75C37,
   dark: #67727A,
   medium: #6991AC,
   light: #C3D7DF
 );
+
+
 
 // This is the function to pull colors out. It's here instead of on the functions sheet so the below color values can be set.
 @function color($key) {
