@@ -30,7 +30,8 @@ I don’t even need, or want, to also describe the “Nasty Icon” set that’s
 * A man doping up with a needle
 * A lumberjack axed in the head
 * Best of all, a man being impaled by a unicorn horn.
-* Try and find them all below!
+
+Try and find them all below!
 
 ![Alt text](/img/posts/fontastic/crazy-icons.png)
 
