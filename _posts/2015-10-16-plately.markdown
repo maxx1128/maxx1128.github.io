@@ -3,7 +3,6 @@ layout: post
 title:  "Meet Plately!"
 date:   2015-10-16 07:40:02 -0500
 categories: web-development
-permalink: /blog/:title
 ---
 Every web project needs a good starting template. I’m sad to say mine wasn’t in good shape for a long time. It had the bare basics but wasn’t built for professional web development. I shouldn’t be too mad at myself for this, since made it only a year after I started coding.
 

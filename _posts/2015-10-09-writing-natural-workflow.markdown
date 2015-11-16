@@ -3,7 +3,6 @@ layout: post
 title:  "The Biggest Content Obstacle is a Natural Workflow"
 date:   2015-10-09 07:40:02 -0500
 categories: writing
-permalink: /blog/:title
 ---
 I really do want to write more. Seeing this blog with few regular updates is a big source of nighttime anger and sheet-wringing.
 

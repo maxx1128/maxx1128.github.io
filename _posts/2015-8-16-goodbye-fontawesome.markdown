@@ -3,7 +3,6 @@ layout: post
 title:  "Goodbye Font Awesome, Hello Fontastic"
 date:   2015-8-16 07:40:02 -0500
 categories: web-development
-permalink: /blog/:title
 ---
 
 Icons are huge in websites today. They look cool and can be styled to different sizes and colors. Most importantly, they make for a good user experience, taking up little space while giving good direction. For example, having an email icon beats writing “email” in a toolbar each time.

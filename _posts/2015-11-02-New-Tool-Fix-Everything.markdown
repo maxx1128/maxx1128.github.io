@@ -3,7 +3,6 @@ layout: post
 title:  "A New Tool Can Never Fix Everything"
 date:   2015-11-02 07:40:02 -0500
 categories: productivity
-permalink: /blog/:title
 ---
 Want to be productive? Never think any new tool or skill will fix your problems.
 

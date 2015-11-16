@@ -3,7 +3,6 @@ layout: post
 title:  "How to Put Some Soul Into Your Writing"
 date:   2015-10-28 07:40:02 -0500
 categories: writing
-permalink: /blog/:title
 ---
 A new way I’ve come to think of writing well: good writing means putting in a piece of your soul.
 
