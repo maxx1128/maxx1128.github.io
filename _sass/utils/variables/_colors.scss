@@ -5,21 +5,12 @@
 // Try a Metagross one?
 
 $colors: (
-  white: #ffffff,
-  action: #c5a400,
-  dark: #295241,
-  medium: #4a8373,
-  light: #94deb4
+  white: #cddef6,
+  action: #d54a52,
+  dark: #313962,
+  medium: #416294,
+  light: #7ba4f6
 );
-
-$colors-2: (
-  white: #F5F5F5,
-  action: #D75C37,
-  dark: #67727A,
-  medium: #6991AC,
-  light: #C3D7DF
-);
-
 
 
 // This is the function to pull colors out. It's here instead of on the functions sheet so the below color values can be set.

@@ -57,7 +57,11 @@ body.homepage {
 	&:focus,
 	&:active {
 		
-		color: color(light);
+		color: lighten(color(light), 15%);
+	}
+
+	&:before {
+		background: lighten(color(light), 15%);
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
