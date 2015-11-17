@@ -89,3 +89,16 @@ blockquote {
 
 	background-color: lighten(color(light), 15%);
 }
+
+.iframe-container {
+	width: 100%;
+
+	iframe {
+		width: 100%;
+	}
+
+	@include flexy-breakpoint($tablet-screen) {
+		width: 75%;
+		margin: 0 auto;
+	}
+}

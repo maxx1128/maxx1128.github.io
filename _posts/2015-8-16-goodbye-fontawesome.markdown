@@ -9,11 +9,7 @@ Icons are huge in websites today. They look cool and can be styled to different 
 
 This means having a good tool to manage icons is vital. For a long time I’ve used Font Awesome. It’s a remote library of almost 600 icons that only needs a single reference and the right tag references. It’s been my go-to tool for a while, but recently I’ve discovered Fontastic. It quickly made me a believer, and I plan to use it for my future icon needs for all the below reasons.
 
-<div class="video">
-  <div class="video-wrapper">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/V6GMZojJCk4" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
+{% include embed_video.html url="https://www.youtube.com/embed/V6GMZojJCk4" %}
 
 ### More Icon Options
 
