@@ -5,4 +5,21 @@ date:   2015-3-02 07:40:02 -0500
 categories: writing
 ---
 
-http://maxwellantonucci.com/short-posts-are-okay/
+This is a reminder to everyone, especially me, that just because something you write online is short doesn’t make it bad. If anything, in today’s Internet, shorter is better.
+
+People are always flooded with info, so they want their info to be short, sweet and fast. Have one key idea and make it easy to read. Even with longer posts, the big idea must be right at the very top, short and clear.
+
+Many think longer posts must be better, since long posts send many messages about the writer: being intelligent, well-spoken, hard-working and thorough. It doesn’t look like you’re oversimplifying or skipping big details.
+
+However, short posts send good messages too. Messages more important in today’s internet:
+
+You know your message well enough to say it simply. As Einstein would say, that’s a sign you really understand it.
+You know people are busy and don’t want to waste their time.
+You’re confident your post will be good without overcompensating by piling on more content.
+Simpler ideas and content are more shareable, which is always an asset today.
+
+!["If an idea can be explained simply, it is mastered."](/img/posts/short-posts/quote.jpg)
+
+It often takes more skill to make a short post as good as a long one.  So keep your short post writing muscles strong. It doesn’t take as much time as writing long posts, so you have fewer excuses not to.
+
+**Short post writing done right doesn’t mean a lack of intelligence – it means focused, efficient intelligence.** Without that, intelligence today doesn’t have much use on the Internet.

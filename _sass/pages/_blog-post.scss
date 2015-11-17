@@ -34,7 +34,7 @@ blockquote {
 
 	border-top: 10px solid color(medium);
 	border-bottom: 10px solid color(medium);
-	background-color: color(white);
+	background-color: lighten(color(white), 5%);
 	color: color(medium);
 
 	p {
