@@ -72,6 +72,19 @@ blockquote {
 
 	@include flexy-breakpoint($tablet-screen) {
 		max-width: 75%;
+
+		&.left, &.right {
+			max-width: 40%;
+			margin: 1.5em;
+		}
+
+		&.left {
+			float: left;
+		}
+
+		&.right {
+			float: right;
+		}
 	}
 }
 
@@ -81,8 +94,8 @@ blockquote {
 
 .caption-text {
 	display: inline-block;
-	@include padding(.5em null);
-	width: 100%;
+	@include padding(.5em);
+	max-width: 100%;
 
 	font-size: 80%;
 	font-style: italic;
