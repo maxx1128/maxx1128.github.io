@@ -57,8 +57,6 @@ header {
 
 	@include padding(1em);
 
-	@include wobble-skew();
-
 	text-align: center;
 	border-top: 1px solid color(light);
 	border-bottom: 1px solid color(light);
