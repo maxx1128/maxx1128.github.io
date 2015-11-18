@@ -13,7 +13,7 @@ Many think longer posts must be better, since long posts send many messages abou
 
 However, short posts send good messages too. Messages more important in today’s internet:
 
-You know your message well enough to say it simply. As Einstein would say, that’s a sign you really understand it.
+You know your message well enough to say it simply. As [Einstein would say](https://www.goodreads.com/quotes/19421-if-you-can-t-explain-it-to-a-six-year-old), that’s a sign you really understand it.
 You know people are busy and don’t want to waste their time.
 You’re confident your post will be good without overcompensating by piling on more content.
 Simpler ideas and content are more shareable, which is always an asset today.

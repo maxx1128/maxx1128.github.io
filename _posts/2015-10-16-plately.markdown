@@ -6,7 +6,7 @@ categories: web-development
 ---
 Every web project needs a good starting template. I’m sad to say mine wasn’t in good shape for a long time. It had the bare basics but wasn’t built for professional web development. I shouldn’t be too mad at myself for this, since made it only a year after I started coding.
 
-But in the last few weeks it got a much-needed revamp with some major guideline changes and a new name: Plately. Now all my future web projects will be more professional (hopefully) and built to last.
+But in the last few weeks it got a much-needed revamp with some major guideline changes and a new name: [Plately](https://github.com/maxx1128/Plately). Now all my future web projects will be more professional (hopefully) and built to last.
 
 Why is Plately better than my old starting template? Let’s count the ways…
 
@@ -61,7 +61,7 @@ One smaller tweak was more of a mindset one: separating code in development from
 
 This effects only the CSS. In the development phase, CSS is expanded and includes sourcemaps so it’s easier to edit and read through.
 
-	pre - gulp prod
+	gulp prod
 
 After running this poorly named “production task”, the CSS is minimized, prefixed for multiple browsers, sourcemap-free, and cleansed of any styles not used in the HTML.
 

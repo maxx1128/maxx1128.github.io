@@ -14,13 +14,13 @@ With most coming grads, there’s death sprint to learn some last-minute skills.
 
 So the first part of my 2015 checklist are some skill loose ends to tie up. Going by my interests and what’s in demand, as well as this swell video I found, I’m aiming mostly for web development.
 
-[youtube]https://www.youtube.com/watch?v=zXqs6X0lzKI[/youtube]
+{% include embed_video.html url="https://www.youtube.com/embed/zXqs6X0lzKI" %}
 
 Improving jQuery and Javascript skills are first, which are what drive interactivity and general awesomeness on most web pages. There’s also Bootstrap, a popular framework that makes making web pages very fast and easy – it’s very widely used, so that’s obviously there too.
 
-One area where I’m deviating is with PHP and MySQL, the languages that let web pages have dynamic content and interact with databases. This is outside my comfort zone, and most of my understanding, but is also extremely useful since it’s a foundation for making web applications. But it needs pretty strong understanding of basic HTML and CSS first, so I’d caution my fellow soon-to-be-grads from jumping into it too fast.
+One area where I’m deviating is with PHP and MySQL, the languages that let web pages have dynamic content and interact with databases. This is outside my comfort zone, and most of my understanding, but is also extremely useful since it’s a foundation for making web applications. But it needs pretty strong understanding of basic HTML and CSS first, so I’d caution my fellow soon-to-be-grads from [jumping into it too fast.](http://www.headfirstlabs.com/books/hfphp/)
 
-There’s also jQuery frameworks, like Angular.js and Backbone.js, which essentially make it faster and easier to make web pages interactive. But after a little study, they seem too complicated and far-reaching for anyone not working almost solely in web development. They’re maybe something to learn later on.
+There’s also jQuery frameworks, like [Angular.js](https://angularjs.org/) and [Backbone.js](http://backbonejs.org/), which essentially make it faster and easier to make web pages interactive. But after a little study, they seem too complicated and far-reaching for anyone not working almost solely in web development. They’re maybe something to learn later on.
 
 <blockquote class="twitter-tweet" lang="en">I'm not sold on learning JS frameworks like Angular.js unless you're primarily a web developer. Too. Much. Jargon. - <a href="http://t.co/xjgc9nDiDR">http://t.co/xjgc9nDiDR</a>
 
@@ -32,7 +32,7 @@ What kind of graduation year would it be without scrambling everywhere to find e
 
 Bonus points for students who’ve never done any serious networking before this coming semester, you’ll enjoy it the most. I’ve managed to get some good networking in before, but that only helps so much when faced with the fiery pits of unemployment prospects. Now’s the best time for a serious networking resolution, since companies know we’ll be on the job market soon.
 
-It’s not just about networking and cover letters anymore. Employers research online presences too, like personal websites and social media accounts. Students who have sloppily maintained their presence, like making stupid and unprofessional posts, or simply not worked on it, like not making their own website, will probably get knocked from many potential jobs. So I’m resolving to keep working on both of mine and pray someone offers me a job over Twitter. It won’t happen, I’ll just keep praying for it.
+It’s not just about networking and cover letters anymore. Employers research online presences too, like personal websites and social media accounts. Students who have sloppily maintained their presence, like [making stupid and unprofessional posts](http://mashable.com/2011/06/16/weinergate-social-media-job-loss/#_), or simply not worked on it, like not [making their own website](http://www.huffingtonpost.com/larry-atkins/go-web-young-dude-college_b_706831.html), will probably get knocked from many potential jobs. So I’m resolving to keep working on both of mine and pray someone offers me a job over Twitter. It won’t happen, I’ll just keep praying for it.
 
 If you think the job market is good enough to not worry about this, I’ll leave you with this completely true tweet:
 
@@ -46,7 +46,7 @@ Even as a student, not all time is spent working and studying. For the potential
 I’m aiming to keep my fun tasks short and sweet this last semester. The biggest ones include:
 
 * **Talking more walks and unplugging more from the Internet.** My philosophy is that when all your work is done on a computer, all your free time should be away from it.
-* **Do more reading.** These consist mainly of thought-provoking articles clipped from websites, graphic novels, the disturbing yet intriguing comment sections from news sites, political news, and anything new Dan Brown publishes. Standard nerd reading fare.
+* **Do more reading.** These consist mainly of thought-provoking articles clipped from websites, graphic novels, the disturbing yet intriguing comment sections from news sites, political news, and [anything new Dan Brown publishes.](http://www.danbrown.com/#news-section) Standard nerd reading fare.
 * **Drawing!** At this point I don’t need, or want, to write about how much I love drawing.
 
 

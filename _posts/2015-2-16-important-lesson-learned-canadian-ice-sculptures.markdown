@@ -8,7 +8,7 @@ categories: personal
 How does one connect cartoons, Canada, ice sculptures, and giant thought bubbles in one post?  If that got your attention, please read on about my trip last week.
 
 ### First, I’m a Wannabe Creative
-This story starts with a big disclaimer: I’ve have a secret desire to build my career off a creative and quirky personality. You heard me, I basically want to be Matthew Inman.
+This story starts with a big disclaimer: I’ve have a secret desire to build my career off a creative and quirky personality. You heard me, I basically want to be [Matthew Inman.](http://theoatmeal.com/)
 
 As you can tell from my below sketchbook doodles, this dream refuses to die. But when I try to take the extra step of tracing and maybe coloring my sketches on my computer to boost their quality, I hit a mental block. I’m not sure what creates it, but it always keeps these characters stuck in their paper pages and away from the digital limelight.
 
@@ -17,18 +17,28 @@ As you can tell from my below sketchbook doodles, this dream refuses to die. But
 With that sad fact about my life cleared up, the real story can begin.
 
 ### A Weekend Visit to a Canadian Festival
-All the above was in my head during a weekend visit to Canada one week ago. The main focus of the trip, in addition to riding ice slides, eating beaver tails, sleeping in a hostel once was a prison, and ice-skating along a 8-km-long canal, there was the Winterlude festival. Specifically, the part with the cool ice sculpture art.
+All the above was in my head during a weekend visit to Canada one week ago. The main focus of the trip, in addition to riding ice slides, eating [beaver tails](http://en.wikipedia.org/wiki/BeaverTails), sleeping in a hostel once was a prison, and ice-skating along a 8-km-long canal, there was the Winterlude festival. Specifically, the part with the cool ice sculpture art.
 
 Sadly, getting to this amazing art was not easy due to a 15-minute walk through below-zero winds and piling snow. After one minute of this I realized I’d left my hat and protective face mask behind, which made the weather that much worse.
 
 When we arrived at the park where said art was , I’d forgotten what it was like to feel my own face – but I did learn the feeling of my legs and teeth chattering so hard they may break apart like ice.
 
-Once we finally arrived at the somehow colder-still park, though, seeing all the ice sculptures on display made the trek worth the pain. I could describe how amazing they looked with the artists’ attention to detail and when they were backlit by colorful lights below the night sky – but thankfully my fingers weren’t so frozen that I couldn’t take pictures. I invite you to click on the pics below and let them blow your mind.
+Once we finally arrived at the somehow colder-still park, though, seeing all the ice sculptures on display made the trek worth the pain. I could describe how amazing they looked with the artists’ attention to detail and when they were backlit by colorful lights below the night sky – but thankfully my fingers weren’t so frozen that I couldn’t take pictures. I invite you to see the pics below and let them blow your mind.
 
-<img class="post-half-image" src="/img/posts/ice-sculptures/sculpture1.jpg">
-<img class="post-half-image" src="/img/posts/ice-sculptures/sculpture2.jpg">
-<img class="post-half-image" src="/img/posts/ice-sculptures/sculpture3.jpg">
-<img class="post-half-image" src="/img/posts/ice-sculptures/sculpture4.jpg">
+<div class="flexy-gallery">
+	<div class="gallery-img">
+		<img src="/img/posts/ice-sculptures/sculpture1.jpg">
+	</div>
+	<div class="gallery-img">
+		<img src="/img/posts/ice-sculptures/sculpture2.jpg">
+	</div>
+	<div class="gallery-img">
+		<img src="/img/posts/ice-sculptures/sculpture3.jpg">
+	</div>
+	<div class="gallery-img">
+		<img src="/img/posts/ice-sculptures/sculpture4.jpg">
+	</div>
+</div>
 
 ### What Ice Sculptures Have to do with Creativity
 You may be wondering, “Okay Max, cool ice sculptures and all, but what’s that have to do with being creatively frustrated?”
