@@ -41,7 +41,7 @@
 
 .caption-text {
 	display: inline-block;
-	@include padding(.5em);
+	@include padding(.5em 1em);
 	max-width: 100%;
 
 	font-size: 80%;

@@ -12,13 +12,13 @@ Explaining flexbox is too big a task for this measly humble blog, so I recommend
 
 If you clicked the above links, you likely noticed how much info is crammed into them. Flexbox does have a high learning curve. That’s why this post is mainly the big reasons why flexbox is worth learning. Once you pick it up, all the time spent learning will be made up by all the time saved using flexbox for responsive grids.
 
-* Flexbox is much simpler. Every time I changed a responsive grid I made with Neat to a flexbox one, there was at least half as much code. Flexbox is made so the media queries and breakpoints write themselves based on a few options. You set up some parameters and watch the flexbox magic happen for all screens.
-* Flexbox handles unique grids better. This is best explained with an example. I had an idea for a photo gallery that highlighted some photos with a border and larger size. But keeping this effect organized and consistent across screen sizes was really complicated at first. How do you make some photos bigger than others without messing up the grid? Then I wrote some flexbox CSS and finished in ten minutes. See it now and try resizing the result!
+* **Flexbox is much simpler.** Every time I changed a responsive grid I made with Neat to a flexbox one, there was at least half as much code. Flexbox is made so the media queries and breakpoints write themselves based on a few options. You set up some parameters and watch the flexbox magic happen for all screens.
+* **Flexbox handles unique grids better.** This is best explained with an example. I had an idea for a photo gallery that highlighted some photos with a border and larger size. But keeping this effect organized and consistent across screen sizes was really complicated at first. How do you make some photos bigger than others without messing up the grid? Then I wrote some flexbox CSS and finished in ten minutes. See it now and try resizing the result!
 
 <p data-height="450" data-theme-id="0" data-slug-hash="pjbpWw" data-default-tab="result" data-user="max1128" class='codepen'>See the Pen <a href='http://codepen.io/max1128/pen/pjbpWw/'>A Better Responsive Image Gallery With Flexbox</a> by Maxwell Antonucci (<a href='http://codepen.io/max1128'>@max1128</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-* Flexbox has lots of layout options. The surprisingly long list includes alignment, space between items, width, and order. It offers these without making things too complicated or adding lots of code back on.
-* Flexbox automatically includes margins. This is small, but anything that avoids an extra line of Sass changing the box-sizing property is welcome. It also makes controlling the layout more straightforward.
+* **Flexbox has lots of layout options.** The surprisingly long list includes alignment, space between items, width, and order. It offers these without making things too complicated or adding lots of code back on.
+* **Flexbox automatically includes margins.** This is small, but anything that avoids an extra line of Sass changing the box-sizing property is welcome. It also makes controlling the layout more straightforward.
 
 There you have the biggest benefits of flexbox! If you’re not convinced, check out the other awesome examples and get back to me. Even if it seems confusing at the start, trust me that it’s worth the effort. In my view, flexbox will only get more popular and isn’t going away.
