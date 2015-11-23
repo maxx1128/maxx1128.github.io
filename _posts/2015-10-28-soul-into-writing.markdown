@@ -13,7 +13,7 @@ I realized this after writing my article for asexual awareness week. After my ne
 What separated that piece from all the others? I was putting a piece of my soul into it.
 
 ### Okay, but What Does That Even Mean?
-It is catchy to say, I admit, but I admit it does sound like some useless but of advice in a lame self-help book. So what does it mean to put some of your soul into what you write?
+It is catchy, but does sound like something from a lame self-help book. So what does it mean to put some of your soul into what you write?
 
 After some thought, I narrowed it down to four criteria:
 
