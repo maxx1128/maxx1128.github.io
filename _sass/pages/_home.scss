@@ -1,4 +1,19 @@
+@include keyframes(home-background) {
+	0%   { background-position: 100% 0; }
+	100% { background-position: 0 0; }
+}
+
+
+
 body.homepage {
+
+	background-image: url(http://placehold.it/350x150);
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	
+	@include flexy-breakpoint($tablet-screen) {
+		animation: home-background 40s linear infinite;
+	}
 
 	.page-content {
 		@include flexy-row();
