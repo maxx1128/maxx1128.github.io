@@ -1,19 +1,42 @@
-@include keyframes(home-background) {
-	0%   { background-position: 100% 0; }
-	100% { background-position: 0 0; }
+@include keyframes(home-pic) {
+	0%   { 
+			margin-top: -.5em;
+			margin-bottom: .5em;
+		}
+	
+	50% { 
+			margin-top: .5em;
+			margin-bottom: -.5em;
+		}
+
+	100%   { 
+			margin-top: -.5em;
+			margin-bottom: .5em;
+		}
+}
+
+@include keyframes(home-text) {
+	0%   { 
+			margin-top: .5em;
+			margin-bottom: -.5em;
+		}
+	
+	50% { 
+			margin-top: -.5em;
+			margin-bottom: .5em;
+		}
+
+	100%   { 
+			margin-top: .5em;
+			margin-bottom: -.5em;
+		}
 }
 
 
 
 body.homepage {
 
-	background-image: url(http://placehold.it/350x150);
-	background-position: 0px 0px;
-	background-repeat: repeat;
-	
-	@include flexy-breakpoint($tablet-screen) {
-		animation: home-background 40s linear infinite;
-	}
+	background-color: lighten(color(light), 25%);
 
 	.page-content {
 		@include flexy-row();
@@ -28,6 +51,9 @@ body.homepage {
 
 .home-content {
 	@include flexy-row();
+	@include flexy-align(middle);
+
+	padding-top: 1em;
 }
 
 .home-content-text, .home-content-image {
@@ -43,12 +69,27 @@ body.homepage {
 
 
 .home-content-text {
-	@include padding(null 1em);
-	@include flexy-align-self(middle);
+	@include padding(null 2em 2em 2em);
+
+	@include flexy-breakpoint($tablet-screen) {
+		animation: home-text 3s linear infinite;
+	}
 }
 
 .home-content-image {
+	border-radius: 100%;
+	overflow: hidden;
 
+	max-width: em(500px);
+	padding-top: 2.5em;
+	margin: 0 auto;
+
+	background-color: color(light);
+	box-shadow: 0 0 1em .5em color(medium);
+
+	@include flexy-breakpoint($tablet-screen) {
+		animation: home-pic 3s linear infinite;
+	}
 }
 
 .home-nav {
