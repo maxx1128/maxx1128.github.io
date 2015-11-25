@@ -36,7 +36,7 @@ header {
 		@include transition(.25s);
 
 		&:hover {
-			background-color: lighten(color(medium), 5%);
+			background-color: darken(color(medium), 5%);
 			@include transition(.25s);
 		}
 	}
@@ -81,7 +81,7 @@ header {
 		@include transition(.25s);
 
 		&:hover {
-			background-color: lighten(color(medium), 5%);
+			background-color: darken(color(medium), 5%);
 			@include transition(.25s);
 		}
 	}
