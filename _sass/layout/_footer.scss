@@ -16,8 +16,8 @@ footer {
 	@include padding(1em null);
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(6);
-		@include flexy-end(3);
+		@include flexy-span(7);
+		@include flexy-end(2);
 	}
 }
 

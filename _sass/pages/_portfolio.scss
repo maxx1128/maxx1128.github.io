@@ -21,7 +21,7 @@
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(1, 2, 1.5em);
+		@include flexy-span(1, 2, 1.5em 2em);
 
 		@include transition(.25s);
 

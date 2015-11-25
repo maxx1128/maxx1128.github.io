@@ -22,14 +22,23 @@ header {
 .site-title {	
 	@include flexy-span(auto);
 
+	@include shadow();
+
 	h4 {
 		margin: .5em 0;
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(6);
+		@include flexy-span(4);
+		@include flexy-end(2);
 
-		text-align: left;
+		text-align: center;
+		@include transition(.25s);
+
+		&:hover {
+			background-color: lighten(color(medium), 5%);
+			@include transition(.25s);
+		}
 	}
 }
 
@@ -60,6 +69,7 @@ header {
 	text-align: center;
 	border-top: 1px solid color(light);
 	border-bottom: 1px solid color(light);
+	@include shadow();
 
 	@include flexy-breakpoint($tablet-screen) {
 
@@ -68,6 +78,12 @@ header {
 		@include padding(.5em);
 
 		border: none;
+		@include transition(.25s);
+
+		&:hover {
+			background-color: lighten(color(medium), 5%);
+			@include transition(.25s);
+		}
 	}
 }
 
