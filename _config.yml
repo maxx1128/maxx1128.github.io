@@ -10,8 +10,8 @@ gems: [jekyll-paginate]
 # Site settings
 title: Max Antonucci
 email: maxx1128@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Making websites look pretty, filling them with good content, and spreading the word.
+description: >
+  Max Antonucci - I code, write, design, analyze, sometimes draw, often breathe
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 permalink: /blog/:title/
