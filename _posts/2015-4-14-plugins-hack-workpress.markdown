@@ -5,7 +5,7 @@ date:   2015-4-14 07:40:02 -0500
 categories: web-development
 ---
 
-For the past few weeks I’ve been drowning in WordPress. Through all this love, I’ve found six plugins that make it easy to hack, control, and downright own any theme out there.
+For the past few weeks I’ve been drowning in WordPress. Through all this love, I’ve found six plugins to hack and control any theme.
 
 
 I’m not talking about changing around a theme’s settings, that’s too limiting. I’m talking about adding almost any feature, regardless of the theme. This includes:

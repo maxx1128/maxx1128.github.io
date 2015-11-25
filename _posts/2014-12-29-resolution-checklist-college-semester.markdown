@@ -5,7 +5,7 @@ date:   2014-12-29 07:40:02 -0500
 categories: productivity
 ---
 
-As Internet law requires, I’m required to write either a review of something from 2014 or some expectations for 2015. I’m going with a checklist of new resolutions for the coming year. It’s also graduation year for me and the class of 2015, so it’s fairly important.
+As Internet law requires, I’m required to write either a review of something from 2014 or some expectations for 2015. I’m going with a checklist of new resolutions for the coming year.
 
 If anything, this list only applies to the first half of next year, not the whole one. After graduation my life, and so many others, will change so drastically it’ll require some whole new resolutions. But that’s a post for the end of May. For now, these are the resolutions of a student facing their impending doom college graduation next year!
 

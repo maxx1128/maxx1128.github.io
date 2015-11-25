@@ -6,7 +6,7 @@ categories: drawing
 featured-img: /img/posts/drawing-life-lessons/featured.jpg
 ---
 
-In honor of the holiday season, I took a trip down memory lane with an old cartoon sketchbook. It was surprising to see how much my drawing had changed (even after not doing it for three years), so I did something fun: redraw old cartoons to see what’s gotten better, and what still can. Mostly the first thing, I hope.
+In honor of the holiday season, I took a trip down memory lane with an old cartoon sketchbook. It was surprising to see how much my drawing had changed, so I did something fun: redraw old cartoons to see what’s gotten better.
 
 In the midst of this, I reflected on some important lessons I’d learned from my drawing over the years. They apply to my drawing in the future and life in general, so they’re worth sharing.
 

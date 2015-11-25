@@ -4,9 +4,7 @@ title:  "Flexbox – That Thing all Developers Need to Use"
 date:   2015-10-21 07:40:02 -0500
 categories: web-development
 ---
-If you’re in web development, you’ve likely learned responsive design. This means learning that some responsive grids can be complex and frustrating beyond belief.
-
-Hopefully you also later learned of flexbox, which can make responsive design much, much easier. If not, you will soon.
+If you’re in web development, you’ve likely learned responsive design. This means learning that some responsive grids can be complex and frustrating beyond belief. Hopefully you also later learned of flexbox, which can make responsive design much, much easier. If not, you will soon.
 
 Explaining flexbox is too big a task for this measly humble blog, so I recommend reading this or this instead. Plus Smashing Magazine’s most recent book has an excellent chapter on how great flexbox is, which I really recommend. The short version is flexbox automatically sizes elements based on a few simple parameters, which automatically change for screen sizes.
 

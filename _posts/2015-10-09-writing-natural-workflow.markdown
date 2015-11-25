@@ -4,11 +4,7 @@ title:  "The Biggest Content Obstacle is a Natural Workflow"
 date:   2015-10-09 07:40:02 -0500
 categories: writing
 ---
-I really do want to write more. Seeing this blog with few regular updates is a big source of nighttime anger and sheet-wringing.
-
-But every time I set time to sit and work on content, my brain dries up. Whether it’s writing, drawing, or just thinking through a good post, nothing appears on the screen right.
-
-I think my lack of content is because the way I write content feels too forced.
+I really do want to write more. But every time I set time to sit and work on content, whether it's writing, drawing, or even planning, my brain dries up. The reason? My process is becoming too forced.
 
 When your job requires being in front of a computer screen for hours already, adding even more time to work on things outside of work becomes an impossible chore. As much as I love being online, there’s a limit. Whenever I want to focus on writing something substantive, too often I’ve already hit that limit.
 

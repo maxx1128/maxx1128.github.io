@@ -11,7 +11,7 @@ People are always flooded with info, so they want their info to be short, sweet 
 
 Many think longer posts must be better, since long posts send many messages about the writer: being intelligent, well-spoken, hard-working and thorough. It doesn’t look like you’re oversimplifying or skipping big details.
 
-However, short posts send good messages too. Messages more important in today’s internet:
+However, short posts send good messages too. Messages more important in today’s internet.
 
 You know your message well enough to say it simply. As [Einstein would say](https://www.goodreads.com/quotes/19421-if-you-can-t-explain-it-to-a-six-year-old), that’s a sign you really understand it.
 You know people are busy and don’t want to waste their time.

@@ -5,6 +5,8 @@ date:   2015-8-16 07:40:02 -0500
 categories: web-development
 ---
 
+I've loved FontAwesome for a long time, but now I must say goodbye for a better icon service.
+
 Icons are huge in websites today. They look cool and can be styled to different sizes and colors. Most importantly, they make for a good user experience, taking up little space while giving good direction. For example, having an email icon beats writing “email” in a toolbar each time.
 
 This means having a good tool to manage icons is vital. For a long time I’ve used Font Awesome. It’s a remote library of almost 600 icons that only needs a single reference and the right tag references. It’s been my go-to tool for a while, but recently I’ve discovered Fontastic. It quickly made me a believer, and I plan to use it for my future icon needs for all the below reasons.

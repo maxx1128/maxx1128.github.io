@@ -5,11 +5,9 @@ date:   2014-6-13 07:40:02 -0500
 categories: drawing
 ---
 
-After three years, I’d say I’ve had something of a relapse. I wouldn’t say it’s a bad one, I’m simply doing something in my free time other than tweeting and/or watching South Park – drawing.
+After three years, I've had a major relapse. I'm once again drawing. That thing with actual pencil and paper.
 
-Yes, that thing with actual pencil and paper.
-
-I’m actually very thankful for this, because if I’d gone without drawing much longer, I would’ve probably snapped and gone (clinically) insane. I didn’t know this right away, but not drawing may have been one of my worst mistakes (and it’s a tough list to crack). It could’ve almost made me lose my whole identity.
+I’m actually thankful for this, because if I’d gone without drawing much longer, I would’ve probably snapped and gone (clinically) insane. I didn’t know this right away, but not drawing may have been one of my worst mistakes (and it’s a tough list to crack). It could’ve almost made me lose my whole identity.
 
 ### Drawing was my iPhone
 
