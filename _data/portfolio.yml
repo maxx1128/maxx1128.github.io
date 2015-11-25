@@ -1,3 +1,8 @@
+- name: Slanted Angle mixin
+  date: 11/20/2015
+  description: "I've often struggled with adding slants to the bottom or top of elements on pages that are also responsive. This mixin uses some Sass and SVG magic so it's easy to add this effect while controlling the location, size, and color while looking good on all devices."
+  link: http://codepen.io/max1128/pen/megORY
+
 - name: Ellisha
   date: 11/07/2015
   description: A mixin collection for responsive Flexbox grids and layouts. It gives site layouts the new benefits of flexbox while keeping their grids lightweight and customizable.
