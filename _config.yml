@@ -13,7 +13,7 @@ email: maxx1128@gmail.com
 description: >
   I code, write, design, analyze, sometimes draw, often breathe
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://maxwellantonucci.com" # the base hostname & protocol for your site
 permalink: /blog/:title/
 paginate: 8,
 paginate_path: "/blog/page:num/"
