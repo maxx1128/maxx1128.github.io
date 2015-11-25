@@ -10,6 +10,8 @@
 
 	&:nth-of-type(odd) {
 		background-color: lighten(color(light), 17.5%);
+		border-top: color(medium) 3px solid;
+		border-bottom: color(medium) 3px solid;
 	}
 }
 
@@ -18,8 +20,6 @@
 
 	@include padding(.5em null);
 	margin: 0;
-
-	@include wobble-skew();
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(9);
