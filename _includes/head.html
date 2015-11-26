@@ -4,6 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<title>{% if page.title %}{{ page.title }} - Max Antonucci{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="thumbnail" content="../../img/profile-dev.png" />
+	<meta property="og:image" content="../../img/profile-dev.png"/>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	
 	<link rel="icon" type="img/ico" href="../../img/favicon.ico">
