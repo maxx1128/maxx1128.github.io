@@ -6,7 +6,7 @@
 - name: Ellisha
   date: 11/07/2015
   description: A mixin collection for responsive Flexbox grids and layouts. It gives site layouts the new benefits of flexbox while keeping their grids lightweight and customizable.
-  link: http://maxx1128.github.io/Ellisha/
+  link: http://dev.maxwellantonucci.com/Ellisha/
 
 - name: Animated Viewport Items
   date: 10/19/2019
@@ -16,7 +16,7 @@
 - name: '"What Eeveelution are You" Quiz'
   date: 10/15/2015
   description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS.'
-  link: http://maxx1128.github.io/Which-Eeveelution-Are-You/
+  link: http://dev.maxwellantonucci.com/Which-Eeveelution-Are-You/
 
 - name: Guess the Number!
   date: 09/19/2015
@@ -26,7 +26,7 @@
 - name: Plately
   date: 07/07/2015
   description: 'For my web development projects, whether they’re WordPress or static sites, I’ve put together a personal workflow I enjoy using called Plately. It makes use of Gulp.js, Sass, Bower, and Jade to speed the process along. I’ve also put in some of my favorite ThoughtBot open-source tools in advance.'
-  link: https://github.com/maxx1128/Plately
+  link: http://dev.maxwellantonucci.com/Plately
 
 - name: Frosted Glass Effect
   date: 05/05/2015
