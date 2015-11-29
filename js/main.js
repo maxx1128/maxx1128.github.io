@@ -8,4 +8,8 @@ $( document ).ready(function() {
     $('.header-icon').on('click', function(){
     	$('header').toggleClass('hide-menu');
     })
+
+    $('article.blog-post a').each(function() {
+    	$(this).attr('target', '_blank');
+    });
 });
