@@ -1,6 +1,6 @@
 - name: HTML Doc Generator
   date: 12/3/2015
-  description: "For many component libraries, developers need to constantly copy just the HTML of elements to use in different parts of projects. This generates that HTML documentation automatically. This way it's simple for developers to easily access and copy the HTML for their components."
+  description: "For many component libraries, developers need to constantly copy an element's HTML for different projects. This generates HTML documentation automatically, making it faster and simpler for developers to use HTML for their components."
   link: http://codepen.io/max1128/pen/obvRQW
 
 - name: Slanted Angle mixin
