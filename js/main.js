@@ -11,6 +11,12 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-65207823-2', 'auto');
 ga('send', 'pageview');
 
+$('.portfolio-item').on('click', function(){
+	var label = $(this).attr('href');
+
+	ga('send', 'event', 'portfolio', 'click', label);
+});
+
 $( document ).ready(function() {
     $('.header-icon').on('click', function(){
     	$('header').toggleClass('hide-menu');
