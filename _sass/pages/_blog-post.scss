@@ -25,16 +25,14 @@
 }
 
 blockquote {
-	margin: 3%;
+	margin: 4%;
 	padding: 1.25em;
 
 	font-family: $heading-font-family;
 	text-align: center;
-	box-shadow: 0em 0em 1.25em color(dark);
 
 	border-top: 10px solid color(medium);
 	border-bottom: 10px solid color(medium);
-	background-color: lighten(color(white), 5%);
 	color: color(medium);
 
 	p {
