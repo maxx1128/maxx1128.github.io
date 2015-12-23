@@ -4,9 +4,9 @@
 @charset "utf-8";
 
 @import
-	"bower_components/bourbon/app/assets/stylesheets/bourbon",
-	"bower_components/Ellisha/dist/Ellisha",
-  "bower_components/hover/scss/hover.scss";
+	"../_bower_components/bourbon/app/assets/stylesheets/bourbon",
+	"../_bower_components/Ellisha/dist/Ellisha",
+  "../_bower_components/hover/scss/hover.scss";
 
 @import
   'utils/variables/breakpoints',

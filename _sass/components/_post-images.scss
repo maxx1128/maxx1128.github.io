@@ -11,7 +11,7 @@
 	}
 }
 
-.image-caption {
+figure {
 	display: block;
 	@include margin(1.5em auto);
 
@@ -39,7 +39,7 @@
 	margin: 0 auto !important;
 }
 
-.caption-text {
+figcaption {
 	display: inline-block;
 	@include padding(.75em 1em);
 	box-sizing: border-box;
