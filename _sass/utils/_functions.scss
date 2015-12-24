@@ -1,3 +1,15 @@
 // -- Functions Page -- //
 
 // Note: Sass functions that are likely to be needed to set variable values are on their respective sheets in the util folder
+
+// Can lighten or darken any color by a percentage of 10
+// color-s(color(medium), dark, 1);
+@function color-s($color, $shade, $degree) {
+	$per: percentage($degree/10);
+
+	@if $shade == 'light' {
+		@return mix(white, $color, $per);
+	} @else {
+		@return mix(black, $color, $per);
+	}
+}

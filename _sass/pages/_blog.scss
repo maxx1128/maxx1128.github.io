@@ -9,7 +9,7 @@
 	@include padding(5%);
 
 	&:nth-of-type(odd) {
-		background-color: lighten(color(light), 17.5%);
+		background-color: color-s(color(light), light, 4);
 		border-top: color(medium) 3px solid;
 		border-bottom: color(medium) 3px solid;
 	}
@@ -24,8 +24,6 @@
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(9);
 	}
-
-	// @include hang();
 }
 
 .blog-meta {

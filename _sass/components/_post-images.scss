@@ -49,7 +49,7 @@ figcaption {
 	font-size: 80%;
 	font-style: italic;
 
-	background-color: lighten(color(light), 15%);
+	background-color: color-s(color(light), light, 3);
 }
 
 .flexy-gallery {

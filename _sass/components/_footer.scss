@@ -1,4 +1,4 @@
-$dark-link: lighten(color(light), 10%);
+$dark-link: color-s(color(light), light, 1);
 
 .footer-social-links {
 	padding: 0;

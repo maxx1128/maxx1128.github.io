@@ -12,14 +12,13 @@
 	@include flexy-center(1em);
 	height: auto;
 
-	p {
-		color: color(dark);
-	}
+	p { color: color(dark); }
 
 	&:nth-child(even) {
-		background-color: lighten(color(light), 10%);
+		background-color: color-s(color(light), light, 2);
 	}
 
+	// For regular size screens
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(1, 2, 1.5em 2em);
 
@@ -28,27 +27,24 @@
 		border-right: 0px solid color(white);
 		border-left: 0px solid color(white);
 
-		&:nth-child(even) {
-			background-color: color(white);
-		}
+		// The lighter background color
+		&:nth-child(even) { background-color: color(white); }
 
+		// The darker background color
 		&:nth-child(4n+1),
 		&:nth-child(4n+4) {
-			background-color: lighten(color(light), 10%);
+			background-color: color-s(color(light), light, 3);
 
-			border-right: 0px solid lighten(color(light), 10%);
-			border-left: 0px solid lighten(color(light), 10%);
+			border-right: 0px solid color-s(color(light), light, 2);
+			border-left: 0px solid color-s(color(light), light, 2);
 		}
 
 		&:hover {
-
-			p {
-				color: color(dark);
-			}
-
 			border-right: 10px solid color(action);
 			border-left: 10px solid color(action);
 			@include transition(.5s);
+
+			p { color: color(dark); }
 		}
 	}
 }

@@ -4,7 +4,7 @@ $max-width: em(1024px);
 body {
 	margin: 0;
 
-	background-color: lighten(color(light), 25%);
+	background-color: color-s(color(light), light, 9);
 }
 
 .page-content {

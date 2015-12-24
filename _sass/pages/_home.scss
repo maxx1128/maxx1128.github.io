@@ -36,7 +36,7 @@
 
 body.homepage {
 
-	background-color: lighten(color(light), 25%);
+	background-color: color-s(color(light), light, 9);
 
 	.page-content {
 		@include flexy-row();
@@ -113,11 +113,11 @@ body.homepage {
 	&:focus,
 	&:active {
 		
-		color: lighten(color(light), 15%);
+		color: color-s(color(light), light, 2);
 	}
 
 	&:before {
-		background: lighten(color(light), 15%);
+		background: color-s(color(light), light, 2);
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
