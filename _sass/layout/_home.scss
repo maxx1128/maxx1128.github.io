@@ -11,11 +11,55 @@
 }
 
 
+.home-skills {
+	display: none;
+	@include flexy-justify(center);
+	margin-top: 3em;
 
-.home-content-text {
+	// Only show the skills area on tablet and above screens
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-row();
+	}
 
+	// Center the skills list and align the text in the center
+	ul {
+		@include flexy-row();
+		@include flexy-span(10);
+		@include flexy-justify(center);
+		@include flexy-align(middle);
+
+		@include margin(0);
+		list-style-type: none;
+
+		// Each list item is 1/4 of the width in each role
+		li {
+			@include position(relative);
+			@include flexy-span(3);
+			@include padding(.5em);
+			@include margin(.25em null);
+
+			font-size: .85em;
+			text-align: center;
+			font-style: italic;
+
+			// Adding the slanted dash after almost all skills
+			&:after {
+				content: '';
+				height: 100%;
+				width: 2px;
+				background-color: color(medium);
+				@include transform(rotate(10deg));
+				@include position(absolute, 0 0 null null);
+			}
+
+			// Hide the dashes at the end of each row and the last skill
+			&:last-of-type, &:nth-of-type(4n) {
+				&:after { display: none; }
+			}
+		}
+	}
 }
 
-.home-content-image {
+.home-content-text { }
 
-}
+.home-content-image { }

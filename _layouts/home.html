@@ -17,6 +17,15 @@
 				<img class="img-full" src="img/profile-dev.png">
 			</div>
 		  </div>
+		  
+		  <div class="home-skills">
+			<ul> 
+			  {% for skill in site.data.skills %}
+				<li> {{skill.skill}} </li>
+			  {% endfor %}
+			</ul>
+		  </div>
+
 		  <ul class="home-nav">
 			{% for menu in site.data.menu %}
 			  <a class="home-nav-item" href="{{ menu.link | prepend: site.baseurl }}">
