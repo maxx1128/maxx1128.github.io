@@ -1,0 +1,63 @@
+.resume-intro { 
+	margin-bottom: .4em;
+
+	text-align: center; 
+}
+
+.resume {
+	@include flexy-row();
+	@include flexy-justify(center);
+}
+
+.resume-item {
+	@include flexy-span(12, $padding: 1em 0);
+
+	@include flexy-breakpoint($tablet-screen) {
+		@include flexy-span(10);
+		@include padding(1em null 2em null);
+	}
+}
+
+.resume-title h4, .resume-title h5 {
+	@include flexy-row();
+	@include flexy-align(middle);
+
+	.resume-icon {
+		@include flexy-span(12);
+		
+		text-align: center;
+		font-size: 1.75em;
+
+		color: color(medium);
+
+		@include flexy-breakpoint($tablet-screen) {
+			@include flexy-span(1.75em);
+			padding-right: 1em;
+			margin-right: 1em;
+
+			font-size: 1.5em;
+
+			border-right: 2px solid color(light);
+		}
+	}
+
+	.resume-title-item {
+		@include flexy-span(12);
+
+		text-align: center;
+
+		@include flexy-breakpoint($tablet-screen) {
+			@include flexy-span(auto);
+
+			text-align: left;
+		}
+	}
+}
+
+.resume-time {
+	text-align: center;
+
+	@include flexy-breakpoint($tablet-screen) { text-align: left; }
+}
+
+.resume-description { padding-left: 5%; }

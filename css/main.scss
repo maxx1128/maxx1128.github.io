@@ -6,7 +6,8 @@
 @import
 	"../_bower_components/bourbon/app/assets/stylesheets/bourbon",
 	"../_bower_components/Ellisha/dist/Ellisha",
-  "../_bower_components/hover/scss/hover.scss";
+  "../_bower_components/hover/scss/hover.scss"
+;
 
 @import
   'utils/variables/breakpoints',
@@ -14,15 +15,18 @@
   'utils/variables/typography',
   'utils/variables/layout',
   'utils/variables/animation',
-  'utils/variables/hover';
+  'utils/variables/hover'
+;
 
 @import
   'utils/functions',
   'utils/mixins',
-  'utils/placeholders';
+  'utils/placeholders'
+;
 
 @import
-  'base/typography';
+  'base/typography'
+;
 
 @import
   'layout/grid',
@@ -40,10 +44,13 @@
   'components/pagination',
   'components/video-wrapper',
   'components/fonts',
-  'components/post-images';
+  'components/post-images',
+  'components/resume'
+;
 
 @import
   'pages/home',
   'pages/blog',
   'pages/portfolio',
-  'pages/blog-post';
+  'pages/blog-post'
+;
