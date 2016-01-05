@@ -1,3 +1,8 @@
+- name: Synapse Grid
+  date: 1/4/2016
+  description: "Synapse is a grid system that has the fun and simplicity of Expressive CSS without the CSS bloat and excessive HTML classes. It lets coders customize the number of columns, element spacing, and easily add utility classes. Very scalable for responsive grids on large and small projects."
+  link: https://github.com/maxx1128/Synapse-Grid
+
 - name: HTML Doc Generator
   date: 12/3/2015
   description: "For many component libraries, developers need to constantly copy an element's HTML for different projects. This generates HTML documentation automatically, making it faster and simpler for developers to use HTML for their components."
