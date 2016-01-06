@@ -2,14 +2,14 @@
 
 // This map is the array of standard colors for the project. Uses the Color function to reference. For colors that are frequently changing values, key names that aren't colors are recommended over literal names (such as the name 'cute' instead of pink).
 
+// Lucario
 $colors: (
-  white: #cddef6,
-  action: #d54a52,
-  dark: #313962,
-  medium: #416294,
-  light: #7ba4f6
+  white: #fff,
+  action: #de4141,
+  dark: #104a7b,
+  medium: #29739c,
+  light: #4a9cee
 );
-
 
 // This is the function to pull colors out. It's here instead of on the functions sheet so the below color values can be set.
 @function color($key) {
