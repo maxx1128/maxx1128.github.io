@@ -16,6 +16,8 @@ ul, ol, dl, figure,
     background: #fff;
     @extend %vertical-rhythm;
     @include margin(null 0);
+    text-align: left;
+    max-width: 100%;
 
     .highlighter-rouge & {
       background: #eef;

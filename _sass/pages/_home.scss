@@ -106,19 +106,11 @@ body.homepage {
 	@include flexy-span(12, $padding: .5em);
 
 	text-align: center;
+	color: color(white);
 
 	@include shutter-in-vertical();
 
-	&:hover,
-	&:focus,
-	&:active {
-		
-		color: color-s(color(light), light, 2);
-	}
-
-	&:before {
-		background: color-s(color(light), light, 2);
-	}
+	&:before { background: color-s(color(light), light, 2); }
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(auto, $padding: 1em);

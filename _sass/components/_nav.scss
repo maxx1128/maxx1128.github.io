@@ -2,7 +2,6 @@ header {
 	@include transition(.5s);
 
 	background-color: color(medium);
-	border-bottom: 1em solid color(light);
 }
 
 .header-container {
@@ -22,37 +21,36 @@ header {
 .site-title {	
 	@include flexy-span(auto);
 
-	@include shadow();
-
 	h4 {
 		margin: .5em 0;
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(4);
-		@include flexy-end(2);
+		@include flexy-end(1);
 
 		text-align: center;
-		@include transition(.25s);
+	}
+}
 
-		&:hover {
-			background-color: darken(color(medium), 5%);
-			@include transition(.25s);
-		}
+.site-tagline {
+	display: none;
+
+	@include flexy-breakpoint($tablet-screen) {
+		display: block;
+		@include flexy-span(7);
 	}
 }
 
 .site-menu {
 	@include flexy-row();
 	@include flexy-span(12);
+	@include flexy-justify(center);
 
 	margin-bottom: 0;
 
 	list-style: none;
-
-	li {
-		
-	}
+	background-color: color(light);
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include flexy-span(auto);
@@ -65,25 +63,25 @@ header {
 	@include flexy-align(center);
 
 	@include padding(1em);
+	color: color(white);
 
 	text-align: center;
 	border-top: 1px solid color(light);
 	border-bottom: 1px solid color(light);
-	@include shadow();
+
+	&:hover {
+		background-color: color-s(color(light), light, 1);
+		color: color(white);
+		@include transition(.25s);
+	}
 
 	@include flexy-breakpoint($tablet-screen) {
 
-		@include flexy-span(auto);
-
+		@include flexy-span(2);
 		@include padding(.5em);
 
 		border: none;
 		@include transition(.25s);
-
-		&:hover {
-			background-color: darken(color(medium), 5%);
-			@include transition(.25s);
-		}
 	}
 }
 
@@ -111,8 +109,6 @@ header {
 .hide-menu {
 
 	.site-menu {
-		// @include transition(.5s);
-
 		visibility: hidden;
 		opacity: 0;
 		max-height: 0;
