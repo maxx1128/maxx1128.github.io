@@ -20,7 +20,7 @@ header, footer {
 	color: white;
 
 	a {
-		color: color-s(color(light), light, 3);
+		color: color-s(color(light), light, 4);
 		font-weight: 700;
 		@include transition(.25s);
 
