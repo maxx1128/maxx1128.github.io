@@ -9,22 +9,12 @@ footer {
 	@include flexy-row();
 	@include flexy-container($max-width);
 	@include flexy-align(middle);
-}
 
-.footer-description {
-	@include flexy-span(12);
-	@include padding(1em null);
+	ul {
+		list-style-type: none;
 
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(7);
-		@include flexy-end(2);
-	}
-}
-
-.footer-social {
-	@include flexy-span(12);
-
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto);
+		li {
+			display: inline;
+		}
 	}
 }

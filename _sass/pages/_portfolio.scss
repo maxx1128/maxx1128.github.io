@@ -19,7 +19,7 @@
 	}
 
 	// For regular size screens
-	@include flexy-breakpoint($tablet-screen) {
+	@include flexy-breakpoint($desktop-screen) {
 		@include flexy-span(1, 2, 1.5em 2em);
 
 		@include transition(.25s);

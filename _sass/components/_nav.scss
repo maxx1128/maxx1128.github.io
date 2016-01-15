@@ -2,6 +2,16 @@ header {
 	@include transition(.5s);
 
 	background-color: color(medium);
+	color: color(white);
+
+	a {
+		color: color(white);
+
+		&:hover,
+		&:focus {
+			color: color-s(color(white), dark, 2);
+		}
+	}
 }
 
 .header-container {
@@ -14,6 +24,8 @@ header {
 	text-align: left;
 
 	@include flexy-breakpoint($tablet-screen) {
+		padding-bottom: 0;
+
 		text-align: center;
 	}
 }
@@ -26,8 +38,7 @@ header {
 	}
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(4);
-		@include flexy-end(1);
+		@include flexy-span(12);
 
 		text-align: center;
 	}
@@ -38,7 +49,7 @@ header {
 
 	@include flexy-breakpoint($tablet-screen) {
 		display: block;
-		@include flexy-span(7);
+		@include flexy-span(12);
 	}
 }
 
@@ -53,7 +64,7 @@ header {
 	background-color: color(light);
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto);
+		@include margin(3em null 1.5em null);
 	}
 }
 
@@ -77,7 +88,7 @@ header {
 
 	@include flexy-breakpoint($tablet-screen) {
 
-		@include flexy-span(2);
+		@include flexy-span(12);
 		@include padding(.5em);
 
 		border: none;
@@ -118,7 +129,29 @@ header {
 		.site-menu {
 			visibility: visible;
 			opacity: 1;
-			max-height: 5em;
+			max-height: 1000em;
 		}
+	}
+}
+
+.social-links {
+	@include flexy-row();
+	@include flexy-justify(center);
+	
+	@include padding(1em);
+	@include margin(null auto);
+	max-width: em(400px);
+
+	list-style-type: none;
+	font-size: 1.25em;
+
+	a {
+		@include flexy-span(auto);
+
+		text-align: center;
+	}
+
+	@include max-bp($tablet-screen) {
+		display: none;
 	}
 }

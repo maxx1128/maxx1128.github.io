@@ -1,20 +1,12 @@
 <footer>
 	<div class="footer-container">
 
-		<div class="footer-description">
-			<h5>
-				Max Antonucci
-			</h5>
-			{{ site.description }}
-		</div>
-
 		<div class="footer-social">
 			<ul class="footer-social-links">
 			  {% for social in site.data.social %}
 				<a href="{{ social.url }}" target="_blank">
 					<li>
 					 	<i class="icon-{{ social.icon }}"></i>
-					 	{{ social.name }}
 					</li>
 				</a>
 			  {% endfor %}
@@ -22,5 +14,3 @@
 		</div>
 	</div>
 </footer>
-
-	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>

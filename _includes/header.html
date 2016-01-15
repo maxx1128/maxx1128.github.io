@@ -24,4 +24,14 @@
     </ul>
   </div>
 
+  <ul class="social-links">
+    {% for social in site.data.social %}
+    <a href="{{ social.url }}" target="_blank">
+      <li>
+        <i class="icon-{{ social.icon }}"></i>
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+
 </header>

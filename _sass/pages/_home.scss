@@ -44,6 +44,8 @@ body.homepage {
 		.home-container {
 			@include flexy-center(1em);
 			width: 100%;
+			max-width: $desktop-screen;
+			margin: 0 auto;
 		}
 	}
 }
