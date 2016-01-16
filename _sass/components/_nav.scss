@@ -15,11 +15,10 @@ header {
 }
 
 .header-container {
-	@include flexy-row();
-	@include flexy-spacing(between);
-	@include flexy-align(middle);
-
-	@include flexy-container($max-width);
+	width: 100%;
+	@include padding(1em);
+	box-sizing: border-box;
+	@include clearfix();
 
 	text-align: left;
 
@@ -31,34 +30,28 @@ header {
 }
 
 .site-title {	
-	@include flexy-span(auto);
+	display: inline;
+	float: left;
 
-	h4 {
-		margin: .5em 0;
-	}
+	h4 { margin: .5em 0; }
 
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(12);
+	@include flexy-breakpoint($tablet-screen) { 
+		float: none;
 
-		text-align: center;
+		text-align: center; 
 	}
 }
 
 .site-tagline {
 	display: none;
 
-	@include flexy-breakpoint($tablet-screen) {
-		display: block;
-		@include flexy-span(12);
-	}
+	@include flexy-breakpoint($tablet-screen) { display: block; }
 }
 
 .site-menu {
-	@include flexy-row();
-	@include flexy-span(12);
-	@include flexy-justify(center);
-
+	width: 100%;
 	margin-bottom: 0;
+	padding-left: 0;
 
 	list-style: none;
 	background-color: color(light);
@@ -70,10 +63,10 @@ header {
 
 .site-menu-item {
 	display: inline-block;
-	@include flexy-span(12);
-	@include flexy-align(center);
+	width: 100%;
 
 	@include padding(1em);
+	box-sizing: border-box;
 	color: color(white);
 
 	text-align: center;
@@ -88,7 +81,6 @@ header {
 
 	@include flexy-breakpoint($tablet-screen) {
 
-		@include flexy-span(12);
 		@include padding(.5em);
 
 		border: none;
@@ -97,7 +89,8 @@ header {
 }
 
 .header-icon {
-	@include flexy-span(2);
+	display: inline;
+	float: right;
 
 	@include transition(.5s);
 	@include transform(rotate(180deg));
@@ -145,13 +138,24 @@ header {
 	list-style-type: none;
 	font-size: 1.25em;
 
-	a {
-		@include flexy-span(auto);
+	a { text-align: center; }
 
-		text-align: center;
+	@include max-bp($tablet-screen) { display: none; }
+}
+
+html.flexbox.flexwrap {
+	.social-links {
+		@include flexy-row();
+		@include flexy-justify(center);
+
+		a {
+			@include flexy-span(auto);
+		}
 	}
+}
 
-	@include max-bp($tablet-screen) {
-		display: none;
+html.no-flexbox.no-flexwrap {
+	.social-links a {
+		padding: .5em;
 	}
 }
