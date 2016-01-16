@@ -1,0 +1,41 @@
+---
+layout: page
+title: Resume
+subheading: Where I'm working now and have before
+permalink: /resume/
+---
+
+<div class="resume">
+
+{% for resume in site.data.resume %}
+	<div class="resume-item">
+
+		<!-- Resume title, different sizes for present jobs -->
+		<div class="resume-title">
+
+			{% if resume.end == "Present" %}<h4>{% else %}<h5>{% endif %}
+
+				<i class="resume-icon icon-{{ resume.icon }}"></i>
+				<span class="resume-title-item">{{ resume.title }}</span>
+
+			{% if resume.end == "Present" %}</h4>{% else %}</h5>{% endif %}
+		</div>
+		
+		<!-- Role and range, bold for present and italic for old -->
+		<div class="resume-time">
+			{% if resume.end == "Present" %}<h6>{% else %}<em><h6>{% endif %}
+
+				At <u>{{ resume.company }}</u> from {{ resume.start }} to {{ resume.end }}
+
+			{% if resume.end == "Present" %}</h6>{% else %}</em></h6>{% endif %}
+		</div>
+
+		<!-- Regular description -->
+		<div class="resume-description">
+			{{ resume.description }}
+		</div>
+
+	</div>
+{% endfor %}
+
+</div>
