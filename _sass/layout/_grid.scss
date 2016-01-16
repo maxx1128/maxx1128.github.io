@@ -13,34 +13,24 @@ body {
 }
 
 body:not(.homepage) {
-	@include flexy-row();
-
 	.page-content {
-		@include flexy-span(12, $padding: 1em);
+		width: 100%;
+		padding: 1em;
 
-		@include flexy-breakpoint($tablet-screen) {
-			@include flexy-span(8, $padding: .5em 2em);
-			@include flexy-push(4);
-		}
+		@include flexy-breakpoint($tablet-screen) { padding: .5em 2em;}
 
-		@include flexy-breakpoint($desktop-screen) {
-			@include flexy-span(9, $padding: .5em 2em);
-			@include flexy-push(3);
-		}
+		@include syn(md, 8, 4, (''));
+		@include syn(lg, 9, 3, (''));
 	}
 }
 
 header {
 	@include size(100%);
 
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(4);
-		position: fixed;
-	}
+	@include syn(md, 4, 0, (''));
+	@include syn(lg, 3, 0, (''));
 
-	@include flexy-breakpoint($desktop-screen) {
-		@include flexy-span(3);
-	}
+	@include flexy-breakpoint($tablet-screen) { position: fixed; }
 }
 
 // Gallery, Blog, Resume, Blog post, Page, Homepage, Nav, default layout

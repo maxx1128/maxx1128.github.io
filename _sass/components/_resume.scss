@@ -1,3 +1,5 @@
+.resume-item { padding: 1em; }
+
 .resume-intro { 
 	margin-bottom: .4em;
 
@@ -61,3 +63,5 @@
 }
 
 .resume-description { padding-left: 5%; }
+
+// Non flex layout is acceptable so no Modernizr styles needed here

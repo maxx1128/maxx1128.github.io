@@ -1,11 +1,6 @@
-.blog-list {
-	margin-top: 2.5em;
-}
+.blog-list { margin-top: 2.5em; }
 
 .blog-list-item {
-	@include flexy-row();
-	@include flexy-align(middle);
-
 	@include padding(5%);
 
 	&:nth-of-type(odd) {
@@ -16,28 +11,10 @@
 }
 
 .blog-title {
-	@include flexy-span(1, 1);
-
-	@include padding(.5em null);
+	padding-bottom: .5em;
 	margin: 0;
-
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(9);
-	}
 }
 
-.blog-meta {
-	@include flexy-span(6);
+.blog-meta { font-style: italic; }
 
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto);
-
-		padding-left: 1em;
-	}
-}
-
-.blog-excerpt {
-	@include flexy-span(1, 1);
-
-	margin-top: 1.5em;
-}
+.blog-excerpt {  margin-top: 1em; }

@@ -46,10 +46,44 @@ body.homepage {
 	&:before { background: color-s(color(light), light, 2); }
 }
 
+.home-skills {
+	display: none;
+	margin-top: 3em;
 
+	// Center the skills list and align the text in the center
+	ul {
+		@include margin(0);
+		list-style-type: none;
+
+		// Each list item is 1/4 of the width in each role
+		li {
+			@include position(relative);
+			@include padding(.5em);
+			@include margin(.25em null);
+
+			font-size: .85em;
+			text-align: center;
+			font-style: italic;
+
+			// Adding the slanted dash after almost all skills
+			&:after {
+				content: '';
+				height: 100%;
+				width: 2px;
+				background-color: color(medium);
+				@include transform(rotate(10deg));
+				@include position(absolute, 0 0 null null);
+			}
+
+			// Hide the dashes at the end of each row and the last skill
+			&:last-of-type, &:nth-of-type(4n) {
+				&:after { display: none; }
+			}
+		}
+	}
+}
 
 html.flexbox.flexwrap {
-	
 	body.homepage {
 		.page-content {
 			@include flexy-row();
@@ -95,6 +129,25 @@ html.flexbox.flexwrap {
 			@include flexy-span(auto, $padding: 1em);
 		}
 	}
+	
+	.home-skills {
+		@include flexy-justify(center);
+
+		// Only show the skills area on tablet and above screens
+		@include flexy-breakpoint($tablet-screen) { @include flexy-row(); }
+
+		ul {
+			@include flexy-row();
+			@include flexy-span(10);
+			@include flexy-justify(center);
+			@include flexy-align(middle);
+
+			// Each list item is 1/4 of the width in each role
+			li {
+				@include flexy-span(3);
+			}
+		}
+	}
 }
 
 html.no-flexbox.no-flexwrap {
@@ -111,12 +164,35 @@ html.no-flexbox.no-flexwrap {
 
 	.home-nav-item {
 		@include syn(xs, 12, 0, (pad-2));
-		@include syn(md, 4, 0, (pad-2));
+		@include syn(md, 3, 0, (pad-2));
+	}
+
+	.home-content-text, .home-content-image {
+		@include flexy-breakpoint($tablet-screen) {
+			width: 45%;
+			display: inline-block;
+		}
 	}
 
 	.home-content-text {
+		@include flexy-breakpoint($tablet-screen) { 
+			padding-top: 5em !important; 
+			float: left;
+		}
+	}
+
+	.home-skills {
 		@include flexy-breakpoint($tablet-screen) {
-			padding-top: 5em !important;
+			display: block;
+
+			ul {
+
+				// Each list item is 1/4 of the width in each role
+				li {
+					display: inline-block;
+					width: 20%;
+				}
+			}
 		}
 	}
 }

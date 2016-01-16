@@ -58,9 +58,7 @@ html.flexbox.flexwrap {
 		@include flexy-justify(center);
 		@include flexy-align(middle);
 
-		img {
-			margin: 0 !important;
-		}
+		img { margin: 0 !important; }
 
 		.gallery-img {
 			@include flexy-span(12, $padding: .5em);
@@ -71,23 +69,37 @@ html.flexbox.flexwrap {
 
 		@include flexy-breakpoint($mobile-h-screen) {
 			
-			.gallery-img {
-				@include flexy-span(6, $padding: .5em);
-			}
+			.gallery-img { @include flexy-span(6, $padding: .5em); }
 		}
 
 		@include flexy-breakpoint($tablet-screen) {
 			
-			.gallery-img {
-				@include flexy-span(4, $padding: .5em);
-			}
+			.gallery-img { @include flexy-span(4, $padding: .5em); }
 		}
 
 		@include flexy-breakpoint($desktop-screen) {
 			
-			.gallery-img {
-				@include flexy-span(3, $padding: .5em);
-			}
+			.gallery-img { @include flexy-span(3, $padding: .5em); }
+		}
+	}
+}
+
+html.no-flexbox.no-flexwrap {
+	.flexy-gallery {
+		
+		img {
+			margin: 0 !important;
+		}
+
+		.gallery-img {
+			@include padding(.5em);
+			display: inline-block;
+			box-sizing: border-box;
+			width: 100%;
+
+			@include flexy-breakpoint($tablet-screen) { width: 48%; }
+
+			@include flexy-breakpoint($desktop-screen) { width: 30%; }
 		}
 	}
 }
