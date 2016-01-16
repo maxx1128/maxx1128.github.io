@@ -52,40 +52,42 @@ figcaption {
 	background-color: color-s(color(light), light, 3);
 }
 
-.flexy-gallery {
-	@include flexy-row();
-	@include flexy-justify(center);
-	@include flexy-align(middle);
+html.flexbox.flexwrap {
+	.flexy-gallery {
+		@include flexy-row();
+		@include flexy-justify(center);
+		@include flexy-align(middle);
 
-	img {
-		margin: 0 !important;
-	}
-
-	.gallery-img {
-		@include flexy-span(12, $padding: .5em);
-		height: auto;
-
-		box-sizing: border-box;
-	}
-
-	@include flexy-breakpoint($mobile-h-screen) {
-		
-		.gallery-img {
-			@include flexy-span(6, $padding: .5em);
+		img {
+			margin: 0 !important;
 		}
-	}
 
-	@include flexy-breakpoint($tablet-screen) {
-		
 		.gallery-img {
-			@include flexy-span(4, $padding: .5em);
+			@include flexy-span(12, $padding: .5em);
+			height: auto;
+
+			box-sizing: border-box;
 		}
-	}
 
-	@include flexy-breakpoint($desktop-screen) {
-		
-		.gallery-img {
-			@include flexy-span(3, $padding: .5em);
+		@include flexy-breakpoint($mobile-h-screen) {
+			
+			.gallery-img {
+				@include flexy-span(6, $padding: .5em);
+			}
+		}
+
+		@include flexy-breakpoint($tablet-screen) {
+			
+			.gallery-img {
+				@include flexy-span(4, $padding: .5em);
+			}
+		}
+
+		@include flexy-breakpoint($desktop-screen) {
+			
+			.gallery-img {
+				@include flexy-span(3, $padding: .5em);
+			}
 		}
 	}
 }

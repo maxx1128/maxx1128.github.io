@@ -1,82 +1,19 @@
-@include keyframes(home-pic) {
-	0%   { 
-			margin-top: -.5em;
-			margin-bottom: .5em;
-		}
-	
-	50% { 
-			margin-top: .5em;
-			margin-bottom: -.5em;
-		}
-
-	100%   { 
-			margin-top: -.5em;
-			margin-bottom: .5em;
-		}
-}
-
-@include keyframes(home-text) {
-	0%   { 
-			margin-top: .5em;
-			margin-bottom: -.5em;
-		}
-	
-	50% { 
-			margin-top: -.5em;
-			margin-bottom: .5em;
-		}
-
-	100%   { 
-			margin-top: .5em;
-			margin-bottom: -.5em;
-		}
-}
-
-
-
 body.homepage {
 
 	background-color: color-s(color(light), light, 9);
 
-	.page-content {
-		@include flexy-row();
-
-		.home-container {
-			@include flexy-center(1em);
-			width: 100%;
-			max-width: $desktop-screen;
-			margin: 0 auto;
-		}
+	.home-container {
+		width: 100%;
+		max-width: $desktop-screen;
+		margin: 0 auto;
 	}
 }
 
+.home-content { padding-top: 1em; }
 
-.home-content {
-	@include flexy-row();
-	@include flexy-align(middle);
+.home-content-text, .home-content-image { text-align: center; }
 
-	padding-top: 1em;
-}
-
-.home-content-text, .home-content-image {
-	@include flexy-span(12);
-
-	text-align: center;
-
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto);
-	}
-}
-
-
-
-.home-content-text {
-	@include padding(null 2em 2em 2em);
-
-	@include flexy-breakpoint($tablet-screen) {
-		animation: home-text 3s linear infinite;
-	}
-}
+.home-content-text { padding: 0 2em; }
 
 .home-content-image {
 	border-radius: 100%;
@@ -88,14 +25,9 @@ body.homepage {
 
 	background-color: color(light);
 	box-shadow: 0 0 1em .5em color(medium);
-
-	@include flexy-breakpoint($tablet-screen) {
-		animation: home-pic 3s linear infinite;
-	}
 }
 
 .home-nav {
-	@include flexy-row();
 	width: 100%;
 
 	margin-top: 2em;
@@ -105,7 +37,6 @@ body.homepage {
 }
 
 .home-nav-item {
-	@include flexy-span(12, $padding: .5em);
 
 	text-align: center;
 	color: color(white);
@@ -113,10 +44,79 @@ body.homepage {
 	@include shutter-in-vertical();
 
 	&:before { background: color-s(color(light), light, 2); }
+}
 
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(auto, $padding: 1em);
 
-		display: inline-block;
+
+html.flexbox.flexwrap {
+	
+	body.homepage {
+		.page-content {
+			@include flexy-row();
+
+			.home-container {
+				@include flexy-center(1em);
+			}
+		}
+	}
+
+	.home-content {
+		@include flexy-row();
+		@include flexy-align(middle);
+	}
+
+	.home-content-text, .home-content-image {
+		@include flexy-span(12);
+
+		@include flexy-breakpoint($tablet-screen) {
+			@include flexy-span(auto);
+		}
+	}
+
+	.home-content-text {
+		@include flexy-breakpoint($tablet-screen) {
+			animation: home-text 3s linear infinite;
+			padding: 1em 3em !important;
+		}
+	}
+
+	.home-content-image {
+		@include flexy-breakpoint($tablet-screen) {
+			animation: home-pic 3s linear infinite;
+		}
+	}
+
+	.home-nav {	@include flexy-row(); }
+
+	.home-nav-item {
+		@include flexy-span(12, $padding: .5em);
+
+		@include flexy-breakpoint($tablet-screen) {
+			@include flexy-span(auto, $padding: 1em);
+		}
+	}
+}
+
+html.no-flexbox.no-flexwrap {
+	.home-container {
+		max-width: $max-width;
+		width: 100%;
+	}
+
+	.home-nav {
+		@include clearfix;
+		@include padding(null 1em);
+		box-sizing: border-box;
+	}
+
+	.home-nav-item {
+		@include syn(xs, 12, 0, (pad-2));
+		@include syn(md, 4, 0, (pad-2));
+	}
+
+	.home-content-text {
+		@include flexy-breakpoint($tablet-screen) {
+			padding-top: 5em !important;
+		}
 	}
 }
