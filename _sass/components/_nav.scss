@@ -140,7 +140,7 @@ header {
 
 	a { text-align: center; }
 
-	@include max-bp($tablet-screen) { display: none; }
+	@include max-bp($tablet-screen) { display: none !important; }
 }
 
 html.flexbox.flexwrap {
