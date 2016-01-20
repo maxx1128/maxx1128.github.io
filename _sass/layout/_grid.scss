@@ -1,10 +1,17 @@
+@mixin bg-gradient($break) {
+	@include linear-gradient(to right, color-s(color(light), light, 7) 0%, color-s(color(light), light, 6) $break, color-s(color(light), light, 9) 100%);
+}
+
 $flexy-container-padding: 1em 7.5%;
 $max-width: em(1024px);
 
 body {
 	margin: 0;
 
-	background-color: color-s(color(light), light, 9);
+	@include bg-gradient(50%);
+
+	@include flexy-breakpoint($tablet-screen) { @include bg-gradient(33%); }
+	@include flexy-breakpoint($desktop-screen) { @include bg-gradient(25%); }
 }
 
 .page-content {
@@ -22,6 +29,8 @@ body:not(.homepage) {
 		@include syn(md, 8, 4, (''));
 		@include syn(lg, 9, 3, (''));
 	}
+
+	@include linear-gradient(to right, color-s(color(light), light, 6) 0%, color-s(color(light), light, 6) 33%, color-s(color(light), light, 9) 100%);
 }
 
 header {

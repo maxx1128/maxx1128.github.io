@@ -1,7 +1,11 @@
+$nav-darken: 0.5;
+$nav-background: "https://images.unsplash.com/photo-1429051883746-afd9d56fbdaf?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=533d700028277f3d53e0e6d4ac3bcc1c";
+$menu-opacity: 0.6;
+
 header {
 	@include transition(.5s);
 
-	background-color: color(medium);
+	@include background(linear-gradient( rgba(0, 0, 0, $nav-darken), rgba(0, 0, 0, $nav-darken) ), url($nav-background) no-repeat center);
 	color: color(white);
 
 	a {
@@ -58,6 +62,7 @@ header {
 
 	@include flexy-breakpoint($tablet-screen) {
 		@include margin(3em null 1.5em null);
+		background-color: rgba(color(light), $menu-opacity);
 	}
 }
 
@@ -74,7 +79,7 @@ header {
 	border-bottom: 1px solid color(light);
 
 	&:hover {
-		background-color: color-s(color(light), light, 1);
+		background-color: rgba(color-s(color(light), light, 1), $menu-opacity);
 		color: color(white);
 		@include transition(.25s);
 	}
