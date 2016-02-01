@@ -8,6 +8,11 @@ header {
 	@include background(linear-gradient(rgba(color-s(color(dark), dark, 7), $nav-darken), rgba(color-s(color(dark), dark, 7), $nav-darken) ), url($nav-background) no-repeat center);
 	color: color(white);
 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 	a {
 		color: color(white);
 
