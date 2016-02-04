@@ -1,10 +1,82 @@
 <!DOCTYPE html>
-<html class="flexbox flexwrap">
+<html>
 
   {% include head.html %}
 
   <body class="homepage">
 
+	<section class="home-opening">
+		<article class="home-title">
+			<h2>{{ site.title }}</h2>
+			<h5>{{ site.description }}</h5>
+			<p>Learn more below</p>
+		</article>
+		<article class="home-image">
+			<img src="img/profile-dev.png">
+		</article>
+	</section>
+
+	<!-- Put the sticky header here? -->
+
+	<section class="home-info">
+		<article class="home-perspective">
+			<div class="cube">
+			    <div class="side front">
+			    	<i class="icon-codepen"></i>
+			    </div>
+			    <div class="side back">
+			    	<i class="icon-codepen"></i>
+			    </div>
+			    <div class="side right">
+			    	<i class="icon-codepen"></i>
+			    </div>
+			    <div class="side left">
+			    	<i class="icon-codepen"></i>
+			    </div>
+			    <div class="side top">
+			    	<i class="icon-codepen"></i>
+			    </div>
+			    <div class="side bottom">
+			    	<i class="icon-codepen"></i>
+			    </div>
+			  </div>
+		</article>
+
+		<article class="home-info-description">
+			<h4>DESCRIPTION here</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in lectus a nisi maximus feugiat. Nam sodales felis non condimentum ultrices. Vivamus in pharetra ex, id tincidunt orci. Aliquam faucibus convallis mi in efficitur.</p>
+		</article>
+	</section>
+
+	<section class="home-blog">
+		{% for post in site.posts limit: 2 %}
+		    <article class="home-blog-item">
+		      <h4 class="home-blog-title">
+		        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		      </h4>
+		      
+		      <div class="home-blog-excerpt"> 
+		        {{ post.excerpt }}
+		      </div>
+		    </article>
+		{% endfor %}
+	</section>
+
+	<section class="home-social">
+		<h4>Find me on Social</h4>
+		{% for social in site.data.social %}
+			<a href="{{ social.url }}" target="_blank">
+				<i class="icon-{{ social.icon }}"></i>
+			</a>
+    	{% endfor %}
+	</section>
+
+
+
+
+
+
+<!-- 
 	<div class="page-content">
 	  <div class="home-container">
 		  <div class="home-content">
@@ -37,7 +109,7 @@
 		  </ul>
 	  </div>
 	</div>
-
+-->
 
   <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
   </body>

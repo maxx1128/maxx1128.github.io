@@ -1,3 +1,130 @@
+$section_border_width: em(8px);
+
+// Total opening container for first part of the homepage. Always takes up the full screen
+.home-opening {
+	width: 100%;
+	min-height: 100vh;
+	margin-bottom: 2em;
+
+	@include flexy-breakpoint($tablet-screen) { margin-bottom: 0; }
+}
+
+.home-title,
+.home-image {
+	text-align: center;
+}
+
+.home-image {
+
+}
+
+// The extra information right below the home opening
+.home-info {
+	@include clearfix();
+	box-sizing: border-box;
+	@include padding(7em 1em 5em 1em);
+
+	background-color: color-s(color(light), light, 9);
+	border-top: $section_border_width solid color-s(color(light), light, 3);
+	border-bottom: $section_border_width solid color-s(color(light), light, 3);
+}
+
+.home-perspective {
+	@include clearfix();
+	height: 12.75em;
+	margin-bottom: 2em;
+
+	@include syn(xs, 12, 0, ('pad-1'));
+	@include syn(md, 4, 0, ('pad-2'));
+}
+
+.home-info-description {
+	@include syn(xs, 12, 0, (''));
+	@include syn(md, 8, 0, ('pad-sides-4'));
+}
+
+.home-blog {
+	@include clearfix();
+	@include padding(1em 2em);
+
+	background-color: color-s(color(light), light, 8);
+}
+
+.home-blog-item {
+	@include padding(2em);
+	@include margin(1em null);
+	border-radius: 0.5em;
+	border-bottom: ($section_border_width/2) solid color-s(color(light), light, 7);
+
+	@include syn(md, 10, 1, (''));
+	@include syn(lg, 8, 2, (''));
+
+	background-color: color-s(color(light), light, 9);
+}
+
+.home-social {
+	@include padding(2em);
+
+	text-align: center;
+	color: color(white) !important;
+
+	background-color: color(dark);
+	border-top: $section_border_width solid color-s(color(dark), dark, 3);
+
+	a {
+		width: 49%;
+		display: inline-block;
+		box-sizing: border-box;
+
+		color: color-s(color(light), light, 4);
+		font-size: 2.25em;
+
+		@include flexy-breakpoint($tablet-screen) { 
+			width: auto;
+			display: inline;
+			@include padding(null 1em);
+		}
+
+		&:hover {
+			color: color-s(color(light), light, 7);
+		}
+	}
+}
+
+html.flexbox.flexwrap {
+	.home-opening { 
+		@include flexy-row();
+		@include flexy-align(middle);
+		@include flexy-justify(center);
+	}
+
+	.home-title,
+	.home-image {
+		@include flexy-span(12, $padding: 1em);
+
+		@include flexy-breakpoint($tablet-screen) {
+			@include flexy-span(4, $padding: 1em);
+		}
+	}
+
+	.home-image {
+
+		img {
+			@include size(100% auto);
+			max-width: em(350px);
+		}
+	}
+}
+
+html.no-flexbox.no-flexwrap {
+
+}
+
+
+
+
+/* 
+
 body.homepage {
 
 	background-color: color-s(color(light), light, 9);
@@ -196,3 +323,5 @@ html.no-flexbox.no-flexwrap {
 		}
 	}
 }
+
+*/

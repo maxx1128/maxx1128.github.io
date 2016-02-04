@@ -1,0 +1,86 @@
+$dist-1: 1.5em;
+$dist-2: 1.5em;
+$dist-3: 1.5em;
+$cube-time: 12s;
+$cube-width: 2em;
+$cube-persp: 500px;
+$rotate-time: 20s;
+
+
+@keyframes rotate-dice {
+   0%    { perspective-origin: 0 100%; perspective: $cube-persp; transform: rotateY(0deg); }
+   20%   { perspective-origin: 100% 100%; perspective: ($cube-persp * 1.25); }
+   40%   { perspective-origin: 100% 0; }
+   50%   { transform: rotateY(180deg); perspective: ($cube-persp / 2); }
+   60%   { perspective-origin: 0 0; }
+   80%   { perspective-origin: center; perspective: ($cube-persp * 1.25); }
+   100%  { perspective-origin: 0 100%; perspective: $cube-persp; transform: rotateY(360deg); }
+}
+
+@keyframes rotate-front {
+   0%    { transform: rotateY( 0deg) translateZ($dist-1) }
+   100%  { transform: rotateY(360deg) translateZ($dist-1) }
+}
+
+@keyframes rotate-top {
+   0%    { transform: rotateX( 90deg) translateZ($dist-3) }
+   100%  { transform: rotateX(-270deg) translateZ($dist-3) }
+}
+
+@keyframes rotate-right {
+   0%    { transform: rotateX(90deg) rotateY(90deg) translateZ($dist-2) }
+   100%  { transform: rotateX(90deg) rotateY(-270deg) translateZ($dist-2) }
+}
+
+@keyframes rotate-bottom {
+   0%    { transform: rotateX( -90deg) translateZ($dist-3) }
+   100%  { transform: rotateX(-450deg) translateZ($dist-3) }
+}
+
+@keyframes rotate-left {
+   0%    { transform: rotateX(90deg) rotateY( -90deg) translateZ($dist-2) }
+   100%  { transform: rotateX(90deg) rotateY(-450deg) translateZ($dist-2) }
+}
+
+@keyframes rotate-back {
+   0%    { transform: rotateY(180deg) translateZ($dist-1) }
+   100%  { transform: rotateY(540deg) translateZ($dist-1) }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.cube {
+  @include clearfix();
+
+  font-size: 4em;
+  width: $cube-width;
+  margin-left: auto;
+  margin-right: auto;
+  transform-style: preserve-3d;
+  animation: rotate-dice infinite $rotate-time ease-in-out;
+}
+
+.side {
+  position: absolute;
+  width: 1.75em;
+  height: 1.75em;
+  
+  border-radius: 100%;
+  
+  color: black; 
+  text-align: center;
+  line-height: 2em;
+  font-size: 5rem;
+}
+
+// Have an extra animation that toys with their opacity a little?
+
+.front { animation: rotate-front infinite $cube-time linear; }
+.top { animation: rotate-top infinite $cube-time linear; }
+.right { animation: rotate-right infinite $cube-time linear; }
+.bottom { animation: rotate-bottom infinite $cube-time linear; }
+.left { animation: rotate-left infinite $cube-time linear; }
+.back { animation: rotate-back infinite $cube-time linear; }
