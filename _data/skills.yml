@@ -1,11 +1,17 @@
-- skill: HTML5
-- skill: Jade and Nunjucks
-- skill: CSS3 and Sass
-- skill: Javascript and jQuery
-- skill: Angular.js
-- skill: Gulp.js and npm
-- skill: Git
-- skill: Custom Wordpress
-- skill: Online Journalism
-- skill: Social Media
-- skill: Google Analytics
+- icon: social-javascript
+  side: front
+
+- icon: sass
+  side: back
+
+- icon: social-angular
+  side: right
+
+- icon: line-chart
+  side: left
+
+- icon: newspaper
+  side: top
+
+- icon: wordpress
+  side: bottom

@@ -11,7 +11,7 @@ gems: [jekyll-paginate, pygments]
 title: Max Antonucci
 email: maxx1128@gmail.com
 description: >
-  I code, write, design, analyze, sometimes draw, often breathe
+  I code, write, design, analyze, often breathe, always philosophize.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://maxwellantonucci.com/" # the base hostname & protocol for your site
 permalink: /blog/:title/

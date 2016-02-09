@@ -2,10 +2,6 @@
   url: http://www.twitter.com/Maxwell_Dev
   icon: twitter
 
-- name: Linkedin
-  url: https://www.linkedin.com/in/maxwellantonucci
-  icon: linkedin
-
 - name: Codepen
   url: http://codepen.io/max1128/
   icon: codepen
@@ -13,6 +9,10 @@
 - name: Github
   url: https://github.com/maxx1128
   icon: github
+
+- name: Linkedin
+  url: https://www.linkedin.com/in/maxwellantonucci
+  icon: linkedin
 
 - name: Pinterest
   url: https://www.pinterest.com/maxwell1128/
