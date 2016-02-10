@@ -20,7 +20,7 @@
 		<article class="home-perspective">
 			<div class="cube">
 			    {% for skill in site.data.skills %}
-					<div class="side {{ skill.side }}">
+					<div class="side perspective-{{ skill.side }}">
 						<i class="icon-{{ skill.icon }}"></i>
 					</div>
 			    {% endfor %}

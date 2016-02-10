@@ -78,9 +78,9 @@ h1 {
 
 // Have an extra animation that toys with their opacity a little?
 
-.front { animation: rotate-front infinite $cube-time linear; }
-.top { animation: rotate-top infinite $cube-time linear; }
-.right { animation: rotate-right infinite $cube-time linear; }
-.bottom { animation: rotate-bottom infinite $cube-time linear; }
-.left { animation: rotate-left infinite $cube-time linear; }
-.back { animation: rotate-back infinite $cube-time linear; }
+.perspective-front { animation: rotate-front infinite $cube-time linear; }
+.perspective-top { animation: rotate-top infinite $cube-time linear; }
+.perspective-right { animation: rotate-right infinite $cube-time linear; }
+.perspective-bottom { animation: rotate-bottom infinite $cube-time linear; }
+.perspective-left { animation: rotate-left infinite $cube-time linear; }
+.perspective-back { animation: rotate-back infinite $cube-time linear; }
