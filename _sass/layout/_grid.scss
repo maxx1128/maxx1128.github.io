@@ -24,7 +24,7 @@ body:not(.homepage) {
 		width: 100%;
 		padding: 1em;
 
-		@include flexy-breakpoint($tablet-screen) { padding: .5em 2em;}
+		@include flexy-breakpoint($tablet-screen) { padding: .5em 5%;}
 
 		@include syn(md, 8, 4, (''));
 		@include syn(lg, 9, 3, (''));
