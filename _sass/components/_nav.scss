@@ -164,7 +164,9 @@ html.flexbox.flexwrap {
 	}
 }
 
-html.no-flexbox.no-flexwrap {
+html.no-flexbox.no-flexwrap, 
+html.no-flexbox.flexwrap, 
+html.flexbox.no-flexwrap {
 	.social-links a {
 		padding: .5em;
 	}

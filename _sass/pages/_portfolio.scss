@@ -53,7 +53,9 @@ html.flexbox.flexwrap {
 	}
 }
 
-html.no-flexbox.no-flexwrap {
+html.no-flexbox.no-flexwrap, 
+html.no-flexbox.flexwrap, 
+html.flexbox.no-flexwrap {
 	.portfolio-item {
 		
 		@include flexy-breakpoint($tablet-screen) {

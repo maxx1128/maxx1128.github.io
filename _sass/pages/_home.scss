@@ -175,7 +175,9 @@ html.flexbox.flexwrap {
 	}
 }
 
-html.no-flexbox.no-flexwrap {
+html.no-flexbox.no-flexwrap, 
+html.no-flexbox.flexwrap, 
+html.flexbox.no-flexwrap {
 	
 	.home-opening {
 		@include clearfix();
