@@ -27,7 +27,7 @@ Layouts are made mainly through adding HTML classes. They'd affect width, paddin
 </div>
 {% endhighlight %}
 
-You see this a lot in web frameworks, such as Bootstrap and Foundation. In fact, this example is how you'd make a layour with the latter: using only classes to define element widths at certain breakpoints.
+You see this a lot in web frameworks, such as Bootstrap and Foundation. In fact, this example is how you'd make a layout with the latter: using only classes to define element widths at certain breakpoints.
 
 ##### The Good about Expressive Grids
 
@@ -90,7 +90,7 @@ These are rough examples, but the result is basically the same as before: each a
 
 From my experiences, good and bad points here are the opposite of Expressive CSS.
 
-Component CSS means **no wasted CSS.** Tying layouts to mixins means that code is only added as you use it. Ss long as your layout is concise, your code will be too.
+Component CSS means **no wasted CSS.** Tying layouts to mixins means that code is only added as you use it. As long as your layout is concise, your code will be too.
 
 **HTML classes are easier to manage**. Elements are tied to only one or two so markup is more maintainable.
 
@@ -146,8 +146,8 @@ Now the mixin is ready to make your responsive layout. For the same collection o
 
 A breakdown of the mixin's arguments:
 
-*	First is the **number of columns the element will use.** In this 12-column grid, it'd be 12 for the whole screen, 6 for half, and 3 for one-fourth.
-*	Second is **the set breakpoint for each width.** Articles are full width on small screens, go to half-width on medium ones, and one-fourth on large ones.
+*	First is **the set breakpoint for each width.** Articles are full width on small screens, go to half-width on medium ones, and one-fourth on large ones.
+*	Second is the **number of columns the element will use.** In this 12-column grid, it'd be 12 for the whole screen, 6 for half, and 3 for one-fourth.
 *	Third is **the offset element.** If you wanted to push the element two columns forward, it'd be 2. You can also pull it backwards by making it -2.
 *	Fourth is **any utility classes for that breakpoint.** These include spacing utilities set from the settings. If your first spacing unit was .5em, then pad-1 would add that much padding on all sides. Then pad-2 would add 1em of spacing, marg-1 would add 1em of margin, and so on. Plus there's utility classes for text-align, float, display, and others.
 
@@ -155,7 +155,7 @@ A breakdown of the mixin's arguments:
 
 ##### All the benefits, no drawbacks
 
-Synapse aims for the benefits of both without the pitfalls. For the most part, I think it does.
+For the most part, Synapse gets the benefits of both worlds without the pitfalls.
 
 *	**No wasted styling code:** Since Synapse is mixin-based, it only adds code when the mixin is used. No bloat from unneeded utilities.
 *	**No excessive HTML classes:** Layout and utility CSS properties are all added in the classes you set for it. No need to manage lots of classes per element.
