@@ -6,11 +6,12 @@ categories: philosophy politics
 excerpt: "As the 2016 election approaches, my thoughts turn to political philosophy. So I ask, how would I define an ideal entitlement system for the state? Don't worry, no crazy politics here."
 ---
 
-Like any person with Internet access, I've been exposured to the 2016 election. The one I followed the most was Bernie Sander's surprising success, which made me think of one issue: entitlements.
+Like any person with Internet access, I've been exposed to the 2016 election. The one I followed the most was Bernie Sander's surprising success, which made me think of one issue: entitlements.
 
 I wondered, **how would an ideal entitlement system work?**
 
 Know this isn't a post advocating one party's position over another. That's an overcrowded marketplace and there's too many requirements for me to succeed in it:
+
 * Spite
 * A condescending, dickish tone of voice
 * Rage, not limited to four or five-letter words
@@ -31,7 +32,7 @@ Google defines "entitlement" as **the fact of having a right to something.** See
 
 So I looked that up and found a problem. Google's definition of "right" is **a moral or legal entitlement to something**. Great, an infinite definition loop! It's hard to define entitlements when it tries to use the same word to define itself.
 
-So the "official" definition of entitlement is unclear. So I'll be using my own.
+So the "official" definition of entitlement is unclear. I'll be using my own.
 
 The first part: **entitlements must be given to individuals by the state.** If they're given by family or friends by their choice, I don't define that as entitlement. I define it as goodwill or charity. Entitlements must be collected by the state from all people (how much from each person is another post), then given to individuals the state choses.
 
