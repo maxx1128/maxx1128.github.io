@@ -1,16 +1,7 @@
-<footer>
-	<div class="footer-container">
-
-		<div class="footer-social">
-			<ul class="footer-social-links">
-			  {% for social in site.data.social %}
-				<a href="{{ social.url }}" target="_blank">
-					<li>
-					 	<i class="icon-{{ social.icon }}"></i>
-					</li>
-				</a>
-			  {% endfor %}
-			</ul>
-		</div>
-	</div>
+<footer class="home-social">
+	{% for social in site.data.social %}
+		<a href="{{ social.url }}" target="_blank">
+			<i class="icon-{{ social.icon }}"></i>
+		</a>
+	{% endfor %}
 </footer>

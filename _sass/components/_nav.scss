@@ -42,7 +42,7 @@ header {
 	display: inline;
 	float: left;
 
-	h4 { margin: .5em 0; }
+	margin: .5em 0;
 
 	@include flexy-breakpoint($tablet-screen) { 
 		float: none;
@@ -53,12 +53,14 @@ header {
 
 .site-tagline {
 	display: none;
+	margin: 0.25em 0;
 
 	@include flexy-breakpoint($tablet-screen) { display: block; }
 }
 
 .site-menu {
-	width: 100%;
+	@include clearfix();
+	// width: 100%;
 	margin-bottom: 0;
 	padding-left: 0;
 
@@ -66,7 +68,7 @@ header {
 	background-color: color(light);
 
 	@include flexy-breakpoint($tablet-screen) {
-		@include margin(3em null 1.5em null);
+		margin-top: 1em;
 		background-color: rgba(color(light), $menu-opacity);
 	}
 }
@@ -92,6 +94,7 @@ header {
 	@include flexy-breakpoint($tablet-screen) {
 
 		@include padding(.5em);
+		@include syn(md, 3, 0, (''));
 
 		border: none;
 		@include transition(.25s);

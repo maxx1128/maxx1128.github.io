@@ -1,3 +1,15 @@
+// The base typography elements
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-feature-settings: "kern", "liga", "pnum";
+  
+  @include font-size(1);
+  
+  @include line-height(1);
+}
+
+
 // This generates the font sizes based on modular scale so they're consistent and easy to manage.
 @each $key, $value in $modular-size-map {
   $main-font-size: modular-scale($value);
@@ -5,19 +17,13 @@
 
    #{$key} {
       font-size: $scaled-font-size;
+      font-size: rem($scaled-font-size);
 
       @include flexy-breakpoint($tablet-screen) {
         font-size: $main-font-size;
+        font-size: rem($main-font-size);
       }
    }   
-}
-
-body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-feature-settings: "kern", "liga", "pnum";
-  font-size: $base-font-size;
-  line-height: $base-line-height;
 }
 
 h1,
@@ -27,13 +33,28 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  line-height: $heading-line-height;
-  margin: ($small-spacing / 3) 0 $small-spacing;
-  letter-spacing: 1px;
+  @include line-height(2);
+
+  @include margin-top(2);
+  @include margin-bottom(1);
+}
+
+h1 + h2 {
+  @include margin-top(1);
+}
+
+h2 + h3,
+h3 + h4,
+h4 + h5 {
+  @include margin-top(.5);
+}
+
+h5 + h6 {
+  @include margin-top(-.5);
 }
 
 p {
-  margin: 0 0 1.25em;
+  @include margin-bottom(1);
 }
 
 a {
@@ -53,8 +74,14 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: $base-spacing 0;
+
+  @include margin-top(1);
+  @include margin-bottom(1);
 }
+
+strong { font-weight: 700; }
+
+em { font-style: italic; }
 
 img,
 picture {

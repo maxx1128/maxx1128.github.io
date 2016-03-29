@@ -54,14 +54,7 @@
 		</div>
 	</section>
 
-	<section class="home-social">
-		<h4>Find me on Social</h4>
-		{% for social in site.data.social %}
-			<a href="{{ social.url }}" target="_blank">
-				<i class="icon-{{ social.icon }}"></i>
-			</a>
-    	{% endfor %}
-	</section>
+	{% include footer.html %}
 
   <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
   </body>

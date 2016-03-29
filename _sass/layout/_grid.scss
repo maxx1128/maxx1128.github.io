@@ -22,12 +22,12 @@ body {
 body:not(.homepage) {
 	.page-content {
 		width: 100%;
-		padding: 1em;
+		padding: 1em 5%;
 
-		@include flexy-breakpoint($tablet-screen) { padding: .5em 5%;}
+		@include syn(md, 10, 1, (''));
+		@include syn(lg, 8, 2, (''));
 
-		@include syn(md, 8, 4, (''));
-		@include syn(lg, 9, 3, (''));
+		float: none !important;
 	}
 
 	@include linear-gradient(to right, color-s(color(light), light, 6) 0%, color-s(color(light), light, 6) 33%, color-s(color(light), light, 9) 100%);
@@ -36,10 +36,10 @@ body:not(.homepage) {
 header {
 	@include size(100%);
 
-	@include syn(md, 4, 0, (''));
-	@include syn(lg, 3, 0, (''));
+	// @include syn(md, 4, 0, (''));
+	// @include syn(lg, 3, 0, (''));
 
-	@include flexy-breakpoint($tablet-screen) { position: fixed; }
+	// @include flexy-breakpoint($tablet-screen) { position: fixed; }
 }
 
 // Gallery, Blog, Resume, Blog post, Page, Homepage, Nav, default layout

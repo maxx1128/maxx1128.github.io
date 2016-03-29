@@ -1,10 +1,10 @@
 <header class="hide-menu">
 
   <div class="header-container">
-    <a class="site-title" href="{{ site.baseurl }}/">
-      <h4>
+    <a href="{{ site.baseurl }}/">
+      <h3 class="site-title">
         {{ site.title }}
-      </h4>
+      </h3>
     </a>
 
     <h6 class="site-tagline">{{ site.description }}</h6>
@@ -23,15 +23,5 @@
       {% endfor %}
     </ul>
   </div>
-
-  <ul class="social-links">
-    {% for social in site.data.social %}
-    <a href="{{ social.url }}" target="_blank">
-      <li>
-        <i class="icon-{{ social.icon }}"></i>
-      </li>
-    </a>
-    {% endfor %}
-  </ul>
 
 </header>

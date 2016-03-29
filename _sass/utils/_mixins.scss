@@ -1,3 +1,25 @@
+@mixin font-size($number) {
+  font-size: #{ $number * $base + 'px'};
+  font-size: #{ $number * $base-rem + 'rem'};
+}
+
+@mixin line-height($number) {
+  line-height: #{ $number * $leading + 'px'};
+  line-height: #{ $number * $leading-rem + 'rem'};
+}
+
+@mixin margin-top($number) {
+  margin-top: #{ $number * $leading + 'px'};
+  margin-top: #{ $number * $leading-rem + 'rem'};
+}
+
+@mixin margin-bottom($number) {
+  margin-bottom: #{ $number * $leading + 'px'};
+  margin-bottom: #{ $number * $leading-rem + 'rem'};
+}
+
+
+
 @mixin max-bp($width) {
   @media (max-width: $width) { @content; }
 }

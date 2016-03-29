@@ -107,6 +107,8 @@ $section_border_width: em(8px);
 	}
 }
 
+.home-blog-title { margin: 0.25em 0; }
+
 .home-blog-link {
 	width: 100%;
 	@include clearfix();
