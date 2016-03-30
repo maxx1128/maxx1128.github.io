@@ -82,6 +82,8 @@ $section_border_width: em(8px);
 	@include syn(md, 8, 0, (pad-sides-4, align-l));
 }
 
+.home-info-description-title { @include margin(0.15em null); }
+
 .home-blog {
 	@include clearfix();
 	@include padding(1em 2.5%);

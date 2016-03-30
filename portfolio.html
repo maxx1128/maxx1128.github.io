@@ -9,13 +9,13 @@ permalink: /portfolio/
 	{% for portfolio in site.data.portfolio %}
 	<a class="portfolio-item" href="{{ portfolio.link }}" target="_blank">
 		<div class="portfolio-item-content">
-			<h5>
+			<h5 class="portfolio-item-title">
 				{{ portfolio.name }}
 			</h5>
 			<p>
 				{{ portfolio.description }}
 			</p>
-			<h6>
+			<h6 class="portfolio-item-date">
 				{{ portfolio.date }}
 			</h6>
 		</div>

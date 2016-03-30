@@ -37,6 +37,10 @@
 	}
 }
 
+.portfolio-item-title { @include margin(0.25em null 0.5em null); }
+
+.portfolio-item-date { @include margin(0.25em null); }
+
 html.flexbox.flexwrap {
 	.portfolio-list {
 		@include flexy-row();

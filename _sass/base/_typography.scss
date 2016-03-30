@@ -33,9 +33,9 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  @include line-height(2);
+  @include line-height(1.5);
 
-  @include margin-top(2);
+  @include margin-top(2.5);
   @include margin-bottom(1);
 }
 
@@ -87,4 +87,8 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+blockquote p {
+  font-size: inherit !important;
 }

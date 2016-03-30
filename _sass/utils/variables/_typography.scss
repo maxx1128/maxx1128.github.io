@@ -1,7 +1,7 @@
 // ----- Typography Variables ----- //
 
-$base-font-size: 100;
-$line-height: 1.8;
+$base-font-size: 105;
+$line-height: 1.85;
 
 $base: 16 * ($base-font-size / 100);
 $base-rem: ($base-font-size / 100);
@@ -41,5 +41,6 @@ $modular-size-map: (
    h5: 2,
    h6: 1,
    p: 0,
-   button: 0
+   button: 0,
+   blockquote: 1
 );
