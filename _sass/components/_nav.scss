@@ -1,176 +1,173 @@
 $nav-darken: 0.65;
-$nav-background: "/img/nav.jpg";
+$nav-background: '/img/nav.jpg';
 $menu-opacity: 0.6;
 
 header {
-	@include transition(.5s);
+  @include transition(0.5s);
 
-	@include background(linear-gradient(rgba(color-s(color(dark), dark, 7), $nav-darken), rgba(color-s(color(dark), dark, 7), $nav-darken) ), url($nav-background) no-repeat center);
-	color: color(white);
+  @include background(linear-gradient(rgba(color-s(color(dark), dark, 7), $nav-darken), rgba(color-s(color(dark), dark, 7), $nav-darken)), url($nav-background) no-repeat center);
+  color: color(white);
+  background-size: cover;
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  a {
+    color: color(white);
 
-	a {
-		color: color(white);
-
-		&:hover,
-		&:focus {
-			color: color-s(color(white), dark, 2);
-		}
-	}
+    &:hover,
+    &:focus {
+      color: color-s(color(white), dark, 2);
+    }
+  }
 }
 
 .header-container {
-	width: 100%;
-	@include padding(1em);
-	box-sizing: border-box;
-	@include clearfix();
+  @include clearfix();
 
-	text-align: left;
+  padding: 1em;
+  width: 100%;
+  box-sizing: border-box;
 
-	@include flexy-breakpoint($tablet-screen) {
-		padding-bottom: 0;
+  text-align: left;
 
-		text-align: center;
-	}
+  @include flexy-breakpoint($tablet-screen) {
+    padding-bottom: 0;
+
+    text-align: center;
+  }
 }
 
-.site-title {	
-	float: left;
+.site-title {
+  float: left;
 
-	margin: .5em 0;
+  margin: 0.5em 0;
 
-	@include flexy-breakpoint($tablet-screen) { 
-		float: none;
-		margin: 0.5em 0 0.75em 0;
+  @include flexy-breakpoint($tablet-screen) {
+    float: none;
+    margin: 0.5em 0 0.75em;
 
-		text-align: center; 
-	}
+    text-align: center;
+  }
 }
 
 .site-tagline {
-	display: none;
-	margin: 0.25em 0;
+    display: none;
+    margin: 0.25em 0;
 
-	@include flexy-breakpoint($tablet-screen) { display: block; }
+    @include flexy-breakpoint($tablet-screen) { display: block; }
 }
 
 .site-menu {
-	@include clearfix();
-	// width: 100%;
-	margin-bottom: 0;
-	padding-left: 0;
+    @include clearfix();
+    // width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
 
-	list-style: none;
-	background-color: color(light);
+    list-style: none;
+    background-color: color(light);
 
-	@include flexy-breakpoint($tablet-screen) {
-		margin-top: 1em;
-		background-color: rgba(color(light), $menu-opacity);
-	}
+    @include flexy-breakpoint($tablet-screen) {
+        margin-top: 1em;
+        background-color: rgba(color(light), $menu-opacity);
+    }
 }
 
 .site-menu-item {
-	display: inline-block;
-	width: 100%;
+    display: inline-block;
+    width: 100%;
 
-	@include padding(1em);
-	box-sizing: border-box;
-	color: color(white);
+    @include padding(1em);
+    box-sizing: border-box;
+    color: color(white);
 
-	text-align: center;
-	border-top: 1px solid color(light);
-	border-bottom: 1px solid color(light);
+    text-align: center;
+    border-top: 1px solid color(light);
+    border-bottom: 1px solid color(light);
 
-	&:hover {
-		background-color: rgba(color-s(color(light), light, 1), $menu-opacity);
-		color: color(white);
-		@include transition(.25s);
-	}
+    &:hover {
+        background-color: rgba(color-s(color(light), light, 1), $menu-opacity);
+        color: color(white);
+        @include transition(.25s);
+    }
 
-	@include flexy-breakpoint($tablet-screen) {
+    @include flexy-breakpoint($tablet-screen) {
 
-		@include padding(.5em);
-		@include syn(md, 3, 0, (''));
+        @include padding(.5em);
+        @include syn(md, 3, 0, (''));
 
-		border: none;
-		@include transition(.25s);
-	}
+        border: none;
+        @include transition(.25s);
+    }
 }
 
 .header-icon {
-	display: inline;
-	float: right;
+    display: inline;
+    float: right;
 
-	@include transition(.5s);
-	@include transform(rotate(180deg));
-	@include transform-origin(center);
+    @include transition(.5s);
+    @include transform(rotate(180deg));
+    @include transform-origin(center);
 
-	text-align: center;
-	font-size: 2rem;
-	cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
 
-	@include flexy-breakpoint($tablet-screen) {
-		display: none;
-	}
+    @include flexy-breakpoint($tablet-screen) {
+        display: none;
+    }
 
-	.hide-menu & {
-		@include transform(rotate(0deg));
-		@include transition(.5s);
-	}
+    .hide-menu & {
+        @include transform(rotate(0deg));
+        @include transition(.5s);
+    }
 }
 
 .hide-menu {
 
-	.site-menu {
-		visibility: hidden;
-		opacity: 0;
-		max-height: 0;
-	}
+    .site-menu {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+    }
 
-	@include flexy-breakpoint($tablet-screen) {
-		.site-menu {
-			visibility: visible;
-			opacity: 1;
-			max-height: 1000em;
-		}
-	}
+    @include flexy-breakpoint($tablet-screen) {
+        .site-menu {
+            visibility: visible;
+            opacity: 1;
+            max-height: 1000em;
+        }
+    }
 }
 
 .social-links {
-	@include flexy-row();
-	@include flexy-justify(center);
-	
-	@include padding(1em);
-	@include margin(null auto);
-	max-width: em(400px);
+    @include flexy-row();
+    @include flexy-justify(center);
 
-	list-style-type: none;
-	font-size: 1.25em;
+    @include padding(1em);
+    @include margin(null auto);
+    max-width: em(400px);
 
-	a { text-align: center; }
+    list-style-type: none;
+    font-size: 1.25em;
 
-	@include max-bp($tablet-screen) { display: none !important; }
+    a { text-align: center; }
+
+    @include max-bp($tablet-screen) { display: none !important; }
 }
 
 html.flexbox.flexwrap {
-	.social-links {
-		@include flexy-row();
-		@include flexy-justify(center);
+    .social-links {
+        @include flexy-row();
+        @include flexy-justify(center);
 
-		a {
-			@include flexy-span(auto);
-		}
-	}
+        a {
+            @include flexy-span(auto);
+        }
+    }
 }
 
-html.no-flexbox.no-flexwrap, 
-html.no-flexbox.flexwrap, 
+html.no-flexbox.no-flexwrap,
+html.no-flexbox.flexwrap,
 html.flexbox.no-flexwrap {
-	.social-links a {
-		padding: .5em;
-	}
+    .social-links a {
+        padding: .5em;
+    }
 }

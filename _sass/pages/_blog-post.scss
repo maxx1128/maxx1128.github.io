@@ -1,16 +1,20 @@
 .post-header {
-	@include margin(1.5em null 2.5em null);
+  @include margin(1.5em null 2.5em null);
 
-	text-align: center;
+  text-align: center;
 }
 
-.post-title { margin: .25em 0 .75em 0; }
+.post-title {
+  @include line-height(2);
+
+  margin: 0.25em 0 0.75em;
+}
 
 .post-subheading { margin: .25em 0; }
 
 .post-meta {
-	text-align: center;
-	font-style: italic;
+  text-align: center;
+  font-style: italic;
 }
 
 
@@ -18,47 +22,47 @@
 // Any universal post styles here
 .post {
 
-	img {
-		display: block;
-		margin: 1em auto;
-	}
+  img {
+      display: block;
+      margin: 1em auto;
+  }
 }
 
 blockquote {
-	margin: 4%;
-	padding: 1.25em;
+  margin: 4%;
+  padding: 1.25em;
 
-	font-family: $heading-font-family;
-	text-align: center;
+  font-family: $heading-font-family;
+  text-align: center;
 
-	border-top: 10px solid color(medium);
-	border-bottom: 10px solid color(medium);
-	color: color(medium);
+  border-top: 10px solid color(medium);
+  border-bottom: 10px solid color(medium);
+  color: color(medium);
 
-	p {
-		margin: 0;
-	}
+  p {
+      margin: 0;
+  }
 
-	@include flexy-breakpoint($tablet-screen) {
-		width: 40%;
-		float: right;
-	}
+  @include flexy-breakpoint($tablet-screen) {
+      width: 40%;
+      float: right;
+  }
 }
 
 .post-sig {
-	text-align: right;
-	font-style: italic;
+  text-align: right;
+  font-style: italic;
 }
 
 .iframe-container {
-	width: 100%;
+  width: 100%;
 
-	iframe {
-		width: 100%;
-	}
+  iframe {
+      width: 100%;
+  }
 
-	@include flexy-breakpoint($tablet-screen) {
-		width: 75%;
-		margin: 0 auto;
-	}
+  @include flexy-breakpoint($tablet-screen) {
+      width: 75%;
+      margin: 0 auto;
+  }
 }

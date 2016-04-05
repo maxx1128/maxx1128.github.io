@@ -1,45 +1,49 @@
 @mixin bg-gradient($break) {
-	@include linear-gradient(to right, color-s(color(light), light, 7) 0%, color-s(color(light), light, 6) $break, color-s(color(light), light, 9) 100%);
+  @include linear-gradient(to right, color-s(color(light), light, 7) 0%, color-s(color(light), light, 6) $break, color-s(color(light), light, 9) 100%);
 }
 
 $flexy-container-padding: 1em 7.5%;
 $max-width: em(1024px);
 
+
 body {
-	margin: 0;
+  margin: 0;
+  background-color: $base-background-color;
 
-	@include bg-gradient(50%);
+/*
+  @include bg-gradient(50%);
 
-	@include flexy-breakpoint($tablet-screen) { @include bg-gradient(33%); }
-	@include flexy-breakpoint($desktop-screen) { @include bg-gradient(25%); }
+  @include flexy-breakpoint($tablet-screen) { @include bg-gradient(33%); }
+  @include flexy-breakpoint($desktop-screen) { @include bg-gradient(25%); }
+*/
 }
 
 .page-content {
-	// @include flexy-container($max-width);
-	@include padding(0 null);
+  // @include flexy-container($max-width);
+  @include padding(0 null);
 }
 
 body:not(.homepage) {
-	.page-content {
-		width: 100%;
-		padding: 1em 5%;
+  .page-content {
+      width: 100%;
+      padding: 1em 5%;
 
-		@include syn(md, 10, 1, (''));
-		@include syn(lg, 8, 2, (''));
+      @include syn(md, 10, 1, (''));
+      @include syn(lg, 8, 2, (''));
 
-		float: none !important;
-	}
+      float: none !important;
+  }
 
-	@include linear-gradient(to right, color-s(color(light), light, 6) 0%, color-s(color(light), light, 6) 33%, color-s(color(light), light, 9) 100%);
+  background-color: $base-background-color;
 }
 
 header {
-	@include size(100%);
+  @include size(100%);
 
-	// @include syn(md, 4, 0, (''));
-	// @include syn(lg, 3, 0, (''));
+  // @include syn(md, 4, 0, (''));
+  // @include syn(lg, 3, 0, (''));
 
-	// @include flexy-breakpoint($tablet-screen) { position: fixed; }
+  // @include flexy-breakpoint($tablet-screen) { position: fixed; }
 }
 
 // Gallery, Blog, Resume, Blog post, Page, Homepage, Nav, default layout

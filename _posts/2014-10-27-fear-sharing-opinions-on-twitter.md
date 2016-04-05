@@ -31,6 +31,7 @@ The biggest one, for me, is that brand and personality are becoming a lot more i
 Plus Twitter, at its core, is a tool to create conversations with others. For me, a vital part of this is being comfortable expressing personal views on issues. If you don’t, then it’s not a conversation, it’s just a one-way transfer of info. People don’t go to Twitter for that, they go for engagement and connection. If you don’t do that, why are you on Twitter at all?
 
 ### Okay, so how should we do it?
+
 Good question, size three header. Even though I advocate sharing opinions on Twitter, I do acknowledge there are several rules to follow to do it well. By “well,” I mean in a way that won’t anger employers or *** off some of the many Twitter trolls (see below).
 
 {% include image.html url="/img/posts/twitter-opinions/AngryTwitter.jpg" description="Image via Rosaura/Flickr" %}

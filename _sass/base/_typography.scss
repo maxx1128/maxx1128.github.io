@@ -1,12 +1,11 @@
 // The base typography elements
 body {
+  @include font-size(1);
+  @include line-height(1);
+
   color: $base-font-color;
   font-family: $base-font-family;
-  font-feature-settings: "kern", "liga", "pnum";
-  
-  @include font-size(1);
-  
-  @include line-height(1);
+  font-feature-settings: 'kern', 'liga', 'pnum';
 }
 
 
@@ -15,15 +14,15 @@ body {
   $main-font-size: modular-scale($value);
   $scaled-font-size: $main-font-size * $scaled-font-ratio;
 
-   #{$key} {
-      font-size: $scaled-font-size;
-      font-size: rem($scaled-font-size);
+  #{$key} {
+    font-size: $scaled-font-size;
+    font-size: rem($scaled-font-size);
 
-      @include flexy-breakpoint($tablet-screen) {
-        font-size: $main-font-size;
-        font-size: rem($main-font-size);
-      }
-   }   
+    @include flexy-breakpoint($tablet-screen) {
+      font-size: $main-font-size;
+      font-size: rem($main-font-size);
+    }
+  }
 }
 
 h1,
@@ -32,11 +31,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
-  @include line-height(1.5);
-
+  @include line-height(1.6);
   @include margin-top(2.5);
   @include margin-bottom(1);
+
+  font-family: $heading-font-family;
 }
 
 h1 + h2 {
@@ -70,13 +69,13 @@ a {
 }
 
 hr {
+  @include margin-top(1);
+  @include margin-bottom(1);
+
   border-bottom: $base-border;
   border-left: 0;
   border-right: 0;
   border-top: 0;
-
-  @include margin-top(1);
-  @include margin-bottom(1);
 }
 
 strong { font-weight: 700; }

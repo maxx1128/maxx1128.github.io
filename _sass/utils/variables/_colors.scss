@@ -36,7 +36,7 @@ $base-border: 1px solid $base-border-color;
 // -- Background Colors -- //
 
 /// Standard background color for the whole project. Light colors are recommended.
-$base-background-color: color(white);
+$base-background-color: tint($base-border-color, 75%);
 
 /// A tinted version of the standard background color. Slightly darker
-$secondary-background-color: tint($base-border-color, 75%);
+$secondary-background-color: tint($base-border-color, 50%);

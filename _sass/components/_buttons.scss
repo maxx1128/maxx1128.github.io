@@ -1,9 +1,11 @@
+$button-color: #fff;
+
 #{$all-buttons} {
   appearance: none;
   background-color: $action-color;
   border: 0;
   border-radius: $base-border-radius * 2;
-  color: #fff;
+  color: $button-color;
   cursor: pointer;
   display: block;
   font-family: $base-font-family;
@@ -22,7 +24,7 @@
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
-    color: #fff;
+    color: $button-color;
   }
 
   &:disabled {
@@ -36,6 +38,6 @@
 
   a,
   a:hover {
-    color: white;
+    color: $button-color;
   }
 }
