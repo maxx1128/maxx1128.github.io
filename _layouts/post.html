@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<article class="post blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post-content" itemscope itemprop="articleBody" itemtype="http://schema.org/BlogPosting">
 
   <div class="post-header">
     <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
     <p class="post-meta">
-    	Published on 
-    	<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-    		{{ page.date | date: "%b %-d, %Y" }}
-    	</time>
+      Published on 
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
     </p>
 
     <img src="{{ page.featured-img }}">
@@ -17,10 +17,8 @@ layout: default
 
   <hr>
 
-  <article class="post-content" itemprop="articleBody">
-    {{ content }}
+  {{ content }}
 
-    <h6 class="post-sig">- Max Antonucci</h6>
-  </article>
+  <h6 class="post-sig">- Max Antonucci</h6>
 
 </article>

@@ -14,7 +14,14 @@ $section_border_width: em(8px);
 .home-image {
 	text-align: center;
 
-	h2 { @include line-height(2); }
+	h2 {
+		@include line-height(2);
+		margin-top: 0;
+	}
+
+	h5 {
+		margin-top: 0;
+	}
 }
 
 .home-image {
