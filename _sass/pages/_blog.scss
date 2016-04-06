@@ -4,7 +4,7 @@
 	@include padding(5%);
 
 	&:nth-of-type(odd) {
-		background-color: color-s(color(light), light, 5);
+		background-color: color-s(color(light), light, 7);
 		border-top: color(medium) 3px solid;
 		border-bottom: color(medium) 3px solid;
 	}

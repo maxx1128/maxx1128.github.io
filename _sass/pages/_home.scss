@@ -13,11 +13,13 @@ $section_border_width: em(8px);
 .home-title,
 .home-image {
 	text-align: center;
+
+	h2 { @include line-height(2); }
 }
 
 .home-image {
-	img { 
-		border-radius: 100%; 
+	img {
+		border-radius: 100%;
 		border: 5px solid color(dark);
 		background-color: color-s(color(light), light, 3);
 	}
@@ -119,7 +121,7 @@ $section_border_width: em(8px);
 
 	text-align: center;
 
-	button { 
+	button {
 		min-width: 25%;
 		margin-bottom: 1em;
 	}
@@ -142,7 +144,7 @@ $section_border_width: em(8px);
 		color: color-s(color(light), light, 4);
 		font-size: 2.25em;
 
-		@include flexy-breakpoint($tablet-screen) { 
+		@include flexy-breakpoint($tablet-screen) {
 			width: auto;
 			display: inline;
 			@include padding(null 1em);
@@ -155,7 +157,7 @@ $section_border_width: em(8px);
 }
 
 html.flexbox.flexwrap {
-	.home-opening { 
+	.home-opening {
 		@include flexy-row();
 		@include flexy-align(middle);
 		@include flexy-justify(center);
@@ -179,10 +181,10 @@ html.flexbox.flexwrap {
 	}
 }
 
-html.no-flexbox.no-flexwrap, 
-html.no-flexbox.flexwrap, 
+html.no-flexbox.no-flexwrap,
+html.no-flexbox.flexwrap,
 html.flexbox.no-flexwrap {
-	
+
 	.home-opening {
 		@include clearfix();
 		@include syn(md, 12, 0, ('pad-2'));
