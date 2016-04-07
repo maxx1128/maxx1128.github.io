@@ -1,0 +1,112 @@
+// ----- Typography Variables ----- //
+
+$base-font-size: 110;
+$line-height: 1.85;
+
+$base: 16 * ($base-font-size / 100);
+$base-rem: ($base-font-size / 100);
+$leading: round($base * $line-height);
+$leading-rem: $leading / $base;
+
+$base-font-family: 'Droid Sans', 'lucida grande', Verdana, sans-serif;
+$heading-font-family: 'Montserrat', 'Trebuchet MS', Arial, sans-serif;
+
+$modular-scale-ratio: $major-third;
+$modular-scale-base: $base * 1px;
+$base-font-scale: 0; // Initial scale of the modular scale ratio
+$scaled-font-ratio: 0.9; // % of the original font size on small screens.
+
+$modular-size-map: (
+   h1: 6,
+   h2: 5,
+   h3: 4,
+   h4: 3,
+   h5: 2,
+   h6: 1,
+   p: 0,
+   button: 0,
+   blockquote: 1
+); // Bourbon modular-scale function to create the structure of how fonts will be sized
+
+
+
+// ----- Color Variables ----- //
+
+// Lucario
+// Change white to blank?
+$colors: (
+  blank: #fff,
+  white: #fff,
+  action: #de4141,
+  dark: #104a7b,
+  medium: #29739c,
+  light: #4a9cee
+);
+
+// This is the function to pull colors out.
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+$base-font-color: color(dark);
+$action-color: color(action);
+
+$base-border-color: color(light);
+$light-border-color: tint($base-border-color, 77.5%);
+
+$base-background-color: tint(color(light), 87.5%);
+$secondary-background-color: tint(color(light), 70); // Slightly darker background
+
+
+
+
+// ----- Layout Variables ----- //
+
+$base-border-radius: 5px;
+$base-border-width: em(8px);
+$base-border: $base-border-width solid $base-border-color;
+$secondary-border-width: $base-border-width / 2;
+
+$base-spacing: $line-height * 1em;
+$small-spacing: $base-spacing / 2;
+
+// Lays out the different z-index values to help keep them organized. Based off what commom elements they'd be used for.
+$z-layers: (
+  bottomless-pit: -9999,
+  default: 1,
+  dropdown: 3000,
+  overlay: 4000,
+  modal: 4001
+);
+
+// For using organized z-index values
+@function z-index($key) {
+  @if map-has-key($z-layers, $key) {
+    @return map-get($z-layers, $key);
+  }
+ 
+  @warn "Unknown `#{$key}` in $z-layers.";
+  @return null;
+}
+
+
+
+// ----- Grid Variables ----- //
+
+$mobile-screen: em(320px);
+$mobile-h-screen: em(480px);
+$tablet-screen: em(787px);
+$desktop-screen: em(1024px);
+$huge-screen: em(1200px);
+
+
+
+// ----- Animation Variables ----- //
+
+$base-duration: 150ms;
+$base-timing: ease;

@@ -22,7 +22,7 @@ header {
 .header-container {
   @include clearfix();
 
-  padding: 1em;
+  @include padding($small-spacing / 2);
   width: 100%;
   box-sizing: border-box;
 
@@ -38,11 +38,10 @@ header {
 .site-title {
   float: left;
 
-  margin: 0.5em 0;
+  margin: ($small-spacing / 2) 0;
 
   @include flexy-breakpoint($tablet-screen) {
     float: none;
-    margin: 0.5em 0 0.75em;
 
     text-align: center;
   }
@@ -50,14 +49,13 @@ header {
 
 .site-tagline {
     display: none;
-    margin: 0.25em 0;
+    margin: $small-spacing 0;
 
     @include flexy-breakpoint($tablet-screen) { display: block; }
 }
 
 .site-menu {
     @include clearfix();
-    // width: 100%;
     margin-bottom: 0;
     padding-left: 0;
 
@@ -65,49 +63,47 @@ header {
     background-color: color(light);
 
     @include flexy-breakpoint($tablet-screen) {
-        margin-top: 1em;
+        margin-top: $small-spacing;
         background-color: rgba(color(light), $menu-opacity);
     }
 }
 
 .site-menu-item {
-    display: inline-block;
-    width: 100%;
+    @include syn(xs, 12, 0, ('pad-1'));
+    @include syn(md, 3, 0, (''));
 
-    @include padding(1em);
+    display: inline-block;
+
     box-sizing: border-box;
     color: color(white);
-
     text-align: center;
+
     border-top: 1px solid color(light);
     border-bottom: 1px solid color(light);
 
     &:hover {
-        background-color: rgba(color-s(color(light), light, 1), $menu-opacity);
+        background-color: rgba(color(light), $menu-opacity);
         color: color(white);
         @include transition(.25s);
     }
 
     @include flexy-breakpoint($tablet-screen) {
-
-        @include padding(.5em);
-        @include syn(md, 3, 0, (''));
-
         border: none;
         @include transition(.25s);
     }
 }
 
 .header-icon {
-    display: inline;
-    float: right;
-
     @include transition(.5s);
     @include transform(rotate(180deg));
     @include transform-origin(center);
+    @include padding($small-spacing * 0.9);
+
+    display: inline;
+    float: right;
 
     text-align: center;
-    font-size: 2rem;
+    font-size: $base-spacing;
     cursor: pointer;
 
     @include flexy-breakpoint($tablet-screen) {
@@ -123,25 +119,21 @@ header {
 .hide-menu {
 
     .site-menu {
-        visibility: hidden;
-        opacity: 0;
-        max-height: 0;
-    }
+        display: none;
 
-    @include flexy-breakpoint($tablet-screen) {
-        .site-menu {
-            visibility: visible;
-            opacity: 1;
-            max-height: 1000em;
+        @include flexy-breakpoint($tablet-screen) {
+            display: block;
         }
     }
+
+    
 }
 
 .social-links {
     @include flexy-row();
     @include flexy-justify(center);
 
-    @include padding(1em);
+    @include padding($base-spacing);
     @include margin(null auto);
     max-width: em(400px);
 
@@ -168,6 +160,6 @@ html.no-flexbox.no-flexwrap,
 html.no-flexbox.flexwrap,
 html.flexbox.no-flexwrap {
     .social-links a {
-        padding: .5em;
+        padding: $small-spacing;
     }
 }

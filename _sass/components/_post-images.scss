@@ -1,107 +1,106 @@
 
 // Classes for different image sizings
 @include flexy-breakpoint($tablet-screen) {
-	
-	.post-half-image {
-		max-width: 50%;
-	}
 
-	.post-three-quarter-image {
-		max-width: 75%;
-	}
+  .post-half-image {
+    max-width: 50%;
+  }
+
+  .post-three-quarter-image {
+    max-width: 75%;
+  }
 }
 
 figure {
-	display: block;
-	@include margin(1.5em auto);
+  @include margin($base-spacing auto);
+  display: block;
 
-	text-align: center;
+  text-align: center;
 
-	@include flexy-breakpoint($tablet-screen) {
-		max-width: 75%;
+  @include flexy-breakpoint($tablet-screen) {
+    max-width: 75%;
 
-		&.left, &.right {
-			max-width: 40%;
-			margin: 1.5em;
-		}
+    &.left,
+    &.right {
+      max-width: 40%;
+      margin: $base-spacing;
+    }
 
-		&.left {
-			float: left;
-		}
+    &.left {
+      float: left;
+    }
 
-		&.right {
-			float: right;
-		}
-	}
+    &.right {
+      float: right;
+    }
+  }
 }
 
 .image-caption-img {
-	margin: 0 auto !important;
+  margin: 0 auto !important;
 }
 
 figcaption {
-	display: inline-block;
-	@include padding(.75em 1em);
-	box-sizing: border-box;
-	max-width: 100%;
-	width: 100%;
+  @include padding($small-spacing 1em);
+  margin-top: -$small-spacing;
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
 
-	font-size: 80%;
-	font-style: italic;
+  font-size: 80%;
+  font-style: italic;
 
-	background-color: color-s(color(light), light, 3);
+  background-color: $secondary-background-color;
 }
 
-html.flexbox.flexwrap {
-	.flexy-gallery {
-		@include flexy-row();
-		@include flexy-justify(center);
-		@include flexy-align(middle);
+.flexbox.flexwrap {
+  .flexy-gallery {
+    @include flexy-row();
+    @include flexy-justify(center);
+    @include flexy-align(middle);
 
-		img { margin: 0 !important; }
+    img { margin: 0 !important; }
 
-		.gallery-img {
-			@include flexy-span(12, $padding: .5em);
-			height: auto;
+    @include flexy-breakpoint($mobile-h-screen) {
+      .gallery-img { @include flexy-span(6, $padding: $small-spacing); }
+    }
 
-			box-sizing: border-box;
-		}
+    @include flexy-breakpoint($tablet-screen) {
+      .gallery-img { @include flexy-span(4, $padding: $small-spacing); }
+    }
 
-		@include flexy-breakpoint($mobile-h-screen) {
-			
-			.gallery-img { @include flexy-span(6, $padding: .5em); }
-		}
+    @include flexy-breakpoint($desktop-screen) {
+      .gallery-img { @include flexy-span(3, $padding: $small-spacing); }
+    }
 
-		@include flexy-breakpoint($tablet-screen) {
-			
-			.gallery-img { @include flexy-span(4, $padding: .5em); }
-		}
+    .gallery-img {
+      @include flexy-span(12, $padding: $small-spacing);
+      height: auto;
 
-		@include flexy-breakpoint($desktop-screen) {
-			
-			.gallery-img { @include flexy-span(3, $padding: .5em); }
-		}
-	}
+      box-sizing: border-box;
+    }
+  }
 }
 
-html.no-flexbox.no-flexwrap, 
-html.no-flexbox.flexwrap, 
-html.flexbox.no-flexwrap {
-	.flexy-gallery {
-		
-		img {
-			margin: 0 !important;
-		}
+.no-flexbox.no-flexwrap,
+.no-flexbox.flexwrap,
+.flexbox.no-flexwrap {
+  .flexy-gallery {
 
-		.gallery-img {
-			@include padding(.5em);
-			display: inline-block;
-			box-sizing: border-box;
-			width: 100%;
+    img {
+      margin: 0 !important;
+    }
 
-			@include flexy-breakpoint($tablet-screen) { width: 48%; }
+    .gallery-img {
+      @include padding($small-spacing);
+      display: inline-block;
+      box-sizing: border-box;
+      width: 100%;
 
-			@include flexy-breakpoint($desktop-screen) { width: 30%; }
-		}
-	}
+      @include flexy-breakpoint($tablet-screen) { width: 48%; }
+
+      @include flexy-breakpoint($desktop-screen) { width: 30%; }
+    }
+  }
 }

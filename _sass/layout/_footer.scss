@@ -1,18 +1,41 @@
 footer {
-	background-color: color(medium);
-	border-top: 1em solid color(light);
+  @include padding($base-spacing null);
+
+  text-align: center;
+  font-size: 2.25em;
+
+  background-color: color(dark);
+
+  a {
+    width: 49%;
+    padding-bottom: $small-spacing;
+    display: inline-block;
+    box-sizing: border-box;
+
+    color: $base-background-color;
+
+    @include flexy-breakpoint($tablet-screen) {
+      @include padding(null $small-spacing);
+      width: auto;
+      display: inline;
+    }
+
+    &:hover {
+      color: $secondary-background-color;
+    }
+  }
 }
 
 .footer-container {
-	@include flexy-row();
-	@include flexy-container($max-width);
-	@include flexy-align(middle);
+  @include flexy-row();
+  @include flexy-container($max-width);
+  @include flexy-align(middle);
 
-	ul {
-		list-style-type: none;
+  ul {
+    list-style-type: none;
 
-		li {
-			display: inline;
-		}
-	}
+    li {
+      display: inline;
+    }
+  }
 }

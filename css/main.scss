@@ -5,20 +5,11 @@
 
 @import
 	"../_bower_components/bourbon/app/assets/stylesheets/bourbon",
-	"../_bower_components/Ellisha/dist/Ellisha",
-  "../_bower_components/hover/scss/hover.scss"
+	"../_bower_components/Ellisha/dist/Ellisha"
 ;
 
 @import
-  'utils/variables/breakpoints',
-  'utils/variables/colors',
-  'utils/variables/typography',
-  'utils/variables/layout',
-  'utils/variables/animation',
-  'utils/variables/hover'
-;
-
-@import
+  'utils/variables',
   'utils/functions',
   'utils/mixins',
   'utils/placeholders'
@@ -31,8 +22,7 @@
 @import
   'layout/synapse',
   'layout/grid',
-  'layout/footer',
-  'layout/home'
+  'layout/footer'
 ;
 
 @import

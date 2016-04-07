@@ -1,26 +1,9 @@
-.blog-list { margin-top: 2.5em; }
+.blog-list {
+  margin-top: 2.5em;
 
-.blog-list-item {
-  @include padding(4%);
+  .home-blog-item {
+    @include syn(xs, 12, 0, (''));
 
-  &:nth-of-type(odd) {
-    background-color: color-s(color(light), light, 7);
-    border-top: color(medium) 3px solid;
-    border-bottom: color(medium) 3px solid;
-  }
-}
-
-.blog-title {
-  padding-bottom: 0.5em;
-  margin: 0;
-}
-
-.blog-meta { font-style: italic; }
-
-.blog-excerpt {
-  margin-top: 1em;
-
-  > * {
-    margin: 0;
+    background-color: $secondary-background-color;
   }
 }

@@ -1,207 +1,176 @@
-$section_border_width: em(8px);
-
 // Total opening container for first part of the homepage. Always takes up the full screen
 .home-opening {
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	margin-bottom: 2em;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: $base-spacing;
 
-	@include flexy-breakpoint($tablet-screen) { margin-bottom: 0; }
+  @include flexy-breakpoint($tablet-screen) { margin-bottom: 0; }
 }
 
 .home-title,
 .home-image {
-	text-align: center;
+  text-align: center;
 
-	h2 {
-		@include line-height(2);
-		margin-top: 0;
-	}
+  h2 {
+    @include line-height(2);
+    margin-top: 0;
+  }
 
-	h5 {
-		margin-top: 0;
-	}
+  h5 {
+    margin-top: 0;
+  }
 }
 
 .home-image {
-	img {
-		border-radius: 100%;
-		border: 5px solid color(dark);
-		background-color: color-s(color(light), light, 3);
-	}
+  img {
+    border-radius: 100%;
+    border: $secondary-border-width solid color(dark);
+    background-color: $secondary-background-color;
+  }
 }
 
 .home-nav {
-	width: 100%;
+  width: 100%;
 
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .hide-home-menu {
-	@include max-bp($tablet-screen) { display: none !important; }
+  @include max-bp($tablet-screen) { display: none !important; }
 }
 
 .home-menu-item {
-	display: inline-block;
-	@include margin(0.75em 1.5em);
-	padding: 0.75em !important;
+  @include transition(0.5s);
 
-	text-align: center;
-	font-size: 1.1rem;
-	font-family: $heading-font-family;
+  @include margin($small-spacing $base-spacing);
+  display: inline-block;
+  padding: $small-spacing !important;
 
-	background-color: color-s(color(light), light, 7);
-	border-top: 3px solid rgba(0, 0, 0, 0);
-	border-bottom: 3px solid color(dark);
-	border-radius: 0.5em;
-	@include transition(0.5s);
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: $heading-font-family;
 
-	&:hover,
-	&:focus {
-		background-color: color-s(color(light), light, 8);
-		border-top: 0px solid rgba(0, 0, 0, 0);
-		border-bottom: 6px solid color(dark);
-		@include transition(0.5s);
-	}
+  background-color: color-s(color(light), light, 7);
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-bottom: 3px solid color(dark);
+  border-radius: $base-border-radius;
+
+  &:hover,
+  &:focus {
+    @include transition(0.5s);
+
+    background-color: color-s(color(light), light, 8);
+    border-top: 0 solid rgba(0, 0, 0, 0);
+    border-bottom: 6px solid color(dark);
+  }
 }
 
 // The extra information right below the home opening
 .home-info {
-	@include clearfix();
-	box-sizing: border-box;
-	@include padding(7em 1em 5em 1em);
+  @include clearfix();
+  @include padding(5em $base-spacing);
+  box-sizing: border-box;
 
-	background-color: color-s(color(light), light, 9);
-	border-top: $section_border_width solid color-s(color(light), light, 3);
-	border-bottom: $section_border_width solid color-s(color(light), light, 3);
+  background-color: color(white);
 }
 
 .home-perspective {
-	@include clearfix();
-	height: 12.75em;
-	margin-bottom: 3em;
+  @include syn(xs, 12, 0, ('pad-1'));
+  @include syn(md, 4, 0, (pad-2 pad-t-5));
+  @include clearfix();
 
-	@include syn(xs, 12, 0, ('pad-1'));
-	@include syn(md, 4, 0, ('pad-2'));
+  height: 12.75em;
+  margin-bottom: 3em;
 }
 
 .home-info-description {
-	@include syn(xs, 12, 0, (align-c));
-	@include syn(md, 8, 0, (pad-sides-4, align-l));
+  @include syn(xs, 12, 0, (align-c));
+  @include syn(md, 8, 0, (pad-sides-4, align-l));
 }
 
 .home-info-description-title { @include margin(0.15em null); }
 
 .home-blog {
-	@include clearfix();
-	@include padding(1em 2.5%);
-
-	background-color: color-s(color(light), light, 8);
+  @include clearfix();
+  @include padding($base-spacing 2.5%);
 }
 
 .home-blog-mainTitle { text-align: center; }
 
 .home-blog-item {
-	@include padding(1.5em);
-	@include margin(1em null);
-	border-radius: 0.5em;
-	border-bottom: ($section_border_width/2) solid color-s(color(light), light, 7);
+  @include syn(md, 10, 1, ('align-c'));
+  @include syn(lg, 8, 2, (''));
 
-	@include syn(md, 10, 1, (''));
-	@include syn(lg, 8, 2, (''));
+  @include padding($base-spacing);
+  @include margin($small-spacing null);
+  border-radius: $base-border-radius;
+  border-bottom: $secondary-border-width solid color(light);
 
-	background-color: color-s(color(light), light, 9);
+  background-color: $secondary-background-color;
 
-	&:last-of-type {
-		margin-bottom: 1.5em;
-	}
+  &:last-of-type {
+    margin-bottom: $base-spacing;
+  }
 }
 
-.home-blog-title { margin: 0.25em 0; }
+.home-blog-title { margin-top: 0; }
+
+.blog-excerpt > * { margin-bottom: 0; }
 
 .home-blog-link {
-	width: 100%;
-	@include clearfix();
-	display: inline-block;
-	margin: 0 auto;
+  @include clearfix();
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
 
-	text-align: center;
+  text-align: center;
 
-	button {
-		min-width: 25%;
-		margin-bottom: 1em;
-	}
+  button {
+    min-width: 25%;
+    margin-bottom: $base-spacing;
+  }
 }
 
-.home-social {
-	@include padding(2em);
+.flexbox.flexwrap {
+  .home-opening {
+    @include flexy-row();
+    @include flexy-align(middle);
+    @include flexy-justify(center);
+  }
 
-	text-align: center;
-	color: color(white) !important;
+  .home-title,
+  .home-image {
+    @include flexy-span(12, $padding: $base-spacing);
 
-	background-color: color(dark);
-	border-top: $section_border_width solid color-s(color(dark), dark, 3);
+    @include flexy-breakpoint($tablet-screen) {
+      @include flexy-span(4, $padding: $base-spacing);
+    }
+  }
 
-	a {
-		width: 49%;
-		display: inline-block;
-		box-sizing: border-box;
+  .home-image {
 
-		color: color-s(color(light), light, 4);
-		font-size: 2.25em;
-
-		@include flexy-breakpoint($tablet-screen) {
-			width: auto;
-			display: inline;
-			@include padding(null 1em);
-		}
-
-		&:hover {
-			color: color-s(color(light), light, 7);
-		}
-	}
+    img {
+      @include size(100% auto);
+      max-width: em(350px);
+    }
+  }
 }
 
-html.flexbox.flexwrap {
-	.home-opening {
-		@include flexy-row();
-		@include flexy-align(middle);
-		@include flexy-justify(center);
-	}
+.no-flexbox.no-flexwrap,
+.no-flexbox.flexwrap,
+.flexbox.no-flexwrap {
 
-	.home-title,
-	.home-image {
-		@include flexy-span(12, $padding: 1em);
+  .home-opening {
+    @include clearfix();
+    @include syn(md, 12, 0, ('pad-2'));
+    @include syn(md, 10, 1, (pad-3, marg-b-4));
+    padding-top: 12.5%;
+  }
 
-		@include flexy-breakpoint($tablet-screen) {
-			@include flexy-span(4, $padding: 1em);
-		}
-	}
-
-	.home-image {
-
-		img {
-			@include size(100% auto);
-			max-width: em(350px);
-		}
-	}
-}
-
-html.no-flexbox.no-flexwrap,
-html.no-flexbox.flexwrap,
-html.flexbox.no-flexwrap {
-
-	.home-opening {
-		@include clearfix();
-		@include syn(md, 12, 0, ('pad-2'));
-		@include syn(md, 10, 1, (pad-3, marg-b-4));
-		padding-top: 12.5%;
-	}
-
-	.home-title,
-	.home-image {
-		@include syn(xs, 10, 1, ('pad-2'));
-		@include syn(md, 6, 0, (''));
-	}
+  .home-title,
+  .home-image {
+    @include syn(xs, 10, 1, ('pad-2'));
+    @include syn(md, 6, 0, (''));
+  }
 }

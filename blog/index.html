@@ -6,12 +6,10 @@ subheading: We all have thoughts in our spare time. I write mine here for safe-k
 
 <section class="blog-list">
   {% for post in paginator.posts %}
-    <article class="blog-list-item">
-      <h4 class="blog-title">
+    <article class="home-blog-item">
+      <h4 class="home-blog-title">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h4>
-
-      <span class="blog-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       
       <div class="blog-excerpt"> 
         {{ post.excerpt }}
