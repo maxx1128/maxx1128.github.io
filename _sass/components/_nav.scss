@@ -36,11 +36,13 @@ header {
 
 .site-title {
   float: left;
+  max-width: 75%;
 
   margin: ($small-spacing / 2) 0;
 
   @include flexy-breakpoint($tablet-screen) {
     float: none;
+    max-width: none;
 
     text-align: center;
   }
@@ -100,6 +102,7 @@ header {
 
   display: inline;
   float: right;
+  max-width: 20%;
 
   text-align: center;
   font-size: ($base-spacing * 0.75);
