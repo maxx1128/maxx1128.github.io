@@ -1,32 +1,16 @@
 .pagination {
-	@include clearfix();
+  @include clearfix();
 
-	p {
-		margin: 0
-	}
+  p { margin: 0; }
 }
 
-.pagination-next, .pagination-prev {
-	@include padding(1em null);
-
-	text-align: center;
-}
-
-.pagination-next {
-	
-	@include flexy-breakpoint($tablet-screen) {
-		width: 25%;
-		float: left;
-
-		text-align: right;
-	}
-}
-
+.pagination-next,
 .pagination-prev {
-	@include flexy-breakpoint($tablet-screen) {
-		width: 25%;
-		float: right;
+  @include padding($base-spacing null);
 
-		text-align: left;
-	}
+  text-align: center;
 }
+
+.pagination-next { @include syn(md, 3, 0, (float-l align-r)); }
+
+.pagination-prev { @include syn(md, 3, 0, (float-r align-l)); }

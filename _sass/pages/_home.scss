@@ -30,49 +30,13 @@
   }
 }
 
-.home-nav {
-  width: 100%;
-
-  list-style-type: none;
-}
-
-.hide-home-menu {
-  @include max-bp($tablet-screen) { display: none !important; }
-}
-
-.home-menu-item {
-  @include transition(0.5s);
-
-  @include margin($small-spacing $base-spacing);
-  display: inline-block;
-  padding: $small-spacing !important;
-
-  text-align: center;
-  font-size: 1.1rem;
-  font-family: $heading-font-family;
-
-  background-color: color-s(color(light), light, 7);
-  border-top: 3px solid rgba(0, 0, 0, 0);
-  border-bottom: 3px solid color(dark);
-  border-radius: $base-border-radius;
-
-  &:hover,
-  &:focus {
-    @include transition(0.5s);
-
-    background-color: color-s(color(light), light, 8);
-    border-top: 0 solid rgba(0, 0, 0, 0);
-    border-bottom: 6px solid color(dark);
-  }
-}
-
 // The extra information right below the home opening
 .home-info {
   @include clearfix();
   @include padding(5em $base-spacing);
   box-sizing: border-box;
 
-  background-color: color(white);
+  background-color: color(blank);
 }
 
 .home-perspective {
@@ -81,7 +45,7 @@
   @include clearfix();
 
   height: 12.75em;
-  margin-bottom: 3em;
+  margin-bottom: ($base-spacing * 2);
 }
 
 .home-info-description {

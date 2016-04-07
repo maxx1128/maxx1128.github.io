@@ -1,3 +1,15 @@
+.post-half-image,
+.post-three-quarter-image {
+  @include margin(null auto);
+  display: block;
+}
+
+.img-full {
+  display: block;
+  max-width: 100%;
+
+  margin: 0 auto;
+}
 
 // Classes for different image sizings
 @include flexy-breakpoint($tablet-screen) {
@@ -60,25 +72,25 @@ figcaption {
     @include flexy-justify(center);
     @include flexy-align(middle);
 
-    img { margin: 0 !important; }
-
-    @include flexy-breakpoint($mobile-h-screen) {
-      .gallery-img { @include flexy-span(6, $padding: $small-spacing); }
-    }
-
-    @include flexy-breakpoint($tablet-screen) {
-      .gallery-img { @include flexy-span(4, $padding: $small-spacing); }
-    }
-
-    @include flexy-breakpoint($desktop-screen) {
-      .gallery-img { @include flexy-span(3, $padding: $small-spacing); }
-    }
+    img { margin: 0; }
 
     .gallery-img {
       @include flexy-span(12, $padding: $small-spacing);
       height: auto;
 
       box-sizing: border-box;
+
+      @include flexy-breakpoint($mobile-h-screen) {
+        @include flexy-span(6, $padding: $small-spacing);
+      }
+
+      @include flexy-breakpoint($tablet-screen) {
+        @include flexy-span(4, $padding: $small-spacing);
+      }
+
+      @include flexy-breakpoint($desktop-screen) {
+        @include flexy-span(3, $padding: $small-spacing);
+      }
     }
   }
 }
@@ -89,7 +101,7 @@ figcaption {
   .flexy-gallery {
 
     img {
-      margin: 0 !important;
+      margin: 0;
     }
 
     .gallery-img {

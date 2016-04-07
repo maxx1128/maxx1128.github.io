@@ -35,8 +35,7 @@ $modular-size-map: (
 // Lucario
 // Change white to blank?
 $colors: (
-  blank: #fff,
-  white: #fff,
+  blank: #fdfdfd,
   action: #de4141,
   dark: #104a7b,
   medium: #29739c,
@@ -60,7 +59,7 @@ $base-border-color: color(light);
 $light-border-color: tint($base-border-color, 77.5%);
 
 $base-background-color: tint(color(light), 87.5%);
-$secondary-background-color: tint(color(light), 70); // Slightly darker background
+$secondary-background-color: tint(color(light), 70%); // Slightly darker background
 
 
 

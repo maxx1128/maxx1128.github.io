@@ -1,13 +1,13 @@
 pre {
-	background-color: color(white);
-	padding: 1.5em;
-	font-family: $monospace;
+  background-color: color(blank);
+  padding: $base-spacing;
+  font-family: $monospace;
 
-	overflow: scroll;
+  overflow: scroll;
 }
 
 p code {
-	background-color: color(dark);
-	color: color(light);
-	padding: .25em;
+  background-color: color(dark);
+  color: color(light);
+  padding: $small-spacing;
 }

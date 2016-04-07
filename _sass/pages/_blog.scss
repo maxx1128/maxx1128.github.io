@@ -1,5 +1,6 @@
 .blog-list {
-  margin-top: 2.5em;
+  @include clearfix();
+  margin-top: $base-spacing;
 
   .home-blog-item {
     @include syn(xs, 12, 0, (''));

@@ -4,12 +4,12 @@ $max-width: em(1024px);
 $synapse: (
   columns: 12,
   layouts: (
-        xs:  0px,
-        sm:  $mobile-h-screen, 
-        md:  $tablet-screen,
-        lg: $desktop-screen,
-        xlg: $huge-screen
-    ),
+    xs:  0px,
+    sm:  $mobile-h-screen,
+    md:  $tablet-screen,
+    lg: $desktop-screen,
+    xlg: $huge-screen
+  ),
   spaceUnits: ($base-border-width, $small-spacing, $base-spacing, ($base-spacing + $small-spacing), $base-spacing * 2),
   side-margin: 0em
 );

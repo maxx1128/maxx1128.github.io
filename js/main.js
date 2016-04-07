@@ -25,7 +25,7 @@ $( document ).ready(function() {
 	});
 
     // Makes all blog links open in a new tab
-    $('article.blog-post a').each(function() {
+    $('article.post-content a, article.page-content a').each(function() {
     	$(this).attr('target', '_blank');
     });
 

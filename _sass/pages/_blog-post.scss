@@ -1,5 +1,5 @@
 .post-header {
-  @include margin(1.5em null 2.5em null);
+  @include margin($small-spacing null $base-spacing null);
 
   text-align: center;
 }
@@ -7,7 +7,7 @@
 .post-title {
   @include line-height(2);
 
-  margin: 0.25em 0 0.75em;
+  margin: ($small-spacing / 2) 0 $small-spacing;
 }
 
 .post-subheading { margin: 0.25em 0; }
@@ -17,26 +17,15 @@
   font-style: italic;
 }
 
-
-
-// Any universal post styles here
-.post {
-
-  img {
-    display: block;
-    margin: 1em auto;
-  }
-}
-
 blockquote {
   margin: 4%;
-  padding: 1.25em;
+  padding: $base-spacing;
 
   font-family: $heading-font-family;
   text-align: center;
 
-  border-top: 10px solid color(medium);
-  border-bottom: 10px solid color(medium);
+  border-top: $base-border-width solid color(medium);
+  border-bottom: $base-border-width solid color(medium);
   color: color(medium);
 
   @include flexy-breakpoint($tablet-screen) {
@@ -44,9 +33,7 @@ blockquote {
     float: right;
   }
 
-  p {
-    margin: 0;
-  }
+  p { margin: 0; }
 }
 
 .post-sig {

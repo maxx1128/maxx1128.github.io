@@ -1,70 +1,69 @@
-.resume-item { padding: 1em; }
+.resume-item { padding: $small-spacing; }
 
-.resume-intro { 
-	margin-bottom: .4em;
+.resume-intro {
+  margin-bottom: ($small-spacing / 2);
 
-	text-align: center; 
+  text-align: center;
 }
 
 .resume {
-	@include flexy-row();
-	@include flexy-justify(center);
+  @include flexy-row();
+  @include flexy-justify(center);
 }
 
 .resume-item {
-	@include flexy-span(12, $padding: 1em 0);
+  @include flexy-span(12, $padding: $small-spacing 0);
 
-	@include flexy-breakpoint($tablet-screen) {
-		@include flexy-span(10);
-		@include padding(1em null 2em null);
-	}
+  @include flexy-breakpoint($tablet-screen) {
+    @include flexy-span(10);
+    @include padding($small-spacing null $base-spacing null);
+  }
 }
 
-.resume-title h4, .resume-title h5 {
-	@include flexy-row();
-	@include flexy-align(middle);
-	margin: 0.5em 0;
+.resume-title h4,
+.resume-title h5 {
+  @include flexy-row();
+  @include flexy-align(middle);
+  margin: $small-spacing 0;
 
-	.resume-icon {
-		@include flexy-span(12);
-		
-		text-align: center;
-		font-size: 1.75em;
+  .resume-icon {
+    @include flexy-span(12);
 
-		color: color(medium);
+    text-align: center;
+    font-size: $base-spacing;
 
-		@include flexy-breakpoint($tablet-screen) {
-			@include flexy-span(1.75em);
-			padding-right: 1em;
-			margin-right: 1em;
+    color: color(medium);
 
-			font-size: 1.5em;
+    @include flexy-breakpoint($tablet-screen) {
+      @include flexy-span($base-spacing);
+      padding-right: $small-spacing;
+      margin-right: $small-spacing;
 
-			border-right: 2px solid color(light);
-		}
-	}
+      font-size: $base-spacing;
 
-	.resume-title-item {
-		@include flexy-span(12);
+      border-right: ($base-border-width / 4) solid color(light);
+    }
+  }
 
-		text-align: center;
+  .resume-title-item {
+    @include flexy-span(12);
 
-		@include flexy-breakpoint($tablet-screen) {
-			@include flexy-span(auto);
+    text-align: center;
 
-			text-align: left;
-		}
-	}
+    @include flexy-breakpoint($tablet-screen) {
+      @include flexy-span(auto);
+
+      text-align: left;
+    }
+  }
 }
 
 .resume-time {
-	text-align: center;
+  text-align: center;
 
-	@include flexy-breakpoint($tablet-screen) { text-align: left; }
+  @include flexy-breakpoint($tablet-screen) { text-align: left; }
 
-	> * { margin: 0.25em 0 0.75em 0; }
+  > * { margin: ($small-spacing / 2) 0 $small-spacing; }
 }
 
 .resume-description { padding-left: 5%; }
-
-// Non flex layout is acceptable so no Modernizr styles needed here
