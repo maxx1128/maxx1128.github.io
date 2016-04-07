@@ -32,8 +32,8 @@ $modular-size-map: (
 
 // ----- Color Variables ----- //
 
+
 // Lucario
-// Change white to blank?
 $colors: (
   blank: #fdfdfd,
   action: #de4141,
@@ -42,12 +42,13 @@ $colors: (
   light: #4a9cee
 );
 
+
 // This is the function to pull colors out.
 @function color($key) {
   @if map-has-key($colors, $key) {
     @return map-get($colors, $key);
   }
- 
+
   @warn "Unknown `#{$key}` in $colors.";
   @return null;
 }
@@ -88,7 +89,7 @@ $z-layers: (
   @if map-has-key($z-layers, $key) {
     @return map-get($z-layers, $key);
   }
- 
+
   @warn "Unknown `#{$key}` in $z-layers.";
   @return null;
 }

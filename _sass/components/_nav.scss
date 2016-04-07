@@ -96,7 +96,7 @@ header {
   @include transition(0.5s);
   @include transform(rotate(180deg));
   @include transform-origin(center);
-  @include padding($small-spacing * 0.9);
+  @include padding($small-spacing ($small-spacing / 8) $small-spacing 0);
 
   display: inline;
   float: right;
