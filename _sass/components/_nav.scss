@@ -96,13 +96,13 @@ header {
   @include transition(0.5s);
   @include transform(rotate(180deg));
   @include transform-origin(center);
-  @include padding($small-spacing ($small-spacing / 8) $small-spacing 0);
+  @include padding($small-spacing ($small-spacing / 4) $small-spacing 0);
 
   display: inline;
   float: right;
 
   text-align: center;
-  font-size: $base-spacing;
+  font-size: ($base-spacing * 0.75);
   cursor: pointer;
 
   @include flexy-breakpoint($tablet-screen) { display: none; }
