@@ -10,7 +10,7 @@
     border-left: 0 solid color(blank);
 
     // The lighter background color
-    &:nth-child(even) { background-color: color(light); }
+    &:nth-child(even) { background-color: tint(color(light), 50%); }
 
     // The darker background color
     &:nth-child(4n+1),
