@@ -10,7 +10,7 @@
     border-left: 0 solid color(blank);
 
     // The lighter background color
-    &:nth-child(even) { background-color: color(blank); }
+    &:nth-child(even) { background-color: color(light); }
 
     // The darker background color
     &:nth-child(4n+1),
@@ -30,10 +30,6 @@
 
       p { color: color(dark); }
     }
-  }
-
-  &:nth-child(even) {
-    background-color: $secondary-background-color;
   }
 }
 
