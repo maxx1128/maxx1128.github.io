@@ -1,7 +1,7 @@
 // ----- Typography Variables ----- //
 
-$base-font-size: 110;
-$line-height: 1.85;
+$base-font-size: 105;
+$line-height: 1.825;
 
 $base: 16 * ($base-font-size / 100);
 $base-rem: ($base-font-size / 100);
@@ -32,14 +32,13 @@ $modular-size-map: (
 
 // ----- Color Variables ----- //
 
-
-// Lucario
+// Reshiram
 $colors: (
-  blank: #fdfdfd,
-  action: #de4141,
-  dark: #104a7b,
-  medium: #29739c,
-  light: #4a9cee
+  blank: #fff,
+  action: #39b4f6,
+  dark: #4a4a6a,
+  medium: #737b9c,
+  light: #bdbdd5
 );
 
 
@@ -67,8 +66,8 @@ $secondary-background-color: tint(color(light), 70%); // Slightly darker backgro
 
 // ----- Layout Variables ----- //
 
-$base-border-radius: 5px;
-$base-border-width: em(8px);
+$base-border-radius: em(($base / 3));
+$base-border-width: em(($base / 2));
 $base-border: $base-border-width solid $base-border-color;
 $secondary-border-width: $base-border-width / 2;
 
