@@ -1,21 +1,41 @@
 @mixin font-size($number) {
-  font-size: #{ $number * $base + 'px'};
-  font-size: #{ $number * $base-rem + 'rem'};
+  font-size: #{ $number * ($base * $typography-scale) + 'px'};
+  font-size: #{ $number * ($base-rem * $typography-scale) + 'rem'};
+
+  @include flexy-breakpoint($tablet-screen) {
+    font-size: #{ $number * $base + 'px'};
+    font-size: #{ $number * $base-rem + 'rem'};
+  }
 }
 
 @mixin line-height($number) {
-  line-height: #{ $number * $leading + 'px'};
-  line-height: #{ $number * $leading-rem + 'rem'};
+  line-height: #{ $number * ($leading * $typography-scale) + 'px'};
+  line-height: #{ $number * ($leading-rem * $typography-scale) + 'rem'};
+
+  @include flexy-breakpoint($tablet-screen) {
+    line-height: #{ $number * $leading + 'px'};
+    line-height: #{ $number * $leading-rem + 'rem'};
+  }
 }
 
 @mixin margin-top($number) {
-  margin-top: #{ $number * $leading + 'px'};
-  margin-top: #{ $number * $leading-rem + 'rem'};
+  margin-top: #{ $number * ($leading * $typography-scale) + 'px'};
+  margin-top: #{ $number * ($leading-rem * $typography-scale) + 'rem'};
+
+  @include flexy-breakpoint($tablet-screen) {
+    margin-top: #{ $number * $leading + 'px'};
+    margin-top: #{ $number * $leading-rem + 'rem'};
+  }
 }
 
 @mixin margin-bottom($number) {
-  margin-bottom: #{ $number * $leading + 'px'};
-  margin-bottom: #{ $number * $leading-rem + 'rem'};
+  margin-bottom: #{ $number * ($leading * $typography-scale) + 'px'};
+  margin-bottom: #{ $number * ($leading-rem * $typography-scale) + 'rem'};
+
+  @include flexy-breakpoint($tablet-screen) {
+    margin-bottom: #{ $number * $leading + 'px'};
+    margin-bottom: #{ $number * $leading-rem + 'rem'};
+  }
 }
 
 

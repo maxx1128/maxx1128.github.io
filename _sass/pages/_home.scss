@@ -66,12 +66,14 @@
   @include syn(md, 10, 1, ('align-c'));
   @include syn(lg, 8, 2, (''));
 
-  @include padding($base-spacing);
+  @include padding($base-spacing $base-spacing / 2);
   @include margin($small-spacing null);
   border-radius: $base-border-radius;
   border-bottom: $secondary-border-width solid color(light);
 
   background-color: $secondary-background-color;
+
+  @include flexy-breakpoint($tablet-screen) { @include padding($base-spacing); }
 
   &:last-of-type {
     margin-bottom: $base-spacing;
