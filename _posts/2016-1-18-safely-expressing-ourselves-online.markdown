@@ -17,7 +17,7 @@ Is there a balance? A rule for when to let expressions be and when to question t
 
 Maybe not. This statement implies some expressions should always be questioned and some never should. But are there expressions that should never be questioned? Claims we should never ask someone to back up? Religious beliefs to ask if they inspire morality or are outdated dogma? Political views to see if they just want to mislead or control people? Personal views to see if they're reasonable or narcissistic?
 
-George Carlin said people should be raised to question everything. Everything we accept without questioning gives someone a chance to exert control. Even things we were raised to except, things we grow up loving or made to just accept as they are, deserve some skepticism.
+George Carlin said people should be raised to question everything. Everything we accept without questioning gives someone a chance to exert control. Even things we were raised to accept, things we grow up loving or made to just accept as they are, deserve some skepticism.
 
 {% include embed_video.html url="https://www.youtube.com/embed/Uo-QIY7ys-k" %}
 

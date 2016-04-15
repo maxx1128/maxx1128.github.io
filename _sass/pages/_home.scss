@@ -63,13 +63,15 @@
 .home-blog-mainTitle { text-align: center; }
 
 .home-blog-item {
-  @include syn(md, 10, 1, ('align-c'));
+  @include syn(md, 10, 1, (''));
   @include syn(lg, 8, 2, (''));
 
   @include padding($base-spacing $base-spacing / 2);
   @include margin($small-spacing null);
   border-radius: $base-border-radius;
   border-bottom: $secondary-border-width solid color(light);
+
+  text-align: center;
 
   background-color: $secondary-background-color;
 
