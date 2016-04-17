@@ -54,6 +54,7 @@ figure {
 
 figcaption {
   @include padding($small-spacing 1em);
+  @include line-height(0.75);
   margin-top: -$small-spacing;
   display: inline-block;
   box-sizing: border-box;
