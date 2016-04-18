@@ -40,7 +40,7 @@ Anyway, let's get to it!
 
 I'm writing this on the day I got [nearly 800 pages of contemporary philosophy](http://www.amazon.com/The-Stone-Reader-Philosophy-Arguments/dp/1631490710) in the mail, so it's accurate. Need more convincing? Here's the bulkiest part of my bookshelf:
 
-{% include image.html url="/img/posts/personality-test/books.jpg" description="All images courtesy of 16Personalities. Please don't sue me." %}
+{% include image.html url="/img/posts/personality-test/books.jpg" description="Sweet info..." %}
 
 This doesn't even include my most recent purchase:
 
