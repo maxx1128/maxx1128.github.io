@@ -150,9 +150,7 @@ header {
     @include flexy-row();
     @include flexy-justify(center);
 
-    a {
-      @include flexy-span(auto);
-    }
+    a { @include flexy-span(auto); }
   }
 }
 
