@@ -71,7 +71,7 @@ header {
 
 .site-menu-item {
   @include syn(xs, 12, 0, ('pad-1'));
-  @include syn(md, 3, 0, (''));
+  @include syn(md, 3, 0, ('float-l'));
 
   display: inline-block;
 

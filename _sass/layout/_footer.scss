@@ -1,16 +1,11 @@
 footer {
-  @include padding($base-spacing null);
-
-  text-align: center;
+  @include syn(xs, 0, 0, (pad-vert-2, align-c));
   font-size: 2.25em;
 
   background-color: color(dark);
 
   a {
-    width: 49%;
-    padding-bottom: $small-spacing;
-    display: inline-block;
-    box-sizing: border-box;
+    @include syn(xs, 3, 0, (pad-b-1, inline-b, borber-b));
 
     color: $base-background-color;
 
@@ -20,9 +15,7 @@ footer {
       display: inline;
     }
 
-    &:hover {
-      color: $secondary-background-color;
-    }
+    &:hover { color: $secondary-background-color; }
   }
 }
 
@@ -31,11 +24,7 @@ footer {
   @include flexy-container($max-width);
   @include flexy-align(middle);
 
-  ul {
-    list-style-type: none;
+  ul { list-style-type: none; }
 
-    li {
-      display: inline;
-    }
-  }
+  li { display: inline; }
 }

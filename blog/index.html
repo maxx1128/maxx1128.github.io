@@ -4,19 +4,17 @@ title: Blog
 subheading: We all have thoughts in our spare time. I write mine here for safe-keeping.
 ---
 
-<section class="blog-list">
-  {% for post in paginator.posts %}
-    <article class="home-blog-item">
-      <h4 class="home-blog-title">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h4>
-      
-      <div class="blog-excerpt"> 
-        {{ post.excerpt }}
-      </div>
-    </article>
-  {% endfor %}
-</section>
+{% for post in paginator.posts %}
+  <article class="home-blog-item --blogpage-blog-item">
+    <h4 class="home-blog-title">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h4>
+    
+    <div class="blog-excerpt"> 
+      {{ post.excerpt }}
+    </div>
+  </article>
+{% endfor %}
 
 <div class="pagination">
   {% if paginator.previous_page %}

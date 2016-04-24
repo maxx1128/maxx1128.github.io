@@ -4,15 +4,30 @@ $max-width: em(1024px);
 $synapse: (
   columns: 12,
   layouts: (
-    xs:  0px,
+    xs:  0,
     sm:  $mobile-h-screen,
     md:  $tablet-screen,
     lg: $desktop-screen,
     xlg: $huge-screen
   ),
-  spaceUnits: ($base-border-width, $small-spacing, $base-spacing, ($base-spacing + $small-spacing), $base-spacing * 2),
-  side-margin: 0em
+  spaceUnits: (
+    $small-spacing,
+    $base-spacing,
+    $base-spacing + $small-spacing,
+    $base-spacing * 2
+  )
 );
+
+@mixin synapse-custom($var) {
+
+  @if ($var == 'bg-base') {
+    background-color: $base-background-color;
+  } @elseif ($var == 'bg-second') {
+    background-color: $secondary-background-color;
+  } @elseif ($var == 'border-r') {
+    border-radius: $base-border-radius;
+  }
+}
 
 
 body {
@@ -23,11 +38,12 @@ body {
 // Initial sizing for all posts and pages
 .page-content,
 .post-content {
-  @include syn(xs, 12, 0, ('float-n'));
-  @include syn(md, 10, 1, ('float-n'));
+  @include syn(xs, 12, 0, ('border-b'));
+  @include syn(md, 10, 1, (''));
+  @include syn(lg, 8, 2, (''));
 
   padding: $base-spacing 5%;
 }
 
 // Container for blog posts, slightly slimmer than static pages
-.post-content { @include syn(lg, 8, 2, ('float-n')); }
+.post-content { @include syn(lg, 8, 2, ('border-b')); }

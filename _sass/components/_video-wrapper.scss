@@ -1,17 +1,15 @@
 .video {
+  @include clearfix();
   margin: $base-spacing 0;
 }
 
 .video-wrapper {
+  @include syn(md, 9, 0, (center-m));
+
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
   position: relative;
-
-  @include flexy-breakpoint($tablet-screen) {
-    max-width: 75%;
-    margin: 0 auto;
-  }
 
   embed,
   object,

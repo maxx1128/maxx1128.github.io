@@ -17,9 +17,7 @@
     margin-top: 0;
   }
 
-  h5 {
-    margin-top: 0;
-  }
+  h5 { margin-top: 0; }
 }
 
 .home-image {
@@ -40,16 +38,15 @@
 }
 
 .home-perspective {
-  @include syn(xs, 12, 0, ('pad-1'));
+  @include syn(xs, 12, 0, (pad-1 border-b float-l marg-bottom-5));
   @include syn(md, 4, 0, (pad-2 pad-t-5));
   @include clearfix();
 
   height: 12.75em;
-  margin-bottom: ($base-spacing * 2);
 }
 
 .home-info-description {
-  @include syn(xs, 12, 0, (align-c));
+  @include syn(xs, 12, 0, (align-c, border-b, float-l));
   @include syn(md, 8, 0, (pad-sides-4, align-l));
 }
 
@@ -63,23 +60,15 @@
 .home-blog-mainTitle { text-align: center; }
 
 .home-blog-item {
-  @include syn(md, 10, 1, (''));
-  @include syn(lg, 8, 2, (''));
+  @include syn(xs, 12, 0, (pad-2 marg-vert-2 align-c border-b));
+  @include syn(md, 10, 1, (pad-3));
 
-  @include padding($base-spacing $base-spacing / 2);
-  @include margin($small-spacing null);
   border-radius: $base-border-radius;
   border-bottom: $secondary-border-width solid color(light);
 
-  text-align: center;
-
   background-color: $secondary-background-color;
 
-  @include flexy-breakpoint($tablet-screen) { @include padding($base-spacing); }
-
-  &:last-of-type {
-    margin-bottom: $base-spacing;
-  }
+  &:last-of-type { margin-bottom: $base-spacing; }
 }
 
 .home-blog-title { margin-top: 0; }
@@ -87,12 +76,9 @@
 .blog-excerpt > * { margin-bottom: 0; }
 
 .home-blog-link {
+  @include syn(xs, 12, 0, (inline center-m align-c));
   @include clearfix();
-  width: 100%;
   display: inline-block;
-  margin: 0 auto;
-
-  text-align: center;
 
   button {
     min-width: 25%;
@@ -131,14 +117,19 @@
 
   .home-opening {
     @include clearfix();
-    @include syn(md, 12, 0, ('pad-2'));
-    @include syn(md, 10, 1, (pad-3, marg-b-4));
-    padding-top: 12.5%;
+    @include syn(xs, 12, 0, (''));
+    @include syn(md, 10, 1, (''));
+
+    @include padding(7.5% 1em 1em 1em);
+
+    @include flexy-breakpoint($tablet-screen) { margin-bottom: -6em; }
   }
 
   .home-title,
   .home-image {
-    @include syn(xs, 10, 1, ('pad-2'));
-    @include syn(md, 6, 0, (''));
+    @include syn(xs, 10, 1, (pad-2 border-b));
+    @include syn(md, 6, 0, (float-l));
+
+    @include flexy-breakpoint($tablet-screen) { margin: 0; }
   }
 }
