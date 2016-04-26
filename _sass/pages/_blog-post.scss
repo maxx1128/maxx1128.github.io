@@ -1,55 +1,39 @@
-.post-header {
-  @include margin($small-spacing null $base-spacing null);
+// The header container for pages and posts
+.post-header { @include syn(xs, 0, 0, (marg-t-1 marg-b-2 align-c)); }
 
-  text-align: center;
-}
-
+// Title in both pages and posts
 .post-title {
   @include line-height(2);
 
-  margin: ($small-spacing / 2) 0 $small-spacing;
+  margin: ($small-spacing / 2) 0;
 }
 
-.post-subheading { margin: 0.25em 0; }
+// The descriptor below a page title
+.post-subheading { @include syn(xs, 0, 0, (marg-t-1 marg-b-0)); }
 
-.post-meta {
-  text-align: center;
-  font-style: italic;
-}
+// When the post was published
+.post-meta { @include syn(xs, 0, 0, (align-c italic)); }
 
 blockquote {
+  @include syn(xs, 0, 0, (align-c, pad-2));
+  @include syn(md, 5, 0, (float-r));
+
   margin: 4%;
-  padding: $base-spacing;
 
   font-family: $heading-font-family;
-  text-align: center;
 
   border-top: $base-border-width solid color(medium);
   border-bottom: $base-border-width solid color(medium);
   color: color(medium);
 
-  @include flexy-breakpoint($tablet-screen) {
-    width: 40%;
-    float: right;
-  }
-
   p { margin: 0; }
 }
 
-.post-sig {
-  text-align: right;
-  font-style: italic;
-}
+.post-sig { @include syn(xs, 0, 0, (align-r, italic)); }
 
 .iframe-container {
-  width: 100%;
+  @include syn(xs, 12, 0, (''));
+  @include syn(md, 9, 0, (center-m));
 
-  @include flexy-breakpoint($tablet-screen) {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  iframe {
-    width: 100%;
-  }
+  iframe { width: 100%; }
 }

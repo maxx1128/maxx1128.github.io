@@ -1,33 +1,22 @@
 .post-half-image,
-.post-three-quarter-image {
-  @include margin(null auto);
-  display: block;
-}
+.post-three-quarter-image { @include syn(xs, 0, 0, (center-m block)); }
 
 .img-full {
-  display: block;
-  max-width: 100%;
+  @include syn(xs, 0, 0, (center-m block));
 
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 // Classes for different image sizings
 @include flexy-breakpoint($tablet-screen) {
 
-  .post-half-image {
-    max-width: 50%;
-  }
+  .post-half-image { max-width: 50%; }
 
-  .post-three-quarter-image {
-    max-width: 75%;
-  }
+  .post-three-quarter-image { max-width: 75%; }
 }
 
 figure {
-  @include margin($base-spacing auto);
-  display: block;
-
-  text-align: center;
+  @include syn(xs, 0, 0, (marg-vert-2 center-m block, align-c));
 
   @include flexy-breakpoint($tablet-screen) {
     max-width: 75%;
@@ -38,31 +27,22 @@ figure {
       margin: $base-spacing;
     }
 
-    &.left {
-      float: left;
-    }
+    &.left { float: left; }
 
-    &.right {
-      float: right;
-    }
+    &.right { float: right; }
   }
 }
 
-.image-caption-img {
-  margin: 0 auto !important;
-}
+.image-caption-img { @include syn(xs, 0, 0, (marg-vert-0 center-m)); }
 
 figcaption {
-  @include padding($small-spacing 1em);
+  @include syn(xs, 12, 0, (pad-vert-1 pad-sides-2 inline-b border-b italic));
+
   @include line-height(0.75);
   margin-top: -$small-spacing;
-  display: inline-block;
-  box-sizing: border-box;
   max-width: 100%;
-  width: 100%;
 
   font-size: 80%;
-  font-style: italic;
 
   background-color: $secondary-background-color;
 }
@@ -101,15 +81,10 @@ figcaption {
 .flexbox.no-flexwrap {
   .flexy-gallery {
 
-    img {
-      margin: 0;
-    }
+    img { margin: 0; }
 
     .gallery-img {
-      @include padding($small-spacing);
-      display: inline-block;
-      box-sizing: border-box;
-      width: 100%;
+      @include syn(xs, 12, 0, (pad-1 inline-b border-b));
 
       @include flexy-breakpoint($tablet-screen) { width: 48%; }
 

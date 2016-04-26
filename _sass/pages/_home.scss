@@ -1,11 +1,10 @@
 // Total opening container for first part of the homepage. Always takes up the full screen
 .home-opening {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  margin-bottom: $base-spacing;
+  @include syn(xs, 12, 0, (marg-b-2));
+  @include syn(xs, 0, 0, (marg-b-0));
 
-  @include flexy-breakpoint($tablet-screen) { margin-bottom: 0; }
+  position: relative;
+  min-height: 100vh;
 }
 
 .home-title,
@@ -38,8 +37,8 @@
 }
 
 .home-perspective {
-  @include syn(xs, 12, 0, (pad-1 border-b float-l marg-bottom-5));
-  @include syn(md, 4, 0, (pad-2 pad-t-5));
+  @include syn(xs, 12, 0, (pad-1 border-b float-l marg-b-4));
+  @include syn(md, 4, 0, (pad-2 pad-t-5 marg-b-0));
   @include clearfix();
 
   height: 12.75em;
@@ -128,8 +127,6 @@
   .home-title,
   .home-image {
     @include syn(xs, 10, 1, (pad-2 border-b));
-    @include syn(md, 6, 0, (float-l));
-
-    @include flexy-breakpoint($tablet-screen) { margin: 0; }
+    @include syn(md, 6, 0, (float-l marg-0));
   }
 }

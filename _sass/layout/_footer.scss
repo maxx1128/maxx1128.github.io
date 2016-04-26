@@ -3,28 +3,13 @@ footer {
   font-size: 2.25em;
 
   background-color: color(dark);
-
-  a {
-    @include syn(xs, 3, 0, (pad-b-1, inline-b, borber-b));
-
-    color: $base-background-color;
-
-    @include flexy-breakpoint($tablet-screen) {
-      @include padding(null $small-spacing);
-      width: auto;
-      display: inline;
-    }
-
-    &:hover { color: $secondary-background-color; }
-  }
 }
 
-.footer-container {
-  @include flexy-row();
-  @include flexy-container($max-width);
-  @include flexy-align(middle);
+.footer-icon {
+  @include syn(xs, 3, 0, (pad-b-1, inline-b, borber-b));
+  @include syn(md, 0, 0, (pad-sides-1));
 
-  ul { list-style-type: none; }
+  color: $base-background-color;
 
-  li { display: inline; }
+  &:hover { color: $secondary-background-color; }
 }

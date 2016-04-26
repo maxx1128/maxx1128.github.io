@@ -20,18 +20,17 @@ $synapse: (
 
 @mixin synapse-custom($var) {
 
-  @if ($var == 'bg-base') {
-    background-color: $base-background-color;
-  } @elseif ($var == 'bg-second') {
-    background-color: $secondary-background-color;
-  } @elseif ($var == 'border-r') {
-    border-radius: $base-border-radius;
+  @if ($var == 'italic') {
+    font-style: italic;
+  } @elseif ($var == 'width-auto') {
+    width: auto;
   }
 }
 
 
 body {
   margin: 0;
+
   background-color: $base-background-color;
 }
 
@@ -40,10 +39,9 @@ body {
 .post-content {
   @include syn(xs, 12, 0, ('border-b'));
   @include syn(md, 10, 1, (''));
-  @include syn(lg, 8, 2, (''));
 
   padding: $base-spacing 5%;
 }
 
 // Container for blog posts, slightly slimmer than static pages
-.post-content { @include syn(lg, 8, 2, ('border-b')); }
+.post-content { @include syn(lg, 8, 2, ('')); }

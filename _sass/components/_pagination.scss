@@ -5,11 +5,7 @@
 }
 
 .pagination-next,
-.pagination-prev {
-  @include padding($base-spacing null);
-
-  text-align: center;
-}
+.pagination-prev { @include syn(xs, 0, 0, (pad-vert-2 align-c)); }
 
 .pagination-next { @include syn(md, 3, 0, (float-l align-r)); }
 

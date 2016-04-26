@@ -13,14 +13,23 @@ permalink: /resume/
 		<!-- Resume title, different sizes for present jobs -->
 		<div class="resume-title">
 
-			{% if resume.end == "Present" %}<h4>{% else %}<h5>{% endif %}
-
 				<i class="resume-icon icon-{{ resume.icon }}"></i>
-				<span class="resume-title-item">{{ resume.title }}</span>
 
-			{% if resume.end == "Present" %}</h4>{% else %}</h5>{% endif %}
+			{% if resume.end == "Present" %}
+				<h4 class="resume-title-label">
+			{% else %}
+				<h5 class="resume-title-label">
+			{% endif %}
+
+				{{ resume.title }}
+
+			{% if resume.end == "Present" %}
+				</h4>
+			{% else %}
+				</h5>
+			{% endif %}
 		</div>
-		
+
 		<!-- Role and range, bold for present and italic for old -->
 		<div class="resume-time">
 			{% if resume.end == "Present" %}<h6>{% else %}<em><h6>{% endif %}

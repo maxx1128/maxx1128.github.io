@@ -13,25 +13,15 @@ header {
     color: color(blank);
 
     &:hover,
-    &:focus {
-      color: $base-background-color;
-    }
+    &:focus { color: $base-background-color; }
   }
 }
 
 .header-container {
-  @include padding($small-spacing / 2);
+  @include syn(xs, 12, 0, (pad-1, border-b, align-l));
+  @include syn(md, 0, 0, (pad-b-0, align-c));
+
   @include clearfix();
-  width: 100%;
-  box-sizing: border-box;
-
-  text-align: left;
-
-  @include flexy-breakpoint($tablet-screen) {
-    padding-bottom: 0;
-
-    text-align: center;
-  }
 }
 
 .site-title {
@@ -49,10 +39,8 @@ header {
 }
 
 .site-tagline {
-  display: none;
-  margin: $small-spacing 0;
-
-  @include flexy-breakpoint($tablet-screen) { display: block; }
+  @include syn(xs, 0, 0, (hide, marg-vert-1));
+  @include syn(md, 0, 0, (block));
 }
 
 .site-menu {
@@ -70,14 +58,9 @@ header {
 }
 
 .site-menu-item {
-  @include syn(xs, 12, 0, ('pad-1'));
+  @include syn(xs, 12, 0, (pad-1 inline-b border-b align-c));
   @include syn(md, 3, 0, ('float-l'));
-
-  display: inline-block;
-
-  box-sizing: border-box;
-  color: color(blank);
-  text-align: center;
+  @include clearfix();
 
   border-top: 1px solid color(light);
   border-bottom: 1px solid color(light);
@@ -95,20 +78,18 @@ header {
 }
 
 .header-icon {
+  @include syn(xs, 0, 0, (inline float-r align-c));
+  @include syn(md, 0, 0, (hide));
+
   @include transition(0.5s);
   @include transform(rotate(180deg));
   @include transform-origin(center);
   @include padding($small-spacing ($small-spacing / 4) $small-spacing 0);
 
-  display: inline;
-  float: right;
   max-width: 20%;
 
-  text-align: center;
   font-size: ($base-spacing * 0.75);
   cursor: pointer;
-
-  @include flexy-breakpoint($tablet-screen) { display: none; }
 
   .hide-menu & {
     @include transform(rotate(0deg));
@@ -119,45 +100,7 @@ header {
 .hide-menu {
 
   .site-menu {
-    display: none;
-
-    @include flexy-breakpoint($tablet-screen) {
-      display: block;
-    }
-  }
-
-
-}
-
-.social-links {
-  @include flexy-row();
-  @include flexy-justify(center);
-
-  @include padding($base-spacing);
-  @include margin(null auto);
-  max-width: em(400px);
-
-  list-style-type: none;
-  font-size: $base-spacing;
-
-  @include max-bp($tablet-screen) { display: none !important; }
-
-  a { text-align: center; }
-}
-
-.flexbox.flexwrap {
-  .social-links {
-    @include flexy-row();
-    @include flexy-justify(center);
-
-    a { @include flexy-span(auto); }
-  }
-}
-
-.no-flexbox.no-flexwrap,
-.no-flexbox.flexwrap,
-.flexbox.no-flexwrap {
-  .social-links a {
-    padding: $small-spacing;
+    @include syn(xs, 0, 0, (hide));
+    @include syn(md, 0, 0, (block));
   }
 }

@@ -1,69 +1,32 @@
-.resume-item { padding: $small-spacing; }
-
-.resume-intro {
-  margin-bottom: ($small-spacing / 2);
-
-  text-align: center;
-}
-
-.resume {
-  @include flexy-row();
-  @include flexy-justify(center);
-}
-
 .resume-item {
-  @include flexy-span(12, $padding: $small-spacing 0);
+  @include syn(xs, 0, 0, (pad-1 marg-b-3));
+  @include syn(md, 0, 0, (marg-b-4));
+}
+
+.resume-title { @include clearfix(); }
+
+.resume-intro { @include syn(xs, 0, 0, (marg-b-1 align-c)); }
+
+.resume-icon {
+  @include syn(xs, 12, 0, (align-c block));
+  @include syn(md, 2, 0, (pad-r-1 marg-r-1 inline-b));
+
+  font-size: $base-spacing * 1.5;
+
+  color: color(medium);
 
   @include flexy-breakpoint($tablet-screen) {
-    @include flexy-span(10);
-    @include padding($small-spacing null $base-spacing null);
+    border-right: ($base-border-width / 4) solid color(light);
   }
 }
 
-.resume-title h4,
-.resume-title h5 {
-  @include flexy-row();
-  @include flexy-align(middle);
-  margin: $small-spacing 0;
-
-  .resume-icon {
-    @include flexy-span(12);
-
-    text-align: center;
-    font-size: $base-spacing;
-
-    color: color(medium);
-
-    @include flexy-breakpoint($tablet-screen) {
-      @include flexy-span($base-spacing);
-      padding-right: $small-spacing;
-      margin-right: $small-spacing;
-
-      font-size: $base-spacing;
-
-      border-right: ($base-border-width / 4) solid color(light);
-    }
-  }
-
-  .resume-title-item {
-    @include flexy-span(12);
-
-    text-align: center;
-
-    @include flexy-breakpoint($tablet-screen) {
-      @include flexy-span(auto);
-
-      text-align: left;
-    }
-  }
+.resume-title-label {
+  @include syn(xs, 12, 0, (marg-1 align-c));
+  @include syn(md, 9, 0, (marg-t-0 inline-b align-l float-r));
+  @include clearfix();
 }
 
-.resume-time {
-  text-align: center;
-
-  @include flexy-breakpoint($tablet-screen) { text-align: left; }
-
-  > * { margin: ($small-spacing / 2) 0 $small-spacing; }
+.resume-time h6 {
+  @include syn(xs, 0, 0, (marg-t-1 marg-b-2 align-c));
+  @include syn(md, 0, 0, (marg-t-0 align-l));
 }
-
-.resume-description { padding-left: 5%; }
