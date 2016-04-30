@@ -9,7 +9,7 @@ Hello, you've reached the About Page of Max Antonucci. I'm likely not here right
 
 ### I'm a Coder
 
-My biggest career focus now is front-end development. You may ask why if you're okay with my asking hypotheticals for you. It's for several reasons: combining logic and creativity, always learning more, and I enjoy the confused looks on people's faces if they look over my shoulder. The areas I focus on most are:
+My biggest career focus now is front-end development. You may ask why if you're okay with me asking hypotheticals for you. It's for several reasons: combining logic and creativity, always learning more, and I enjoy the confused looks on people's faces if they look over my shoulder. The areas I focus on most are:
 
 * The big three: HTML, CSS and Javascript
 * Preprocessors for the big three: Nunjucks, Jade, and Sass
@@ -22,15 +22,17 @@ While I'm not officially recognized as a **major** computer nerd by the Computer
 
 ### I'm a Writer
 
-While I'm a coder now, my original college major was journalism at Syracuse University. I wrote for the Daily Orange and did technical-focused features for The Newshouse, as well as learning data and visual reporting. My main thing was features on tough topics like religion and gun control, since I enjoy exploring hard topics most people like to avoid. As you can imagine, this helped my brand as a writer but not my dating life. I later wrote opinion columns on travel and politics too. It was only until a fateful encounter with an journalism startup class did I discover my other love for coding. It became a love triangle that coding eventually won, which has defined my career (and most of my dating life again) ever since.
+While I'm a coder now, my original college major was journalism at Syracuse University. I wrote for the Daily Orange and did technical-focused features for The Newshouse, as well as learning data and visual reporting. My main thing was features on tough topics like religion and gun control, since I enjoy exploring hard topics most people like to avoid. As you can imagine, this helped my brand as a writer but not my dating life. I later wrote opinion columns on travel and politics too.
+
+It was only until a fateful encounter with an journalism startup class did I discover my other love for coding. It became a love triangle that coding eventually won, which has defined my career (and most of my dating life again) ever since.
 
 Today my writing is sadly limited to my personal blog, though I look forward to doing more serious blog articles or reporting in the future if I get the chance.
 
 ### I'm a Freethinker
 
-My most prized possessions actually **aren't** my laptop, my laptop backups, or the stickers I put on laptop case. It's simply my ability to think and imagine freely. I enjoy reading and thinknig about philosophy since it's a truly unique trait we have as humans and it's important to embrace. Otherwise we risk our humanity and much of our independence. Not much different than those robots that go around cleaning floors, and I haven't had the right training for that work.
+My most prized possessions actually **aren't** my laptop, my laptop backups, or the stickers I put on my laptop case. It's simply my ability to think and imagine freely. I enjoy reading and thinknig about philosophy since it's a truly unique trait we have as humans and it's important to embrace. Otherwise we risk our humanity and much of our independence. Not much different than those robots that go around cleaning floors, and I haven't had the right training for that work.
 
-Do don't be surprised if a good chunk of what I write, or especially tweet, has a philosophical edge. Asking unexpected questions and questioning unexpected things are ultimately our best weapons as people. Do we truly have free will? Is human nature innately positive or negative? How much can we trust our memories and perceptions? Can we tell when others are unconsciously manipulating our thoughts and decisions? Perhaps most importantly, what's a moral way to live life?
+Don't be surprised if a good chunk of what I write, or especially tweet, has a philosophical edge. Asking unexpected questions and questioning unexpected things are ultimately our best weapons as people. Do we truly have free will? Is human nature innately positive or negative? How much can we trust our memories and perceptions? Can we tell when others are unconsciously manipulating our thoughts and decisions? Perhaps most importantly, what's a moral way to live life?
 
 I'm not done yet!
 
