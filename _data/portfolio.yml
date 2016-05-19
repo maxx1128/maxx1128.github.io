@@ -1,12 +1,17 @@
 - name: Hover Portfolio Template
   date: 5/18/2016
-  description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's a good starting point for future portfolios, and I may even use it sometime."
+  description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's a good starting point for future portfolios, and I may use it for a future personal site."
   link: http://codepen.io/max1128/pen/GZbRJY
 
 - name: Ace Attorney Lorem Ipsum Generator
   date: 5/10/2016
   description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
   link: http://codepen.io/max1128/pen/qZQqLW
+
+- name: Step-Left Bar
+  date: 4/27/2016
+  description: "A component I finished for a pattern library project. It's made to clearly navigate users through a series of steps for a large task, like setting up an account. It's responsive, although the mobile animation math was a tad harsh to calculate."
+  link: http://codepen.io/max1128/pen/PNrKyW
 
 - name: Synapse Grid
   date: 1/4/2016
