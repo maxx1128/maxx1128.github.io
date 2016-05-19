@@ -1,7 +1,7 @@
 - name: Hover Portfolio Template
   date: 5/18/2016
   description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions to a simple yet enjoyable hover animation. A good starting point for showing portfolio items."
-link: http://codepen.io/max1128/pen/GZbRJY
+  link: http://codepen.io/max1128/pen/GZbRJY
 
 - name: Synapse Grid
   date: 1/4/2016
