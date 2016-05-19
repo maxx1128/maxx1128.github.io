@@ -3,6 +3,11 @@
   description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's a good starting point for future portfolios, and I may even use it sometime."
   link: http://codepen.io/max1128/pen/GZbRJY
 
+- name: Ace Attorney Lorem Ipsum Generator
+  date: 5/10/2016
+  description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
+  link: http://codepen.io/max1128/pen/qZQqLW
+
 - name: Synapse Grid
   date: 1/4/2016
   description: "Synapse is a grid system that has the fun and simplicity of Expressive CSS without the CSS bloat and excessive HTML classes. It lets coders customize the number of columns, element spacing, and easily add utility classes. Very scalable for responsive grids, and general style management on large and small projects."
