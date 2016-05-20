@@ -7,12 +7,10 @@ permalink: /portfolio/
 
 <section class="Portfolio_Cards">
 	{% for portfolio in site.data.portfolio %}
-		<div class="Portfolio-Card-Container">
+		<div class="Portfolio-Card-Container {% if portfolio.highlight %}Portfolio-Card-Container--highlight{% endif %}">
 			<a href="{{ portfolio.link }}" class="Portfolio-Card" target="_blank">
 		    <div
-		    	data-lazyload
-
-		    	data-original="http://img09.deviantart.net/dbea/i/2013/247/3/8/athena_cykes_by_tatsuri-d6inqcj.jpg"
+		    	data-lazyload data-original="http://img09.deviantart.net/dbea/i/2013/247/3/8/athena_cykes_by_tatsuri-d6inqcj.jpg"
 
 		    	style="background-image: url('{{ "/img/pages/lazyload-placeholder.jpg" | prepend: site.baseurl }}');"
 

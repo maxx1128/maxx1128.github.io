@@ -15,6 +15,7 @@
 
 - name: Synapse Grid
   date: 1/4/2016
+  highlight: true
   description: "Synapse is a grid system that has the fun and simplicity of Expressive CSS without the CSS bloat and excessive HTML classes. It lets coders customize the number of columns, element spacing, and easily add utility classes. Very scalable for responsive grids, and general style management on large and small projects."
   link: https://github.com/maxx1128/Synapse-Grid
 
@@ -50,6 +51,7 @@
 
 - name: Plately
   date: 07/07/2015
+  highlight: true
   description: 'For my web development projects, whether they’re WordPress or static sites, I’ve put together a personal workflow I enjoy using called Plately. It makes use of Gulp.js, Sass, Bower, and Jade to speed the process along. I’ve also put in some of my favorite ThoughtBot open-source tools in advance.'
   link: http://maxwellantonucci.com/Plately
 
@@ -60,11 +62,13 @@
 
 - name: My Housing Matters
   date: 05/03/2015
+  highlight: true
   description: 'In one of my final Newhouse classes, I was made the primary web developer as we edited and created the MyHousingMatters.com website. It focused on racial and economic disparities related to housing in Syracuse. My main jobs were helping make interactive content, changing styles, and editing the back-end functionality with custom fields and programming.'
   link: http://myhousingmatters.com/
 
 - name: InternNation
   date: 05/02/2015
+  highlight: true
   description: 'My main job as Web Development intern at Eric Mower + Associates was to remake the intern blog. The final product was a WordPress theme built for over 100 posts with Sass and Gulp.js, along with a few useful tools such as Isotope.js and Advanced Custom Fields. The front page also lets users search a grid of all the posts by the intern’s semester, the city they interned in, and what department they worked in. The final product came out just in time for me and the other Spring 2015 interns to get their posts up!'
   link: http://internation.mower.com/
 
@@ -110,6 +114,7 @@
 
 - name: THE General Body’s Demands
   date: 12/05/2014
+  highlight: true
   description: 'THE General Body’s protest at Syracuse University came with a long list of demands of the administration. I pulled a useful Github project and customized the styles to create an interactive breaking down the demands and how they’ve been responded to.'
   link: http://www.thenewshouse.com/story/general-body-continues-advocacy-key-demands-despite-end-sit
 
@@ -125,6 +130,7 @@
 
 - name: '#HealthCareHeroes'
   date: 08/07/2014
+  highlight: true
   description: 'All AmeriCares interns have to publish a blog post on #HealthCareHeroes. I made mine an animated video exploring one of AmeriCares’ recent projects and what how it relates to helping others find quality care.'
   link: https://vimeo.com/102849451
 

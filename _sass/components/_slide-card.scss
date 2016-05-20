@@ -1,14 +1,38 @@
 $Portfolio-Card-height: 20em;
 
-.Portfolio_Cards {
-  @include clearfix();
+html.no-flexbox.flexwrap,
+html.flexbox.no-flexwrap {
+
+  .Portfolio_Cards {
+    @include clearfix();
+  }
+
+  .Portfolio-Card-Container {
+    @include clearfix();
+    @include syn(xs, 12, 0, (inline-b border-b pad-top-1));
+    @include syn(md, 6, 0, (float-l pad-sides-1));
+    @include syn(lg, 4, 0, (''));
+  }
+
 }
 
-.Portfolio-Card-Container {
-  @include clearfix();
-  @include syn(xs, 12, 0, (inline-b border-b pad-top-1));
-  @include syn(md, 6, 0, (float-l pad-sides-1));
-  @include syn(lg, 4, 0, (''));
+html.flexbox.flexwrap {
+
+  .Portfolio_Cards {
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
+
+  .Portfolio-Card-Container {
+    @include flex(1 1 250px);
+
+    padding: $small-spacing;
+  }
+
+  .Portfolio-Card-Container--highlight {
+    @include flex(5 1 350px);
+  }
+
 }
 
 .Portfolio-Card {
