@@ -45,3 +45,10 @@ body {
 
 // Container for blog posts, slightly slimmer than static pages
 .post-content { @include syn(lg, 8, 2, ('')); }
+
+// Wide layout wider for more space
+.wide-content {
+  @include syn(xs, 12, 0, ('border-b'));
+  
+  padding: $base-spacing 2.5%;
+}

@@ -30,7 +30,7 @@ html.flexbox.flexwrap {
   }
 
   .Portfolio-Card-Container--highlight {
-    @include flex(3 1 375px);
+    @include flex(5 1 425px);
   }
 
 }
