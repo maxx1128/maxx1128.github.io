@@ -40,7 +40,7 @@ body {
   @include syn(xs, 12, 0, ('border-b'));
   @include syn(md, 10, 1, (''));
 
-  padding: $base-spacing 5%;
+  padding: $base-spacing 2.5%;
 }
 
 // Container for blog posts, slightly slimmer than static pages

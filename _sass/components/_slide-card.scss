@@ -1,0 +1,86 @@
+$Portfolio-Card-height: 20em;
+
+.Portfolio_Cards {
+  @include clearfix();
+}
+
+.Portfolio-Card-Container {
+  @include clearfix();
+  @include syn(xs, 12, 0, (inline-b border-b pad-top-1));
+  @include syn(md, 6, 0, (float-l pad-sides-1));
+  @include syn(lg, 4, 0, (''));
+}
+
+.Portfolio-Card {
+
+  @include size(100% $Portfolio-Card-height);
+  display: block;
+  margin-bottom: $base-spacing;
+  position: relative;
+  overflow: hidden;
+  
+  &:hover .Portfolio-Card__img,
+  &:hover .Portfolio-Card__title,
+  &:hover .Portfolio-Card__descr { @include transition(0.5s); }
+  
+  &:hover .Portfolio-Card__img { @include position(absolute, -4em null null null); }
+
+  &:hover .Portfolio-Card__title { @include position(absolute, null null -100% null); }
+
+  &:hover .Portfolio-Card__descr { @include position(absolute, null null 0 null); }
+}
+
+.Portfolio-Card__img {
+  @include clearfix();
+  @include transition(0.5s);
+  @include position(absolute, -10% null null null);
+  
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  // width: auto !important;
+  min-height: 130%;
+  min-width: 100%;
+  
+  background-color: blue;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.Portfolio-Card__title,
+.Portfolio-Card__descr {
+  @include transition(0.5s);
+  padding: $base-spacing;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+  color: white;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Portfolio-Card__title {
+  @include position(absolute, null null 0 null);
+  @include size(100% auto);
+  padding: $small-spacing $base-spacing;
+  
+  text-align: center;
+}
+
+.Portfolio-Card__title-text {
+  @include line-height(1);
+  margin: 0;
+}
+
+.Portfolio-Card__descr {
+  @include position(absolute, null null 100% null);
+  @include size(100% $Portfolio-Card-height);
+  padding: $small-spacing;
+
+  overflow: scroll;
+}
+
+.Portfolio-Card__descr-text {
+  @include line-height(0.9);
+  margin: 0;
+}
