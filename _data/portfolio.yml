@@ -1,15 +1,18 @@
 - name: Hover Portfolio Template
   date: 5/18/2016
+  image: hover-portfolio.png
   description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's a good starting point for future portfolios, and I may use it for a future personal site."
   link: http://codepen.io/max1128/pen/GZbRJY
 
 - name: Ace Attorney Lorem Ipsum Generator
   date: 5/10/2016
+  image: ace-attorney-lorem-ipsum.png
   description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
   link: http://codepen.io/max1128/pen/qZQqLW
 
 - name: Step-Left Bar
   date: 4/27/2016
+  image: step-left-bar.png
   description: "A component I finished for a pattern library project. It's made to clearly navigate users through a series of steps for a large task, like setting up an account. It's responsive, although the mobile animation math was a tad harsh to calculate."
   link: http://codepen.io/max1128/pen/PNrKyW
 
@@ -21,11 +24,13 @@
 
 - name: HTML Doc Generator
   date: 12/3/2015
+  image: html-documenter.png
   description: "For many component libraries, developers need to constantly copy an element's HTML for different projects. This generates HTML documentation automatically, making it faster and simpler for developers to use HTML for their components."
   link: http://codepen.io/max1128/pen/obvRQW
 
 - name: Slanted Angle mixin
   date: 11/20/2015
+  image: angle-mixin.png
   description: "I've often struggled with adding slants to the bottom or top of elements on pages that are also responsive. This mixin uses some Sass and SVG magic so it's easy to add this effect while controlling the location, size, and color while looking good on all devices."
   link: http://codepen.io/max1128/pen/megORY
 
@@ -36,6 +41,7 @@
 
 - name: Animated Viewport Items
   date: 10/19/2015
+  image: animated-scroll-events.png
   description: 'An animation trick I made by combining Animate.css with Waypoints.JS, which lets developers create entrance animations for elements just by adding a class.'
   link: http://codepen.io/max1128/pen/PPKXGz
 
@@ -46,6 +52,7 @@
 
 - name: Guess the Number!
   date: 09/19/2015
+  image: guess-the-number.png
   description: 'This is a simple yet quirky number guessing game where you have five chances to guess a number between one and 100. This is part of my Angular.js practice to get more familiar with the app framework, and also uses Bootstrap and jQuery.'
   link: http://codepen.io/max1128/pen/VvaLgr
 
@@ -57,6 +64,7 @@
 
 - name: Frosted Glass Effect
   date: 05/05/2015
+  image: frosted-glass.png
   description: 'A book I’ve been reading, CSS Secrets by Lea Verou, explained this Frosted Glass effect for websites. I managed to reproduce it here.'
   link: http://codepen.io/max1128/pen/QbyvMO
 
