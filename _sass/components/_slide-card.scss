@@ -24,13 +24,13 @@ html.flexbox.flexwrap {
   }
 
   .Portfolio-Card-Container {
-    @include flex(1 1 275px);
+    @include flex(1 1 $Portfolio-Card-height);
 
     padding: 0 $small-spacing;
   }
 
   .Portfolio-Card-Container--highlight {
-    @include flex(5 1 425px);
+    @include flex(5 1 ($Portfolio-Card-height * 1.35));
   }
 
 }

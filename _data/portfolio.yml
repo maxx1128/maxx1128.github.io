@@ -1,7 +1,7 @@
 - name: Hover Portfolio Template
   date: 5/18/2016
   image: hover-portfolio.png
-  description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's a good starting point for future portfolios, and I may use it for a future personal site."
+  description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's being used for this very portfolio page."
   link: http://codepen.io/max1128/pen/GZbRJY
 
 - name: Ace Attorney Lorem Ipsum Generator
@@ -18,6 +18,7 @@
 
 - name: Synapse Grid
   date: 1/4/2016
+  image: synapse.png
   highlight: true
   description: "Synapse is a grid system that has the fun and simplicity of Expressive CSS without the CSS bloat and excessive HTML classes. It lets coders customize the number of columns, element spacing, and easily add utility classes. Very scalable for responsive grids, and general style management on large and small projects."
   link: https://github.com/maxx1128/Synapse-Grid
@@ -36,6 +37,7 @@
 
 - name: Ellisha
   date: 11/07/2015
+  image: ellisha.png
   description: A mixin collection for responsive Flexbox grids and layouts. It gives site layouts the new benefits of flexbox while keeping their grids lightweight and customizable.
   link: http://maxwellantonucci.com/Ellisha/
 
@@ -47,6 +49,7 @@
 
 - name: '"What Eeveelution are You" Quiz'
   date: 10/15/2015
+  image: eeveelutions.png
   description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS.'
   link: http://maxwellantonucci.com/Which-Eeveelution-Are-You/
 
@@ -59,6 +62,7 @@
 - name: Plately
   date: 07/07/2015
   highlight: true
+  image: plately.png
   description: 'For my web development projects, whether they’re WordPress or static sites, I’ve put together a personal workflow I enjoy using called Plately. It makes use of Gulp.js, Sass, Bower, and Jade to speed the process along. I’ve also put in some of my favorite ThoughtBot open-source tools in advance.'
   link: http://maxwellantonucci.com/Plately
 
@@ -71,98 +75,117 @@
 - name: My Housing Matters
   date: 05/03/2015
   highlight: true
+  image: housing-matters.png
   description: 'In one of my final Newhouse classes, I was made the primary web developer as we edited and created the MyHousingMatters.com website. It focused on racial and economic disparities related to housing in Syracuse. My main jobs were helping make interactive content, changing styles, and editing the back-end functionality with custom fields and programming.'
   link: http://myhousingmatters.com/
 
 - name: InternNation
   date: 05/02/2015
   highlight: true
+  image: internation.png
   description: 'My main job as Web Development intern at Eric Mower + Associates was to remake the intern blog. The final product was a WordPress theme built for over 100 posts with Sass and Gulp.js, along with a few useful tools such as Isotope.js and Advanced Custom Fields. The front page also lets users search a grid of all the posts by the intern’s semester, the city they interned in, and what department they worked in. The final product came out just in time for me and the other Spring 2015 interns to get their posts up!'
   link: http://internation.mower.com/
 
 - name: No Developer is an Island
   date: 04/27/2015
+  image: developer-island.jpg
   description: 'This was my actual blog post for the InternNation site I developed. It was a reflection on how web developers are so reliant on community and learning from others for most of our skills and success. Plus there were a few funny cartoons there too.'
   link: http://internation.mower.com/no-developer-island/
 
 - name: 'Net Neutrality: The Debate Continues'
   date: 04/21/2015
+  image: net-nuetrality.png
   description: 'Despite how settled Net Neutrality seems after the FCC decision, the debate is still far from settled in America.'
   link: http://gokicker.com/2015/04/21/net-neutrality-the-debate-continues/
 
 - name: 3 Humbling Life Lessons I Learned Making Websites
   date: 04/17/2015
+  image: coding-lessons.png
   description: 'A reflection on how web development, in addition to becoming my career, has also helped me mature even more as a person.'
   link: http://gokicker.com/2015/04/17/3-humbling-life-lessons-i-learned-making-websites/
 
 - name: 'Millennials, Here’s How to Avoid an Online Identity Crisis'
   date: 02/25/2015
+  image: gokicker-brand.jpg
   description: 'How millennials can make the most of their online presence, in a way that’s unique, effective, and helps their career instead of getting them fired with a stray tweet.'
   link: http://gokicker.com/2015/02/25/how-to-avoid-an-online-identity-crisis/
 
 - name: The NewsHouse Couple’s Quiz
   date: 02/13/2015
+  image: valentines-quiz.png
   description: 'For Valentine’s Day I had the idea of an interactive quiz where couples could make and answer their own questions. It uses Bootstrap and Angular.js to help build out the styles, and is the first real project where I used a Gulp.js pre-processor for my front-end workflow.'
   link: http://www.thenewshouse.com/nhstudent/student-projects/ValentinesDay2015/index.html
 
 - name: 'Here’s How an Actual Young Journalist Sees #AdviceForYoungJournalists'
   date: 02/10/2015
+  image: advice-journalists.jpg
   description: 'Looking at the best tweets in the #AdviceForYoungJournalists hashtag and what the biggest lessons are.'
   link: http://gokicker.com/2015/02/10/heres-actual-young-journalist-sees-adviceforyoungjournalists/
 
 - name: 'Before Community College Is Free, One Idea About College Must Change'
   date: 02/05/2015
+  image: college.png
   description: 'President Obama’s announcement to make community college free is well-intentioned but doesn’t address one major misconception about college in general.'
   link: http://gokicker.com/2015/02/05/community-college-free-one-idea-college-must-change/
 
 - name: SUpernatural Syracuse
   date: 12/06/2014
+  image: halloween-story.png
   description: 'For Halloween I had an idea for an interactive “choose-your-own-adventure” story for the NewsHouse. It focuses on solving the mystery of an old disappearance and recent supernatural activity on campus. I did much of the writing and all the development.'
   link: http://thenewshouse.com/nhstudent/student-projects/halloween2014/halloweenCYOA/index.html
 
 - name: THE General Body’s Demands
   date: 12/05/2014
   highlight: true
+  image: general-body.png
   description: 'THE General Body’s protest at Syracuse University came with a long list of demands of the administration. I pulled a useful Github project and customized the styles to create an interactive breaking down the demands and how they’ve been responded to.'
   link: http://www.thenewshouse.com/story/general-body-continues-advocacy-key-demands-despite-end-sit
 
 - name: Networking with Twitter
   date: 08/12/2014
+  image: networking-twitter.png
   description: 'For my AmeriCares’ internship I was asked to give a presentation to the other interns on the best Twitter practices. It includes creating a profile and dashboard, managing Hootsuite, and sharing engaging content.'
   link: http://www.slideshare.net/MaxwellAntonucci/twitter-for-networking
 
 - name: Juice Jam 2014
   date: 08/17/2014
+  image: juice-jam.jpeg
   description: 'Juice Jam is a major party event at Syracuse, and I made a Storify to tell the story of the best moments through social media posts.'
   link: https://storify.com/newshouse/juice-jam-2014
 
 - name: '#HealthCareHeroes'
   date: 08/07/2014
   highlight: true
+  image: healthcare-heroes.png
   description: 'All AmeriCares interns have to publish a blog post on #HealthCareHeroes. I made mine an animated video exploring one of AmeriCares’ recent projects and what how it relates to helping others find quality care.'
   link: https://vimeo.com/102849451
 
 - name: Recapping the Tech Curve
   date: 03/29/2014
+  image: tech-curve.png
   description: 'The Tech Curve was an event we, the Syracuse SPJ chapter, held at Newhouse for students. Its goal was to help students begin learning and mastering important technical skills and journalism with an informative panel. This blog post recaps all the major points.'
   link: http://syracusespj.syr.edu/2014/03/29/recapping-tech-curve/
 
 - name: Conscience of Society
   date: 03/27/2013
+  image: conscience-society.jpeg
   description: 'Professor Alejandro Garcia is recognized for 35 years of teaching at SU, and is awarded the 2013 Daniel and Mary Lou Rubenstein Social Justice Award.'
   link: http://dailyorange.com/2013/03/conscience-of-society-professor-alejandro-garcia-recognized-for-35-years-at-su-awarded-2013-daniel-and-mary-lou-rubenstein-social-justice-award/
 
 - name: With Open Arms
   date: 02/27/2013
+  image: open-arms.png
   description: An in-depth look at Hendricks Chapel at Syracuse and how it brings students from a multitude of faiths together.
   link: http://dailyorange.com/2013/02/with-open-arms/
 
 - name: 'Stephen Barton, panel of experts open discussion on gun control'
   date: 02/20/2013
+  image: barton.png
   description: A major panel discussion at Syracuse University discussing gun control and it’s surrounding debate in America after the Newtown school shooting.
   link: http://dailyorange.com/2013/02/stephen-barton-panel-of-experts-open-discussion-on-gun-control/
 
 - name: Such Great Heights
   date: 08/28/2012
+  image: great-heights.jpeg
   description: 'How a local Syracuse organization, On Point for College, helps bring potential students the extra resources they need for a fulfilling college education.'
   link: http://dailyorange.com/2012/08/such-great-heights-local-organization-helps-students-reach-new-levels-of-achievement/
