@@ -33,13 +33,13 @@ $modular-size-map: (
 
 // ----- Color Variables ----- //
 
-// Reshiram
+// Porygon-Z
 $colors: (
   blank: #fff,
-  action: #39b4f6,
-  dark: #4a4a6a,
-  medium: #737b9c,
-  light: #bdbdd5
+  action: #ee5a62,
+  dark: #313962,
+  medium: #31739c,
+  light: #8bd5ff
 );
 
 
@@ -59,7 +59,7 @@ $action-color: color(action);
 $base-border-color: color(light);
 $light-border-color: tint($base-border-color, 77.5%);
 
-$base-background-color: tint(color(light), 87.5%);
+$base-background-color: tint(color(light), 95%);
 $secondary-background-color: tint(color(light), 70%); // Slightly darker background
 
 
