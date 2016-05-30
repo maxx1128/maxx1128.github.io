@@ -1,3 +1,9 @@
+- name: Color Palette Generator
+  date: 5/29/2016
+  image: palette-generator.png
+  description: "Making interesting color palettes is one of my favorite parts of coding. This pen creates visual palettes from either a few base colors, or lots of specific ones for more control, using only hex values. The Sass generates the rest for you."
+  link: http://codepen.io/max1128/pen/QEWrZy
+
 - name: Hover Portfolio Template
   date: 5/18/2016
   image: hover-portfolio.png
