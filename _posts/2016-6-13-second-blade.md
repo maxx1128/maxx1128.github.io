@@ -8,7 +8,7 @@ excerpt: "An unusual manga about killing an alien teacher has a good career less
 
 I rediscovered an important career lesson in [a manga where high schoolers try to kill their tentacle-alien teacher](http://www.mangatown.com/manga/ansatsu_kyoushitsu/). An unlikely place, but I swear it's worth it.
 
-<img class="post-three-quarter-image" src="/img/posts/second-blade/classroom.png">
+{% include image.html place="post-three-quarter-image aden" url="/img/posts/second-blade/classroom.png" %}
 
 The important lesson is to **have a second blade.** That's an edgier way of saying "have a backup plan." Not a small one though. A backup plan for one's entire career.
 
@@ -30,7 +30,7 @@ Take front-end web development. I could pour all my time and energy into it. Cod
 
 **Like with the assassination classroom, most or all of this effort could be for nothing.** It doesn't take much searching to see why in my case. What if tools like [The Grid](https://thegrid.io/) go mainstream and automate everything? Too many businesses stick to social platforms like Facebook and Twitter instead of official websites? People only make sites with premade components or templates, like WordPress themes or frameworks? [Businesses focus more on native apps instead of websites?](https://hueniverse.com/2016/06/08/the-fucking-open-web/) These are already issues, and could do all the above someday.
 
-<img class="post-three-quarter-image" src="/img/posts/second-blade/manga_example.png">
+{% include image.html place="post-three-quarter-image lofi" url="/img/posts/second-blade/manga_example.png" %}
 
 If I pour all my time and energy into that first blade, it'd go to waste. Then where would I be?
 
