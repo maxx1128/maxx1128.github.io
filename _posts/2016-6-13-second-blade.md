@@ -3,7 +3,7 @@ layout: post
 title:  "Have a Second Blade"
 date:   2016-06-12 07:40:02 -0500
 categories: philosophy random
-excerpt: "Having a firm, clear set of rules helps a lot in web development. These aim for modular, maintainable code at all times."
+excerpt: "An unusual manga about killing an alien teacher has a good career lesson for us all."
 ---
 
 I rediscovered an important career lesson in [a manga where high schoolers try to kill their tentacle-alien teacher](http://www.mangatown.com/manga/ansatsu_kyoushitsu/). An unlikely place, but I swear it's worth it.
