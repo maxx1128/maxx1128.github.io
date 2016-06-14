@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<article class="post-content" itemscope itemprop="articleBody" itemtype="http://schema.org/BlogPosting">
+<article class="l-post" itemscope itemprop="articleBody" itemtype="http://schema.org/BlogPosting">
 
-  <div class="post-header">
-    <h3 class="post-title" itemprop="name headline">{{ page.title }}</h3>
-    <p class="post-meta">
+  <div class="l-post__header">
+    <h3 class="l-post__title" itemprop="name headline">{{ page.title }}</h3>
+    <p class="l-post__meta">
       Published on 
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%b %-d, %Y" }}
@@ -19,6 +19,6 @@ layout: default
 
   {{ content }}
 
-  <h6 class="post-sig">- Max Antonucci</h6>
+  <h6 class="l-post__sig">- Max Antonucci</h6>
 
 </article>

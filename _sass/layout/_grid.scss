@@ -34,21 +34,17 @@ body {
   background-color: $base-background-color;
 }
 
+.l-post,
+.l-wide { padding: 0 2.5%; }
+
 // Initial sizing for all posts and pages
-.page-content,
-.post-content {
+.l-post {
   @include syn(xs, 12, 0, ('border-b'));
   @include syn(md, 10, 1, (''));
+  @include syn(lg, 8, 2, (''));
 
-  padding: $base-spacing 2.5%;
+  
 }
-
-// Container for blog posts, slightly slimmer than static pages
-.post-content { @include syn(lg, 8, 2, ('')); }
 
 // Wide layout wider for more space
-.wide-content {
-  @include syn(xs, 12, 0, ('border-b'));
-  
-  padding: $base-spacing 2.5%;
-}
+.l-wide { @include syn(xs, 12, 0, ('border-b')); }

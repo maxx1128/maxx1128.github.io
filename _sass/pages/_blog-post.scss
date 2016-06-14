@@ -1,18 +1,18 @@
 // The header container for pages and posts
-.post-header { @include syn(xs, 0, 0, (marg-t-1 marg-b-2 align-c)); }
+.l-post__header { @include syn(xs, 0, 0, (marg-t-1 marg-b-2 align-c)); }
 
 // Title in both pages and posts
-.post-title {
+.l-post__title {
   @include line-height(2);
 
   margin: ($small-spacing / 2) 0;
 }
 
 // The descriptor below a page title
-.post-subheading { @include syn(xs, 0, 0, (marg-t-1 marg-b-0)); }
+.l-post__subheading { @include syn(xs, 0, 0, (marg-t-1 marg-b-0)); }
 
 // When the post was published
-.post-meta { @include syn(xs, 0, 0, (align-c italic)); }
+.l-post__meta { @include syn(xs, 0, 0, (align-c italic)); }
 
 blockquote {
   @include syn(xs, 0, 0, (align-c, pad-2));
@@ -29,7 +29,7 @@ blockquote {
   p { margin: 0; }
 }
 
-.post-sig { @include syn(xs, 0, 0, (align-r, italic)); }
+.l-post__sig { @include syn(xs, 0, 0, (align-r, italic)); }
 
 .iframe-container {
   @include syn(xs, 12, 0, (''));
