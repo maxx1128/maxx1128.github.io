@@ -1,4 +1,6 @@
-<header class="hide-menu" {% if page.featured-img %} style="background-image: url({{ page.featured-img }});" {% endif %}>
+<header class="hide-menu" {% if page.featured-img %} style="background: linear-gradient(rgba(49,57,98,0.8), rgba(49,57,98,0.8)),url('{{ page.featured-img }}');" {% endif %}>
+
+
 
   <div class="header__subcontainer">
 
@@ -18,15 +20,17 @@
       {{ page.title }}
     </h3>
 
-    <p class="l-post__meta">
-      <time itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
-      </time>
-    </p>
-
     <h6 class="site-tagline">
       {{ page.subheading }}
     </h6>
+
+    {% if page.date %}
+      <p class="l-post__meta">
+        <time itemprop="datePublished">
+          {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+      </p>
+    {% endif %}
 
     
 

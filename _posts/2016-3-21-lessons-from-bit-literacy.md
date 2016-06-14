@@ -3,7 +3,7 @@ layout: post
 title:  "Top 4 Lessons from Bit Literacy"
 date:   2016-3-21
 categories: reading, productivity
-excerpt: "Everyday we're flooded by all things Internet, or 'bits.' A recent read is a great guide to keeping them at bay."
+subheading: "Everyday we're flooded by all things Internet, or 'bits.' A recent read is a great guide to keeping them at bay."
 ---
 
 As a coder, college grad, and human that doesn't live in a cave, naturally the Internet's affected me a lot. And naturally it sometimes makes me want to beat me head against a wall.

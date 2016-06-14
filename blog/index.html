@@ -4,17 +4,31 @@ title: Blog
 subheading: We all have thoughts in our spare time. I write mine here for safe-keeping.
 ---
 
+<div class="blog-list">
+  
 {% for post in paginator.posts %}
-  <article class="l-home__blog-item --blogpage-blog-item">
-    <h4 class="l-home__blog-title">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h4>
-    
-    <div class="blog-excerpt"> 
-      {{ post.excerpt }}
-    </div>
-  </article>
+  <a class="blog-list__item" href="{{ post.url | prepend: site.baseurl }}">
+    <article class="blog-list__container">
+      <h4 class="blog-list__title">
+        {{ post.title }}
+      </h4>
+
+      <p class="blog-list__date">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </p>
+      
+      <div class="blog-list__excerpt"> 
+        {% if post.subheading %}
+          {{ post.subheading }}
+        {% else %}
+          {{ post.excerpt }}
+        {% endif %}
+      </div>
+    </article>
+  </a>
 {% endfor %}
+
+</div>
 
 <div class="pagination">
   {% if paginator.previous_page %}

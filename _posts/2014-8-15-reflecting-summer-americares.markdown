@@ -4,6 +4,7 @@ title:  "Reflecting on the Summer with AmeriCares"
 date:   2014-8-15 07:40:02 -0500
 categories: personal social-media
 featured-img: /img/posts/reflecting-americares/featured.jpg
+subheading: Today marks the end of my time with AmeriCares.
 ---
 
 Today marks the end of my time with [AmeriCares.](http://www.americares.org/) It was good since it was the first real job I’ve had that dealt with so many digital areas I’ve studied all at once, including social media, web management, WordPress, and content writing. It was great since, through it all, it hardly ever felt like work. The classic sign we all feel when we’ve found our calling.

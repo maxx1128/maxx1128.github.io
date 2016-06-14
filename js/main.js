@@ -17,258 +17,251 @@
 
 $( document ).ready(function() {
     
-    // To toggle the menus on the homepage and other pages
-    $('.header-icon').on('click', function(){
-    	$('header').toggleClass('hide-menu');
-    	$('.home-nav').toggleClass('hide-home-menu');
-    });
+  // To toggle the menus on the homepage and other pages
+  $('.header__icon').on('click', function(){
+    $('header').toggleClass('hide-menu');
+    $('.home-nav').toggleClass('hide-home-menu');
+  });
 
-    // On homepage, button to scroll from opening section
-    $("#learn-more-button").click(function() {
-	    $('html, body').animate({
-	        scrollTop: $(".home-info").offset().top
-	    }, 1500);
-	});
+  // On homepage, button to scroll from opening section
+  $("#learn-more-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".home-info").offset().top
+    }, 1500);
+  });
 
-    // Makes all blog links open in a new tab
-    $('article.post-content a').each(function() {
-    	$(this).attr('target', '_blank');
-    });
+  // Makes all blog links open in a new tab
+  $('.l-post a').each(function() {
+    $(this).attr('target', '_blank');
+  });
 
-    // Specific tracking for clicking on portfolio items
-    $('.portfolio-item').on('click', function(){
-		var label = $(this).attr('href');
+  // Specific tracking for clicking on portfolio items
+  $('.portfolio-item').on('click', function(){
+   var label = $(this).attr('href');
 
-		ga('send', 'event', 'portfolio', 'click', label);
-	});
+   ga('send', 'event', 'portfolio', 'click', label);
+  });
 
   $("[data-lazyload]").lazyload({
-      effect : "fadeIn"
+    effect : "fadeIn"
   });
 
 
-
-/* Accessible Tooltip */
-
-'use strict';
-
-// Polyfill matches as per https://github.com/jonathantneal/closest
+  // Polyfill matches as per https://github.com/jonathantneal/closest
 Element.prototype.matches = Element.prototype.matches ||
-              Element.prototype.mozMatchesSelector ||
-              Element.prototype.msMatchesSelector ||
-              Element.prototype.oMatchesSelector ||
-              Element.prototype.webkitMatchesSelector;
+  Element.prototype.mozMatchesSelector ||
+  Element.prototype.msMatchesSelector ||
+  Element.prototype.oMatchesSelector ||
+  Element.prototype.webkitMatchesSelector;
 
 /**
  * @param {object} options Object containing configuration overrides
  */
 const Frtooltip = function ({
-    selector: selector = '.js-fr-tooltip',
-    tooltipSelector: tooltipSelector = '.js-fr-tooltip-tooltip',
-    toggleSelector: toggleSelector = '.js-fr-tooltip-toggle',
-    tooltipIdPrefix: tooltipIdPrefix = 'tooltip',
-    readyClass: readyClass = 'fr-tooltip--is-ready'
-  } = {}) {
+  selector: selector = '.js-fr-tooltip',
+  tooltipSelector: tooltipSelector = '.js-fr-tooltip-tooltip',
+  toggleSelector: toggleSelector = '.js-fr-tooltip-toggle',
+  tooltipIdPrefix: tooltipIdPrefix = 'tooltip',
+  readyClass: readyClass = 'fr-tooltip--is-ready'
+} = {})
+
+  {
 
 
-  // CONSTANTS
-  const doc = document;
-  const docEl = doc.documentElement;
-  const _q = (el, ctx = doc) => [].slice.call(ctx.querySelectorAll(el));
+    // CONSTANTS
+    const doc = document;
+    const docEl = doc.documentElement;
+    const _q = (el, ctx = doc) => [].slice.call(ctx.querySelectorAll(el));
 
 
-  // SUPPORTS
-  if (!('querySelector' in doc) || !('addEventListener' in window) || !docEl.classList) return;
+    // SUPPORTS
+    if (!('querySelector' in doc) || !('addEventListener' in window) || !docEl.classList) return;
 
 
-  // SETUP
-  let tooltipContainers = _q(selector);
+    // SETUP
+    let tooltipContainers = _q(selector);
 
-  //  TEMP
-  let currTooltip = null;
+    //  TEMP
+    let currTooltip = null;
 
 
-  //  UTILS
-  function _defer (fn) {
-    //  wrapped in setTimeout to delay binding until previous rendering has completed
-    if (typeof fn === 'function') setTimeout(fn, 0);
-  }
-  function _closest (el, selector) {
-    while (el) {
-      if (el.matches(selector)) break;
-      el = el.parentElement;
+    //  UTILS
+    function _defer (fn) {
+      //  wrapped in setTimeout to delay binding until previous rendering has completed
+      if (typeof fn === 'function') setTimeout(fn, 0);
     }
-    return el;
-  }
-
-
-  //  A11Y
-  function _addA11y (container, i) {
-    //  get relative elements
-    let toggle = _q(toggleSelector, container)[0];
-    let tooltip = _q(tooltipSelector, container)[0];
-    //  create new button and replace toggle
-    var button = doc.createElement('button');
-    button.setAttribute('class', toggle.getAttribute('class'));
-    button.setAttribute('aria-expanded', 'false');
-    button.setAttribute('aria-describedby', '');
-    button.textContent = toggle.textContent;
-    container.replaceChild(button, toggle);
-    //  add tooltip attributes
-    tooltip.setAttribute('role', 'tooltip');
-    tooltip.setAttribute('id', tooltipIdPrefix + '-' + i);
-    tooltip.setAttribute('aria-hidden', 'true');
-    tooltip.setAttribute('aria-live', 'polite');
-  }
-  function _removeA11y (container) {
-    //  get relative elements
-    let toggle = _q(toggleSelector, container)[0];
-    let tooltip = _q(tooltipSelector, container)[0];
-    //  create new span and replace toggle
-    var span = doc.createElement('span');
-    span.setAttribute('class', toggle.getAttribute('class'));
-    span.textContent = toggle.textContent;
-    container.replaceChild(span, toggle);
-    //  remove tooltip attributes
-    tooltip.removeAttribute('role');
-    tooltip.removeAttribute('id');
-    tooltip.removeAttribute('aria-hidden');
-    tooltip.removeAttribute('aria-live');
-  }
-
-
-  // ACTIONS
-  function _showTooltip (toggle, tooltip) {
-    //  assign describedby matching tooltip reference
-    let tooltipId = tooltip.getAttribute('id');
-    toggle.setAttribute('aria-describedby', tooltipId);
-    //  set visible state
-    toggle.setAttribute('aria-expanded', 'true');
-    tooltip.setAttribute('aria-hidden', 'false');
-    //  store temp reference to tooltip
-    currTooltip = tooltip;
-    //  bind doc close events
-    _defer(_bindDocClick);
-    _defer(_bindDocKey);
-  }
-  function _hideTooltip (toggle, tooltip) {
-    //  remove tooltip reference
-    toggle.setAttribute('aria-describedby', '');
-    //  set visible state
-    toggle.setAttribute('aria-expanded', 'false');
-    tooltip.setAttribute('aria-hidden', 'true');
-    //  remove tooltip temp reference
-    currTooltip = null;
-    //  unbind doc close events
-    _unbindDocClick();
-    _unbindDocKey();
-  }
-  function destroy () {
-    tooltipContainers.forEach((container, i) => {
-      _removeA11y(container, i);
-      _unbindToggleEvents(container);
-      container.classList.remove(readyClass);
-    });
-    //  reset temp references
-    currTooltip = null;
-    //  unbind global events
-    _unbindDocClick();
-    _unbindDocKey();
-  }
-
-
-  // EVENTS
-  function _eventTogglePointer (e) {
-    //  close any open tooltips
-    if (currTooltip) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
-    //  get relevant tooltip elements
-    let toggle = e.target;
-    let tooltip = toggle.nextElementSibling;
-    //  show or hide if toggle is 'expanded'
-    if (toggle.getAttribute('aria-expanded') === 'false') {
-      _showTooltip(toggle, tooltip);
-    } else {
-      _hideTooltip(toggle, tooltip);
+    function _closest (el, selector) {
+      while (el) {
+        if (el.matches(selector)) break;
+        el = el.parentElement;
+      }
+      return el;
     }
-  }
-  function _eventTogglePointerLeave () {
-    if (currTooltip) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
-  }
-  function _eventDocClick (e) {
-    //  check if target is panel or child of
-    let isTooltip = e.target === currTooltip;
-    let isTooltipchild = _closest(e.target, tooltipSelector);
-    if (!isTooltip && !isTooltipchild) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
-  }
-  function _eventDocKey (e) {
-    //  esc key
-    if (e.keyCode === 27) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
-  }
 
 
-  // BIND EVENTS
-  function _bindToggleEvents (container) {
-    const toggle = _q(toggleSelector, container)[0];
-    toggle.addEventListener('click', _eventTogglePointer);
-    toggle.addEventListener('mouseenter', _eventTogglePointer);
-    toggle.addEventListener('mouseleave', _eventTogglePointerLeave);
+    //  A11Y
+      function _addA11y (container, i) {
+        //  get relative elements
+        let toggle = _q(toggleSelector, container)[0];
+        let tooltip = _q(tooltipSelector, container)[0];
+        //  create new button and replace toggle
+        var button = doc.createElement('button');
+        button.setAttribute('class', toggle.getAttribute('class'));
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-describedby', '');
+        button.textContent = toggle.textContent;
+        container.replaceChild(button, toggle);
+        //  add tooltip attributes
+        tooltip.setAttribute('role', 'tooltip');
+        tooltip.setAttribute('id', tooltipIdPrefix + '-' + i);
+        tooltip.setAttribute('aria-hidden', 'true');
+        tooltip.setAttribute('aria-live', 'polite');
+      }
+
+      function _removeA11y (container) {
+        //  get relative elements
+        let toggle = _q(toggleSelector, container)[0];
+        let tooltip = _q(tooltipSelector, container)[0];
+        //  create new span and replace toggle
+        var span = doc.createElement('span');
+        span.setAttribute('class', toggle.getAttribute('class'));
+        span.textContent = toggle.textContent;
+        container.replaceChild(span, toggle);
+        //  remove tooltip attributes
+        tooltip.removeAttribute('role');
+        tooltip.removeAttribute('id');
+        tooltip.removeAttribute('aria-hidden');
+        tooltip.removeAttribute('aria-live');
+      }
+
+
+      // ACTIONS
+      function _showTooltip (toggle, tooltip) {
+        //  assign describedby matching tooltip reference
+        let tooltipId = tooltip.getAttribute('id');
+        toggle.setAttribute('aria-describedby', tooltipId);
+        //  set visible state
+        toggle.setAttribute('aria-expanded', 'true');
+        tooltip.setAttribute('aria-hidden', 'false');
+        //  store temp reference to tooltip
+        currTooltip = tooltip;
+        //  bind doc close events
+        _defer(_bindDocClick);
+        _defer(_bindDocKey);
+      }
+      function _hideTooltip (toggle, tooltip) {
+        //  remove tooltip reference
+        toggle.setAttribute('aria-describedby', '');
+        //  set visible state
+        toggle.setAttribute('aria-expanded', 'false');
+        tooltip.setAttribute('aria-hidden', 'true');
+        //  remove tooltip temp reference
+        currTooltip = null;
+        //  unbind doc close events
+        _unbindDocClick();
+        _unbindDocKey();
+      }
+      function destroy () {
+        tooltipContainers.forEach((container, i) => {
+          _removeA11y(container, i);
+          _unbindToggleEvents(container);
+          container.classList.remove(readyClass);
+        });
+        //  reset temp references
+        currTooltip = null;
+        //  unbind global events
+        _unbindDocClick();
+        _unbindDocKey();
+      }
+
+
+      // EVENTS
+      function _eventTogglePointer (e) {
+        //  close any open tooltips
+        if (currTooltip) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
+        //  get relevant tooltip elements
+        let toggle = e.target;
+        let tooltip = toggle.nextElementSibling;
+        //  show or hide if toggle is 'expanded'
+        if (toggle.getAttribute('aria-expanded') === 'false') {
+          _showTooltip(toggle, tooltip);
+        } else {
+          _hideTooltip(toggle, tooltip);
+        }
+      }
+
+      function _eventTogglePointerLeave () {
+        if (currTooltip) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
+      }
+
+      function _eventDocClick (e) {
+        //  check if target is panel or child of
+        let isTooltip = e.target === currTooltip;
+        let isTooltipchild = _closest(e.target, tooltipSelector);
+        if (!isTooltip && !isTooltipchild) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
+      }
+      function _eventDocKey (e) {
+        //  esc key
+        if (e.keyCode === 27) _hideTooltip(currTooltip.previousElementSibling, currTooltip);
+      }
+
+
+      // BIND EVENTS
+      function _bindToggleEvents (container) {
+        const toggle = _q(toggleSelector, container)[0];
+        toggle.addEventListener('click', _eventTogglePointer);
+        toggle.addEventListener('mouseenter', _eventTogglePointer);
+        toggle.addEventListener('mouseleave', _eventTogglePointerLeave);
+      }
+      function _bindDocClick () {
+        doc.addEventListener('click', _eventDocClick);
+        doc.addEventListener('touchstart', _eventDocClick);
+      }
+      function _bindDocKey () {
+        doc.addEventListener('keydown', _eventDocKey);
+      }
+
+
+      //  UNBIND EVENTS
+      function _unbindToggleEvents (container) {
+        const toggle = _q(toggleSelector, container)[0];
+        toggle.removeEventListener('click', _eventTogglePointer);
+        toggle.removeEventListener('mouseenter', _eventTogglePointer);
+        toggle.removeEventListener('mouseleave', _eventTogglePointerLeave);
+      }
+      function _unbindDocClick () {
+        doc.removeEventListener('click', _eventDocClick);
+        doc.removeEventListener('touchstart', _eventDocClick);
+      }
+      function _unbindDocKey () {
+        doc.removeEventListener('keydown', _eventDocKey);
+      }
+
+
+      // INIT
+      function init () {
+        if (!tooltipContainers) return;
+        //  loop through each tooltip element
+        tooltipContainers.forEach((container, i) => {
+          _addA11y(container, i);
+          _bindToggleEvents(container);
+          container.classList.add(readyClass);
+        });
+      }
+      init();
   }
-  function _bindDocClick () {
-    doc.addEventListener('click', _eventDocClick);
-    doc.addEventListener('touchstart', _eventDocClick);
-  }
-  function _bindDocKey () {
-    doc.addEventListener('keydown', _eventDocKey);
-  }
-
-
-  //  UNBIND EVENTS
-  function _unbindToggleEvents (container) {
-    const toggle = _q(toggleSelector, container)[0];
-    toggle.removeEventListener('click', _eventTogglePointer);
-    toggle.removeEventListener('mouseenter', _eventTogglePointer);
-    toggle.removeEventListener('mouseleave', _eventTogglePointerLeave);
-  }
-  function _unbindDocClick () {
-    doc.removeEventListener('click', _eventDocClick);
-    doc.removeEventListener('touchstart', _eventDocClick);
-  }
-  function _unbindDocKey () {
-    doc.removeEventListener('keydown', _eventDocKey);
-  }
-
-
-  // INIT
-  function init () {
-    if (!tooltipContainers) return;
-    //  loop through each tooltip element
-    tooltipContainers.forEach((container, i) => {
-      _addA11y(container, i);
-      _bindToggleEvents(container);
-      container.classList.add(readyClass);
-    });
-  }
-  init();
-
-
-  // REVEAL API
-  return {
-    init,
-    destroy
-  }
-}
-
-
-
 
 
 // Google Analytics
 
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-65207823-2', 'auto');
-	ga('send', 'pageview');
+  ga('create', 'UA-65207823-2', 'auto');
+  ga('send', 'pageview');
 });
+
+
+

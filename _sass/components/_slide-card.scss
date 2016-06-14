@@ -1,11 +1,11 @@
-$Portfolio-Card-height: 20em;
+$Portfolio-Card-height: 16em;
+$Portfolio-Card-width: 17em;
+$Portfolio-Card-width__large: 22em;
 
 html.no-flexbox.flexwrap,
 html.flexbox.no-flexwrap {
 
-  .Portfolio_Cards {
-    @include clearfix();
-  }
+  .Portfolio_Cards { @include clearfix(); }
 
   .Portfolio-Card-Container {
     @include clearfix();
@@ -24,13 +24,13 @@ html.flexbox.flexwrap {
   }
 
   .Portfolio-Card-Container {
-    @include flex(1 1 $Portfolio-Card-height);
+    @include flex(1 1 $Portfolio-Card-width);
 
     padding: 0 $small-spacing;
   }
 
   .Portfolio-Card-Container--highlight {
-    @include flex(5 1 ($Portfolio-Card-height * 1.35));
+    @include flex(5 1 $Portfolio-Card-width__large);
   }
 
 }

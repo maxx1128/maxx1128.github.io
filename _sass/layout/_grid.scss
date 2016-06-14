@@ -47,4 +47,8 @@ body {
 }
 
 // Wide layout wider for more space
-.l-wide { @include syn(xs, 12, 0, ('border-b')); }
+.l-wide {
+  @include syn(xs, 12, 0, ('border-b'));
+  max-width: $max-width;
+  margin: 0 auto;
+}

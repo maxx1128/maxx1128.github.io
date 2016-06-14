@@ -4,11 +4,10 @@ title:  "Have a Second Blade"
 date:   2016-06-12 07:40:02 -0500
 categories: philosophy random
 subheading: "An unusual manga about killing an alien teacher has a good career lesson for us all."
+featured-img: /img/posts/second-blade/classroom.png
 ---
 
 I rediscovered an important career lesson in [a manga where high schoolers try to kill their tentacle-alien teacher](http://www.mangatown.com/manga/ansatsu_kyoushitsu/). An unlikely place, but I swear it's worth it.
-
-{% include image.html place="post-three-quarter-image aden" url="/img/posts/second-blade/classroom.png" %}
 
 The important lesson is to **have a second blade.** That's an edgier way of saying "have a backup plan." Not a small one though. A backup plan for one's entire career.
 

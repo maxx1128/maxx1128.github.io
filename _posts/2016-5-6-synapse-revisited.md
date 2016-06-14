@@ -3,7 +3,7 @@ layout: post
 title:  "Synapse Revisited - First Grids, then the World!"
 date:   2016-05-06 07:40:02 -0500
 categories: web-development
-excerpt: "After working out Synapse's bugs, it's gone from a grid system to a flexible, multi-purpose time-saver."
+subheading: "After working out Synapse's bugs, it's gone from a grid system to a flexible, multi-purpose time-saver."
 ---
 
 A few months ago I finished [Synapse](https://github.com/maxx1128/Synapse-Grid), a Sass grid-system trying to bring the simplicity of Expressive CSS without the bloat. It's come in handy for several projects but has been limited. I quickly found several bugs, big and small. Plus it'd eaten way too much fast food and got some serious artery problems.

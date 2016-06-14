@@ -5,13 +5,12 @@ $menu-opacity: 0.6;
 header {
   @include transition(0.5s);
   margin-bottom: $base-spacing;
+  position: relative;
 
-  @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)));
+  @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)), url($nav-background), no-repeat center);
+  background-size: cover !important;
+  background-position: center !important;
   color: color(blank);
-  background-image: url($nav-background);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   a {
     color: color(blank);
@@ -22,12 +21,13 @@ header {
 }
 
 .flexbox header {
-  @include flexy-breakpoint($tablet-screen) { min-height: 13em; }
+  @include flexy-breakpoint($tablet-screen) { min-height: 14em; }
+  @include flexy-breakpoint($desktop-screen) { min-height: 16em; }
 }
 
 .header__container {
-  @include syn(xs, 12, 0, (pad-1, border-b, align-l));
-  @include syn(md, 10, 1, (pad-b-0, align-c));
+  @include syn(xs, 12, 0, (pad-1 border-b align-l));
+  @include syn(md, 10, 1, (pad-b-0 pad-t-2 align-c));
   @include syn(lg, 8, 2, (''));
 
   @include clearfix();
@@ -50,6 +50,8 @@ header {
 .site-tagline {
   @include syn(xs, 0, 0, (hide marg-t-0 marg-b-2));
   @include syn(md, 0, 0, (block));
+
+  line-height: 1.4em;
 }
 
 .site-menu {

@@ -1,4 +1,4 @@
-- name: Max Antonucci
+- name: Home
   link: '/'
 
 - name: About
@@ -7,7 +7,7 @@
 - name: Portfolio
   link: '/portfolio/'
 
-- name: Resume
+- name: History
   link: '/resume/'
 
 - name: Blog
