@@ -5,19 +5,19 @@
 
   <body class="homepage">
 
-	<section class="home-opening">
-		<article class="home-title">
+	<section class="l-home__opening">
+		<article class="l-home__title">
 			<h2>{{ site.title }}</h2>
 			<h5>{{ site.description }}</h5>
 			<button id="learn-more-button">Learn More</button>
 		</article>
-		<article class="home-image">
+		<article class="l-home__image">
 			<img src="img/profile-dev.png">
 		</article>
 	</section>
 
-	<section class="home-info">
-		<article class="home-perspective">
+	<section class="l-home__info">
+		<article class="l-home__perspective">
 			<div class="cube">
 			    {% for skill in site.data.skills %}
 					<div class="side perspective-{{ skill.side }}">
@@ -27,27 +27,27 @@
 			  </div>
 		</article>
 
-		<article class="home-info-description">
-			<h3 class="home-info-description-title">About me</h3>
+		<article class="l-home__info-description">
+			<h3 class="l-home__info-description-title">About me</h3>
 			{{ content }}
 		</article>
 	</section>
 
-	<section class="home-blog">
-		<h3 class="home-blog-mainTitle" >From My Blog</h3>
+	<section class="l-home__blog">
+		<h3 class="l-home__blog-mainTitle" >From My Blog</h3>
 		{% for post in site.posts limit: 2 %}
-		    <article class="home-blog-item">
-		      <h4 class="home-blog-title">
+		    <article class="l-home__blog-item">
+		      <h4 class="l-home__blog-title">
 		        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 		      </h4>
 		      
-		      <div class="home-blog-excerpt"> 
+		      <div class="l-home__blog-excerpt"> 
 		        {{ post.excerpt }}
 		      </div>
 		    </article>
 		{% endfor %}
 		<br>
-		<div class="home-blog-link">		
+		<div class="l-home__blog-link">		
 			<button>
 				<a href="/blog/">
 					More From My Blog

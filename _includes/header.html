@@ -1,17 +1,6 @@
-<header class="hide-menu">
+<header class="hide-menu" {% if page.featured-img %} style="background-image: url({{ page.featured-img }});" {% endif %}>
 
-  <div class="header-container">
-    <a href="{{ site.baseurl }}/">
-      <h3 class="site-title">
-        {{ site.title }}
-      </h3>
-    </a>
-
-    <h6 class="site-tagline">{{ site.description }}</h6>
-
-    <i class="header-icon icon-menu" href="javascript:void(0)"></i>
-  </div>
-  <div class="header-subcontainer">
+  <div class="header__subcontainer">
 
     <ul class="site-menu">
       {% for menu in site.data.menu %}
@@ -22,6 +11,26 @@
         </a>
       {% endfor %}
     </ul>
+  </div>
+
+  <div class="header__container">
+    <h3 class="site-title">
+      {{ page.title }}
+    </h3>
+
+    <p class="l-post__meta">
+      <time itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+    </p>
+
+    <h6 class="site-tagline">
+      {{ page.subheading }}
+    </h6>
+
+    
+
+    <i class="header__icon icon-menu" href="javascript:void(0)"></i>
   </div>
 
 </header>

@@ -1,12 +1,16 @@
-$nav-darken: 0.65;
+$nav-darken: 0.8;
 $nav-background: '/img/nav.jpg';
 $menu-opacity: 0.6;
 
 header {
   @include transition(0.5s);
+  margin-bottom: $base-spacing;
 
-  @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)), url($nav-background) no-repeat center);
+  @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)));
   color: color(blank);
+  background-image: url($nav-background);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
   a {
@@ -17,9 +21,14 @@ header {
   }
 }
 
-.header-container {
+.flexbox header {
+  @include flexy-breakpoint($tablet-screen) { min-height: 13em; }
+}
+
+.header__container {
   @include syn(xs, 12, 0, (pad-1, border-b, align-l));
-  @include syn(md, 0, 0, (pad-b-0, align-c));
+  @include syn(md, 10, 1, (pad-b-0, align-c));
+  @include syn(lg, 8, 2, (''));
 
   @include clearfix();
 }
@@ -39,7 +48,7 @@ header {
 }
 
 .site-tagline {
-  @include syn(xs, 0, 0, (hide, marg-vert-1));
+  @include syn(xs, 0, 0, (hide marg-t-0 marg-b-2));
   @include syn(md, 0, 0, (block));
 }
 
@@ -52,14 +61,12 @@ header {
   background-color: color(light);
 
   @include flexy-breakpoint($tablet-screen) {
-    margin-top: $small-spacing;
     background-color: rgba(color(light), $menu-opacity);
   }
 }
 
 .site-menu-item {
   @include syn(xs, 12, 0, (pad-1 inline-b border-b align-c));
-  @include syn(md, 3, 0, ('float-l'));
   @include clearfix();
 
   border-top: 1px solid color(light);
@@ -67,6 +74,8 @@ header {
 
   @include flexy-breakpoint($tablet-screen) {
     @include transition(0.25s);
+    width: percentage(1/5);
+    float: left;
     border: 0;
   }
 
@@ -77,7 +86,7 @@ header {
   }
 }
 
-.header-icon {
+.header__icon {
   @include syn(xs, 0, 0, (inline float-r align-c));
   @include syn(md, 0, 0, (hide));
 

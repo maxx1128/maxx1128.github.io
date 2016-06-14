@@ -1,5 +1,5 @@
 // Total opening container for first part of the homepage. Always takes up the full screen
-.home-opening {
+.l-home__opening {
   @include syn(xs, 12, 0, (marg-b-2));
   @include syn(xs, 0, 0, (marg-b-0));
 
@@ -7,8 +7,8 @@
   min-height: 100vh;
 }
 
-.home-title,
-.home-image {
+.l-home__title,
+.l-home__image {
   text-align: center;
 
   h2 {
@@ -19,7 +19,7 @@
   h5 { margin-top: 0; }
 }
 
-.home-image {
+.l-home__image {
   img {
     border-radius: 100%;
     border: $secondary-border-width solid color(dark);
@@ -28,7 +28,7 @@
 }
 
 // The extra information right below the home opening
-.home-info {
+.l-home__info {
   @include clearfix();
   @include padding(5em $base-spacing);
   box-sizing: border-box;
@@ -36,7 +36,7 @@
   background-color: color(blank);
 }
 
-.home-perspective {
+.l-home__perspective {
   @include syn(xs, 12, 0, (pad-1 border-b float-l marg-b-4));
   @include syn(md, 4, 0, (pad-2 pad-t-5 marg-b-0));
   @include clearfix();
@@ -44,21 +44,21 @@
   height: 12.75em;
 }
 
-.home-info-description {
+.l-home__info-description {
   @include syn(xs, 12, 0, (align-c, border-b, float-l));
   @include syn(md, 8, 0, (pad-sides-4, align-l));
 }
 
-.home-info-description-title { @include margin(0.15em null); }
+.l-home__info-description-title { @include margin(0.15em null); }
 
-.home-blog {
+.l-home__blog {
   @include clearfix();
   @include padding($base-spacing 2.5%);
 }
 
-.home-blog-mainTitle { text-align: center; }
+.l-home__blog-mainTitle { text-align: center; }
 
-.home-blog-item {
+.l-home__blog-item {
   @include syn(xs, 12, 0, (pad-2 marg-vert-2 align-c border-b));
   @include syn(md, 10, 1, (pad-3));
 
@@ -70,11 +70,11 @@
   &:last-of-type { margin-bottom: $base-spacing; }
 }
 
-.home-blog-title { margin-top: 0; }
+.l-home__blog-title { margin-top: 0; }
 
 .blog-excerpt > * { margin-bottom: 0; }
 
-.home-blog-link {
+.l-home__blog-link {
   @include syn(xs, 12, 0, (inline center-m align-c));
   @include clearfix();
   display: inline-block;
@@ -86,14 +86,14 @@
 }
 
 .flexbox.flexwrap {
-  .home-opening {
+  .l-home__opening {
     @include flexy-row();
     @include flexy-align(middle);
     @include flexy-justify(center);
   }
 
-  .home-title,
-  .home-image {
+  .l-home__title,
+  .l-home__image {
     @include flexy-span(12, $padding: $base-spacing);
 
     @include flexy-breakpoint($tablet-screen) {
@@ -101,7 +101,7 @@
     }
   }
 
-  .home-image {
+  .l-home__image {
 
     img {
       @include size(100% auto);
@@ -114,7 +114,7 @@
 .no-flexbox.flexwrap,
 .flexbox.no-flexwrap {
 
-  .home-opening {
+  .l-home__opening {
     @include clearfix();
     @include syn(xs, 12, 0, (''));
     @include syn(md, 10, 1, (''));
@@ -124,8 +124,8 @@
     @include flexy-breakpoint($tablet-screen) { margin-bottom: -6em; }
   }
 
-  .home-title,
-  .home-image {
+  .l-home__title,
+  .l-home__image {
     @include syn(xs, 10, 1, (pad-2 border-b));
     @include syn(md, 6, 0, (float-l marg-0));
   }

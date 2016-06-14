@@ -3,20 +3,6 @@ layout: default
 ---
 <article class="l-post" itemscope itemprop="articleBody" itemtype="http://schema.org/BlogPosting">
 
-  <div class="l-post__header">
-    <h3 class="l-post__title" itemprop="name headline">{{ page.title }}</h3>
-    <p class="l-post__meta">
-      Published on 
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}
-      </time>
-    </p>
-
-    <img src="{{ page.featured-img }}">
-  </div>
-
-  <hr>
-
   {{ content }}
 
   <h6 class="l-post__sig">- Max Antonucci</h6>
