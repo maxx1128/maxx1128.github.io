@@ -31,11 +31,12 @@ h3,
 h4,
 h5,
 h6 {
-  @include line-height(1.5);
-  @include margin-top(2.5);
+  @include line-height(1);
+  @include margin-top(2);
   @include margin-bottom(1);
 
   font-family: $heading-font-family;
+  font-weight: 300;
 }
 
 h1 + h2 { @include margin-top(1); }

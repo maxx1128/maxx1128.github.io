@@ -1,14 +1,14 @@
 // ----- Typography Variables ----- //
 
-$base-font-size: 105;
-$line-height: 1.825;
+$base-font-size: 120;
+$line-height: 2.1;
 
 $base: 16 * ($base-font-size / 100);
 $base-rem: ($base-font-size / 100);
 $leading: round($base * $line-height);
 $leading-rem: $leading / $base;
 
-$base-font-family: 'Droid Sans', 'lucida grande', Verdana, sans-serif;
+$base-font-family: 'Raleway', 'lucida grande', Verdana, sans-serif;
 $heading-font-family: 'Montserrat', 'Trebuchet MS', Arial, sans-serif;
 
 $modular-scale-ratio: $major-third;
