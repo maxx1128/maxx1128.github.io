@@ -3,7 +3,8 @@ layout: post
 title:  "What Are People Entitled To?"
 date:   2016-2-19 07:40:02 -0500
 categories: philosophy politics
-subheading: "As the 2016 election approaches, my thoughts turn to political philosophy. So I ask, how would I define an ideal entitlement system for the state? Don't worry, no crazy politics here."
+subheading: "As the 2016 election approaches, my thoughts turn to political philosophy. So I ask, how would I define an ideal entitlement system for the state?"
+featured-img: /img/posts/entitlement/carlin-education.jpg
 ---
 
 Like any person with Internet access, I've been exposed to the 2016 election. The one I followed the most was Bernie Sander's surprising success, which made me think of one issue: entitlements.

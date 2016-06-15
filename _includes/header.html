@@ -1,4 +1,4 @@
-<header class="hide-menu" {% if page.featured-img %} style="background: linear-gradient(rgba(49,57,98,0.8), rgba(49,57,98,0.8)),url('{{ page.featured-img }}');" {% endif %}>
+<header class="hide-menu" {% if page.featured-img %} style="background: linear-gradient(rgba(49,57,98,0.85), rgba(49,57,98,0.85)),url('{{ page.featured-img }}');" {% endif %}>
 
 
 
@@ -21,7 +21,11 @@
     </h3>
 
     <h6 class="site-tagline">
-      {{ page.subheading }}
+      {% if page.subheading %}
+        {{ page.subheading }}
+      {% else %}
+        {{ page.excerpt }}
+      {% endif %}
     </h6>
 
     {% if page.date %}

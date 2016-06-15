@@ -3,6 +3,7 @@ layout: post
 title:  "Goodbye Font Awesome, Hello Fontastic"
 date:   2015-8-16 07:40:02 -0500
 categories: web-development
+featured-img: /img/posts/fontastic/icon-examples.png
 ---
 
 I've loved FontAwesome for a long time, but now I must say goodbye for a better icon service.

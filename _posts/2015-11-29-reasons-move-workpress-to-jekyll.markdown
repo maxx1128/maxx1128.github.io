@@ -4,6 +4,7 @@ title:  "Why I Switched to Jekyll"
 date:   2015-11-29 05:40:02 -0500
 categories: web-development
 published: true
+featured-img: /img/posts/jekyll/jekyll-logo.png
 ---
 
 Even though I remade my personal website twice in the last six months, I did it again with Jekyll. Its benefits were too good to pass up.

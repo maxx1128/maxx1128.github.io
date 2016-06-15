@@ -3,6 +3,7 @@ layout: post
 title:  "The Dying Man I Met Before Graduation"
 date:   2015-12-15 21:04:02 -0500
 categories: personal
+featured-img: /img/posts/graduation-art/Carnegie.jpg
 ---
 
 On my graduation day, I met a man. The meeting lasted only fifteen minutes. He was dying. And it changed my entire graduation and life.

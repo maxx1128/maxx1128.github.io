@@ -3,7 +3,7 @@
   @include flex-wrap(wrap);
   @include align-items(stretch);
 
-  margin-bottom: $base-spacing;
+  margin-bottom: $small-spacing;
 }
 
 .blog-list__item {
@@ -45,8 +45,6 @@
   }
 }
 
-.blog-list__excerpt {
-  color: color(dark);
-}
+.blog-list__excerpt { color: color(dark); }
 
 

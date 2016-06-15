@@ -3,6 +3,7 @@ layout: post
 title:  "The Resolution Checklist for My Last College Semester"
 date:   2014-12-29 07:40:02 -0500
 categories: productivity
+featured-img: /img/posts/resolution-checklist/compare.jpg
 ---
 
 As Internet law requires, I’m required to write either a review of something from 2014 or some expectations for 2015. I’m going with a checklist of new resolutions for the coming year.

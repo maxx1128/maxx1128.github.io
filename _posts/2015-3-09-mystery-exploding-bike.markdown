@@ -3,6 +3,8 @@ layout: post
 title:  "The Mystery of the Exploding Bike"
 date:   2015-3-09 07:40:02 -0500
 categories: personal
+featured-img: /img/posts/exploding-bike/3.jpg
+subheading: The most interesting mystery I found in Italy? Has to be the bike whose explosion makes no sense.
 ---
 
 There were many things in my semester abroad that intrigued or fascinated me, but only a few that flat-out confused me. Italy’s biggest mystery was the Mystery of the Exploding Bike. 

@@ -3,6 +3,7 @@ layout: post
 title:  "12 Simple Lessons From a Social Media Manager"
 date:   2014-7-07 07:40:02 -0500
 categories: social-media
+subheading: So far in my summer at AmeriCares, I've picked up many good lessons on managing social media.
 ---
 
 Career-wise, I can say my summer has gone fairly well so far (I won’t be speaking of the other areas, believe me). I was very lucky to be the social media and web management intern at AmeriCares, a global health nonprofit for humanitarian aid and disaster relief, since it’s pretty *** close to my ideal job in the future.

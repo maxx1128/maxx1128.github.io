@@ -3,6 +3,7 @@ layout: page
 title: About
 subheading: The story of my entire life, give or take a few details
 permalink: /about/
+featured-img: /img/pages/about.jpg
 ---
 
 Hello, you've reached the About Page of Max Antonucci. I'm likely not here right now, so please read the following major info about myself and leave a issue or pull request after the footer:

@@ -3,6 +3,7 @@ layout: post
 title:  "An Important Lesson Learned from Canadian Ice Sculptures"
 date:   2015-2-16 07:40:02 -0500
 categories: personal
+featured-img: /img/posts/ice-sculptures/sculpture1.jpg
 ---
 
 How does one connect cartoons, Canada, ice sculptures, and giant thought bubbles in one post?  If that got your attention, please read on about my trip last week.
