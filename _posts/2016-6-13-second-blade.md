@@ -17,8 +17,6 @@ First off, the manga "Assassination Classroom" is a great read for many reasons:
 
 In this chapter, the teacher Koro-Sensei duplicates himself to tutor each student for exams (stick with me here). But the students say if they can assassinate him for the reward money, they'll be set for life. Knowing this, their grades don't matter. As long as they kill him, things will work out.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae minima deleniti, dolorem, perferendis quo voluptatem nam officia blanditiis <span class="fr-tooltip js-fr-tooltip"><span class="fr-tooltip-toggle js-fr-tooltip-toggle">ipsam</span><span class="fr-tooltip-tooltip js-fr-tooltip-tooltip">Tooltip describing ipsam</span></span> earum officiis nostrum magnam fuga corporis aliquam quam, ut unde!
-
 Koro-Sensei then, for some reason while making a tornado, gives an important lesson: **the success of their primary goal isn't assured.** They may fail the assassination before the year is over. Someone outside the class may kill him. He could leave the classroom and avoid their future attempts. Most of these possibilities are totally outside their control.
 
 In short, what they built their futures on is fragile. So they need at least one backup plan for their lives, or as he calls it, **a second blade.** [Otherwise they're not qualified to call themselves assassins.](http://www.mangatown.com/manga/ansatsu_kyoushitsu/c013/15.html)
