@@ -1,9 +1,11 @@
 ul,
 ol {
   @include syn(xs, 0, 0, (marg-0 marg-b-2 pad-0));
-  padding-left: $base-spacing * 1.75;
 
   list-style-type: none;
+  padding-left: $small-spacing;
+
+  @include flexy-breakpoint($tablet-screen) { padding-left: $base-spacing * 1.75; }
 }
 
 ul { list-style-type: disc; }
