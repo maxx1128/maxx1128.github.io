@@ -34,19 +34,15 @@ featured-img: /img/pages/blog.jpg
 <div class="pagination">
   {% if paginator.previous_page %}
     <p class="pagination-prev">
-      <a href="{{ paginator.previous_page_path }}">
-        <button>
-          Newer Posts
-        </button>
+      <a class="button" href="{{ paginator.previous_page_path }}">
+        Newer Posts
       </a>
     </p>
   {% endif %}
   {% if paginator.next_page %}
     <p class="pagination-next">
-      <a href="{{ paginator.next_page_path }}">
-        <button>
-          Older Posts
-        </button>
+      <a class="button" href="{{ paginator.next_page_path }}">
+        Older Posts
       </a>
     </p>
   {% endif %}
