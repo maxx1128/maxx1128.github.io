@@ -1,3 +1,10 @@
+- name: Pattern Lab Fork
+  date: 6/12/2016
+  image: pattern-lab.png
+  highlight: true
+  description: "Brad Frost's Pattern Lab is a great template for future web projects. I added a custom Sass architecture, a new layout, annotations in Markdown, and removed any unneeded elements. It's a starting point that's best for more complex projects being built from the ground up."
+  link: http://maxwellantonucci.com/patternlab-node/
+
 - name: Color Palette Generator
   date: 5/29/2016
   image: palette-generator.png
