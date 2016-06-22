@@ -18,7 +18,7 @@ You know people are busy and don’t want to waste their time.
 You’re confident your post will be good without overcompensating by piling on more content.
 Simpler ideas and content are more shareable, which is always an asset today.
 
-!["If an idea can be explained simply, it is mastered."](/img/posts/short-posts/quote.jpg)
+{% include image.html place="post-three-quarter-image" url="/img/posts/short-posts/quote.jpg" %}
 
 It often takes more skill to make a short post as good as a long one.  So keep your short post writing muscles strong. It doesn’t take as much time as writing long posts, so you have fewer excuses not to.
 
