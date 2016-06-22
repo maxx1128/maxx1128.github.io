@@ -8,6 +8,6 @@
 .pagination-next,
 .pagination-prev { @include syn(xs, 0, 0, (pad-vert-2 align-c)); }
 
-.pagination-next { @include syn(md, 3, 0, (float-l align-r)); }
+.pagination-next { @include syn(md, 3, 0, (float-l align-l)); }
 
-.pagination-prev { @include syn(md, 3, 0, (float-r align-l)); }
+.pagination-prev { @include syn(md, 3, 0, (float-r align-r)); }
