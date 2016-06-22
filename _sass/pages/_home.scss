@@ -21,7 +21,10 @@
 
 .l-home__image {
   img {
+    @include size(100% auto);
     border-radius: 100%;
+    max-width: em(350px);
+
     border: $secondary-border-width solid color(dark);
     background-color: $secondary-background-color;
   }
@@ -98,14 +101,6 @@
 
     @include flexy-breakpoint($tablet-screen) {
       @include flexy-span(4, $padding: $base-spacing);
-    }
-  }
-
-  .l-home__image {
-
-    img {
-      @include size(100% auto);
-      max-width: em(350px);
     }
   }
 }
