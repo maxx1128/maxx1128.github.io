@@ -26,7 +26,7 @@ $( document ).ready(function() {
   // On homepage, button to scroll from opening section
   $("#learn-more-button").click(function() {
     $('html, body').animate({
-        scrollTop: $(".home-info").offset().top
+        scrollTop: $(".l-home__info").offset().top
     }, 1500);
   });
 

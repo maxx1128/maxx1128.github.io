@@ -1,20 +1,20 @@
 $button-color: color(blank);
 
-#{$all-buttons} {
+.button {
   appearance: none;
   background-color: $action-color;
   border: 0;
   border-radius: $base-border-radius * 2;
   color: $button-color;
   cursor: pointer;
-  display: block;
+  display: inline;
   font-family: $base-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
   margin: 0 auto;
-  padding: $small-spacing $base-spacing;
+  padding: ($small-spacing * 0.75) $small-spacing;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;

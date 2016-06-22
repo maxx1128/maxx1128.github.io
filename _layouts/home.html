@@ -9,7 +9,9 @@
 		<article class="l-home__title">
 			<h2>{{ site.title }}</h2>
 			<h5>{{ site.description }}</h5>
-			<button id="learn-more-button">Learn More</button>
+			<a href="javascript:void(0)" class="button" id="learn-more-button">
+				Learn More
+			</a>
 		</article>
 		<article class="l-home__image">
 			<img src="img/profile-dev.png">
@@ -48,11 +50,9 @@
 		{% endfor %}
 		<br>
 		<div class="l-home__blog-link">		
-			<button>
-				<a href="/blog/">
-					More From My Blog
-				</a>
-			</button>
+			<a class="button" href="/blog/">
+				More From My Blog
+			</a>
 		</div>
 	</section>
 
