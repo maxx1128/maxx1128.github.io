@@ -4,6 +4,7 @@ title:  "Have a Second Blade"
 date:   2016-06-12 07:40:02 -0500
 categories: philosophy random
 subheading: "An unusual manga about killing an alien teacher has a good career lesson for us all."
+excerpt: "An unusual manga about killing an alien teacher has a good career lesson for us all."
 featured-img: /img/posts/second-blade/classroom.png
 ---
 
