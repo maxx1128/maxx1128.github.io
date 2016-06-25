@@ -1,6 +1,7 @@
 $nav-darken: 0.85;
 $nav-background: '/img/nav.jpg';
 $menu-opacity: 0.75;
+$nav-height: rem(105px);
 
 header {
   @include transition(0.5s);
@@ -31,6 +32,8 @@ header {
   @include syn(lg, 8, 2, (''));
 
   @include clearfix();
+  position: relative;
+  height: $nav-height;
 }
 
 .site-title {
@@ -95,11 +98,12 @@ header {
   @include transition(0.5s);
   @include transform(rotate(180deg));
   @include transform-origin(center);
-  @include padding($small-spacing ($small-spacing / 4) $small-spacing 0);
+  @include padding(1.75rem ($small-spacing / 4) null ($small-spacing / 4));
+  @include position(absolute, 0 0 0 null);
 
   max-width: 20%;
 
-  font-size: ($base-spacing * 0.75);
+  font-size: calc(#{$nav-height} - (#{$base-spacing} + #{$small-spacing}));
   cursor: pointer;
 
   .hide-menu & {
