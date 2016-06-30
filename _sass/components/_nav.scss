@@ -6,6 +6,7 @@ $nav-height: rem(105px);
 header {
   @include transition(0.5s);
   margin-bottom: $base-spacing;
+  min-height: 8.5em;
   position: relative;
 
   @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)), url($nav-background), no-repeat center);
@@ -19,11 +20,8 @@ header {
     &:hover,
     &:focus { color: $base-background-color; }
   }
-}
 
-.flexbox header {
-  @include flexy-breakpoint($tablet-screen) { min-height: 14em; }
-  @include flexy-breakpoint($desktop-screen) { min-height: 16em; }
+  @include flexy-breakpoint($tablet-screen) { min-height: 16em; }
 }
 
 .header__container {
@@ -33,7 +31,7 @@ header {
 
   @include clearfix();
   position: relative;
-  height: $nav-height;
+  // height: $nav-height;
 }
 
 .site-title {
@@ -117,5 +115,23 @@ header {
   .site-menu {
     @include syn(xs, 0, 0, (hide));
     @include syn(md, 0, 0, (block));
+  }
+}
+
+.flexbox {
+  header {
+    @include display(flex);
+    @include flex-direction(column);
+  }
+
+  // The top menu
+  .header__subcontainer {
+    @include flex(1);
+  }
+
+  // Below the menu, with the page title and subheading
+  .header__container {
+    @include flex(1);
+    padding-top: 0;
   }
 }

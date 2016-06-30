@@ -12,7 +12,10 @@
 .l-post__subheading { @include syn(xs, 0, 0, (marg-t-1 marg-b-0)); }
 
 // When the post was published
-.l-post__meta { @include syn(xs, 0, 0, (align-c italic marg-t-1 marg-b-2)); }
+.l-post__meta {
+  @include syn(xs, 0, 0, (hide));
+  @include syn(md, 0, 0, (align-c italic marg-t-1 marg-b-2 inline-b));
+}
 
 blockquote {
   @include syn(xs, 0, 0, (align-c, pad-2));
