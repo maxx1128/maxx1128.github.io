@@ -4,6 +4,7 @@ title:  "Review: Blinkist for Curious Readers"
 date:   2015-12-24 07:40:02 -0500
 categories: productivity
 subheading: A few weeks ago I stumbled upon an app I'd wished for for years. It's Blinkist, and you should try it too. Please. It's for your own good.
+featured-img: /img/posts/blinkist-review/blinkist.jpg
 ---
 
 A few weeks ago I stumbled upon an app I'd wished for for years. It's [Blinkist](http://www.blinkist.com), and you should try it too. Please. It's for your own good.
