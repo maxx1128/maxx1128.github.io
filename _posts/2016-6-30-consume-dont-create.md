@@ -3,8 +3,8 @@ layout: post
 title:  "Create, Don't Consume"
 date:   2016-06-22 07:40:02 -0500
 categories: thought
-subheading: "Our minds almost randomly go from sharp to dull. People can't control this, but can work around it."
-excerpt: "Our minds almost randomly go from sharp to dull. People can't control this, but can work around it."
+subheading: "One powerful mental habit I've learned before is to spend free time creating, not consuming."
+excerpt: "One powerful mental habit I've learned before is to spend free time creating, not consuming."
 featured-img: /img/posts/create-dont-consume/featured.png
 ---
 
