@@ -3,6 +3,7 @@ layout: post
 title:  "Can We Express Ourselves Safely Online?"
 date:   2016-1-23 07:40:02 -0500
 categories: personal
+featured-img: /img/posts/express-safely-online/conversation.png
 ---
 
 If I chose my least favorite effect the Internet has on people, it's the fear of self-expression.
