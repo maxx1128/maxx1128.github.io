@@ -70,7 +70,10 @@ $blog-item-bg-tint: 0.91;
   & * { z-index: 5; }
 }
 
-.blog-list__excerpt { color: color(dark); }
+.blog-list__excerpt {
+  color: color(dark);
+  font-size: modular-scale(1);
+}
 
 html:not(.flexbox) {
   .blog-list__container { background-image: none !important; }

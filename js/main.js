@@ -4,9 +4,10 @@
 {% include_relative jquery.min.js %}
 {% include_relative lazyload.js %}
 
+{% include_relative modernizr.js %}
 
 $( document ).ready(function() {
-    
+
   // To toggle the menus on the homepage and other pages
   $('.header__icon').on('click', function(){
     $('header').toggleClass('hide-menu');

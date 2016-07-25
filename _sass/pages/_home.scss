@@ -77,6 +77,8 @@
 
 .blog-excerpt > * { margin-bottom: 0; }
 
+.l-home__blog-excerpt { font-size: modular-scale(1); }
+
 .l-home__blog-link {
   @include syn(xs, 12, 0, (inline center-m align-c));
   @include clearfix();
