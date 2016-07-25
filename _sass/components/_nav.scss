@@ -6,7 +6,7 @@ $nav-height: rem(105px);
 header {
   @include transition(0.5s);
   margin-bottom: $base-spacing;
-  min-height: 8.5em;
+  // min-height: 8.5em;
   position: relative;
 
   @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)), url($nav-background), no-repeat center);
@@ -21,17 +21,16 @@ header {
     &:focus { color: $base-background-color; }
   }
 
-  @include flexy-breakpoint($tablet-screen) { min-height: 16em; }
+  // @include flexy-breakpoint($tablet-screen) { min-height: 16em; }
 }
 
 .header__container {
   @include syn(xs, 12, 0, (pad-1 border-b align-l));
-  @include syn(md, 10, 1, (pad-b-0 pad-t-2 align-c));
-  @include syn(lg, 8, 2, (''));
+  @include syn(md, 10, 1, (pad-vert-1 align-c));
+  @include syn(lg, 8, 2, (pad-vert-2));
 
   @include clearfix();
   position: relative;
-  // height: $nav-height;
 }
 
 .site-title {
@@ -125,13 +124,8 @@ header {
   }
 
   // The top menu
-  .header__subcontainer {
-    @include flex(1);
-  }
+  .header__subcontainer { @include flex(1); }
 
   // Below the menu, with the page title and subheading
-  .header__container {
-    @include flex(1);
-    padding-top: 0;
-  }
+  .header__container { @include flex(1); }
 }
