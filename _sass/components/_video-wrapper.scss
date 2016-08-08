@@ -18,3 +18,8 @@
     @include size(100%);
   }
 }
+
+// Video that isn't embedded
+video {
+  @include size(100% auto);
+}
