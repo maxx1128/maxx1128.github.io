@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Biggest Content Obstacle is a Natural Workflow"
-date:   2015-10-09 07:40:02 -0500
+date:   2015-10-09Tutor
 categories: writing
 subheading: Trying to write more means not forcing anything I write.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reflecting on the Summer with AmeriCares"
-date:   2014-8-15 07:40:02 -0500
+date:   2014-8-15Tutor
 categories: personal social-media
 featured-img: /img/posts/reflecting-americares/featured.jpg
 subheading: Today marks the end of my time with AmeriCares.

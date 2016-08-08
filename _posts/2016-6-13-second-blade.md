@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Have a Second Blade"
-date:   2016-06-12 07:40:02 -0500
+date:   2016-06-12Tutor
 categories: philosophy random
 subheading: "An unusual manga about killing an alien teacher has a good career lesson for us all."
 excerpt: "An unusual manga about killing an alien teacher has a good career lesson for us all."

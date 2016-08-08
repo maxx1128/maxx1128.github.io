@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "After Three Years, Drawing’s Still My Salvation"
-date:   2014-6-13 07:40:02 -0500
+date:   2014-6-13Tutor
 categories: drawing
 featured-img: /img/posts/drawing-salvation/comic.jpg
 ---

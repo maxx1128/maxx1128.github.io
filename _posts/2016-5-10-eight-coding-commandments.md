@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Eight Coding Commandments"
-date:   2016-05-20 07:40:02 -0500
+date:   2016-05-20Tutor
 categories: web-development philosophy
 featured-img: /img/posts/coding-commandments/featured.png
 subheading: "Having a firm, clear set of rules helps a lot in web development. These aim for modular, maintainable code at all times."

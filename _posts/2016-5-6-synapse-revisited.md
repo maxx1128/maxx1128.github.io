@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Synapse Revisited - First Grids, then the World!"
-date:   2016-05-06 07:40:02 -0500
+date:   2016-05-06Tutor
 categories: web-development
 subheading: "After working out Synapse's bugs, it's gone from a grid system to a flexible, multi-purpose time-saver."
 ---

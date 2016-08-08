@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Death, Dogs, and Distance"
-date:   2016-07-01 07:40:02 -0500
+date:   2016-07-01Tutor
 categories: personal
 subheading: "Being so close to death is terrifying, but being far away from it is even worse."
 excerpt: "Being so close to death is terrifying, but being far away from it is even worse."

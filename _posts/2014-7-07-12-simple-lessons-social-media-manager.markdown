@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "12 Simple Lessons From a Social Media Manager"
-date:   2014-7-07 07:40:02 -0500
+date:   2014-7-07Tutor
 categories: social-media
 subheading: So far in my summer at AmeriCares, I've picked up many good lessons on managing social media.
 ---

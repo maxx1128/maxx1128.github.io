@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Our High and Low Points"
-date:   2016-06-22 07:40:02 -0500
+date:   2016-06-22Tutor
 categories: thought
 subheading: "Our minds almost randomly go from sharp to dull. People can't control this, but can work around it."
 excerpt: "Our minds almost randomly go from sharp to dull. People can't control this, but can work around it."

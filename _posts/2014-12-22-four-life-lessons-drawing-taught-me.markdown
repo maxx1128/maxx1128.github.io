@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Four Life Lessons Drawing Taught Me"
-date:   2014-12-22 07:40:02 -0500
+date:   2014-12-22Tutor
 categories: drawing
 featured-img: /img/posts/drawing-life-lessons/featured.jpg
 ---

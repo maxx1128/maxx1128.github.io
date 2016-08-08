@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "An Important Lesson Learned from Canadian Ice Sculptures"
-date:   2015-2-16 07:40:02 -0500
+date:   2015-2-16Tutor
 categories: personal
 featured-img: /img/posts/ice-sculptures/sculpture1.jpg
 ---

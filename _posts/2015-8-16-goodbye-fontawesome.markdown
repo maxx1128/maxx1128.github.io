@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Goodbye Font Awesome, Hello Fontastic"
-date:   2015-8-16 07:40:02 -0500
+date:   2015-8-16Tutor
 categories: web-development
 featured-img: /img/posts/fontastic/icon-examples.png
 ---

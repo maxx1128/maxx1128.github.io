@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Fear of Sharing Opinions on Twitter"
-date:   2014-10-27 07:40:02 -0500
+date:   2014-10-27Tutor
 categories: writing social-media
 featured-img: /img/posts/twitter-opinions/featured.jpg
 subheading: Twitter is one of the most open platforms available, yet sharing views on it brings surprising risk to most people.

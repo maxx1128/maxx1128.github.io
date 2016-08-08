@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Create, Don't Consume"
-date:   2016-06-22 07:40:02 -0500
+date:   2016-06-22Tutor
 categories: thought
 subheading: "One powerful mental habit I've learned before is to spend free time creating, not consuming."
 excerpt: "One powerful mental habit I've learned before is to spend free time creating, not consuming."

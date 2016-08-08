@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Can We Express Ourselves Safely Online?"
-date:   2016-1-23 07:40:02 -0500
+date:   2016-1-23Tutor
 categories: personal
 featured-img: /img/posts/express-safely-online/conversation.png
 ---

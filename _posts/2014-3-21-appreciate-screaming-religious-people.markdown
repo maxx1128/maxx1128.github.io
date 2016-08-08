@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why I Appreciate the Religious People Screaming Outside SU"
-date:   2014-3-21 07:40:02 -0500
+date:   2014-3-21Tutor
 categories: drawing
 featured-img: /img/posts/religious-outside-su/featured.jpg
 subheading: Weird as it sounds, I always feel better seeing people yelling inane things near my university.

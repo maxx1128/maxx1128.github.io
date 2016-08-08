@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Synapse: Combining Expressive and Component Grids"
-date:   2016-1-7 07:40:02 -0500
+date:   2016-1-7Tutor
 categories: web-development
 subheading: 'In the great struggle between an Expressive or Component grid system, I made my own compromise.'
 ---
