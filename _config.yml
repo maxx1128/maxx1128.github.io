@@ -24,3 +24,15 @@ sass:
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME
+  - node_modules
+  - package.json
+  - gulpfile.js

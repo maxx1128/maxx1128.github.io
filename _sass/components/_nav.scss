@@ -21,7 +21,7 @@ header {
     &:focus { color: $base-background-color; }
   }
 
-  // @include flexy-breakpoint($tablet-screen) { min-height: 16em; }
+  // @include breakpoint($tablet-screen) { min-height: 16em; }
 }
 
 .header__container {
@@ -39,7 +39,7 @@ header {
 
   margin: ($small-spacing / 2) 0;
 
-  @include flexy-breakpoint($tablet-screen) {
+  @include breakpoint($tablet-screen) {
     float: none;
     max-width: none;
 
@@ -62,7 +62,7 @@ header {
   list-style: none;
   background-color: color(light);
 
-  @include flexy-breakpoint($tablet-screen) {
+  @include breakpoint($tablet-screen) {
     background-color: rgba(color(light), $menu-opacity);
   }
 }
@@ -74,7 +74,7 @@ header {
   border-top: 1px solid color(light);
   border-bottom: 1px solid color(light);
 
-  @include flexy-breakpoint($tablet-screen) {
+  @include breakpoint($tablet-screen) {
     @include transition(0.25s);
     width: percentage(1/5);
     float: left;

@@ -15,7 +15,7 @@
 
   color: color(medium);
 
-  @include flexy-breakpoint($tablet-screen) {
+  @include breakpoint($tablet-screen) {
     border-right: ($base-border-width / 4) solid color(light);
   }
 }

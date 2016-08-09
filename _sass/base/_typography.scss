@@ -18,7 +18,7 @@ body {
     font-size: $scaled-font-size;
     font-size: rem($scaled-font-size);
 
-    @include flexy-breakpoint($tablet-screen) {
+    @include breakpoint($tablet-screen) {
       font-size: $main-font-size;
       font-size: rem($main-font-size);
     }

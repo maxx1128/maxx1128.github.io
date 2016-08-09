@@ -5,7 +5,7 @@ ol {
   list-style-type: none;
   padding-left: $small-spacing;
 
-  @include flexy-breakpoint($tablet-screen) { padding-left: $base-spacing * 1.75; }
+  @include breakpoint($tablet-screen) { padding-left: $base-spacing * 1.75; }
 }
 
 ul { list-style-type: disc; }

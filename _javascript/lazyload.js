@@ -13,6 +13,9 @@
  *
  */
 
+ var $ = require('jquery'),
+     jQuery = require('jquery');
+
 (function($, window, document, undefined) {
     var $window = $(window);
 

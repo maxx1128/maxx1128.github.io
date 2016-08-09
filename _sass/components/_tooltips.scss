@@ -18,7 +18,7 @@
 
   background-color: color(dark);
 
-  @include flexy-breakpoint($tablet-screen) { font-size: 0.83em; }
+  @include breakpoint($tablet-screen) { font-size: 0.83em; }
 
   &:after {
     @include position(absolute, 100% null null 10%);

@@ -1,13 +1,15 @@
----
----
+// Major dependencies
+var $ = require('jquery');
 
-{% include_relative jquery.min.js %}
-{% include_relative lazyload.js %}
+// Modernizr tests and the trigger to run them
+require('browsernizr/test/css/flexbox');
+require('browsernizr/test/css/flexwrap');
+require('browsernizr');
 
-{% include_relative modernizr.js %}
+require("./lazyload.js");
 
-$( document ).ready(function() {
-
+$(document).ready(function() {
+  
   // To toggle the menus on the homepage and other pages
   $('.header__icon').on('click', function(){
     $('header').toggleClass('hide-menu');
@@ -37,10 +39,10 @@ $( document ).ready(function() {
     effect : "fadeIn"
   });
 
-
-  {% include_relative analytics.js %}
-
 });
+
+
+
 
 
 

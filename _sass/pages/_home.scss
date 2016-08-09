@@ -101,7 +101,7 @@
   .l-home__image {
     @include flexy-span(12, $padding: $base-spacing);
 
-    @include flexy-breakpoint($tablet-screen) {
+    @include breakpoint($tablet-screen) {
       @include flexy-span(4, $padding: $base-spacing);
     }
   }
@@ -118,7 +118,7 @@
 
     @include padding(7.5% 1em 1em 1em);
 
-    @include flexy-breakpoint($tablet-screen) { margin-bottom: -6em; }
+    @include breakpoint($tablet-screen) { margin-bottom: -6em; }
   }
 
   .l-home__title,
