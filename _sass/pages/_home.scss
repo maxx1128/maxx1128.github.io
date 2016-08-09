@@ -92,18 +92,20 @@
 
 .flexbox.flexwrap {
   .l-home__opening {
-    @include flexy-row();
-    @include flexy-align(middle);
-    @include flexy-justify(center);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .l-home__title,
-  .l-home__image {
-    @include flexy-span(12, $padding: $base-spacing);
+  .l-home__image { flex: 0 1 rem(350px); }
 
-    @include breakpoint($tablet-screen) {
-      @include flexy-span(4, $padding: $base-spacing);
-    }
+  .l-home__title { flex-basis: rem(400px); }
+
+  .l-home__image {
+    box-sizing: border-box;
+    padding: $small-spacing;
   }
 }
 

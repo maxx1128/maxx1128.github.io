@@ -8,7 +8,7 @@
 }
 
 // Classes for different image sizings
-@include flexy-breakpoint($tablet-screen) {
+@include breakpoint($tablet-screen) {
 
   .post-half-image { max-width: 50%; }
 
@@ -18,7 +18,7 @@
 figure {
   @include syn(xs, 0, 0, (marg-vert-2 center-m block, align-c));
 
-  @include flexy-breakpoint($tablet-screen) {
+  @include breakpoint($tablet-screen) {
     max-width: 75%;
 
     &.left,
@@ -49,30 +49,19 @@ figcaption {
 
 .flexbox.flexwrap {
   .flexy-gallery {
-    @include flexy-row();
-    @include flexy-justify(center);
-    @include flexy-align(middle);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-    img { margin: 0; }
+  .gallery-img {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: $small-spacing;
+    max-width: rem(300px);
 
-    .gallery-img {
-      @include flexy-span(12, $padding: $small-spacing);
-      height: auto;
-
-      box-sizing: border-box;
-
-      @include flexy-breakpoint($mobile-h-screen) {
-        @include flexy-span(6, $padding: $small-spacing);
-      }
-
-      @include flexy-breakpoint($tablet-screen) {
-        @include flexy-span(4, $padding: $small-spacing);
-      }
-
-      @include flexy-breakpoint($desktop-screen) {
-        @include flexy-span(3, $padding: $small-spacing);
-      }
-    }
+    @include breakpoint($tablet-screen) { max-width: 50%; }
   }
 }
 
@@ -86,9 +75,9 @@ figcaption {
     .gallery-img {
       @include syn(xs, 12, 0, (pad-1 inline-b border-b));
 
-      @include flexy-breakpoint($tablet-screen) { width: 48%; }
+      @include breakpoint($tablet-screen) { width: 48%; }
 
-      @include flexy-breakpoint($desktop-screen) { width: 30%; }
+      @include breakpoint($desktop-screen) { width: 30%; }
     }
   }
 }
