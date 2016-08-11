@@ -28,6 +28,13 @@ $(document).ready(function() {
     $(this).attr('target', '_blank');
   });
 
+  // for the side sliding menu
+  $('.sliding-panel__button,.sliding-panel__fade-screen,.sliding-panel__close').on('click touchstart',function (e) {
+    $('.sliding-panel__container,.sliding-panel__fade-screen').toggleClass('sliding-panel__container--is-visible');
+    e.preventDefault();
+  });
+
+
   // Specific tracking for clicking on portfolio items
   $('.portfolio-item').on('click', function(){
    var label = $(this).attr('href');

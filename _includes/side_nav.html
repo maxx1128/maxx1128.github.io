@@ -1,0 +1,19 @@
+<nav class="sliding-panel__container">
+  <ul class="sliding-panel__menu">
+    {% for menu in site.data.menu %}
+      <a class="sliding-panel__menu-item" href="{{ menu.link | prepend: site.baseurl }}">
+        <li>
+          {{ menu.name }}
+        </li>
+      </a>
+    {% endfor %}
+  </ul>
+
+  <!-- <div class="sliding-panel__close">Close Panel</div> -->
+
+  <a class="button sliding-panel__button">
+    <i class="icon-menu"></i>
+  </a>
+</nav>
+
+<div class="sliding-panel__fade-screen"></div>

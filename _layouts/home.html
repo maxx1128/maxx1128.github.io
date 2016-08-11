@@ -37,17 +37,13 @@
 
 	<section class="l-home__blog">
 		<h3 class="l-home__blog-mainTitle" >From My Blog</h3>
-		{% for post in site.posts limit: 2 %}
-		    <article class="l-home__blog-item">
-		      <h4 class="l-home__blog-title">
-		        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-		      </h4>
-		      
-		      <div class="l-home__blog-excerpt"> 
-		        {{ post.excerpt }}
-		      </div>
-		    </article>
-		{% endfor %}
+		<div class="blog-list">
+			  
+			{% for post in site.posts limit: 2 %}
+			  {% include blog_item.html %}
+			{% endfor %}
+
+		</div>
 		<br>
 		<div class="l-home__blog-link">		
 			<a class="button" href="/blog/">

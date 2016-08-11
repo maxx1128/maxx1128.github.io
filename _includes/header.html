@@ -1,18 +1,19 @@
-<header class="hide-menu" {% if page.featured-img %} style="background: linear-gradient(rgba(49,57,98,0.85), rgba(49,57,98,0.85)),url('{{ page.featured-img }}');" {% endif %}>
+<header {% if page.featured-img %} style="background: linear-gradient(rgba(49,57,98,0.85), rgba(49,57,98,0.85)),url('{{ page.featured-img }}');" {% endif %}>
 
+  <div class="top-bar__container">
+    <h5 class="top-bar__name">
+      <a href="/">
+        Max Antonucci
+      </a>
+    </h5>
 
-
-  <div class="header__subcontainer">
-
-    <ul class="site-menu">
-      {% for menu in site.data.menu %}
-        <a class="site-menu-item" href="{{ menu.link | prepend: site.baseurl }}">
-          <li>
-            {{ menu.name }}
-          </li>
+    <div class="top-bar__social">
+      {% for social in site.data.social %}
+        <a class="top-bar__social-icon" href="{{ social.url }}" target="_blank">
+          <i class="icon-{{ social.icon }}"></i>
         </a>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 
   <div class="header__container">
@@ -35,10 +36,6 @@
         </time>
       </p>
     {% endif %}
-
-    
-
-    <i class="header__icon icon-menu" href="javascript:void(0)"></i>
   </div>
 
 </header>

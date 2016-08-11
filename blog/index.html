@@ -8,31 +8,7 @@ featured-img: /img/pages/blog.jpg
 <div class="blog-list">
   
 {% for post in paginator.posts %}
-  <a class="blog-list__item" href="{{ post.url | prepend: site.baseurl }}">
-    <article class="blog-list__container"
-      data-lazyload data-original="{% if post.featured-img %} {{ site.baseurl }}{{ post.featured-img }} {% else %} {{ site.baseurl }}/img/nav.jpg {% endif %}"
-
-      style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"
-    >
-      <div class="blog-list__wrapper">
-        <h4 class="blog-list__title">
-          {{ post.title }}
-        </h4>
-
-        <p class="blog-list__date">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </p>
-        
-        <div class="blog-list__excerpt"> 
-          {% if post.subheading %}
-            {{ post.subheading }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </div>
-      </div>
-    </article>
-  </a>
+  {% include blog_item.html %}
 {% endfor %}
 
 </div>

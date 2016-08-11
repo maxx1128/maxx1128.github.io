@@ -1,0 +1,71 @@
+.sliding-panel__container {  
+  $sliding-panel-width: rem(250px);
+
+  @include position(fixed, 0 auto 0 0);
+  @include size($sliding-panel-width 100%);
+  @include transform(translateX(- $sliding-panel-width));
+  @include transition(all 0.25s linear);
+
+  background: color(blank);
+  -webkit-overflow-scrolling: touch;
+  z-index: 999999;
+
+  &.sliding-panel__container--is-visible {
+    @include transform(translateX(0));
+  }
+}
+
+.sliding-panel__menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sliding-panel__menu-item {
+  @include transition($base-duration);
+  display: block;
+  width: 100%;
+  padding: ($small-spacing * 0.75) $base-spacing;
+  box-sizing: border-box;
+
+  text-align: center;
+  font-family: $heading-font-family;
+
+  border-bottom: 1px solid color(medium);
+
+  &:hover {
+    @include transition($base-duration);
+    background-color: color(light);
+  }
+}
+
+
+.sliding-panel__fade-screen {
+  @include position(fixed, 0 0 0 0);
+  @include transition;
+  background: color(dark);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+
+  &.sliding-panel__container--is-visible {
+    @include transition;
+    opacity: 0.5;
+    visibility: visible;
+  }
+}
+
+.sliding-panel__close {
+  cursor: pointer;
+}
+
+.sliding-panel__button {
+  @include position(absolute, 0.5em null null calc(100% + 0.5em));
+  @include size(1em);
+  opacity: 0.8;
+  padding: 0.5em;
+
+  border-radius: 100%;
+  background-color: color(action);
+}
+
+// Based on code by Diego Eis
