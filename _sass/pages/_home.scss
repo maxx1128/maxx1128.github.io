@@ -25,15 +25,15 @@
     border-radius: 100%;
     max-width: em(350px);
 
-    border: $secondary-border-width solid color(dark);
-    background-color: $secondary-background-color;
+    border: $g-secondary-border-width solid color(dark);
+    background-color: $g-secondary-background-color;
   }
 }
 
 // The extra information right below the home opening
 .l-home__info {
   @include clearfix();
-  @include padding(5em $base-spacing);
+  @include padding(spacing(double) spacing());
   box-sizing: border-box;
 
   background-color: color(blank);
@@ -56,7 +56,7 @@
 
 .l-home__blog {
   @include clearfix();
-  @include padding($base-spacing 2.5%);
+  @include padding(spacing() 2.5%);
 }
 
 .l-home__blog-mainTitle { text-align: center; }
@@ -65,19 +65,19 @@
   @include syn(xs, 12, 0, (pad-2 marg-vert-2 align-c border-b));
   @include syn(md, 10, 1, (pad-3));
 
-  border-radius: $base-border-radius;
-  border-bottom: $secondary-border-width solid color(light);
+  border-radius: $g-base-border-radius;
+  border-bottom: $g-secondary-border-width solid color(light);
 
-  background-color: $secondary-background-color;
+  background-color: $g-secondary-background-color;
 
-  &:last-of-type { margin-bottom: $base-spacing; }
+  &:last-of-type { margin-bottom: spacing(); }
 }
 
 .l-home__blog-title { margin-top: 0; }
 
 .blog-excerpt > * { margin-bottom: 0; }
 
-.l-home__blog-excerpt { font-size: modular-scale(1); }
+.l-home__blog-excerpt { font-size: g-modular-scale(1); }
 
 .l-home__blog-link {
   @include syn(xs, 12, 0, (inline center-m align-c));
@@ -86,7 +86,7 @@
 
   button {
     min-width: 25%;
-    margin-bottom: $base-spacing;
+    margin-bottom: spacing();
   }
 }
 
@@ -105,7 +105,7 @@
 
   .l-home__image {
     box-sizing: border-box;
-    padding: $small-spacing;
+    padding: spacing(half);
   }
 }
 

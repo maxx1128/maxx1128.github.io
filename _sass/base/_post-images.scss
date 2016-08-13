@@ -24,7 +24,7 @@ figure {
     &.left,
     &.right {
       max-width: 40%;
-      margin: $base-spacing;
+      margin: spacing();
     }
 
     &.left { float: left; }
@@ -39,12 +39,12 @@ figcaption {
   @include syn(xs, 12, 0, (pad-vert-1 pad-sides-2 inline-b border-b italic));
 
   @include line-height(0.75);
-  margin-top: -$small-spacing;
+  margin-top: -spacing(half);
   max-width: 100%;
 
   font-size: 80%;
 
-  background-color: $secondary-background-color;
+  background-color: $g-secondary-background-color;
 }
 
 .flexbox.flexwrap {
@@ -58,7 +58,7 @@ figcaption {
   .gallery-img {
     flex: 1 1 auto;
     box-sizing: border-box;
-    padding: $small-spacing;
+    padding: spacing(half);
     max-width: rem(300px);
 
     @include breakpoint($tablet-screen) { max-width: 50%; }

@@ -2,28 +2,28 @@ $button-color: color(blank);
 
 .button {
   appearance: none;
-  background-color: $action-color;
+  background-color: $g-action-color;
   border: 0;
-  border-radius: $base-border-radius * 2;
+  border-radius: $g-base-border-radius * 2;
   color: $button-color;
   cursor: pointer;
   display: inline;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $g-base-font-family;
+  font-size: $g-base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
   margin: 0 auto;
-  padding: ($small-spacing * 0.75) $small-spacing;
+  padding: spacing(half) spacing(half);
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
+  transition: background-color $g-base-duration $g-base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover,
   &:focus {
-    background-color: shade($action-color, 20%);
+    background-color: shade($g-action-color, 20%);
     color: $button-color;
   }
 

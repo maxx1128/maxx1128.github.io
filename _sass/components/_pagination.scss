@@ -1,6 +1,6 @@
 .pagination {
   @include clearfix();
-  margin-bottom: $base-spacing;
+  margin-bottom: spacing();
 
   p { margin: 0; }
 }

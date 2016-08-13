@@ -11,12 +11,12 @@
   @include syn(xs, 12, 0, (align-c block));
   @include syn(md, 2, 0, (pad-r-1 marg-r-1 inline-b));
 
-  font-size: $base-spacing * 1.5;
+  font-size: spacing(oneHalf);
 
   color: color(medium);
 
   @include breakpoint($tablet-screen) {
-    border-right: ($base-border-width / 4) solid color(light);
+    border-right: ($g-base-border-width / 4) solid color(light);
   }
 }
 

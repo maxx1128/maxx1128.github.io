@@ -10,10 +10,10 @@ $synapse: (
     xlg: $huge-screen
   ),
   spaceUnits: (
-    $small-spacing,
-    $base-spacing,
-    $base-spacing + $small-spacing,
-    $base-spacing * 2
+    spacing(half),
+    spacing(),
+    spacing(oneHalf),
+    spacing(double)
   )
 );
 
@@ -30,7 +30,7 @@ $synapse: (
 body {
   margin: 0;
 
-  background-color: $base-background-color;
+  background-color: $g-base-background-color;
 }
 
 .l-post,

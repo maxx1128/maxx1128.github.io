@@ -3,24 +3,28 @@ body {
   @include font-size(1);
   @include line-height(1);
 
-  color: $base-font-color;
-  font-family: $base-font-family;
+  color: $g-base-font-color;
+  font-family: $g-base-font-family;
   font-feature-settings: 'kern', 'liga', 'pnum';
 }
 
 
 // This generates the font sizes based on modular scale so they're consistent and easy to manage.
-@each $key, $value in $modular-size-map {
+@each $key, $value in $g-modular-size-map {
   $main-font-size: modular-scale($value);
-  $scaled-font-size: $main-font-size * $scaled-font-ratio;
+  $scaled-font-size: $main-font-size * $g-scaled-font-ratio;
+
+  @if ( $key == 'p' ) {
+    $scaled-font-size: $main-font-size;
+  }
 
   #{$key} {
     font-size: $scaled-font-size;
-    font-size: rem($scaled-font-size);
 
-    @include breakpoint($tablet-screen) {
-      font-size: $main-font-size;
-      font-size: rem($main-font-size);
+    @if ( $key != 'p' ) {
+      @include breakpoint($tablet-screen) {
+        font-size: $main-font-size;
+      }
     }
   }
 }
@@ -35,7 +39,7 @@ h6 {
   @include margin-top(2);
   @include margin-bottom(1);
 
-  font-family: $heading-font-family;
+  font-family: $g-heading-font-family;
   font-weight: 300;
 }
 
@@ -50,14 +54,14 @@ h5 + h6 { @include margin-top(-0.5); }
 p { @include margin-bottom(1); }
 
 a {
-  color: $action-color;
+  color: $g-action-color;
   text-decoration: none;
-  transition: color $base-duration $base-timing;
+  transition: color $g-base-duration $g-base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: shade($g-action-color, 25%);
   }
 }
 
@@ -65,7 +69,7 @@ hr {
   @include margin-top(1);
   @include margin-bottom(1);
 
-  border-bottom: $base-border;
+  border-bottom: $g-base-border;
   border-left: 0;
   border-right: 0;
   border-top: 0;

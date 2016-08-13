@@ -1,48 +1,42 @@
 @charset "utf-8";
 
 @import
-  "../_bower_components/bourbon/app/assets/stylesheets/bourbon"
-;
+  "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 @import
-  'utils/variables',
   'utils/functions',
+  'utils/variables',
   'utils/mixins',
-  'utils/placeholders'
-;
-
-@import
-  'base/typography'
-;
+  'utils/placeholders';
 
 @import
   'layout/synapse',
   'layout/grid',
-  'layout/footer'
-;
+  'layout/footer';
 
 @import
-  'components/lists',
-  'components/pre',
-  'components/buttons',
-  'components/syntax',
-  'components/nav',
-  'components/slide-card',
-  'components/sliding-panel',
-  'components/pagination',
-  'components/video-wrapper',
-  'components/fonts',
-  'components/post-images',
-  'components/resume',
-  'components/perspective',
+  'base/buttons',
+  'base/fonts',
+  'base/lists',
+  'base/post-images',
+  'base/pre',
+  'base/syntax',
+  'base/typography';
+
+@import
   'components/cssgram',
-  'components/top-bar',
-  'components/tooltips'
-;
+  'components/pagination',
+  'components/slide-card',
+  'components/video-wrapper';
 
 @import
-  'pages/home',
+  'patterns/nav',
+  'patterns/perspective',
+  'patterns/sliding-panel',
+  'patterns/top-bar';
+
+@import
   'pages/blog',
-  'pages/portfolio',
-  'pages/blog-post'
-;
+  'pages/blog-post',
+  'pages/home',
+  'pages/resume';

@@ -5,7 +5,7 @@ $nav-height: rem(105px);
 
 header {
   @include transition(0.5s);
-  margin-bottom: $base-spacing;
+  margin-bottom: spacing();
   // min-height: 8.5em;
   position: relative;
 
@@ -18,7 +18,7 @@ header {
     color: color(blank);
 
     &:hover,
-    &:focus { color: $base-background-color; }
+    &:focus { color: $g-base-background-color; }
   }
 
   // @include breakpoint($tablet-screen) { min-height: 16em; }
@@ -37,7 +37,7 @@ header {
   float: left;
   max-width: 75%;
 
-  margin: ($small-spacing / 2) 0;
+  margin: spacing(fourth) 0;
 
   @include breakpoint($tablet-screen) {
     float: none;
@@ -95,12 +95,12 @@ header {
   @include transition(0.5s);
   @include transform(rotate(180deg));
   @include transform-origin(center);
-  @include padding(1.75rem ($small-spacing / 4) null ($small-spacing / 4));
+  @include padding(1.75rem spacing(fourth) null spacing(fourth));
   @include position(absolute, 0 0 0 null);
 
   max-width: 20%;
 
-  font-size: calc(#{$nav-height} - (#{$base-spacing} + #{$small-spacing}));
+  font-size: calc(#{$nav-height} - (#{spacing()} + #{spacing(half)}));
   cursor: pointer;
 
   .hide-menu & {

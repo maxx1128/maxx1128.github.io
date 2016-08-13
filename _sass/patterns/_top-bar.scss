@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   // height: rem(61px);
-  padding-left: rem(64px);
+  padding-left: rem(70px);
   box-sizing: border-box;
 
 
@@ -32,10 +32,10 @@
 
 
 .top-bar__social-icon {
-  margin-right: $small-spacing;
+  margin-right: spacing(half);
 
   color: color(blank);
-  font-size: modular-scale(0);
+  font-size: g-modular-scale(0);
 
   &:hover { color: darken(color(blank), 15%); }
 

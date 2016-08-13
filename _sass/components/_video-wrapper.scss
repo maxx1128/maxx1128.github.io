@@ -1,6 +1,6 @@
 .video {
   @include clearfix();
-  margin: $base-spacing 0;
+  margin: spacing() 0;
 }
 
 .video-wrapper {

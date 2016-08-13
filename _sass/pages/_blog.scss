@@ -6,14 +6,14 @@ $blog-item-bg-tint: 0.91;
   @include flex-wrap(wrap);
   @include align-items(stretch);
 
-  margin-bottom: $small-spacing;
+  margin-bottom: spacing(half);
 }
 
 .blog-list__item {
   @include flex(1 1 19em);
   display: block;
   box-sizing: border-box;
-  padding: $small-spacing / 2;
+  padding: spacing(fourth);
 
 
 
@@ -28,7 +28,7 @@ $blog-item-bg-tint: 0.91;
 }
 
 .blog-list__date {
-  margin: ($small-spacing / 2) 0 $small-spacing 0;
+  margin: spacing(fourth) 0 spacing(half) 0;
 
   font-size: 0.83em;
   color: color(dark);
@@ -38,19 +38,19 @@ $blog-item-bg-tint: 0.91;
 .blog-list__container {
   @include transition(0.25s);
   box-sizing: border-box;
-  padding: $small-spacing * 1.5;
+  padding: spacing(half) * 1.5;
   height: 100%;
   position: relative;
 
   background-size: cover;
   background-position: center;
   background-color: color(light);
-  border-radius: $base-border-radius;
-  border-bottom: $secondary-border-width solid color(light);
+  border-radius: $g-base-border-radius;
+  border-bottom: $g-secondary-border-width solid color(light);
 
   &:hover {
     @include transition(0.25s);
-    box-shadow: 0 0 $base-border-width color(dark);
+    box-shadow: 0 0 $g-base-border-width color(dark);
   }
 }
 
@@ -72,7 +72,7 @@ $blog-item-bg-tint: 0.91;
 
 .blog-list__excerpt {
   color: color(dark);
-  font-size: modular-scale(1);
+  font-size: g-modular-scale(1);
 }
 
 html:not(.flexbox) {

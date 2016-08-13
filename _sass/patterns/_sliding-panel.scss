@@ -21,19 +21,19 @@
 }
 
 .sliding-panel__menu-item {
-  @include transition($base-duration);
+  @include transition($g-base-duration);
   display: block;
   width: 100%;
-  padding: ($small-spacing * 0.75) $base-spacing;
+  padding: spacing(fourth) spacing();
   box-sizing: border-box;
 
   text-align: center;
-  font-family: $heading-font-family;
+  font-family: $g-heading-font-family;
 
   border-bottom: 1px solid color(medium);
 
   &:hover {
-    @include transition($base-duration);
+    @include transition($g-base-duration);
     background-color: color(light);
   }
 }
@@ -59,9 +59,9 @@
 }
 
 .sliding-panel__button {
-  @include position(absolute, 0.5em null null calc(100% + 0.5em));
+  @include position(absolute, 0.7em null null calc(100% + 0.7em));
   @include size(1em);
-  opacity: 0.8;
+  opacity: 0.7;
   padding: 0.5em;
 
   border-radius: 100%;

@@ -26,7 +26,7 @@ html.flexbox.flexwrap {
   .Portfolio-Card-Container {
     @include flex(1 1 $Portfolio-Card-width);
 
-    padding: 0 $small-spacing;
+    padding: 0 spacing(half);
   }
 
   .Portfolio-Card-Container--highlight {
@@ -39,13 +39,13 @@ html.flexbox.flexwrap {
   @include transition(0.5s);
   @include size(100% $Portfolio-Card-height);
   display: block;
-  margin-bottom: $base-spacing;
+  margin-bottom: spacing();
   position: relative;
   overflow: hidden;
 
   border: 1px solid color(dark);
 
-  &:hover { box-shadow: 0 0 $base-spacing color(dark); }
+  &:hover { box-shadow: 0 0 spacing() color(dark); }
   
   &:hover,
   &:hover .Portfolio-Card__img,
@@ -79,7 +79,7 @@ html.flexbox.flexwrap {
 .Portfolio-Card__title,
 .Portfolio-Card__descr {
   @include transition(0.5s);
-  padding: $base-spacing;
+  padding: spacing();
   box-sizing: border-box;
   overflow: hidden;
   
@@ -91,7 +91,7 @@ html.flexbox.flexwrap {
 .Portfolio-Card__title {
   @include position(absolute, null null 0 null);
   @include size(100% auto);
-  padding: $small-spacing $base-spacing;
+  padding: spacing(half) spacing();
   
   text-align: center;
 }
@@ -104,7 +104,7 @@ html.flexbox.flexwrap {
 .Portfolio-Card__descr {
   @include position(absolute, null null 100% null);
   @include size(100% $Portfolio-Card-height);
-  padding: $small-spacing;
+  padding: spacing(half);
 
   overflow: scroll;
 }

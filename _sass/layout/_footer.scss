@@ -9,7 +9,7 @@ footer {
   @include syn(xs, 3, 0, (pad-b-1, inline-b, borber-b));
   @include syn(md, 0, 0, (pad-sides-1));
 
-  color: $base-background-color;
+  color: $g-base-background-color;
 
-  &:hover { color: $secondary-background-color; }
+  &:hover { color: $g-secondary-background-color; }
 }

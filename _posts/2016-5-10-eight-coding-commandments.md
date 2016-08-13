@@ -179,9 +179,9 @@ This rule cuts this behavior off before it gets ugly: if you're about to nest so
 
 A small yet important step to separate style and function is not linking JavaScript to classes. This keeps two scenarios from ruining a project's code:
 
-1. **A component's class, or multiple classes, change.** If the JavaScript is linked to those classes, it means going through all the related code and making changes. Repeat every time a class changes and tell me how fun that is.
-
 > Function and style should always be separate, especially with classes
+
+1. **A component's class, or multiple classes, change.** If the JavaScript is linked to those classes, it means going through all the related code and making changes. Repeat every time a class changes and tell me how fun that is.
 
 2. **Two or more different components need the same JS functionality.** If the class linking the JavaScript has lots of styles, it can lead to painful patches and workarounds to get the same effect without those styles. Example: Foundation 5.5.3's modals are closed by clicking a `.close-reveal-modal` element. However, it also affects an element's size, type, and positions it in the top right. Want a close button at the bottom of the modal? Not much fun either, I'll tell you.
 

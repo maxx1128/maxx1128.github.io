@@ -1,36 +1,36 @@
 @mixin font-size($number) {
-  font-size: #{ $number * ($base-rem * $typography-scale) + 'rem'};
+  font-size: #{ $number * ($g-base-rem * $g-typography-scale) + 'rem'};
 
   @include breakpoint($tablet-screen) {
 
-    font-size: #{ $number * $base-rem + 'rem'};
+    font-size: #{ $number * $g-base-rem + 'rem'};
   }
 }
 
 @mixin line-height($number) {
-  line-height: #{ $number * ($leading-rem * $typography-scale) + 'rem'};
+  line-height: #{ $number * ($g-leading-rem * $g-typography-scale) + 'rem'};
 
   @include breakpoint($tablet-screen) {
 
-    line-height: #{ $number * $leading-rem + 'rem'};
+    line-height: #{ $number * $g-leading-rem + 'rem'};
   }
 }
 
 @mixin margin-top($number) {
-  margin-top: #{ $number * ($leading-rem * $typography-scale) + 'rem'};
+  margin-top: #{ $number * ($g-leading-rem * $g-typography-scale) + 'rem'};
 
   @include breakpoint($tablet-screen) {
 
-    margin-top: #{ $number * $leading-rem + 'rem'};
+    margin-top: #{ $number * $g-leading-rem + 'rem'};
   }
 }
 
 @mixin margin-bottom($number) {
-  margin-bottom: #{ $number * ($leading-rem * $typography-scale) + 'rem'};
+  margin-bottom: #{ $number * ($g-leading-rem * $g-typography-scale) + 'rem'};
 
   @include breakpoint($tablet-screen) {
 
-    margin-bottom: #{ $number * $leading-rem + 'rem'};
+    margin-bottom: #{ $number * $g-leading-rem + 'rem'};
   }
 }
 

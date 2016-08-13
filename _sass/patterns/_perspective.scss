@@ -67,8 +67,8 @@ h1 {
   @include line-height(1);
 
   position: absolute;
-  width: $base-spacing;
-  height: $base-spacing;
+  width: spacing();
+  height: spacing();
 
   border-radius: 100%;
 

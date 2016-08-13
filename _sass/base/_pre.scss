@@ -1,6 +1,7 @@
 pre {
+  max-height: rem(400px);
   background-color: color(blank);
-  padding: $base-spacing;
+  padding: spacing(half);
   font-family: $monospace;
 
   overflow: scroll;
@@ -9,5 +10,5 @@ pre {
 p code {
   background-color: color(dark);
   color: color(light);
-  padding: $small-spacing;
+  padding: rem(2px) rem(5px);
 }
