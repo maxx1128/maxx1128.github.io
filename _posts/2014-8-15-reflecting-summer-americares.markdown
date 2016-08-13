@@ -24,7 +24,7 @@ Sounds difficult (and borderline in several cases), but oddly enough, dealing wi
 
 Daily posting was a matter of just scheduling posts far enough in advance, and I’m already in the habit of scheduling at least a day in advance for my own accounts. This time, for many posts, it was often for days in advance, which wasn’t a major leap. Maybe a light skip, even though doing that in the office gets some odd looks.
 
-<img class="post-half-image" src="/img/posts/reflecting-americares/saturday.jpg">
+<img class="image__half" src="/img/posts/reflecting-americares/saturday.jpg">
 
 When a new trend popped up that AmeriCares should post about, solving the time issue was just about finding a tool that was quick, easy, but could still make an impressive photo so share. So I wound up finding QuotesCover, and used it for both #MalalaDay, #MandelaDay, and the recent passing of Robin Williams to great effect both times. Like using a slow-cooker to cook, it creates an illusion of working harder with a veil of resourcefulness.
 

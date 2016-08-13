@@ -230,7 +230,7 @@ $full-spacing: $spacing;
   }
 }
 
-@mixin generate-grid-classes($row-pad, $col-pad, $max-width: 0) {
+@mixin generate-grid-classes($row-pad, $col-pad, $g-max-width: 0) {
   $syn-layouts: map-get($synapse, layouts);
   $syn-columns: map-get($synapse, columns);
   $syn-row-padding: nth($syn-spacing, $row-pad);
@@ -239,7 +239,7 @@ $full-spacing: $spacing;
 
   .syn-row {
     width: 100%;
-    max-width: $max-width;
+    max-width: $g-max-width;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;

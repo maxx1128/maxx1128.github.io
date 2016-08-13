@@ -1,4 +1,4 @@
-$max-width: em(1024px);
+$g-max-width: em(1024px);
 
 $synapse: (
   columns: 12,
@@ -48,6 +48,6 @@ body {
 // Wide layout wider for more space
 .l-wide {
   @include syn(xs, 12, 0, ('border-b'));
-  max-width: $max-width;
+  max-width: $g-max-width;
   margin: 0 auto;
 }

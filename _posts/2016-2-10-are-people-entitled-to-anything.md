@@ -21,7 +21,7 @@ Know this isn't a post advocating one party's position over another. That's an o
 
 The market is especially saturated this Election Year, as you've noticed.
 
-<img class="post-three-quarter-image" src="/img/posts/entitlement/trump-brain.gif">
+<img class="image__three-quarter" src="/img/posts/entitlement/trump-brain.gif">
 
 So in this post, I'm looking at this without any present-day politics. This is pure philosophical pondering, no censors to block thoughts for the sake of the squeamish. Down and dirty free thinking. Let's get to the action!
 
@@ -41,7 +41,7 @@ For the sake of argument, **entitlements given to people will be anything essent
 
 Then we're at the hardest part of my definition: **How should we give out entitlements?** Make it universal or only to some? Who gets them and who doesn't? Should anyone get them? Tough questions...
 
-<img class="post-three-quarter-image" src="/img/posts/entitlement/deep-thought.gif">
+<img class="image__three-quarter" src="/img/posts/entitlement/deep-thought.gif">
 
 > The hardest part of entitlements is giving them out fairly and effectively.
 
@@ -58,7 +58,7 @@ But this raises a question: do people deserve entitlements for simply existing?
 
 This raises an obvious problem: people could deliberately do nothing their entire lives, be given all their entitlements, and not making use of them. It's fair to argue that people who don't add any value to society wouldn't deserve anything from society. From through donations and charities, sure, but not the state. So I can quickly discard this way to give out entitlements.
 
-<img class="post-three-quarter-image" src="/img/posts/entitlement/fry-existing.jpg">
+<img class="image__three-quarter" src="/img/posts/entitlement/fry-existing.jpg">
 
 Thankfully, my reason for rejecting this method leads me to my next one: **What we're entitled to is equal to the value we add to society.** This is a better definition since the state has plenty reasons to help people making it better.
 
@@ -72,7 +72,7 @@ Even with my current definition has a big issue: the Problem of Opportunity.
 
 I've gotten as far as "people are entitled to how much they help society." Leaving the specifics of how measure this aside for now (another blog post), there's a huge issue: **what if people aren't able to contribute to society, even if they wanted to?**
 
-<img class="post-three-quarter-image" src="/img/posts/entitlement/struggle.gif">
+<img class="image__three-quarter" src="/img/posts/entitlement/struggle.gif">
 
 Lets say someone is born into a harsh life. They have little food and water, shelter is sporadic, and can't treat common health issues. This person must work extremely hard just to stay alive, leaving next to no energy to contribute to society. The society they want to add value too makes it real hard to do just that.
 
@@ -98,7 +98,7 @@ This is a tough yet simple one. I'm assuming all people need to reach a certain 
 
 I know the "giving children a good childhood education" position doesn't seem controversial, but surprisingly it is. Likely because people in power don't want citizens smart enough to question them. But once again, that's another blog post.
 
-<img class="post-three-quarter-image" src="/img/posts/entitlement/carlin-education.jpg">
+<img class="image__three-quarter" src="/img/posts/entitlement/carlin-education.jpg">
 
 #### Fixing Opportunity for the Older
 
@@ -108,7 +108,7 @@ The "exception to the rule" solution I used for the young won't work here. That 
 
 My answer is thankfully very simple: public work programs.
 
-<img class="post-three-quarter-image" src="/img/posts/entitlement/lightbulb-idea.gif">
+<img class="image__three-quarter" src="/img/posts/entitlement/lightbulb-idea.gif">
 
 I'm taking a page from the New Deal, mainly the [Public Works Administration](https://en.wikipedia.org/wiki/Public_Works_Administration). Citizens who lost their jobs were hired by the government to build infrastructure and do other jobs for the public good. My solution would make this a constant option for everyone. People in bad circumstances would always have the opportunity for a job, as long as they meet these criteria:
 

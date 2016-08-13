@@ -1,7 +1,17 @@
 <footer>
-	{% for social in site.data.social %}
-		<a class="footer-icon" href="{{ social.url }}" target="_blank">
-			<i class="icon-{{ social.icon }}"></i>
-		</a>
-	{% endfor %}
+  <div class="footer__wrapper">
+
+    <p class="footer__description">
+      {{ site.description }}
+    </p>
+
+    <div class="footer__link-container">
+    	{% for social in site.data.menu %}
+    		<a class="footer__link" href="{{ social.link }}">
+          {{ social.name }}
+    		</a>
+    	{% endfor %}
+    </div>
+
+  </div>
 </footer>

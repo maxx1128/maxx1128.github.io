@@ -13,7 +13,7 @@ This story starts with a big disclaimer: I’ve have a secret desire to build my
 
 As you can tell from my below sketchbook doodles, this dream refuses to die. But when I try to take the extra step of tracing and maybe coloring my sketches on my computer to boost their quality, I hit a mental block. I’m not sure what creates it, but it always keeps these characters stuck in their paper pages and away from the digital limelight.
 
-<img class="post-half-image" src="/img/posts/ice-sculptures/sketches.jpg">
+<img class="image__half" src="/img/posts/ice-sculptures/sketches.jpg">
 
 With that sad fact about my life cleared up, the real story can begin.
 
@@ -54,7 +54,7 @@ It took a while to find an answer to this, but the eventual one was “Yes.”
 
 I’ve known this answer for a while now, I’d just forgotten it at college when my future career ambitions took a vice-like grip over my brain. But I was more than happy to do the work and take those risks in high school, as this drawing I made before shows:
 
-<img class="post-half-image" src="/img/posts/ice-sculptures/thoughts.jpg">
+<img class="image__half" src="/img/posts/ice-sculptures/thoughts.jpg">
 
 Another great, and likely embarrassing example, of this are some posts I made on my first ever blog. They were extremely long and philosophical, had needless image editing, and were probably never read by anyone. Yet I still enjoyed making them – they were worth the work.
 

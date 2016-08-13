@@ -16,8 +16,6 @@
 .top-bar__social {
   flex: 0 1 auto;
   padding: em(5px) 0;
-
-  color: color(blank);
 }
 
 .top-bar__name {
@@ -34,10 +32,10 @@
 .top-bar__social-icon {
   margin-right: spacing(half);
 
-  color: color(blank);
+  color: color(action);
   font-size: g-modular-scale(0);
 
-  &:hover { color: darken(color(blank), 15%); }
+  &:hover { color: darken(color(action), 15%); }
 
   @include max-bp($tablet-screen) { display: none; }
 }

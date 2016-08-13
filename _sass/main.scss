@@ -11,8 +11,7 @@
 
 @import
   'layout/synapse',
-  'layout/grid',
-  'layout/footer';
+  'layout/grid';
 
 @import
   'base/buttons',
@@ -30,6 +29,7 @@
   'components/video-wrapper';
 
 @import
+  'patterns/footer',
   'patterns/nav',
   'patterns/perspective',
   'patterns/sliding-panel',

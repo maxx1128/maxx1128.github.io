@@ -1,13 +1,13 @@
-.resume-item {
+.Resume-item {
   @include syn(xs, 0, 0, (pad-1 marg-b-3));
   @include syn(md, 0, 0, (marg-b-4));
 }
 
-.resume-title { @include clearfix(); }
+.Resume-item__title { @include clearfix(); }
 
-.resume-intro { @include syn(xs, 0, 0, (marg-b-1 align-c)); }
+.Resume-item__intro { @include syn(xs, 0, 0, (marg-b-1 align-c)); }
 
-.resume-icon {
+.Resume-item__icon {
   @include syn(xs, 12, 0, (align-c block));
   @include syn(md, 2, 0, (pad-r-1 marg-r-1 inline-b));
 
@@ -20,13 +20,13 @@
   }
 }
 
-.resume-title-label {
+.Resume-item__label {
   @include syn(xs, 12, 0, (marg-1 align-c));
   @include syn(md, 9, 0, (marg-t-0 inline-b align-l float-r));
   @include clearfix();
 }
 
-.resume-time h6 {
+.Resume-item__time h6 {
   @include syn(xs, 0, 0, (marg-t-1 marg-b-2 align-c));
   @include syn(md, 0, 0, (marg-t-0 align-l));
 }

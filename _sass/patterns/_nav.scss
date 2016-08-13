@@ -33,28 +33,21 @@ header {
   position: relative;
 }
 
-.site-title {
-  float: left;
-  max-width: 75%;
+.header__title {
 
   margin: spacing(fourth) 0;
 
-  @include breakpoint($tablet-screen) {
-    float: none;
-    max-width: none;
-
-    text-align: center;
-  }
+  text-align: center;
 }
 
-.site-tagline {
+.header__tagline {
   @include syn(xs, 0, 0, (hide marg-t-0 marg-b-2));
   @include syn(md, 0, 0, (block));
 
   line-height: 1.4em;
 }
 
-.site-menu {
+.header__menu {
   @include clearfix();
   margin-bottom: 0;
   padding-left: 0;
@@ -67,7 +60,7 @@ header {
   }
 }
 
-.site-menu-item {
+.header__menu-item {
   @include syn(xs, 12, 0, (pad-1 inline-b border-b align-c));
   @include clearfix();
 
@@ -111,7 +104,7 @@ header {
 
 .hide-menu {
 
-  .site-menu {
+  .header__menu {
     @include syn(xs, 0, 0, (hide));
     @include syn(md, 0, 0, (block));
   }

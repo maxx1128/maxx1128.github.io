@@ -18,7 +18,7 @@ He must have seen me watching him, since he walked towards me and smiled. He was
 
 He said hello. I paused and said hello back. He said it looked like my big day. I smiled and said I suppose, and joked it was the only reason I'd wear this robe. He laughed and said congrats. Then he turned and spit on the ground. A good amount of blood hit the pavement too. He turned back to me and kept talking.
 
-<img class="post-three-quarter-image" src="/img/posts/graduation-art/Carnegie.jpg">
+<img class="image__three-quarter" src="/img/posts/graduation-art/Carnegie.jpg">
 
 Somehow we wound up at a nearby bench. We shot the breeze like any other people. We talked about college, education, family, special moments, and eventually ourselves. I talked about how I came to school wanting to write but left wanting to code. How I liked college but felt disillusioned with it lately. How my Dad was here from New Orleans just for this day.
 
@@ -40,7 +40,7 @@ There was my medal for being a "Newhouse Scholar," since I'd been an especially 
 
 There were the cap and gown outfits for these solemn occassions, used to mark academics, intellectuals, high achievers, and elites. I saw people who apparently applied to the Swiss Gaurd, got rejected in the first round, and were sentenced to wander the earth in hand-me-down uniforms spewing vague words. I didn't understand how such a ridiculous outfit, worn by people who normally valued such a business-like suit and tie attire, were accepted as such a norm for so long. Tradition can be real unsettling at times.
 
-{% include image.html place="post-three-quarter-image" url="/img/posts/graduation-art/gowns.jpg" description="Admit it. If you've never seen a graduation, you'd have no idea what country this was." %}
+{% include image.html place="image__three-quarter" url="/img/posts/graduation-art/gowns.jpg" description="Admit it. If you've never seen a graduation, you'd have no idea what country this was." %}
 
 Most importantly, I didn't know where these thoughts were coming from. Before meeting Art I was as excited as anyone else. Now one of my supposedly best moments was full of cynicism. But I wasn't angry. I felt like an alien dropped onto a strange planet, wishing I'd been thrown somewhere else.
 

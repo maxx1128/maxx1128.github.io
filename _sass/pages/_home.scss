@@ -40,8 +40,8 @@
 }
 
 .l-home__perspective {
-  @include syn(xs, 12, 0, (pad-1 border-b float-l marg-b-4));
-  @include syn(md, 4, 0, (pad-2 pad-t-5 marg-b-0));
+  @include syn(xs, 12, 0, (pad-1 border-b float-l marg-b-4 hide));
+  @include syn(md, 4, 0, (pad-2 pad-t-5 marg-b-0 block));
   @include clearfix();
 
   height: 12.75em;

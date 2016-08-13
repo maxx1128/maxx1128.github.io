@@ -2,7 +2,7 @@ $button-color: color(blank);
 
 .button {
   appearance: none;
-  background-color: $g-action-color;
+  background-color: color(action);
   border: 0;
   border-radius: $g-base-border-radius * 2;
   color: $button-color;
@@ -23,7 +23,7 @@ $button-color: color(blank);
 
   &:hover,
   &:focus {
-    background-color: shade($g-action-color, 20%);
+    background-color: shade(color(action), 20%);
     color: $button-color;
   }
 

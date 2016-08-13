@@ -3,7 +3,7 @@ body {
   @include font-size(1);
   @include line-height(1);
 
-  color: $g-base-font-color;
+  color: color(dark);
   font-family: $g-base-font-family;
   font-feature-settings: 'kern', 'liga', 'pnum';
 }
@@ -54,14 +54,14 @@ h5 + h6 { @include margin-top(-0.5); }
 p { @include margin-bottom(1); }
 
 a {
-  color: $g-action-color;
+  color: color(action);
   text-decoration: none;
   transition: color $g-base-duration $g-base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($g-action-color, 25%);
+    color: shade(color(action), 25%);
   }
 }
 

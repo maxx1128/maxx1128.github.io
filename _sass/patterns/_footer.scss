@@ -1,0 +1,35 @@
+footer {
+  padding: spacing(half) spacing();
+
+  color: $g-base-background-color;
+
+  background-color: color(dark);
+}
+
+.footer__wrapper {
+  @include syn(xs, 12, 0, (pad-1 border-b align-l));
+  @include syn(md, 10, 1, (pad-vert-1 align-c));
+  @include syn(lg, 8, 2, (''));
+}
+
+.footer__description { margin-bottom: spacing(half); }
+
+.footer__link {
+  display: block;
+  padding: spacing(half) 0;
+
+  color: color(action);
+
+  &:hover { color: shade(color(action), 15%); }
+}
+
+.flexbox {
+  .footer__link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer__link { flex: 1 1 6em; }
+}

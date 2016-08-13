@@ -1,7 +1,7 @@
-.post-half-image,
-.post-three-quarter-image { @include syn(xs, 0, 0, (center-m block)); }
+.image__half,
+.image__three-quarter { @include syn(xs, 0, 0, (center-m block)); }
 
-.img-full {
+.img__full {
   @include syn(xs, 0, 0, (center-m block));
 
   max-width: 100%;
@@ -10,9 +10,9 @@
 // Classes for different image sizings
 @include breakpoint($tablet-screen) {
 
-  .post-half-image { max-width: 50%; }
+  .image__half { max-width: 50%; }
 
-  .post-three-quarter-image { max-width: 75%; }
+  .image__three-quarter { max-width: 75%; }
 }
 
 figure {
@@ -33,7 +33,7 @@ figure {
   }
 }
 
-.image-caption-img { @include syn(xs, 0, 0, (marg-vert-0 center-m)); }
+.img__caption { @include syn(xs, 0, 0, (marg-vert-0 center-m)); }
 
 figcaption {
   @include syn(xs, 12, 0, (pad-vert-1 pad-sides-2 inline-b border-b italic));
