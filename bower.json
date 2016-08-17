@@ -12,7 +12,6 @@
   "devDependencies": {
     "bourbon": "~4.2.4",
     "jquery": "~3.1.0",
-    "jquery_lazyload": "https://github.com/tuupola/jquery_lazyload.git#~1.9.7",
-    "Scut": "scut#~1.4.0"
+    "jquery_lazyload": "https://github.com/tuupola/jquery_lazyload.git#~1.9.7"
   }
 }
