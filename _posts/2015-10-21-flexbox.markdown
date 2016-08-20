@@ -7,7 +7,7 @@ subheading: If you're in web development and haven't yet picked up Flexbox, do s
 ---
 If you’re in web development, you’ve likely learned responsive design. This means learning that some responsive grids can be complex and frustrating beyond belief. Hopefully you also later learned of flexbox, which can make responsive design much, much easier. If not, you will soon.
 
-Explaining flexbox is too big a task for this measly humble blog, so I recommend reading this or this instead. Plus Smashing Magazine’s most recent book has an excellent chapter on how great flexbox is, which I really recommend. The short version is flexbox automatically sizes elements based on a few simple parameters, which automatically change for screen sizes.
+Explaining flexbox is too big a task for this measly humble blog, so I recommend reading [this](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html) or [this](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) instead. Plus Smashing Magazine’s [most recent book](https://www.smashingmagazine.com/2015/03/real-life-responsive-web-design-smashing-book-5/) has an excellent chapter on how great flexbox is, which I really recommend. The short version is flexbox automatically sizes elements based on a few simple parameters, which automatically change for screen sizes.
 
 If you clicked the above links, you likely noticed how much info is crammed into them. Flexbox does have a high learning curve. That’s why this post is mainly the big reasons why flexbox is worth learning. Once you pick it up, all the time spent learning will be made up by all the time saved using flexbox for responsive grids.
 
