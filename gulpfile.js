@@ -107,7 +107,7 @@ gulp.task('sass', function () {
     };
 
     var autoprefixerOptions = {
-      browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+      browsers: ['IE 7', 'IE 8', 'last 4 versions', '> 2%', 'Firefox ESR']
     };
 
     var unCSS_Settings = {

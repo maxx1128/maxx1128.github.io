@@ -18,9 +18,10 @@ footer {
   display: block;
   padding: spacing(half) 0;
 
-  color: color(action);
+  text-decoration: underline;
+  color: $g-base-background-color;
 
-  &:hover { color: shade(color(action), 15%); }
+  &:hover { color: shade($g-base-background-color, 15%); }
 }
 
 .flexbox {

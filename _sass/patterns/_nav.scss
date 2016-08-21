@@ -1,4 +1,3 @@
-$nav-darken: 0.85;
 $nav-background: '/img/nav.jpg';
 $menu-opacity: 0.75;
 $nav-height: rem(105px);
@@ -9,9 +8,10 @@ header {
   // min-height: 8.5em;
   position: relative;
 
-  @include background(linear-gradient(rgba(color(dark), $nav-darken), rgba(color(dark), $nav-darken)), url($nav-background), no-repeat center);
+  box-shadow: inset 0 0 0 1000px rgba(color(dark), $menu-opacity);
   background-size: cover !important;
   background-position: center !important;
+  background-image: url($nav-background);
   color: color(blank);
 
   a {
