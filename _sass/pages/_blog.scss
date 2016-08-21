@@ -17,9 +17,9 @@ $blog-item-bg-tint: 0.91;
 
 
 
-  &:nth-child(3n+2) { @include flex(3 1 23em); }
+  &:nth-child(3n+2) { @include flex(3 1 22em); }
 
-  &:first-of-type { @include flex(1 1 30em); }
+  &:first-of-type { @include flex(5 1 24em); }
 }
 
 .blog-list__title {
