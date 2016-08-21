@@ -1,7 +1,10 @@
 // The base typography elements
 body {
-  @include font-size(1);
+  $body-font-size: strip-unit(modular-scale(0)) * 1rem;
+  $body-font-scale: strip-unit(spacing(fourth)) * 1vw;
+
   @include line-height(1);
+  font-size: calc(#{$body-font-size} + #{$body-font-scale});
 
   color: color(dark);
   font-family: $g-base-font-family;
@@ -11,21 +14,15 @@ body {
 
 // This generates the font sizes based on modular scale so they're consistent and easy to manage.
 @each $key, $value in $g-modular-size-map {
-  $main-font-size: modular-scale($value);
-  $scaled-font-size: $main-font-size * $g-scaled-font-ratio;
-
-  @if ( $key == 'p' ) {
-    $scaled-font-size: $main-font-size;
-  }
+  $main-font-size: strip-unit(modular-scale($value)) * 1rem;
+  
+  $base-vw: strip-unit(spacing(half)) * 1vw;
+  $small-vw: strip-unit(spacing(fourth)) * 1vw;
 
   #{$key} {
-    font-size: $scaled-font-size;
+    // font-size: $scaled-font-size;
 
-    @if ( $key != 'p' ) {
-      @include breakpoint($tablet-screen) {
-        font-size: $main-font-size;
-      }
-    }
+    font-size: calc(#{$main-font-size} + #{$small-vw});
   }
 }
 
@@ -36,8 +33,8 @@ h4,
 h5,
 h6 {
   @include line-height(1.5);
-  @include margin-top(2);
-  @include margin-bottom(1);
+  @include margin-top(1.5);
+  @include margin-bottom(0.5);
 
   font-family: $g-heading-font-family;
   font-weight: 300;
@@ -51,7 +48,9 @@ h4 + h5 { @include margin-top(0.5); }
 
 h5 + h6 { @include margin-top(-0.5); }
 
-p { @include margin-bottom(1); }
+p {
+  @include margin-bottom(1);
+}
 
 a {
   color: color(action);

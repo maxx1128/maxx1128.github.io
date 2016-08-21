@@ -4,7 +4,7 @@ $nav-height: rem(105px);
 
 header {
   @include transition(0.5s);
-  margin-bottom: spacing();
+  margin-bottom: spacing(half);
   // min-height: 8.5em;
   position: relative;
 
@@ -26,8 +26,9 @@ header {
 
 .header__container {
   @include syn(xs, 12, 0, (pad-1 border-b align-l));
-  @include syn(md, 10, 1, (pad-vert-1 align-c));
-  @include syn(lg, 8, 2, (pad-vert-2));
+  @include syn(sm, 0,  0, (pad-sides-2));
+  @include syn(md, 10, 1, (pad-2 align-c));
+  @include syn(lg, 8,  2, (''));
 
   @include clearfix();
   position: relative;

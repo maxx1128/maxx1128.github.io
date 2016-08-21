@@ -42,7 +42,7 @@ body {
   @include syn(md, 10, 1, (''));
   @include syn(lg, 8, 2, (''));
 
-  
+  & p:first-of-type { margin-top: 0; }  
 }
 
 // Wide layout wider for more space
