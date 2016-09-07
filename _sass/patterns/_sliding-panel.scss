@@ -54,9 +54,7 @@
   }
 }
 
-.sliding-panel__close {
-  cursor: pointer;
-}
+.sliding-panel__close { cursor: pointer; }
 
 .sliding-panel__button {
   @include position(absolute, 0.7em null null calc(100% + 0.7em));
@@ -64,6 +62,7 @@
   opacity: 0.7;
   padding: 0.5em;
 
+  line-height: 0;
   font-size: rem(20px);
 
   border-radius: 100%;
