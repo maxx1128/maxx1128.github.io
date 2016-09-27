@@ -17,21 +17,6 @@
   @include syn(md, 0, 0, (marg-t-1 marg-b-2));
 }
 
-blockquote {
-  @include syn(xs, 0, 0, (align-c, pad-2));
-  @include syn(md, 5, 0, (float-r));
-
-  margin: 4%;
-
-  font-family: $g-heading-font-family;
-
-  border-top: $g-base-border-width solid color(medium);
-  border-bottom: $g-base-border-width solid color(medium);
-  color: color(medium);
-
-  p { margin: 0; }
-}
-
 .l-post__sig { @include syn(xs, 0, 0, (align-r, italic)); }
 
 .iframe-container {

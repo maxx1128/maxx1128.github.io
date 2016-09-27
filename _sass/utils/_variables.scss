@@ -1,9 +1,9 @@
 // ----- Typography Variables ----- //
 
-$g-base-font-size: 100;
-$g-line-height: 2.5;
+$g-base-font-size: 90;
+$g-line-height: 2.15;
 
-$g-base: 18 * ($g-base-font-size / 100);
+$g-base: 16 * ($g-base-font-size / 100);
 $g-base-rem: ($g-base-font-size / 100);
 $g-leading: round($g-base * $g-line-height);
 $g-leading-rem: $g-leading / $g-base;
@@ -12,11 +12,13 @@ $g-base-font-family: 'Josefin Sans', 'lucida grande', Verdana, sans-serif;
 $g-heading-font-family: 'Montserrat', 'Trebuchet MS', Arial, sans-serif;
 
 $g-modular-scale-ratio: $minor-third;
-$g-modular-scale-base: $g-base * 1px;
+$g-modular-scale-base: em($g-base * 1px);
 $g-base-font-scale: 0; // Initial scale of the modular scale ratio
 $g-scaled-font-ratio: 0.9; // % of the original font size on small screens.
 $g-typography-scale: $g-scaled-font-ratio; // The scale-down ratio for font-size, line-height, and type margins
 
+
+$modular-scale-base: $g-modular-scale-base;
 $g-modular-size-map: (
    h1: 5,
    h2: 4,

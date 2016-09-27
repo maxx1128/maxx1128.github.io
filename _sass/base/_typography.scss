@@ -84,4 +84,31 @@ picture {
   max-width: 100%;
 }
 
-blockquote p { font-size: inherit !important; }
+blockquote:not(.twitter-tweet) {
+  @include syn(xs, 0, 0, (align-c, pad-2));
+  @include syn(md, 5, 0, (float-r));
+
+  margin: 4%;
+
+  font-family: $g-heading-font-family;
+
+  border-top: $g-base-border-width solid color(medium);
+  border-bottom: $g-base-border-width solid color(medium);
+  color: color(medium);
+
+  p {
+    margin: 0;
+    
+    font-size: inherit !important;
+  }
+}
+
+// For blockquotes that are from Twitter
+.twitter-tweet {
+  margin: 0;
+  padding: spacing(half) spacing();
+
+  background-color: color(blank);
+  border-top: $g-secondary-border-width solid color(medium);
+  border-bottom: $g-secondary-border-width solid color(medium);
+}
