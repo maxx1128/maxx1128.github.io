@@ -138,10 +138,10 @@ gulp.task('sass', function () {
 // Task for updating Jekyll with Gulp workflow
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['serve',
-    '--baseurl',
     '--watch',
     '--incremental',
-    '--drafts'
+    '--drafts',
+    '--baseurl'
   ]);
 
   const jekyllLogger = (buffer) => {
