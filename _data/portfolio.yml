@@ -1,8 +1,14 @@
 - name: Hangman Game
   date: 10/21/2016
-  image:
-  description: A simple hangman game helping me fine-tune my Javascript skills. It's a combination of object data, DOM interaction, and containerization. Another fun project that'll kill a surprising amount of time.
+  image: hangman.png
+  description: "A simple hangman game helping me fine-tune my Javascript skills. It's a combination of object data, DOM interaction, and containerization. Another fun project that'll kill a surprising amount of time."
   link: http://codepen.io/max1128/pen/wzmZRK
+
+- name: Corner Borders
+  date: 9/2/2016
+  image: corner-border.png
+  description: "After wondering how one would get a border only in the corners of an element, I worked out a way to do so with a Sass mixin. It lets coders control the border color, background color, border length and width for the corner borders."
+  link: http://codepen.io/max1128/pen/kkBLrz
 
 - name: Pattern Lab Fork
   date: 6/12/2016
