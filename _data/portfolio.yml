@@ -1,5 +1,5 @@
 - name: Hangman Game
-  date: 8/21/2016
+  date: 10/21/2016
   image:
   description: A simple hangman game helping me fine-tune my Javascript skills. It's a combination of object data, DOM interaction, and containerization. Another fun project that'll kill a surprising amount of time.
   link: http://codepen.io/max1128/pen/wzmZRK
