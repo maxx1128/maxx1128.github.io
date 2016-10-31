@@ -140,7 +140,6 @@ gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['serve',
     '--watch',
     '--incremental',
-    '--drafts',
     '--baseurl'
   ]);
 

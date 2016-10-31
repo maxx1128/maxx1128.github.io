@@ -1,4 +1,5 @@
-<a class="blog-list__item" href="{{ post.url | prepend: site.baseurl }}">
+
+<a class="blog-list__item" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" {% if post.external_url %}target="_blank"{% endif %}>
   <article class="blog-list__container"
     data-lazyload data-original="{% if post.featured-img %} {{ site.baseurl }}{{ post.featured-img }} {% else %} {{ site.baseurl }}/img/nav.jpg {% endif %}"
 
