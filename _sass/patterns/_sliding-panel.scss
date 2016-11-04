@@ -5,14 +5,70 @@
   @include size($sliding-panel-width 100%);
   @include transform(translateX(- $sliding-panel-width));
   @include transition(all 0.25s linear);
+  box-sizing: border-box;
+  padding: spacing(half);
 
-  background: color(blank);
   -webkit-overflow-scrolling: touch;
   z-index: 999999;
+
+  background: color(blank);
 
   &.sliding-panel__container--is-visible {
     @include transform(translateX(0));
   }
+}
+
+// Wrapper to allow vertical scrolling
+.sliding-panel__wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+// Container for the nav img and title/descr
+.sliding-panel__intro {
+  text-align: center;
+}
+
+// Title in the nav
+.sliding-panel__intro-name {
+  margin-top: spacing(fourth);
+}
+
+// The profile image in the nav
+.sliding-panel__intro-img {
+  box-sizing: border-box;
+  border-radius: 100%;
+  
+  border: $g-secondary-border-width solid color(dark);
+  background-color: $g-secondary-background-color;
+}
+
+.sliding-panel__intro-descr {
+  margin-bottom: spacing(fourth);
+}
+
+// The container for latest post links
+.sliding-panel__latest-post {
+  margin-bottom: spacing(fourth);
+  padding-bottom: spacing(fourth);
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid color(medium);
+  }
+}
+
+// Title for most recent posts
+.sliding-panel__latest-title {
+  @include margin(spacing(half) null 0 null);
+}
+
+// The date of the latest posts
+.sliding-panel__latest-date {
+  display: block;
+  margin-bottom: em(-10px);
+
+  font-weight: 700;
+  color: color(medium);
 }
 
 .sliding-panel__menu {

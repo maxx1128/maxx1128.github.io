@@ -1,19 +1,55 @@
 <nav class="sliding-panel__container">
-  <ul class="sliding-panel__menu">
-    {% for menu in site.data.menu %}
-      <a class="sliding-panel__menu-item" href="{{ menu.link | prepend: site.baseurl }}">
-        <li>
-          {{ menu.name }}
-        </li>
-      </a>
+
+  <div class="sliding-panel__wrapper">
+    
+    <div class="sliding-panel__intro">
+      <img class="sliding-panel__intro-img" src="/img/profile-dev.png">
+
+      <h5 class="sliding-panel__intro-name">
+        <a href="/">
+          {{ site.title }}
+        </a>
+      </h5>
+
+      <p class="sliding-panel__intro-descr">
+        {{ site.description }}
+      </p>
+    </div>
+
+    <ul class="sliding-panel__menu">
+      {% for menu in site.data.menu %}
+        <a class="sliding-panel__menu-item" href="{{ menu.link | prepend: site.baseurl }}">
+          <li>
+            {{ menu.name }}
+          </li>
+        </a>
+      {% endfor %}
+    </ul>
+
+    <h6 class="sliding-panel__latest-title">
+      Latest Posts
+    </h6>
+
+    {% for post in site.posts limit: 3 %}
+      <div class="sliding-panel__latest-post">
+        <tiny class="sliding-panel__latest-date">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </tiny>
+
+        <a class="sliding-panel__latest-link" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" {% if post.external_url %}target="_blank"{% endif %}>
+          {{ post.title }}
+        </a>
+      </div>
+
+      
     {% endfor %}
-  </ul>
 
-  <!-- <div class="sliding-panel__close">Close Panel</div> -->
+    <!-- <div class="sliding-panel__close">Close Panel</div> -->
 
-  <a class="button sliding-panel__button">
-    <i class="icon-menu"></i>
-  </a>
+    <a class="button sliding-panel__button">
+      <i class="icon-menu"></i>
+    </a>
+  </div>
 </nav>
 
 <div class="sliding-panel__fade-screen"></div>
