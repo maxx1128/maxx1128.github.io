@@ -49,7 +49,7 @@ h4 + h5 { @include margin-top(0.5); }
 h5 + h6 { @include margin-top(-0.5); }
 
 p {
-  @include margin-bottom(1);
+  @include margin-bottom(0.75);
 }
 
 a {
