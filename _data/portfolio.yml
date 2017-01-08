@@ -1,3 +1,16 @@
+- name: Ruby Pokedex
+  date: 1/8/2017
+  image: pokedex.png
+  highlight: true
+  description: "My first official project with Ruby uses Sinatra and the Pokemon API to create a basic pokedex. It makes use of many basics, such as templating and partials, setting URL paths, using input data, navigating complex data through views, and got me started on Heroku. It still needs fine-tuning, but was my first big step forward with Ruby and the server-side of web development."
+  link: https://maxx1128-pokedex.herokuapp.com/
+
+- name: Sass Blueprint
+  date: 11/1/2016
+  image: sass-blueprint.png
+  description: "This is the standard starting collection of Sass files I use for new projects. They have the my favorite basics set up, including BEM, the ITCSS file structure, variable maps, useful functions and mixins, and useful add ons."
+  link: https://github.com/maxx1128/Sass-Blueprint
+
 - name: Hangman Game
   date: 10/21/2016
   image: hangman.png
@@ -9,6 +22,12 @@
   image: corner-border.png
   description: "After wondering how one would get a border only in the corners of an element, I worked out a way to do so with a Sass mixin. It lets coders control the border color, background color, border length and width for the corner borders."
   link: http://codepen.io/max1128/pen/kkBLrz
+
+- name: Jekyll-Gulp
+  date: 8/5/2016
+  image: jekyll-gulp.png
+  description: "Jekyll and Gulp are two of my favorite front-end tools for static site generation and asset management. To get the best of both worlds, Jekyll's simple convenience with Gulp's range and flexibility, I combined them both into a single workflow. It's powering this very site."
+  link: https://github.com/maxx1128/jekyll-gulp
 
 - name: Pattern Lab Fork
   date: 6/12/2016
