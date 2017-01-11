@@ -139,8 +139,7 @@ gulp.task('sass', function () {
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['serve',
     '--watch',
-    '--incremental',
-    '--baseurl'
+    '--incremental'
   ]);
 
   const jekyllLogger = (buffer) => {
