@@ -7,10 +7,10 @@ $button-color: color(blank);
   border-radius: $g-base-border-radius * 2;
   color: $button-color;
   cursor: pointer;
-  display: inline;
+  display: block;
   font-family: $g-base-font-family;
   -webkit-font-smoothing: antialiased;
-  margin: 0 auto;
+  margin: 0 auto spacing(half);
   padding: spacing(third) spacing(half);
   text-decoration: none;
   transition: background-color $g-base-duration $g-base-timing;
@@ -31,4 +31,6 @@ $button-color: color(blank);
 
   a,
   a:hover { color: $button-color; }
+
+  @include breakpoint($mobile-h-screen) { display: inline; }
 }

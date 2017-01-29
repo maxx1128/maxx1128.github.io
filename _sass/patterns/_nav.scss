@@ -1,18 +1,19 @@
 $nav-background: '/img/nav.jpg';
-$menu-opacity: 0.75;
+$menu-opacity: 0.85;
 $nav-height: rem(105px);
 
 header {
+  @include svg_background();
   @include transition(0.5s);
   margin-bottom: spacing(half);
   // min-height: 8.5em;
   position: relative;
 
   box-shadow: inset 0 0 0 1000px rgba(color(dark), $menu-opacity);
-  background-size: cover !important;
+  // background-size: cover !important;
   background-position: center !important;
-  background-image: url($nav-background);
   color: color(blank);
+  
 
   a {
     color: color(blank);

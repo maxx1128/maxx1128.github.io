@@ -5,7 +5,6 @@ date       : 2017-01-20
 categories : productivity
 excerpt    : "Don't feel lazy and undeserving for taking the time to rest. One can't be productive without rest."
 
-featured-img: /img/posts/rest-productivity/featured.jpg
 ---
 
 **Rest is not laziness. Rest is long-term productivity.**

@@ -1,7 +1,7 @@
 // Total opening container for first part of the homepage. Always takes up the full screen
 .l-home__opening {
-  @include syn(xs, 12, 0, (marg-b-2));
-  @include syn(xs, 0, 0, (marg-b-0));
+  @include syn(xs, 12, 0, (marg-b-2, pad-sides-2));
+  box-sizing: border-box;
 
   position: relative;
   min-height: 100vh;
@@ -33,33 +33,42 @@
 // The extra information right below the home opening
 .l-home__info {
   @include clearfix();
-  @include padding(spacing(double) spacing());
-  box-sizing: border-box;
 
   background-color: color(blank);
 }
 
-.l-home__perspective {
-  @include syn(xs, 12, 0, (pad-1 border-b float-l marg-b-4 hide));
-  @include syn(md, 4, 0, (pad-2 pad-t-5 marg-b-0 block));
+.l-home__info-wrapper {
+  @include syn(xs, 12, 0, (border-b, align-c, pad-3));
+  @include syn(md, 10, 1, (''));
+  @include syn(lg, 8, 2, (''));
+}
+
+.l-home__info-title { @include margin(0.15em null); }
+
+.l-home__links-container {
   @include clearfix();
-
-  height: 12.75em;
+  padding: spacing(third) 0 spacing();
 }
 
-.l-home__info-description {
-  @include syn(xs, 12, 0, (align-c, border-b, float-l));
-  @include syn(md, 8, 0, (pad-sides-4, align-l));
-}
+.l-home__link {
+  @include breakpoint($mobile-h-screen) {
+    display: inline;
+    margin-bottom: 0;
 
-.l-home__info-description-title { @include margin(0.15em null); }
+    &:not(:last-of-type) { margin-right: spacing(); }
+  }
+}
 
 .l-home__blog {
   @include clearfix();
   @include padding(spacing() 2.5%);
 }
 
-.l-home__blog-mainTitle { text-align: center; }
+.l-home__blog-mainTitle {
+  margin-top: 0;
+
+  text-align: center;
+}
 
 .l-home__blog-item {
   @include syn(xs, 12, 0, (pad-2 marg-vert-2 align-c border-b));

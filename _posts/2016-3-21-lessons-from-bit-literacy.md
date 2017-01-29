@@ -8,7 +8,7 @@ subheading: "Everyday we're flooded by all things Internet, or 'bits.' A recent 
 
 As a coder, college grad, and human that doesn't live in a cave, naturally the Internet's affected me a lot. And naturally it sometimes makes me want to beat me head against a wall.
 
-Or a bookshelf. Or a heater if I'm having a bad day. Or the new office whiteboard if I missed a...the point is it makes my head hurt and costs money to clean.
+Or a bookshelf. Or a heater if I'm having a bad day. Or the new office white-board if I missed a...the point is it makes my head hurt and costs money to clean.
 
 Looking for a solution to cut down on my cleaning and medical expenses, I found a summary of Bit Literacy on Blinkist. It turned out to be so helpful I bought the actual book. The author's core message in one line is:
 
@@ -16,13 +16,13 @@ Looking for a solution to cut down on my cleaning and medical expenses, I found 
 
 Bits refer to all general forms of info online. The common theme in most issues is being overloaded by bits. So people must learn to isolate the important bits and ignore the others.
 
-I encourage anyone who uses computers or smartphones regularly (ie everyone not in a cave that lacks wifi) to read the book - Amazon even has [a **free** Kindle version](http://www.amazon.com/gp/product/B001CLFPMY/ref=dp-kindle-redirect?ie=UTF8&btkr=1). Otherwise, below are four ways to **let the bits go** that stuck with me the most.
+I encourage anyone who uses computers or smartphones regularly (i.e. everyone not in a cave that lacks wifi) to read the book - Amazon even has [a **free** Kindle version](http://www.amazon.com/gp/product/B001CLFPMY/ref=dp-kindle-redirect?ie=UTF8&btkr=1). Otherwise, below are four ways to **let the bits go** that stuck with me the most.
 
 ### Get a Strict Media Diet
 
 Imagine a Las Vegas all-you-can-eat buffet. Great food, a "variety of quality," and you could never get through it all. Take that and make it a thousand miles long. That's a highly scientific metaphor for all the information online.
 
-This is only bad when people try to overstuff themselves with it all. With so many sites selling themselves as being helpful or even essential, it's tempting to try and read them all.
+This is only bad when people try to over-stuff themselves with it all. With so many sites selling themselves as being helpful or even essential, it's tempting to try and read them all.
 
 > We rarely remember everything we read online. Pick the sites you forget the least and focus mostly on them and few others.
 
@@ -59,7 +59,7 @@ This sounded crazy to me, and I'm a coder that uses a text editor on a regular b
 
 But the book made some good arguments against relying on these too much. Take Microsoft Word for example. Much of it's functions just make documents print-friendly. Have you had to print everything you've written on your computer? Likely a few things, yes, but unlikely all of them. Many were then saved to a larger Microsoft Word file for no reason.
 
-Writing in just a text editor is a big shift, but brings flexibility to one's computer. Text files are lightweight, easier to manage and backup, and can be more easily changed between formats. With information management changing so rapidly, this felxibility really helps. Plus text editors have [many awesome functions for editing and removing text](http://www.hongkiat.com/blog/sublime-text-tips/) if used right.
+Writing in just a text editor is a big shift, but brings flexibility to one's computer. Text files are lightweight, easier to manage and backup, and can be more easily changed between formats. With information management changing so rapidly, this flexibility really helps. Plus text editors have [many awesome functions for editing and removing text](http://www.hongkiat.com/blog/sublime-text-tips/) if used right.
 
 Already have lots of files saved in Word and don't want to migrate them all at once? Move them over as you open them instead. It's a more gradual process that brings more important files over first. Whether it's fast or slow, let the software go and focus more on the info itself.
 

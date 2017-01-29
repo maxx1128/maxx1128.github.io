@@ -32,8 +32,8 @@ $g-modular-size-map: (
    ul: 0,
    blockquote: 1,
    code: -1,
-   button: -1,
-   '.button': -1,
+   button: 0,
+   '.button': 0,
    '.sliding-panel__menu': -1
 ); // Bourbon g-modular-scale function to create the structure of how fonts will be sized
 
@@ -49,6 +49,7 @@ $colors: (
   medium: #31739c,
   light: #8bd5ff
 );
+
 
 
 $g-base-border-color: color(light);

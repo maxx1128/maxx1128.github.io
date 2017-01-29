@@ -36,6 +36,7 @@ $blog-item-bg-tint: 0.91;
 }
 
 .blog-list__container {
+  @include svg_background('medium');
   @include transition(0.25s);
   box-sizing: border-box;
   padding: spacing(half) * 1.5;

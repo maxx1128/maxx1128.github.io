@@ -19,19 +19,21 @@
 	</section>
 
 	<section class="l-home__info">
-		<article class="l-home__perspective">
-			<div class="cube">
-			    {% for skill in site.data.skills %}
-					<div class="side perspective-{{ skill.side }}">
-						<i class="icon-{{ skill.icon }}"></i>
-					</div>
-			    {% endfor %}
-			  </div>
-		</article>
-
-		<article class="l-home__info-description">
-			<h3 class="l-home__info-description-title">About me</h3>
+		<article class="l-home__info-wrapper">
+			<h3 class="l-home__info-title">
+				A Brief Summary of Me
+			</h3>
 			{{ content }}
+
+			<div class="l-home__links-container">
+				{% for menu in site.data.menu %}
+					{% if menu.name != 'Blog' %}
+						<a href="{{ menu.link }}" class="l-home__link button">
+							{{ menu.name }}
+						</a>
+					{% endif %}
+				{% endfor %}
+			</div>
 		</article>
 	</section>
 
