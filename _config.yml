@@ -7,6 +7,8 @@
 
 gems: [jekyll-paginate, rouge]
 
+future: true
+
 # Site settings
 title: Max Antonucci
 email: maxx1128@gmail.com

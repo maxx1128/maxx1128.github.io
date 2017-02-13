@@ -1,7 +1,7 @@
 ---
 layout     : post
 title      : "You Have no Right to an Uninformed Opinion"
-date       : 2017-02-12
+date       : 2017-02-13
 categories : politics
 excerpt    : ""
 
