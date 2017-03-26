@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "The Biggest Content Obstacle is a Natural Workflow"
-date:   2015-10-09Tutor
+date:   2015-10-09
 categories: writing
-subheading: Trying to write more means not forcing anything I write.
+excerpt: Trying to write more means not forcing anything I write.
 ---
 I really do want to write more. But every time I set time to sit and work on content, whether it's writing, drawing, or even planning, my brain dries up. The reason? My process is becoming too forced.
 

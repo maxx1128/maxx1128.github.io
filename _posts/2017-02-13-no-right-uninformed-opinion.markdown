@@ -1,9 +1,8 @@
 ---
-layout     : post
 title      : "You Have no Right to an Uninformed Opinion"
 date       : 2017-02-13
 categories : politics
-excerpt    : ""
+excerpt    : Before you share an opinion on any topic, ask yourself the following questions.
 
 ---
 

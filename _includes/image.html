@@ -1,6 +1,11 @@
-<figure class="{{ include.place }}">
-	<img class="img__caption" src=" {{ include.url }} " alt=" {{ include.description }} ">
-  {% if include.description %}
-	 <figcaption>{{ include.description }}</figcaption>
-  {% endif %}
-</figure>
+{% if include.description %}
+  <figure class="ma-c-blogContent__figure">
+    <img class="ma-c-blogContent__figureImg" src=" {{ include.url }} " alt=" {{ include.description }} ">
+
+     <figcaption class="ma-c-blogContent__figureCaption">{{ include.description }}</figcaption>
+    
+  </figure>
+{% else %}
+  
+  <img src=" {{ include.url }} ">
+{% endif %}

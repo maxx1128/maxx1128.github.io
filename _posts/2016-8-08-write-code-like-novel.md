@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Write a Program like a Novel"
 date:   2016-08-08
 categories: coding philosophy
-excerpt: "A better mindset for writing clear, understandable code may be writing it like a story."
+excerpt: A better mindset for writing clear, understandable code may be writing it like a story.
 featured-img: /img/posts/write-code-like-novel/featured.jpg
 ---
 

@@ -1,17 +1,24 @@
 {
-  "name": "Maxwell Jekyll",
-  "version": "2.0.0",
+  "name": "Jekyll-Gulp",
+  "description": "A starting workflow combining Jekyll and Gulp",
+  "main": "_config.yml",
   "authors": [
-    "maxx1128 <maxx1128@gmail.com>"
-  ],
-  "moduleType": [
-    "node"
+    "Maxwell Antonucci <maxx1128@gmail.com>"
   ],
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "bourbon": "~4.2.4",
-    "jquery": "~3.1.0",
-    "jquery_lazyload": "https://github.com/tuupola/jquery_lazyload.git#~1.9.7"
+  "keywords": [
+    "gulp",
+    "jekyll",
+    "front-end",
+    "boilerplate",
+    "front-end",
+    "development",
+    "Sass",
+    "Javascript"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "dependencies": {
+    "jquery": "~3.1.1"
   }
 }

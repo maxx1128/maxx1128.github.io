@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Flexbox – That Thing all Developers Need to Use"
-date:   2015-10-21Tutor
+date:   2015-10-21
 categories: web-development
-subheading: If you're in web development and haven't yet picked up Flexbox, do so now. Just do it.
+excerpt: If you're in web development and haven't yet picked up Flexbox, do so now. Just do it.
 ---
 If you’re in web development, you’ve likely learned responsive design. This means learning that some responsive grids can be complex and frustrating beyond belief. Hopefully you also later learned of flexbox, which can make responsive design much, much easier. If not, you will soon.
 

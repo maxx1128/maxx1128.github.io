@@ -1,0 +1,21 @@
+{% assign classes = 'ma-c-blogItem__container ' | append: include.classes %}
+{% assign title = include.title | default: 'Post Title' %}
+{% assign excerpt = include.excerpt %}
+{% assign url = include.url | default: 'javascript:void(0);' %}
+{% assign ext_url = include.ext_url %}
+{% assign bg_img = include.bg_img %}
+
+<div class="{{ classes }}">
+  <a class="ma-c-blogItem" href="{% if ext_url %}{{ ext_url }}{% else %}{{ url }}{% endif %}" {% if ext_url %}target="_blank"{% endif %}{% if bg_img %}data-lazyload data-original="{{ site.baseurl }}{{ bg_img }}" style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"{% endif %}>
+      
+    <span class="ma-c-blogItem__title">
+      {{ title }}
+    </span>
+
+    <div class="ma-c-blogItem__descr">
+      <p>
+        {{ excerpt }}
+      </p>
+    </div>
+  </a>
+</div>

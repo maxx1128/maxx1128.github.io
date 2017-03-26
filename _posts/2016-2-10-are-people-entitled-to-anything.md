@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "What Are People Entitled To?"
-date:   2016-2-19Tutor
+date:   2016-2-19
 categories: philosophy politics
-subheading: "As the 2016 election approaches, my thoughts turn to political philosophy. So I ask, how would I define an ideal entitlement system for the state?"
+excerpt: As the 2016 election approaches, my thoughts turn to political philosophy.
 featured-img: /img/posts/entitlement/carlin-education.jpg
 ---
 

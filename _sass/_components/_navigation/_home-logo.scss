@@ -1,0 +1,23 @@
+
+.ma-n-homeLogo {
+  display: flex;
+  flex-direction: column;
+  padding: spacing() spacing() spacing(half);
+
+  text-align: right;
+  color: color(primary, lighter);
+
+  @include hovers() { color: color(primary, lighter); }
+}
+
+.ma-n-homeLogo__title {
+  @include responsive-font-sizes(type(font-size, h3));
+  margin-bottom: spacing(half);
+
+  font-family: type(font-family, header);
+}
+
+.ma-n-homeLogo__descr {
+  @include responsive-font-sizes(type(font-size, h6));
+  font-style: italic;
+}

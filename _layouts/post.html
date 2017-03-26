@@ -1,10 +1,36 @@
----
-layout: default
----
-<article class="l-post" itemscope itemprop="articleBody" itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
 
-  {{ content }}
+  {% include head.html %}
 
-  <h6 class="l-post__sig">- Max Antonucci</h6>
+  <body class="ma-l-default__wrapper">
 
-</article>
+    <!-- js-offCanvas-toggle -->
+
+    <aside role="complementary" class="ma-l-default__sidebar">
+      {% include nav.html %}
+    </aside>
+
+    <main role="main" class="ma-l-default__main">
+      <div class="ma-l-default__header">
+        {% include components/header.html
+          title = page.title
+          tagline = page.excerpt
+          bg_img = page.featured-img
+        %}
+      </div>
+
+      <article aria-label="article" class="ma-l-default__content ma-c-blogContent">
+        {{ content }}
+
+        <p class="ma-l-default__sig">
+          Cheers, Max A
+        </p>
+      </article>
+
+      <div class="ma-l-default__footer">
+        {% include footer.html %}
+      </div>
+    </main>
+  </body>
+</html>

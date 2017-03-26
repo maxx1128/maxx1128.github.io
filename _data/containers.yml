@@ -1,0 +1,11 @@
+- category: border-radius
+  values:
+    - small
+    - base
+    - large
+
+- category: box-shadow
+  values:
+    - light
+    - base
+    - heavy

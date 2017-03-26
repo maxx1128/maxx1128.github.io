@@ -1,0 +1,38 @@
+
+.ma-n-navLinks {
+  margin: spacing(double) 0;
+}
+
+.ma-n-navLink {
+  @include responsive-font-sizes(type(font-size, h6));
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: spacing(half) spacing();
+  cursor: pointer;
+
+  color: color(action, light);
+
+  @include hovers() {
+    transition: 0.25s;
+
+    color: color(action, light);
+    font-weight: type(font-weight, bold);
+
+    background-color: rgba(color(mono, blank), 0.05);
+  }
+
+  &.ma-n-navLink--active {
+    transition: 0.5s;
+    font-weight: type(font-weight, bold);
+
+    background-color: rgba(color(mono, blank), 0.05);
+  }
+}
+
+.ma-n-navLink__icon {
+  @include responsive-font-sizes(type(font-size, h5));
+  flex: 0 0 auto;
+  margin-left: spacing(double);
+}

@@ -1,0 +1,65 @@
+@import '../_tools/_colors.scss';
+
+// This function pulls specific color values from the below map
+@function color($color, $tone: 'base') {
+  @if map-has-key($color-map, $color) {
+    @return map-get(map-get($color-map, $color), $tone);
+  }
+}
+
+/*
+
+  All color palettes
+
+*/
+
+$g-color--shade: 30%;
+
+$g-color--primary   : #31739c;
+$g-color--secondary : #5ab46a;
+$g-color--action    : #ff826e;
+$g-color--mono      : #373737;
+
+
+// Map for storing all color variables
+$color-map: (
+  primary: (
+    base: $g-color--primary,
+
+    lighter: tint($g-color--primary, ($g-color--shade * 2)),
+    light: tint($g-color--primary, $g-color--shade),
+
+    dark: shade($g-color--primary, $g-color--shade),
+    darker: shade($g-color--primary, ($g-color--shade * 2))
+  ),
+
+  secondary: (
+    base: $g-color--secondary,
+
+    lighter: tint($g-color--secondary, ($g-color--shade * 2)),
+    light: tint($g-color--secondary, $g-color--shade),
+
+    dark: shade($g-color--secondary, $g-color--shade),
+    darker: shade($g-color--secondary, ($g-color--shade * 2))
+  ),
+
+  action: (
+    base: $g-color--action,
+
+    lighter: tint($g-color--action, ($g-color--shade * 2)),
+    light: tint($g-color--action, $g-color--shade),
+
+    dark: shade($g-color--action, $g-color--shade),
+    darker: shade($g-color--action, ($g-color--shade * 2))
+  ),
+
+  mono: (
+    blank: #fff,
+    light: #eee,
+
+    base: $g-color--mono,
+
+    dark: #222023,
+    darkest: #080401
+  )
+);

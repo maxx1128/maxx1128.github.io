@@ -1,8 +1,9 @@
 ---
-layout: post
 title:  "Think like a Glossary"
-date:   2015-6-08Tutor
+date:   2015-6-08
 categories: productivity
+
+excerpt: The more we need to learn, the less we need to memorize.
 ---
 
 With so much info out there, I’ve recognized something important: The more we need to learn, the less we need to memorize. 

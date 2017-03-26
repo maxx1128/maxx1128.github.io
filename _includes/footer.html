@@ -1,17 +1,11 @@
-<footer>
-  <div class="footer__wrapper">
+<footer role="contentinfo">
+  <p>
+    This is my site. Hope you enjoy visiting it!
+  </p>
 
-    <p class="footer__description">
-      {{ site.description }}
-    </p>
+  <h6>
+    Ⓒ Max Antonucci, 2017
+  </h6>
 
-    <div class="footer__link-container">
-    	{% for social in site.data.menu %}
-    		<a class="footer__link" href="{{ social.link }}">
-          {{ social.name }}
-    		</a>
-    	{% endfor %}
-    </div>
-
-  </div>
+  {% include footer_links.html %}
 </footer>

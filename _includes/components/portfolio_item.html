@@ -1,0 +1,20 @@
+{% assign name = include.name | default: "Item name!" %}
+{% assign link = include.link | default: "javascript:void(0);" %}
+{% assign highlight = include.highlight | default: false %} 
+{% assign bg_img = include.bg_img | default: "hover-portfolio.png" %}
+
+{% assign description = include.description | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore officia voluptatibus repellendus libero quam maiores maxime amet ea quae sint ex, magnam vel quibusdam adipisci assumenda harum temporibus facilis reiciendis." %}
+
+<a class="ma-c-portfolioItem ma-l-portfolio__item {% if highlight %}ma-l-portfolio__item--highlight{% endif %}" href="{{ link }}" target="_blank">
+  <div class="ma-c-portfolioItem__img" data-lazyload data-original="/img/portfolio/{{ bg_img | prepend: site.baseurl }}" style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"></div>
+  <div class="ma-c-portfolioItem__title">
+    <h4>
+      {{ name }}
+    </h4>
+  </div>
+  <div class="ma-c-portfolioItem__descr">
+    <p>
+      {{ description }}
+    </p>
+  </div>
+</a>

@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "Our High and Low Points"
-date:   2016-06-22Tutor
+date:   2016-06-22
 categories: thought
-subheading: "Our minds almost randomly go from sharp to dull. People can't control this, but can work around it."
-excerpt: "Our minds almost randomly go from sharp to dull. People can't control this, but can work around it."
+excerpt: Our minds almost randomly go from sharp to dull. People can't control this, but can work around it.
 featured-img: /img/posts/high-low-points/cliff.jpg
 ---
 

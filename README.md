@@ -1,7 +1,11 @@
-This is the Jekyll code for my personal site. I migrated to it from WordPress since it's faster and much easier to maintain. Just made with basic Sass and Liquid templates, and also a few plugins.
+# Jekyll-Gulp
 
-* Bourbon for sass mixins
-* Ellisha for a flexbox-based layout
-* Hover.css for simple hover animation
+Jekyll is amazing, but as it can be pretty limiting with assets like Sass and Javascript. This build process uses Gulp for these and other potential assets, so fun things like Autoprefixer, UnCSS, and others.
 
-See the [full site here.](http://maxwellantonucci.com)
+
+## Setup Instructions
+
+1. Install npm dependencies `npm install`
+2. Install bower dependencies `bower install`
+3. Install gem dependencies `bundle install`
+4. Start serving `gulp`

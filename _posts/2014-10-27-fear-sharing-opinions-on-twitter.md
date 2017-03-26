@@ -1,10 +1,9 @@
 ---
-layout: post
 title:  "The Fear of Sharing Opinions on Twitter"
-date:   2014-10-27Tutor
+date:   2014-10-27
 categories: writing social-media
 featured-img: /img/posts/twitter-opinions/featured.jpg
-subheading: Twitter is one of the most open platforms available, yet sharing views on it brings surprising risk to most people.
+excerpt: Twitter is one of the most open platforms available, yet sharing views on it brings surprising risk to most people.
 ---
 
 This year’s mental struggle is brought to you by the issue of expressing opinions online, specifically on Twitter. It also has the distinct honor of having gotten under my skin the most, more so than almost any other issue.

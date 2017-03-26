@@ -1,9 +1,8 @@
 ---
-layout     : post
 title      : "Rest is not Laziness"
 date       : 2017-01-20
 categories : productivity
-excerpt    : "Don't feel lazy and undeserving for taking the time to rest. One can't be productive without rest."
+excerpt    : Don't feel lazy and undeserving for taking the time to rest. One can't be productive without rest.
 
 ---
 

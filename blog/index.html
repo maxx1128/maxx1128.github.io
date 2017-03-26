@@ -1,31 +1,20 @@
 ---
-layout: wide
+layout: default
 title: Blog
-subheading: We all have thoughts in our spare time. I write mine here for safe-keeping.
-featured-img: /img/pages/blog.jpg
+tagline: We all have thoughts in our spare time. I keep mine here for safe-keeping.
 ---
 
-<div class="blog-list">
-  
-{% for post in paginator.posts %}
-  {% include blog_item.html %}
-{% endfor %}
+<div class="ma-l-blog__wrapper">
 
-</div>
+  {% for post in site.posts %}
+    {% include components/blog_item.html
+      classes = 'ma-l-blog__item ma-l-blog__item--flex'
+      title = post.title
+      excerpt = post.excerpt
+      url =  post.url
+      ext_url = post.external_url
+      bg_img = post.featured-img
+    %}
+  {% endfor %}
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <p class="pagination-prev">
-      <a class="button" href="{{ paginator.previous_page_path }}">
-        Newer Posts
-      </a>
-    </p>
-  {% endif %}
-  {% if paginator.next_page %}
-    <p class="pagination-next">
-      <a class="button" href="{{ paginator.next_page_path }}">
-        Older Posts
-      </a>
-    </p>
-  {% endif %}
 </div>

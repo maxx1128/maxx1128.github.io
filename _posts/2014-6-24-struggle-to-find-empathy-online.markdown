@@ -1,9 +1,10 @@
 ---
-layout: post
 title:  "The Struggle to Find Empathy Online"
-date:   2014-6-24Tutor
+date:   2014-6-24
 categories: internet
 featured-img: /img/posts/empathy-online/featured.jpg
+
+excerpt: One of my favorite online articles is also one of the most painful for me to read. 
 ---
 
 One of my favorite online articles is also one of the most painful for me to read. 

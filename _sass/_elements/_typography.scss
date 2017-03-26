@@ -1,0 +1,44 @@
+// Get all the type elements whose size is being set...
+$type-elements: map-get($typography-map, 'font-size');
+
+// ...and loop through them to establish their size and other base styles!
+@each $element, $val in $type-elements {
+
+  $main-font-size: type(font-size, #{$element});
+
+  $small-vw: strip-unit(spacing(half)) * 1vw;
+
+
+  #{$element} {
+    @include responsive-font-sizes($val);
+    margin: type(margin, #{$element});
+    
+    line-height: type(line-height, #{$element});
+  }
+}
+
+
+
+// Set the font families for base text and the headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: type(font-family, header); }
+
+a {
+  color: color(action);
+  text-decoration: none;
+
+  @include hovers() { color: color(action, dark); }
+}
+
+ol,
+ul {
+  padding: 0 ($l-d-sidePadding * 1.5);
+}
+
+body {
+  font-family: type(font-family);
+}

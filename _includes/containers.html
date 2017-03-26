@@ -1,0 +1,22 @@
+
+<h3>
+  Container Styles
+</h3>
+
+<p>
+  Common styles for different blocks and containers.
+</p>
+
+{% for container in site.data.containers %}
+  <div class="sg-container">
+    <h5 class="sg-container__title scf-t-subheader">
+      {{ container.category | capitalize }}
+    </h5>
+
+    <div class="sg-container__examples">
+      {% for value in container.values %}
+        <div class="sg-container__example sg-container__example--{{ container.category }} sg-container__example--{{ container.category }}--{{ value }}"></div>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}

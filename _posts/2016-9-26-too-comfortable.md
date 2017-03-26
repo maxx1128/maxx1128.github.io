@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Are we too Comfortable?"
 date:   2016-09-26
 categories: philosophy productivity
-excerpt: "Could life's best enjoyments keep us from fulfillment?"
+excerpt: Could life's best enjoyments keep us from fulfillment?
 featured-img: /img/posts/too-comfortable/featured.png
 ---
 

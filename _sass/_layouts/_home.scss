@@ -1,0 +1,19 @@
+
+$home-img-width: rem(325px);
+$home-content-width: rem(325px);
+
+.ma-l-home__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ma-l-home__image {
+  flex: 0 1 $home-img-width;
+  width: 100%;
+}
+
+.ma-l-home__content {
+  flex: 1 1 $home-content-width;
+}

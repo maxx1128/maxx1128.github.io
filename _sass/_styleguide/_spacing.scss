@@ -1,0 +1,47 @@
+// Styles for showing the different spacing measures
+
+.sg-spacing { margin-bottom: spacing(double); }
+
+// The wrapper around each spacing title and measure
+.sg-spacingUnit {
+  display: flex;
+  align-items: center;
+
+  margin-top: spacing();
+}
+
+// Title of each measure
+.sg-spacingUnit__title {
+  padding-left: spacing();
+
+  text-transform: capitalize;
+}
+
+// The measure of each spacing length
+.sg-spacingUnit__measure {
+  height: spacing(double);
+  margin-right: spacing(quad);
+
+  background-color: color(primary);
+}
+
+@each $label, $length in $spacing-map {
+
+  $length_label : '#{$length}';
+
+  .sg-spacingUnit__measure--#{$label} {
+    width: $length;
+    position: relative;
+
+    &:after {
+      content: inspect($length_label);
+      position: absolute;
+      width: 7rem;
+      top: spacing(half);
+      left: calc(100% + #{spacing(third)});
+
+      font-style: italic;
+      font-size: type(font-size, small);
+    }
+  }
+}

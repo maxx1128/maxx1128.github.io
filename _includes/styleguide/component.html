@@ -1,0 +1,82 @@
+{% assign component = include.component %}
+{% assign source = component.url | prepend: site.baseurl %}
+{% assign slug = component.slug %}
+{% assign title = component.slug | replace: "-", " " | capitalize %}
+{% assign description = component.description | markdownify %}
+{% assign html = component.content %}
+{% assign liquid = component.example %}
+{% assign parameters = component.parameters %}
+{% assign tab_name = slug | append: "-" | append: "-tab" %}
+
+<div class="sg-entry" id="{{ slug }}">
+
+  <h4>
+    {{ title }}
+  </h4>
+
+  {{ description }}
+
+  <table class="sg-table">
+    <thead>
+      <tr>
+        <th scope="col">Parameter</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for parameter in parameters %}
+      {% assign parameter_name = parameter[0] %}
+      {% assign parameter_desc = parameter[1] | markdownify %}
+      <tr>
+        <td data-label="Parameter"><code>{{ parameter_name }}</code></td>
+        <td data-label="Description">{{ parameter_desc }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="sg-tabs">
+    <!-- Nav tabs -->
+    <ul class="sg-tabs__tabs" role="tablist">
+
+      <li class="sg-tabs__tabItem sg-tabs__tabItem--active" tabs-link-id="demo" role="presentation">
+        Demo
+      </li>
+
+      <li class="sg-tabs__tabItem" tabs-link-id="liquid" role="presentation">
+        Liquid
+      </li>
+
+      <li class="sg-tabs__tabItem" tabs-link-id="html" role="presentation">
+        HTML
+      </li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="sg-tabs__content">
+
+      <div class="sg-tabs__contentPanel sg-tabs__contentPanel--active" tabs-content-id="demo" role="tabpanel">
+        <iframe frameborder="0" scrolling="no" onload="resizeIframe(this)" class="sg-tabs__iframe" src="{{ source }}" title="{{ title }}"></iframe>
+      </div>
+
+      <div class="sg-tabs__contentPanel" tabs-content-id="liquid" role="tabpanel">
+        {% highlight liquid %}{{ liquid }}{% endhighlight %}
+      </div>
+
+      <div class="sg-tabs__contentPanel" tabs-content-id="html" role="tabpanel">
+        {% highlight html %}{{ html }}{% endhighlight %}
+      </div>
+    </div>
+
+    <a
+      href="{{ source }}"
+      title="Open in fullscreen"
+      target="_blank">
+      <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+      <span class="sr-only">Open in fullscreen</span>
+    </a>
+  </div>
+
+
+</div>

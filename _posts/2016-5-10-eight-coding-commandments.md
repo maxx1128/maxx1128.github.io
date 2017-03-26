@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "My Eight Coding Commandments"
-date:   2016-05-20Tutor
+title:  "My Eight Coding Laws"
+date:   2016-05-20
 categories: web-development philosophy
 featured-img: /img/posts/coding-commandments/featured.png
-subheading: "Having a firm, clear set of rules helps a lot in web development. These aim for modular, maintainable code at all times."
+excerpt: Having a firm, clear set of rules helps a lot in web development. These aim for modular, maintainable code at all times.
 ---
 
 The good and bad about web projects is they can get complex. It's good because one can make incredible things limited only by imagination, free time, and lack of social life. It's bad because overly-complex projects are hard to maintain, slowly break down, and eventually self-destruct.

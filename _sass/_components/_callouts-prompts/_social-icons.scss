@@ -1,0 +1,15 @@
+
+.ma-cp-socialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: spacing();
+  padding-top: spacing(half);
+}
+
+.ma-cp-socialIcon {
+  @include responsive-font-sizes(type(font-size, p));
+  color: color(action, lighter);
+
+  @include hovers() { color: color(action, light); }
+}

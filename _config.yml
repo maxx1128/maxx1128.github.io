@@ -5,28 +5,21 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-gems: [jekyll-paginate, rouge]
-
-future: true
-
 # Site settings
 title: Max Antonucci
-email: maxx1128@gmail.com
-description: >
-  I code, write, design, analyze, often breathe, always philosophize.
+description: > # this means to ignore newlines until "baseurl:"
+  Code, write, design, breathe, philosophize. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://maxwellantonucci.com/" # the base hostname & protocol for your site
-permalink: /blog/:title/
-paginate: 12,
-paginate_path: "/blog/page:num/"
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 sass:
-  style: compressed
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
+  sass_dir: _sass
 
 # Build settings
 exclude:
@@ -38,3 +31,30 @@ exclude:
   - node_modules
   - package.json
   - gulpfile.js
+
+
+
+# Plugin settings
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Styleguide settings
+collections:
+  styleguide:
+    output: true
+
+# Sensible defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "styleguide"
+    values:
+      layout: "blank"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

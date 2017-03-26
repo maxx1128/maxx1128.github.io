@@ -1,0 +1,35 @@
+{% include components/home_logo.html %}
+
+<nav role="navigation" class="ma-n-navLinks">
+  {% for nav in site.data.menu %}
+    {% if nav.name == page.title %}
+      {% assign navClass = "ma-n-navLink--active" %}
+    {% else %}
+      {% assign navClass = "" %}
+    {% endif %}
+    
+    {% include components/nav_link.html
+      class = navClass
+      link = nav.link
+      label = nav.name
+      icon = nav.icon
+    %}
+  {% endfor %}
+</nav>
+
+<div class="ma-l-default__sidebarBottom">
+  {% include components/wisdom.html %}
+
+  <div class="ma-cp-socialIcons">
+    {% for social in site.data.social %}
+      {% include components/social_icon.html
+        url = social.url
+        icon = social.icon
+      %}
+    {% endfor %}
+  </div>
+</div>
+
+<span class="ma-l-default__toggle js-offCanvas-toggle">
+  <i class="icon-menu"></i>
+</span>

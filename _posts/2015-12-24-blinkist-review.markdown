@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Review: Blinkist for Curious Readers"
-date:   2015-12-24Tutor
+date:   2015-12-24
 categories: productivity
-subheading: A few weeks ago I stumbled upon an app I'd wished for for years. It's Blinkist, and you should try it too. Please. It's for your own good.
+excerpt: A few weeks ago I stumbled upon an app I'd wished for for years. It's Blinkist, and you should try it too.
 featured-img: /img/posts/blinkist-review/blinkist.jpg
 ---
 

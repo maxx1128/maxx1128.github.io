@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Should we Love or Hate Time?"
 date:   2016-11-17
 categories: philosophy
-excerpt: "When one sorts out their feelings about the passage of time, can it help us understand ourselves?"
+excerpt: When one sorts out their feelings about the passage of time, can it help us understand ourselves?
 
 featured-img: /img/posts/love-hate-time/featured.jpeg
 ---

@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Learning in Chunks"
 date:   2016-09-06
 categories: coding
-excerpt: "The best starting point for learning more code isn't one long book, but lots of small pieces of code."
+excerpt: The best starting point for learning more code isn't one long book, but lots of small pieces of code.
 featured-img: /img/posts/learning-in-chunks/featured.jpg
 ---
 

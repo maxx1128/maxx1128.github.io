@@ -1,0 +1,24 @@
+
+// Use grid instead!
+
+.ma-l-portfolio__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: spacing(half) * -1;
+  margin-left: spacing(half) * -1;
+}
+
+.ma-l-portfolio__item {
+  flex: 1 1 rem(325px);
+  margin: spacing(half);
+
+  // border-top: spacing(third) solid color(secondary);
+}
+
+.ma-l-portfolio__item--highlight {
+  flex-basis: rem(400px);
+}
+
+
+

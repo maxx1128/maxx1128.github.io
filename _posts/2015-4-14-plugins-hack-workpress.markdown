@@ -1,9 +1,10 @@
 ---
-layout: post
 title:  "Six free and easy plugins to hack WordPress"
-date:   2015-4-14Tutor
+date:   2015-4-14
 categories: web-development
 featured-img: /img/posts/wordpress_plugins/wordpress_plugins.jpg
+
+excerpt: For the past few weeks I’ve been drowning in WordPress. Through all this love, I’ve found six plugins to hack and control any theme.
 ---
 
 For the past few weeks I’ve been drowning in WordPress. Through all this love, I’ve found six plugins to hack and control any theme.

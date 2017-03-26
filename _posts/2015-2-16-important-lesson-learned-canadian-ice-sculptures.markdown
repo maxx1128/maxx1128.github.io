@@ -1,9 +1,10 @@
 ---
-layout: post
 title:  "An Important Lesson Learned from Canadian Ice Sculptures"
-date:   2015-2-16Tutor
+date:   2015-2-16
 categories: personal
 featured-img: /img/posts/ice-sculptures/sculpture1.jpg
+
+excerpt: How does one connect cartoons, Canada, ice sculptures, and giant thought bubbles in one post?
 ---
 
 How does one connect cartoons, Canada, ice sculptures, and giant thought bubbles in one post?  If that got your attention, please read on about my trip last week.
@@ -13,7 +14,7 @@ This story starts with a big disclaimer: I’ve have a secret desire to build my
 
 As you can tell from my below sketchbook doodles, this dream refuses to die. But when I try to take the extra step of tracing and maybe coloring my sketches on my computer to boost their quality, I hit a mental block. I’m not sure what creates it, but it always keeps these characters stuck in their paper pages and away from the digital limelight.
 
-<img class="image__half" src="/img/posts/ice-sculptures/sketches.jpg">
+![Alt text](/img/posts/ice-sculptures/sketches.jpg)
 
 With that sad fact about my life cleared up, the real story can begin.
 
@@ -26,19 +27,11 @@ When we arrived at the park where said art was , I’d forgotten what it was lik
 
 Once we finally arrived at the somehow colder-still park, though, seeing all the ice sculptures on display made the trek worth the pain. I could describe how amazing they looked with the artists’ attention to detail and when they were backlit by colorful lights below the night sky – but thankfully my fingers weren’t so frozen that I couldn’t take pictures. I invite you to see the pics below and let them blow your mind.
 
-<div class="flexy-gallery">
-	<div class="gallery-img">
-		<img src="/img/posts/ice-sculptures/sculpture1.jpg">
-	</div>
-	<div class="gallery-img">
-		<img src="/img/posts/ice-sculptures/sculpture2.jpg">
-	</div>
-	<div class="gallery-img">
-		<img src="/img/posts/ice-sculptures/sculpture3.jpg">
-	</div>
-	<div class="gallery-img">
-		<img src="/img/posts/ice-sculptures/sculpture4.jpg">
-	</div>
+<div class="ma-c-blogContent__imageGallery">
+	<img src="/img/posts/ice-sculptures/sculpture1.jpg">
+	<img src="/img/posts/ice-sculptures/sculpture2.jpg">
+	<img src="/img/posts/ice-sculptures/sculpture3.jpg">
+	<img src="/img/posts/ice-sculptures/sculpture4.jpg">
 </div>
 
 ### What Ice Sculptures Have to do with Creativity
@@ -54,7 +47,7 @@ It took a while to find an answer to this, but the eventual one was “Yes.”
 
 I’ve known this answer for a while now, I’d just forgotten it at college when my future career ambitions took a vice-like grip over my brain. But I was more than happy to do the work and take those risks in high school, as this drawing I made before shows:
 
-<img class="image__half" src="/img/posts/ice-sculptures/thoughts.jpg">
+![Alt text](/img/posts/ice-sculptures/thoughts.jpg)
 
 Another great, and likely embarrassing example, of this are some posts I made on my first ever blog. They were extremely long and philosophical, had needless image editing, and were probably never read by anyone. Yet I still enjoyed making them – they were worth the work.
 

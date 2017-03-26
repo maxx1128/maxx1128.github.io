@@ -1,5 +1,4 @@
 ---
-layout     : post
 title      : "Five Lessons Learned as a 24-Year-Old"
 date       : 2016-11-28
 categories : personal productivity

@@ -1,55 +1,24 @@
-// Major dependencies
-var $ = require('jquery');
+//=include ../_bower_components/jquery/dist/jquery.min.js
+//=include lazyload.js
 
-// Modernizr tests and the trigger to run them
-require('browsernizr/test/css/flexbox');
-require('browsernizr/test/css/flexwrap');
-require('browsernizr');
+//=include offCanvasNav.js
+//=include wisdom.js
 
-require("./lazyload.js");
+//=include sg_tabs.js
 
-$(document).ready(function() {
-  
-  // To toggle the menus on the homepage and other pages
-  $('.header__icon').on('click', function(){
-    $('header').toggleClass('hide-menu');
-    $('.home-nav').toggleClass('hide-home-menu');
-  });
+function resizeIframe(obj) {
+  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
 
-  // On homepage, button to scroll from opening section
-  $("#learn-more-button").click(function() {
-    $('html, body').animate({
-        scrollTop: $(".l-home__info").offset().top
-    }, 1500);
-  });
-
-  // Makes all blog links open in a new tab
-  $('.l-post a').each(function() {
-    $(this).attr('target', '_blank');
-  });
-
-  // for the side sliding menu
-  $('.sliding-panel__button,.sliding-panel__fade-screen,.sliding-panel__close').on('click touchstart',function (e) {
-    $('.sliding-panel__container,.sliding-panel__fade-screen').toggleClass('sliding-panel__container--is-visible');
-    e.preventDefault();
-  });
-
-
-  // Specific tracking for clicking on portfolio items
-  $('.portfolio-item').on('click', function(){
-   var label = $(this).attr('href');
-
-   ga('send', 'event', 'portfolio', 'click', label);
-  });
-
+$(document).ready(function(){
   $("[data-lazyload]").lazyload({
     effect : "fadeIn"
   });
 
+  $('.ma-c-blogContent a').attr('target', '_blank');
+
+  MA_OFFCANVASNAV_EXT.init();
+  MA_WISDOM_EXT.init();
+
+  SG_TABS_EXT.init();
 });
-
-
-
-
-
-

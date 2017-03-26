@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Meet Plately!"
-date:   2015-10-16Tutor
+date:   2015-10-16
 categories: web-development
-subheading: Every web project needs a good starting template. This one's mine.
+excerpt: Every web project needs a good starting template. This one's mine.
 ---
 Every web project needs a good starting template. I’m sad to say mine wasn’t in good shape for a long time. It had the bare basics but wasn’t built for professional web development. Thankfully, this has changed.
 

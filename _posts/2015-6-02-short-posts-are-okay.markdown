@@ -1,8 +1,9 @@
 ---
-layout: post
 title:  "Short Posts Are Okay"
-date:   2015-3-02Tutor
+date:   2015-3-02
 categories: writing
+
+excerpt: If anything, in today’s Internet, shorter is better.
 ---
 
 This is a reminder to everyone, especially me, that just because something you write online is short doesn’t make it bad. If anything, in today’s Internet, shorter is better.

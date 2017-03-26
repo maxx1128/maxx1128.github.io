@@ -1,0 +1,90 @@
+.ma-l-default__content {
+
+  img:not(.ma-c-blogContent__fullWidth) {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: rem(480px);
+  }
+
+  iframe,
+  figcaption { margin-bottom: spacing(); }
+
+  figcaption {
+    @include responsive-font-sizes(type(font-size, small));
+
+    a { @include responsive-font-sizes(type(font-size, small)); }
+  }
+}
+
+.ma-c-blogContent__fullWidth {
+  max-width: calc(100% + (#{$l-d-sidePadding} * 2);
+  margin-right: $l-d-sidePadding * -1;
+  margin-left: $l-d-sidePadding * -1;
+}
+
+.ma-c-blogContent__imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+  margin-right: spacing(half) * -1;
+  margin-left: spacing(half) * -1;
+
+  img {
+    flex: 1 1 rem(300px);
+    
+    margin: spacing(half);
+    max-width: rem(99999px);
+  }
+}
+
+.ma-c-blogContent__figure {
+  margin: 0 0 spacing();
+
+  text-align: center;
+}
+
+.ma-c-blogContent__figureCaption {
+  @include responsive-font-sizes(type(font-size, small));
+  margin-top: spacing(third);
+
+  font-style: italic;
+}
+
+
+.ma-c-blogContent__video {
+  @include clearfix();
+  margin: spacing() 0;
+}
+
+.ma-c-blogContent__videoWrapper {
+  @include syn(md, 9, 0, (center-m));
+
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+  position: relative;
+
+  embed,
+  object,
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+// Video that isn't embedded
+video {
+  width: 100%;
+  height: auto;
+}
+
+// Embedded tweets
+.twitter-tweet {
+  margin: 0 auto spacing();
+}

@@ -61,37 +61,16 @@ gulp.task('browserSync', function() {
     browserSync(Settings)
 });
 
-// Task to clean out files to be replaced on tasks
-gulp.task('clean:dev', function(cb){
-    del(prod ? ['app', 'img/sprites.png'] : ['dist', 'img/sprites.png'], cb)
-});
 
+gulp.task('scripts', function(){
 
-// Browserify for creating javascript bundle
-var bundler = browserify({
-    // Required watchify args
-    cache: {},
-    packageCache: {},
-    fullPaths: true,
-    // Browserify options
-    entries: ['_javascript/main.js']
-  });
-
-var bundle = function() {
-  return bundler
-    .bundle()
-    .pipe(customPlumber('Error running Scripts'))
-    .on('error', errorLog)
-    .pipe(source('main.js'))
-    .pipe(buffer())
-    .pipe(p.uglify())
-    .pipe(gulp.dest(config.AssetsPath + 'js'))
-    .pipe(p.notify({ message: 'JS Uglified!', onLast: true }))
-    .pipe(browserSync.reload(bs_reload))
-}
-
-gulp.task('browserify', function() {
-  return bundle();
+  gulp.src('_javascript/*.js')
+  .pipe(customPlumber('Error running Scripts'))
+  .pipe(p.include()).on('error', console.log)
+  .pipe(p.uglify())
+  .pipe(gulp.dest(config.AssetsPath + 'js'))
+  .pipe(p.notify({ message: 'JS Uglified!', onLast: true }))
+  .pipe(browserSync.reload(bs_reload))
 });
 
 
@@ -99,7 +78,7 @@ gulp.task('browserify', function() {
 gulp.task('sass', function () {
     
     // Sass and styling variables
-    var sassInput = '_sass/main.scss';
+    var sassInput = '_sass/*.scss';
     
     var sassOptions = { 
         outputStyle: 'compressed',
@@ -107,7 +86,7 @@ gulp.task('sass', function () {
     };
 
     var autoprefixerOptions = {
-      browsers: ['IE 7', 'IE 8', 'last 4 versions', '> 2%', 'Firefox ESR']
+      browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
     };
 
     var unCSS_Settings = {
@@ -126,9 +105,8 @@ gulp.task('sass', function () {
     // Write Sass for either dev or prod
     .pipe(p.sass(sassOptions))
     // .pipe(p.uncss(unCSS_Settings))
-    .pipe(p.autoprefixer(autoprefixerOptions))
+    .pipe(p.if(!prod, p.autoprefixer(autoprefixerOptions)))
     .pipe(p.if(prod, p.sourcemaps.write()))
-    .pipe(p.rename("style.css"))
     // Sends the Sass file to either the app or dist folder
     .pipe(gulp.dest(config.AssetsPath + 'css'))
     .pipe(p.notify({ message: 'Sass Processed!', onLast: true }))
@@ -136,10 +114,12 @@ gulp.task('sass', function () {
 });
 
 // Task for updating Jekyll with Gulp workflow
+// For newer Jekyll versions, may need to add "bundle exec" to front of this command. Only one word can be used before the others must be put in the array below.
 gulp.task('jekyll', () => {
   const jekyll = child.spawn('jekyll', ['serve',
     '--watch',
-    '--incremental'
+    '--incremental',
+    '--drafts'
   ]);
 
   const jekyllLogger = (buffer) => {
@@ -155,18 +135,12 @@ gulp.task('jekyll', () => {
 
 // Task to watch the things!
 gulp.task('watch', function(){
-  gulp.watch('_sass/**/**/*.scss', ['sass']);
-  gulp.watch('_javascript/**/**/*.js', ['browserify']);
+  gulp.watch('_sass/**/**/*.scss', ['sass', 'jekyll']);
+  gulp.watch('_javascript/**/**/*.js', ['scripts', 'jekyll']);
   
   // gulp.watch(['img/**/**/*',], ['imagemin']);
 });
 
-gulp.task('watch-js', function() {
-  var watchifyBundler = watchify(bundler);
-  watchifyBundler.on('update', bundle);
-
-  return bundle();
-});
 
 
 
@@ -192,8 +166,8 @@ gulp.task('imagemin', function() {
 gulp.task('default', function(callback) {
   runSequence(
     'jekyll',
-    ['sass', 'browserify'], 
-    ['browserSync', 'watch', 'watch-js'],
+    ['sass', 'scripts'], 
+    ['browserSync', 'watch'],
     callback
   )
 });

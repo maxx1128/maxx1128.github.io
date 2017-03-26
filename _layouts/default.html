@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: 'en' }}">
 
   {% include head.html %}
 
-  <body>
+  <body class="ma-l-default__wrapper">
 
-    {% include side_nav.html %}
+    <!-- js-offCanvas-toggle -->
 
-    {% include header.html %}
+    <aside role="complementary" class="ma-l-default__sidebar">
+      {% include nav.html %}
+    </aside>
 
-    {{ content }}
+    <main role="main" class="ma-l-default__main">
+      <div class="ma-l-default__header">
+        {% include components/header.html
+          title = page.title
+          tagline = page.tagline
+          bg_img = page.featured-img
+        %}
+      </div>
 
+      <div class="ma-l-default__content" aria-label="Content">
+        {{ content }}
+      </div>
+
+      <div class="ma-l-default__footer">
+        {% include footer.html %}
+      </div>
+    </main role="main">
   </body>
-
-  {% include footer.html %}
-
-  <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-
 </html>

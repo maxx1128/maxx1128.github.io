@@ -1,0 +1,103 @@
+// The default layout for the blog
+
+$l-d-sidebarWidth: rem(280px);
+$l-d-sidePadding: 5%;
+
+.ma-l-default__wrapper {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.ma-l-default__header,
+.ma-l-default__footer {
+  width: 100%;
+  float: left;
+  flex: 0 1 auto;
+}
+
+.ma-l-default__footer {
+  @include contra-color(color(secondary, lighter));
+  padding: spacing() $l-d-sidePadding;
+}
+
+.ma-l-default__main {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  @include larger-than(md) {
+    width: calc(100% - #{$l-d-sidebarWidth});
+    margin-left: $l-d-sidebarWidth;
+  }
+}
+
+.ma-l-default__content {
+  padding: spacing() 0;
+  flex: 1 1 auto;
+
+  & > *:not(blockquote):not(ul):not(ol):not(iframe):not(video):not(.video):not(.cp_embed_wrapper):not(.highlight):not(.ma-c-blogContent__fullWidth) {
+    padding-right: $l-d-sidePadding;
+    padding-left: $l-d-sidePadding;
+  }
+}
+
+.ma-l-default__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: 0.5s;
+  overflow-y: scroll;
+  width: $l-d-sidebarWidth;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: $l-d-sidebarWidth * -1;
+  z-index: z-index(overlay);
+
+  box-shadow: container(box-shadow), inset 0 0 0 1000px rgba(color(primary, darker), 0.875);
+  @include svg_background();
+
+  @include larger-than(md) { left: 0; }
+
+  @include smaller-than(md) {
+    .ma-l-default__wrapper--expanded & {
+      transition: 0.5s;
+      left: 0;
+    }
+  }
+}
+
+.ma-l-default__sidebarBottom { padding: spacing(); }
+
+.ma-l-default__toggle {
+  @include responsive-font-sizes(type(font-size, p));
+  @include contra-color(color(action));
+  transition: 0.5s;
+  position: fixed;
+  left: spacing(half);
+  bottom: spacing(half);
+  padding: spacing(half);
+
+  line-height: 0;
+
+  border-radius: 100%;
+
+  cursor: pointer;
+
+  .ma-l-default__wrapper--expanded & {
+    transition: 0.5s;
+    left: $l-d-sidebarWidth + spacing(half);
+  }
+
+  @include larger-than(md) { display: none; }
+}
+
+.ma-l-default__sig {
+  margin-top: spacing(double);
+
+  text-align: right;
+  font-style: italic;
+  font-weight: type(font-weight, bold);
+}

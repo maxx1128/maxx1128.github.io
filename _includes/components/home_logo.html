@@ -1,0 +1,11 @@
+{% assign link = include.link | default: "/" %}
+
+<a href="{{ link }}" class="ma-n-homeLogo">
+  <span class="ma-n-homeLogo__title">
+    {{ site.title }}
+  </span>
+
+  <span class="ma-n-homeLogo__descr">
+    {{ site.description }}
+  </span>
+</a>

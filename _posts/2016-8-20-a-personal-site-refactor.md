@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "A Personal Site Refactor"
 date:   2016-08-20
 categories: coding
-excerpt: "Site refactors fix plenty, and my site was overdue for one. But with luck, I'll make less in the future."
+excerpt: Site refactors fix plenty, and my site was overdue for one. But with luck, I'll make less in the future.
 featured-img: /img/posts/site-refactor/featured.png
 ---
 

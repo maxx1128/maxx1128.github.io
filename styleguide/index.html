@@ -1,0 +1,31 @@
+---
+layout: default
+title: Styleguide
+tagline: My site's building blocks
+---
+
+<p>
+  These are all the elements, values, pieces, and bits of clockwork that make up this very website.
+</p>
+
+{% include colors.html %}
+
+{% include spacing.html %}
+
+{% include containers.html %}
+
+<br><br>
+
+<h3>
+  Pattern List
+</h3>
+
+<p>
+  A list of all this site's patterns, their uses, demos, and the code that references them.
+</p>
+
+{% for component in site.styleguide %}
+  {% include styleguide/component.html
+    component = component
+  %}
+{% endfor %}

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Resume
+tagline: Where I'm working now and have before
+featured-img: /img/pages/resume.jpg
+---
+
+<div class="ma-c-resume__container">
+
+{% for resume in site.data.resume %}
+
+  {% include components/resume_item.html
+    title = resume.title
+    icon = resume.icon
+    company = resume.company
+    start = resume.start
+    end = resume.end
+    description = resume.description
+  %}
+
+{% endfor %}
+
+</div>

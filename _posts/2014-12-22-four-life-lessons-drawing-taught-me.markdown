@@ -1,9 +1,10 @@
 ---
-layout: post
 title:  "Four Life Lessons Drawing Taught Me"
-date:   2014-12-22Tutor
+date:   2014-12-22
 categories: drawing
 featured-img: /img/posts/drawing-life-lessons/featured.jpg
+
+excerpt: In honor of the holiday season, I took a trip down memory lane with an old cartoon sketchbook.
 ---
 
 In honor of the holiday season, I took a trip down memory lane with an old cartoon sketchbook. It was surprising to see how much my drawing had changed, so I did something fun: redraw old cartoons to see what’s gotten better.

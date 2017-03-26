@@ -1,0 +1,12 @@
+blockquote {
+  @include contra-color(color(secondary, dark));
+  padding: spacing() $l-d-sidePadding;
+  margin: 0 0 spacing() 0;
+
+  p {
+    @include responsive-font-sizes(type(font-size, h4));
+    margin: 0;
+
+    font-style: italic;
+  }
+}

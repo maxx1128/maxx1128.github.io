@@ -1,9 +1,10 @@
 ---
-layout: post
 title:  "After Three Years, Drawing’s Still My Salvation"
-date:   2014-6-13Tutor
+date:   2014-6-13
 categories: drawing
 featured-img: /img/posts/drawing-salvation/comic.jpg
+
+excerpt: After three years, I've had a major relapse. I'm once again drawing. That thing with actual pencil and paper.
 ---
 
 After three years, I've had a major relapse. I'm once again drawing. That thing with actual pencil and paper.

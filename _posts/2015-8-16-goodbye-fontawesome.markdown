@@ -1,9 +1,10 @@
 ---
-layout: post
 title:  "Goodbye Font Awesome, Hello Fontastic"
-date:   2015-8-16Tutor
+date:   2015-8-16
 categories: web-development
 featured-img: /img/posts/fontastic/icon-examples.png
+
+excerpt: I've loved FontAwesome for a long time, but now I must say goodbye for a better icon service.
 ---
 
 I've loved FontAwesome for a long time, but now I must say goodbye for a better icon service.
@@ -20,7 +21,7 @@ Obviously the more icons the better, and Fontastic definitely has more. Font Awe
 
 To be fair, all the extra options may not matter much. Some icons are repeated several times (the Github OctoCat appears least three times). Plus I can’t think of 4,286 different situations when I’d need each icon. Especially since some are odd icon choices, such as one for each state, a cow, a chibi robot, a constipated ski pro, and a marijuana leaf. See those and some of my other favorites below:
 
-![Alt text](/img/posts/fontastic/icon-examples.png)
+<img class="ma-c-blogContent__fullWidth" src="/img/posts/fontastic/icon-examples.png">
 
 I don’t even need, or want, to also describe the “Nasty Icon” set that’s there for whatever reason. These include classics such as:
 
@@ -31,7 +32,7 @@ I don’t even need, or want, to also describe the “Nasty Icon” set that’s
 
 Try and find them all below!
 
-![Alt text](/img/posts/fontastic/crazy-icons.png)
+<img class="ma-c-blogContent__fullWidth" src="/img/posts/fontastic/crazy-icons.png">
 
 Knowing the Internet, I could see maybe half being used at some point. The other ones, give the Internet 15 more years until some site needs them.
 

@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "Synapse: Combining Expressive and Component Grids"
-date:   2016-1-7Tutor
+date:   2016-1-7
 categories: web-development
-subheading: 'In the great struggle between an Expressive or Component grid system, I made my own compromise.'
+excerpt: In the great struggle between an Expressive or Component grid system, I made my own compromise.
 ---
 
 Recently I've had a major dilemma with creating website layout between Expressive and Component CSS. Did I want the simplicity and fun of the first, or the control and efficiency of the second?

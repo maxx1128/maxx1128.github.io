@@ -1,0 +1,98 @@
+@import '../_tools/_modular-scale.scss';
+
+/*
+
+  All typography variables
+
+*/
+
+
+// For pulling any typography values
+// For most no base is set so it always needs two values
+@function type($type-var, $val: 'base') {
+  @if map-has-key($typography-map, $type-var) {
+    @return map-get(map-get($typography-map, $type-var), $val);
+  }
+}
+
+@mixin responsive-font-sizes($main-font-size) {
+
+  $small-vw: strip-unit(spacing(half)) * 1vw;
+
+  font-size: $main-font-size; // Fallback if responsive typography isn't supported by the browser
+  font-size: calc(#{$main-font-size} + #{$small-vw});
+}
+
+  
+
+
+
+
+// Modular Scale variables
+$g-modular-scale--base  : spacing();
+$g-modular-scale--ratio : 1.25; // Major third
+
+
+// Font families
+$g-fontFamily-base   : 'Josefin Sans', Lucida Grande, Verdana, Arial, sans-serif;
+$g-fontFamily-header : 'Raleway', Helvetica, Arial, sans-serif;
+$g-fontFamily-mono   : 'add monospace here';
+
+
+$typography-map: (
+  font-family: (
+    base: $g-fontFamily-base,
+    header: $g-fontFamily-header,
+    mono: $g-fontFamily-mono
+  ),
+
+  font-size: (
+    h1: decimal-round(modular-scale(5), 2),
+    h2: decimal-round(modular-scale(4), 2),
+    h3: decimal-round(modular-scale(3), 2),
+    h4: decimal-round(modular-scale(2), 2),
+    h5: decimal-round(modular-scale(1), 2),
+    h6: decimal-round(modular-scale(0), 2),
+    large: decimal-round(modular-scale(0), 2),
+    p: decimal-round(modular-scale(0), 2),
+    ol: decimal-round(modular-scale(0), 2),
+    ul: decimal-round(modular-scale(0), 2),
+    a: decimal-round(modular-scale(0), 2),
+    small: decimal-round(modular-scale(-1), 2),
+    tiny: decimal-round(modular-scale(-2), 2)
+  ),
+
+  font-weight: (
+    bold: 700,
+    base: 400,
+    light: 100
+  ),
+
+  line-height: (
+    h1: strip-unit(decimal-round(modular-scale(2), 2)),
+    h2: strip-unit(decimal-round(modular-scale(2), 2)),
+    h3: strip-unit(decimal-round(modular-scale(2), 2)),
+    h4: strip-unit(decimal-round(modular-scale(2), 2)),
+    h5: strip-unit(decimal-round(modular-scale(2), 2)),
+    h6: strip-unit(decimal-round(modular-scale(2), 2)),
+    p: strip-unit(decimal-round(modular-scale(2), 2)),
+    ol: strip-unit(decimal-round(modular-scale(2), 2)),
+    ul: strip-unit(decimal-round(modular-scale(2), 2)),
+    small: strip-unit(decimal-round(modular-scale(1), 2)),
+    tiny: strip-unit(decimal-round(modular-scale(1), 2))
+  ),
+
+  margin: (
+    h1: spacing() 0 spacing(),
+    h2: spacing() 0 spacing(),
+    h3: spacing() 0 spacing(),
+    h4: spacing() 0 spacing(half),
+    h5: spacing() 0 spacing(half),
+    h6: spacing() 0 spacing(half),
+    p: 0 0 spacing() 0,
+    small: 0 0 spacing(half),
+    tiny: 0 0 spacing(half)
+  )
+);
+
+

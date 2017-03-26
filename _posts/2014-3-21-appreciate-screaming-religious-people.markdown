@@ -1,10 +1,9 @@
 ---
-layout: post
 title:  "Why I Appreciate the Religious People Screaming Outside SU"
-date:   2014-3-21Tutor
+date:   2014-3-21
 categories: drawing
 featured-img: /img/posts/religious-outside-su/featured.jpg
-subheading: Weird as it sounds, I always feel better seeing people yelling inane things near my university.
+excerpt: Weird as it sounds, I always feel better seeing people yelling inane things near my university.
 ---
 
 Last year on my way off campus, I saw a man standing on Waverly Avenue with a large sign saying how the bible was the only hope one had for salvation and shouting at passerby. Instead of walking past him trying not to make eye contact, I smiled and walked over.

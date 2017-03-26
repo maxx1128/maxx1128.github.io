@@ -1,0 +1,27 @@
+{% assign title = include.title | default: "Job Title" %}
+{% assign icon = include.icon | default: "wrench" %}
+{% assign company = include.company | default: "Company" %}
+{% assign start = include.start | default: "Start Time" %}
+{% assign end = include.end | default: "End Time" %}
+{% assign description = include.description | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate obcaecati perspiciatis debitis animi ratione optio tenetur excepturi, laboriosam rerum, totam eum cum. Fugit explicabo ducimus est vel ratione. Atque, quas." %}
+
+<div class="ma-c-resume__item">
+
+  <div class="ma-c-resume__header">
+    <i class="ma-c-resume__icon icon-{{ icon }}"></i>
+
+    <div class="ma-c-resume__headerInfo">
+      <h4 class="ma-c-resume__title">
+        {{ title }}
+      </h4>
+
+      <span class="ma-c-resume__meta">
+        At <strong>{{ company }}</strong> from {{ start }} to {{ end }}
+      </span>
+    </div>
+  </div>
+
+  <p>
+    {{ description }}
+  </p>
+</div>

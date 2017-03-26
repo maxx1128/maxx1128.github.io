@@ -1,0 +1,26 @@
+
+// Each resume item for my past jobs
+
+.ma-c-resume__item {
+  margin-bottom: spacing(triple);
+}
+
+.ma-c-resume__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: spacing();
+}
+
+.ma-c-resume__icon,
+.ma-c-resume__title {
+  color: color(primary, dark);
+}
+
+.ma-c-resume__icon {
+  @include responsive-font-sizes(type(font-size, h1));
+  margin-right: spacing(double);
+
+  line-height: 0;
+}
+
+.ma-c-resume__meta { color: color(secondary, dark); }

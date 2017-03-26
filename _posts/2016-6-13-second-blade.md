@@ -1,10 +1,8 @@
 ---
-layout: post
 title:  "Have a Second Blade"
-date:   2016-06-12Tutor
+date:   2016-06-12
 categories: philosophy random
-subheading: "An unusual manga about killing an alien teacher has a good career lesson for us all."
-excerpt: "An unusual manga about killing an alien teacher has a good career lesson for us all."
+excerpt: An unusual manga about killing an alien teacher has a good career lesson for us all.
 featured-img: /img/posts/second-blade/classroom.png
 ---
 
@@ -30,7 +28,7 @@ Take front-end web development. I could pour all my time and energy into it. Cod
 
 **Like with the assassination classroom, most or all of this effort could be for nothing.** It doesn't take much searching to see why in my case. What if tools like [The Grid](https://thegrid.io/) go mainstream and automate everything? Too many businesses stick to social platforms like Facebook and Twitter instead of official websites? People only make sites with premade components or templates, like WordPress themes or frameworks? [Businesses focus more on native apps instead of websites?](https://hueniverse.com/2016/06/08/the-fucking-open-web/) These are already issues, and could do all the above someday.
 
-{% include image.html place="image__three-quarter lofi" url="/img/posts/second-blade/manga_example.png" %}
+<img src="/img/posts/second-blade/manga_example.png" alt="Comic illustrating how planning a second and third strike is important in case the first misses.">
 
 If I pour all my time and energy into that first blade, it'd go to waste. Then where would I be?
 

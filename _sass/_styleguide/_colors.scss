@@ -1,0 +1,76 @@
+// Showing the color swatches
+@mixin color-swatch-styles($palette, $color, $shade) {
+
+  .sg-colorSwatches__swatch--#{$palette}-#{$shade} {
+    @include contra-color($color);
+
+    &:after { content: quote(inspect($color)); }
+  }
+}
+
+// Container for all swatches
+.sg-colorSwatches {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: spacing(triple);
+}
+
+// Common styles for all different swatches
+.sg-colorSwatches__swatch {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: spacing(half);
+
+  &:after {
+    order: 2;
+
+    font-size: type(font-size, small);
+    font-weight: type(font-weight, bold);
+  }
+}
+
+// The base color in each swatch
+.sg-colorSwatches__swatch--base {
+  flex: 1 1 100%;
+  order: 1;
+
+  &:after { margin-bottom: spacing(); }
+}
+
+// The other shades aside the base color
+.sg-colorSwatches__swatch--shade {
+  flex: 1 1 rem(150px);
+  order: 2;
+}
+
+// All color swatch titles
+.sg-colorSwatches__title {
+  order: 1;
+  text-transform: capitalize;
+  font-weight: type(font-weight, bold);
+  font-family: type(font-family, header);
+}
+
+// The title for base colors
+.sg-colorSwatches__title--base { font-size: type(font-size, h3); }
+
+// The title for all other color shades
+.sg-colorSwatches__title--shade { font-size: type(font-size, h5); }
+
+// Container for helper classes in each swatch
+.sg-colorSwatches__helpers {
+  order: 3;
+  margin-top: auto;
+  padding-top: spacing(double);
+
+  font-size: type(font-size, small);
+  font-family: type(font-family, mono);
+}
+
+// Generating the unique classes for displaying each color
+@each $palette, $color-list in $color-map {
+  @each $shade, $color in $color-list {
+    @include color-swatch-styles($palette, $color, $shade);
+  }
+}

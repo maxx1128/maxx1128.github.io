@@ -1,42 +1,59 @@
-@charset "utf-8";
 
 @import
-  "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
+'_tools/_calc.scss';
 
 @import
-  'utils/functions',
-  'utils/variables',
-  'utils/mixins',
-  'utils/placeholders';
+'_settings/spacing.scss',
+'_settings/colors.scss',
+'_settings/grid.scss',
+'_settings/typography.scss',
+'_settings/containers.scss';
 
 @import
-  'layout/synapse',
-  'layout/grid';
+'_tools/_colors.scss',
+'_tools/_layout.scss',
+'_tools/_selectors.scss',
+'_tools/_synapse.scss';
 
 @import
-  'base/buttons',
-  'base/fonts',
-  'base/lists',
-  'base/post-images',
-  'base/pre',
-  'base/syntax',
-  'base/typography';
+'_generic/_normalize.scss',
+'_generic/_syntax.scss';
 
 @import
-  'components/cssgram',
-  'components/pagination',
-  'components/slide-card',
-  'components/video-wrapper';
+'_layouts/_default.scss',
+'_layouts/_blog.scss',
+'_layouts/_home.scss',
+'_layouts/_portfolio.scss';
 
 @import
-  'patterns/footer',
-  'patterns/nav',
-  'patterns/perspective',
-  'patterns/sliding-panel',
-  'patterns/top-bar';
+'_elements/_blockquote.scss',
+'_elements/_body.scss',
+'_elements/_icons.scss',
+'_elements/_typography.scss',
+'_elements/_video.scss';
 
 @import
-  'pages/blog',
-  'pages/blog-post',
-  'pages/home',
-  'pages/resume';
+'_components/_callouts-prompts/_social-icons.scss';
+
+@import
+'_components/_content/_blog-item.scss',
+'_components/_content/_blog-content.scss',
+'_components/_content/_header.scss',
+'_components/_content/_resume.scss',
+'_components/_content/_portfolio-item.scss',
+'_components/_content/_wisdom.scss';
+
+@import
+'_components/_navigation/_home-logo.scss',
+'_components/_navigation/_nav-link.scss';
+
+@import
+'_components/_media/_profile-img.scss';
+
+@import
+'_styleguide/_colors.scss',
+'_styleguide/_containers.scss',
+'_styleguide/_entry.scss',
+'_styleguide/_spacing.scss',
+'_styleguide/_table.scss',
+'_styleguide/_tabs.scss';

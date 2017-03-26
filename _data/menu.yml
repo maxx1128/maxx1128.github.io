@@ -1,11 +1,19 @@
 - name: About Me
   link: '/about/'
+  icon: about
 
 - name: Portfolio
   link: '/portfolio/'
+  icon: portfolio
 
-- name: Work History
+- name: Resume
   link: '/resume/'
+  icon: resume
 
 - name: Blog
   link: '/blog/'
+  icon: blog
+
+- name: Styleguide
+  link: '/styleguide/'
+  icon: styleguide

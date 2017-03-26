@@ -1,9 +1,8 @@
 ---
-layout: post
 title:  "12 Simple Lessons From a Social Media Manager"
-date:   2014-7-07Tutor
+date:   2014-7-07
 categories: social-media
-subheading: So far in my summer at AmeriCares, I've picked up many good lessons on managing social media.
+excerpt: So far in my summer at AmeriCares, I've picked up many good lessons on managing social media.
 ---
 
 Career-wise, I can say my summer has gone fairly well so far (I won’t be speaking of the other areas, believe me). I was very lucky to be the social media and web management intern at AmeriCares, a global health nonprofit for humanitarian aid and disaster relief, since it’s pretty *** close to my ideal job in the future.
@@ -13,6 +12,7 @@ While I won’t go into much specifics about my work there so far, I do want to 
 The below tips are simple but can apply to any professional social media work. So please take them to heart!
 
 #### Scheduling is God
+
 I can’t put this any more simply: schedule lots of social media posts in advance with some outside tools. Go for at least one or two days in advance, with even more on the weekends. Scheduling is my buffer to do extra work, meet with people, try out new ideas, and try to get one of those “life” things if I’m ambitious.
 
 > Scheduling is the way to handle social media, finish other work, and still have a life.
@@ -22,12 +22,11 @@ I thought it was just really useful before, now I realize it’s plain impossibl
 One catch: I can’t let scheduling keep me from taking part in conversations. It lulls many into a false sense of security to not respond to messages or post about new topics. If that happens, it’s no longer social media, it’s just a digital megaphone. Scheduling can’t get in the way of social media being a conversation. 
 
 #### Play to Your Content and Brand Strengths
+
 Regardless of what I see in different streams, it almost always comes back to matching it with our content and brand strengths. Trying to branch out into anything too different just comes across as opportunistic and won’t reach enough people. I make sure it always plays to our strengths.
 
-<blockquote class="twitter-tweet" lang="en">An <a href="https://twitter.com/hashtag/Ebola?src=hash">#Ebola</a> outbreak in W.Africa has killed over 300, and thanks to you, we've begun treatment: <a href="http://t.co/oReUoSNEN6">http://t.co/oReUoSNEN6</a> <a href="http://t.co/LbczRiGGGg">pic.twitter.com/LbczRiGGGg</a>
-
-— AmeriCares (@AmeriCares) <a href="https://twitter.com/AmeriCares/statuses/481427801283653632">June 24, 2014</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">An <a href="https://twitter.com/hashtag/Ebola?src=hash">#Ebola</a> outbreak in W.Africa has killed over 300, and thanks to you, we&#39;ve begun treatment: <a href="http://t.co/oReUoSNEN6">http://t.co/oReUoSNEN6</a> <a href="http://t.co/LbczRiGGGg">pic.twitter.com/LbczRiGGGg</a></p>&mdash; Americares (@Americares) <a href="https://twitter.com/Americares/status/481427801283653632">June 24, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 In AmeriCares’ case, our strengths are our aid-focused work and our awesome photo database. That’s why posts like the above are the ones that spread the furthest and do the best. They’re different for every company, however.
 
