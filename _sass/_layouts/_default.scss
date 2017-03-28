@@ -73,7 +73,6 @@ $l-d-sidePadding: 5%;
 
 .ma-l-default__toggle {
   @include responsive-font-sizes(type(font-size, p));
-  @include contra-color(color(action));
   transition: 0.5s;
   position: fixed;
   left: spacing(half);
@@ -83,6 +82,7 @@ $l-d-sidePadding: 5%;
   line-height: 0;
 
   border-radius: 100%;
+  background-color: rgba(color(action), 0.8);
 
   cursor: pointer;
 

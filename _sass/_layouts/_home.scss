@@ -1,4 +1,13 @@
 
+@keyframes logo_rotate {
+  40% { transform: rotate(0deg); }
+  45% { transform: rotate(5deg); }
+  50% { transform: rotate(-10deg); }
+  55% { transform: rotate(10deg); }
+  60% { transform: rotate(-5deg); }
+  65% { transform: rotate(0deg); }
+}
+
 $home-img-width: rem(325px);
 $home-content-width: rem(325px);
 
@@ -12,8 +21,10 @@ $home-content-width: rem(325px);
 .ma-l-home__image {
   flex: 0 1 $home-img-width;
   width: 100%;
+
+  animation: 5s logo_rotate ease-in-out infinite;
+
+  img { box-shadow: container(box-shadow); }
 }
 
-.ma-l-home__content {
-  flex: 1 1 $home-content-width;
-}
+.ma-l-home__content { flex: 1 1 $home-content-width; }
