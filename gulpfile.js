@@ -10,6 +10,7 @@ var browserSync   = require('browser-sync'),
     watchify      = require('watchify'),
     source        = require('vinyl-source-stream'),
     buffer        = require('vinyl-buffer'),
+    scsslint      = require('gulp-scss-lint'),
     child         = require('child_process');
 
 // Important variables used throughout the gulp file //
@@ -111,6 +112,21 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(config.AssetsPath + 'css'))
     .pipe(p.notify({ message: 'Sass Processed!', onLast: true }))
     .pipe(browserSync.reload(bs_reload))
+});
+
+// For linting the Sass files
+gulp.task('scss-lint', function() {
+  return gulp.src([
+    '_sass/**/**/**/*.scss',
+    '!_sass/_generic/_normalize.scss',
+    '!_sass/_generic/_syntax.scss',
+    '!_sass/_tools/_synapse.scss'
+  ])
+  .pipe(scsslint({
+    'maxBuffer': 9999999999999999999999999999999999999999,
+    'config': '.css-guidelines.yml',
+    'bundleExec': true
+  }))
 });
 
 // Task for updating Jekyll with Gulp workflow

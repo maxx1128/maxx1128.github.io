@@ -43,6 +43,7 @@
     "del": "^1.2.1",
     "gulp": "^3.9.0",
     "gulp-load-plugins": "^1.1.0",
+    "gulp-scss-lint": "^0.4.0",
     "gulp-uncss": "^1.0.5",
     "jquery": "^2.2.0",
     "run-sequence": "^1.1.5",
