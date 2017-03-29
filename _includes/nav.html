@@ -2,7 +2,7 @@
 
 <nav role="navigation" class="ma-n-navLinks">
   {% for nav in site.data.menu %}
-    {% if nav.name == page.title %}
+    {% if nav.name == page.title or page.layout == "post" and nav.name == "Blog" %}
       {% assign navClass = "ma-n-navLink--active" %}
     {% else %}
       {% assign navClass = "" %}

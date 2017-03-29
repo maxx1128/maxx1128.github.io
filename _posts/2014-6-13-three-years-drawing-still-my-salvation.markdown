@@ -32,7 +32,7 @@ I didn’t have high hopes about starting drawing again. My cartoons were rough 
 
 But I was wrong, since it was like I had never even stopped. I went right back to drawing the same characters in my head for years (and any other random ones). Their moods would mirror my own, from being joyful to wanting to crawl into a hole forever (good times).
 
-<img class="image__three-quarter" src="/img/posts/drawing-salvation/Dalen.jpg">
+<img  src="/img/posts/drawing-salvation/Dalen.jpg">
 
 That’s probably my biggest benefit from my drawings since I couldn’t sell them for lots of money: they’d take the weird, obscure, and sometimes borderline thoughts in my mind and give them a physical form. It’s like my mind was an ocean, and drawing was pulling out small cups of water. I could examine the water in each cup and be fascinated with the details, but still fantasize about what else was in the wide-open sea.
 
@@ -43,7 +43,7 @@ Fromm wrote that to find “wholeness,” or our sense of self, we must discover
 
 To put it simply, creative expression lets us find meaning in our lives and brings us closer to others.
 
-<img class="image__three-quarter" src="/img/posts/drawing-salvation/comic.jpg">
+<img  src="/img/posts/drawing-salvation/comic.jpg">
 
 This all certainly felt true for me, it explained a decent amount, and it sounds like a good set of perks for drawing. Plus it explains why I dug up my old sketchbooks the day after I first read those same ideas.
 
@@ -52,6 +52,6 @@ I’ll admit that lately, despite all my work in school and everything, I’ve b
 
 I still accept my drawing isn’t part of my career and it never will be. But I don’t think that matters when it comes to having a good outlet to express and enjoy myself (other than writing here, I suppose). Drawing is there without a battery charger, and I’m always a bit surprised with what I put on the page. Plus it helps me actually get away from my work online and return to my favorite hobby of playing around with a few cool ideas – one part of my identity I’d forgotten.
 
-<img class="image__three-quarter" src="/img/posts/drawing-salvation/thought.jpg">
+<img  src="/img/posts/drawing-salvation/thought.jpg">
 
 Dear God, I needed to draw again. I can’t even think of a good metaphor for it, that’s how much I needed to.

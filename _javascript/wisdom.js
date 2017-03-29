@@ -31,10 +31,11 @@ function ma_wisdom($, patternId) {
       'Only when we let strangers in, can we find new ways to be ourselves.',
       'When humans are made into commodities, what can conversations be but trivial?',
       'A free person owes an explanation only to themselves',
-      'Force is camouflaged by consent, brought about by methods of mass suggestion.',
-      'The biggest chains are ones made to look like our own desires and ideals.',
+      'Force is camouflaged by consent, brought by methods of mass suggestion.',
+      'The biggest chains are desires and ideals made to look like our own.',
       'Inside every cynical person is a disappointed idealist.',
-      'To be is to be perceived.'
+      'To be is to be perceived.',
+      'The eternal happiness you most wish for is the only thing you can\'t have.'
     ],
     selected_wisdom = wisdoms[Math.floor(Math.random()*wisdoms.length)]
   ;

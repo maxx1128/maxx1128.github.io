@@ -32,7 +32,7 @@ I could only ask myself: now what? There's no uncertainty or fear, so how do I f
 
 All I knew was I didn't want to feel the same as last time.
 
-{% include image.html place="image__three-quarter mayfair" url="/img/posts/death-dogs-distance/picture.jpg" %}
+{% include image.html place="ma-c-blogContent__image mayfair" url="/img/posts/death-dogs-distance/picture.jpg" %}
 
 This "last time" was when our other dog, Maya, passed away. It was several years ago. I was at school in Upstate New York, studying in the library. There was a phone call, the news, and an empty line. Then a stale feeling in my chest.
 

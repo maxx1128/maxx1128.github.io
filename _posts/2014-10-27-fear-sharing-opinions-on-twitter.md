@@ -22,6 +22,7 @@ Plus for myself, being in a top communications school majoring in online journal
 In my opinion ([ha ha](http://tvtropes.org/pmwiki/pmwiki.php/Main/Pun?from=Main.IncrediblyLamePun)), while people need to be careful about tweeting opinions, it’s also something to embrace as well, even in a journalism-related major or any media field.
 
 ### Why should we tweet opinions?
+
 This can all apply to anyone, but for simplicity’s sake, let’s look at this from the perspective of journalists (or anyone working online). There’s actually some good arguments for expressing more opinions on Twitter.
 
 {% include image.html url="/img/posts/twitter-opinions/thought.jpg" description="Image via Kooroshication/Flickr" %}
@@ -47,6 +48,7 @@ While there’s [a lot of discussion and debate](http://stevebuttry.wordpress.co
 * **Try to avoid issues you’re currently doing straight reporting on, or know you will later.** This speaks for itself, especially on touchy issues, since sometimes opinion and reporting still can’t mix (even if this happens less often now).
 
 #### In Conclusion
+
 To me, many are unnecessarily afraid of expressing their opinions on Twitter (or just online). While I understand these concerns, I don’t think their arguments are strong enough to overrule expressing ANY opinions at all. For journalists, if done right, sharing some opinions is an important part of doing well on Twitter. For non-journalists, not doing so is missing out on one of the biggest things Twitter has to offer.
 
 We should be cautious about being opinionated on Twitter, but not paralyzed with fear either.  Otherwise, there’s no point in using it, now is there?
