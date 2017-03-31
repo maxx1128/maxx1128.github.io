@@ -1,10 +1,4 @@
-
-/*
-
-  Mixins for selecting certain classes and states related to other elements. For more efficient selections
-
-*/
-
+// Mixins for selecting certain classes and states related to other elements. For more efficient selections
 
 // For adding styles fast to all hover states
 // Useful for buttons, links, and the like
@@ -13,7 +7,6 @@
   &:focus,
   &:active { @content; }
 }
-
 
 // For BEM elements, have their base styles apply to modifier classes too
 // This way, modifier classes can be used instead of main ones to get the same basic styles.
@@ -25,7 +18,7 @@
   }
 }
 
-@mixin bem-mods__id($id) {
+@mixin bem-mods-id($id) {
   ##{$id},
   [id^=#{$id}],
   [id*=#{$id}] {

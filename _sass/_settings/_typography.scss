@@ -1,11 +1,6 @@
-@import '../_tools/_modular-scale.scss';
+@import '../_tools/modular-scale';
 
-/*
-
-  All typography variables
-
-*/
-
+// All typography variables
 
 // For pulling any typography values
 // For most no base is set so it always needs two values
@@ -23,27 +18,22 @@
   font-size: calc(#{$main-font-size} + #{$small-vw});
 }
 
-  
-
-
-
-
 // Modular Scale variables
-$g-modular-scale--base  : spacing();
-$g-modular-scale--ratio : 1.25; // Major third
+$g-modular-scale--base: spacing();
+$g-modular-scale--ratio: 1.25; // Major third
 
 
 // Font families
-$g-fontFamily-base   : 'Josefin Sans', Lucida Grande, Verdana, Arial, sans-serif;
-$g-fontFamily-header : 'Raleway', Helvetica, Arial, sans-serif;
-$g-fontFamily-mono   : 'add monospace here';
+$g-font-family-base: 'Josefin Sans', Lucida Grande, Verdana, Arial, sans-serif;
+$g-font-family-header: 'Raleway', Futura, Helvetica, Arial, sans-serif;
+$g-font-family-mono: 'add monospace here';
 
 
 $typography-map: (
   font-family: (
-    base: $g-fontFamily-base,
-    header: $g-fontFamily-header,
-    mono: $g-fontFamily-mono
+    base: $g-font-family-base,
+    header: $g-font-family-header,
+    mono: $g-font-family-mono
   ),
 
   font-size: (

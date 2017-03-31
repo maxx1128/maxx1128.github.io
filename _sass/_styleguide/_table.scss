@@ -1,75 +1,84 @@
 
 .sg-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
   width: 100%;
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid color(mono);
+  border-collapse: collapse;
   table-layout: fixed;
 }
+
 .sg-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
+  margin: spacing(half) 0;
+
+  font-size: type(font-size, h4);
 }
+
 .sg-table tr {
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
+  padding: spacing(third);
+
+  background: color(mono, light);
+  border: 1px solid color(mono, dark);
 }
+
 .sg-table th,
 .sg-table td {
-  padding: .625em;
+  padding: spacing();
+
   text-align: left;
 }
+
 .sg-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  font-size: type(font-size, small);
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 600px) {
-  .sg-table {
-    border: 0;
-  }
-  .sg-table caption {
-    font-size: 1.3em;
-  }
+
+@include smaller-than(md) {
+  .sg-table { border: 0; }
+
+  .sg-table caption { font-size: type(font-size, h5); }
+
   .sg-table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
     width: 1px;
-  }
-  .sg-table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  .sg-table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
 
+    clip: rect(0 0 0 0);
+
+    border: 0;
+  }
+
+  .sg-table tr {
+    display: block;
+    margin-bottom: spacing(half);
+
+    border-bottom: 2px solid color(mono, dark);
+  }
+
+  .sg-table td {
     display: flex;
     justify-content: space-between;
+
+    font-size: type(font-size, small);
+    text-align: right;
+
+    border-bottom: 1px solid color(mono, dark);
   }
-  .sg-table td:before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
+
+  .sg-table td::before {
     content: attr(data-label);
+
     float: left;
+    padding-right: spacing();
+
     font-weight: bold;
     text-transform: uppercase;
+  }
 
-    padding-right: spacing();
-  }
-  .sg-table td:last-child {
-    border-bottom: 0;
-  }
+  .sg-table td:last-child { border-bottom: 0; }
 }

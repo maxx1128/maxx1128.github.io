@@ -1,5 +1,5 @@
 
-@keyframes logo_rotate {
+@keyframes logo-rotate {
   40% { transform: rotate(0deg); }
   45% { transform: rotate(5deg); }
   50% { transform: rotate(-10deg); }
@@ -19,10 +19,10 @@ $home-content-width: rem(325px);
 }
 
 .ma-l-home__image {
-  flex: 0 1 $home-img-width;
   width: 100%;
+  flex: 0 1 $home-img-width;
 
-  animation: 5s logo_rotate ease-in-out infinite;
+  animation: 5s logo-rotate ease-in-out infinite;
 
   img { box-shadow: container(box-shadow); }
 }

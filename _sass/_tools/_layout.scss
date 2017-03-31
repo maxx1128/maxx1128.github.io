@@ -1,10 +1,4 @@
-/*
-
-  Mixins needed for controlling grid dimensions and responsive styles, as well as layout-related styles
-
-*/
-
-
+// Mixins needed for controlling grid dimensions and responsive styles, as well as layout-related styles
 
 // Mixin to use with the breakpoint map, sets any styles to be used above a certain screen width
 @mixin larger-than($point-name) {
@@ -28,9 +22,11 @@
 // Clearfix
 @mixin clearfix {
   &::after {
-    clear: both;
-    content: "";
+    content: '';
+
     display: block;
+
+    clear: both;
   }
 }
 
@@ -44,19 +40,20 @@
   display: table;
   width: 100%;
   @if $fix-direction == 'left' {
-    & > :first-child {
+    > :first-child {
       @include fix-cell($fix-direction, $fix-width);
       margin-right: $fix-margin;
     }
-    & > :last-child {
+
+    > :last-child {
       @include flex-cell;
     }
   } @else {
-    & > :first-child {
+    > :first-child {
       @include flex-cell;
   }
 
-    & > :last-child {
+    > :last-child {
       @include fix-cell($fix-direction, $fix-width);
       margin-left: $fix-margin;
     }
@@ -69,6 +66,7 @@
   display: block;
   max-width: none;
 }
+
 // Mixin dependency for Fix-Fle
 @mixin flex-cell {
   display: table-cell;

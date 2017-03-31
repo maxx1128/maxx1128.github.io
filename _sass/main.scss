@@ -1,59 +1,59 @@
 
 @import
-'_tools/_calc.scss';
+'_tools/calc';
 
 @import
-'_settings/spacing.scss',
-'_settings/colors.scss',
-'_settings/grid.scss',
-'_settings/typography.scss',
-'_settings/containers.scss';
+'_settings/spacing',
+'_settings/colors',
+'_settings/grid',
+'_settings/typography',
+'_settings/containers';
 
 @import
-'_tools/_colors.scss',
-'_tools/_layout.scss',
-'_tools/_selectors.scss',
-'_tools/_synapse.scss';
+'_tools/colors',
+'_tools/layout',
+'_tools/selectors',
+'_tools/synapse';
 
 @import
-'_generic/_normalize.scss',
-'_generic/_syntax.scss';
+'_generic/normalize',
+'_generic/syntax';
 
 @import
-'_layouts/_default.scss',
-'_layouts/_blog.scss',
-'_layouts/_home.scss',
-'_layouts/_portfolio.scss';
+'_layouts/default',
+'_layouts/blog',
+'_layouts/home',
+'_layouts/portfolio';
 
 @import
-'_elements/_blockquote.scss',
-'_elements/_body.scss',
-'_elements/_icons.scss',
-'_elements/_typography.scss',
-'_elements/_video.scss';
+'_elements/blockquote',
+'_elements/body',
+'_elements/icons',
+'_elements/typography',
+'_elements/video';
 
 @import
-'_components/_callouts-prompts/_social-icons.scss';
+'_components/_callouts-prompts/social-icons';
 
 @import
-'_components/_content/_blog-item.scss',
-'_components/_content/_blog-content.scss',
-'_components/_content/_header.scss',
-'_components/_content/_resume.scss',
-'_components/_content/_portfolio-item.scss',
-'_components/_content/_wisdom.scss';
+'_components/_content/blog-item',
+'_components/_content/blog-content',
+'_components/_content/header',
+'_components/_content/resume',
+'_components/_content/portfolio-item',
+'_components/_content/wisdom';
 
 @import
-'_components/_navigation/_home-logo.scss',
-'_components/_navigation/_nav-link.scss';
+'_components/_navigation/home-logo',
+'_components/_navigation/nav-link';
 
 @import
-'_components/_media/_profile-img.scss';
+'_components/_media/profile-img';
 
 @import
-'_styleguide/_colors.scss',
-'_styleguide/_containers.scss',
-'_styleguide/_entry.scss',
-'_styleguide/_spacing.scss',
-'_styleguide/_table.scss',
-'_styleguide/_tabs.scss';
+'_styleguide/colors',
+'_styleguide/containers',
+'_styleguide/entry',
+'_styleguide/spacing',
+'_styleguide/table',
+'_styleguide/tabs';

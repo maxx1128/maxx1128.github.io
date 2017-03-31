@@ -23,14 +23,15 @@
       #{$category}: $value;
       position: relative;
 
-      &:after {
+      &::after {
         content: quote(inspect($label));
-        position: absolute;
-        bottom: spacing();
-        right: spacing();
 
-        font-style: italic;
+        position: absolute;
+        right: spacing();
+        bottom: spacing();
+
         font-size: type(font-size, small);
+        font-style: italic;
       }
     }
   }

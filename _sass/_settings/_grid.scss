@@ -1,8 +1,5 @@
-/*
 
-  All variables related to the grid, including breakpoints
-
-*/
+// All variables related to the grid, including breakpoints
 
 // For pulling specific breakpoint width values out.
 // Not for adding breakpoint styles.
@@ -11,8 +8,6 @@
     @return map-get($breakpoint-map, $width);
   }
 }
-
-
 
 // Map for the breakpoints and max width
 $breakpoint-map: (

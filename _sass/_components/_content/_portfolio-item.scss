@@ -1,19 +1,19 @@
 
-
 .ma-c-portfolioItem {
+  position: relative;
   display: block;
   width: 100%;
   height: spacing(quad) * 5.5;
-  position: relative;
   overflow: hidden;
-  
+
   &:hover .ma-c-portfolioItem__img,
   &:hover .ma-c-portfolioItem__title,
   &:hover .ma-c-portfolioItem__descr {
-    transition: 0.5s;
     position: absolute;
+
+    transition: 0.5s;
   }
-  
+
   &:hover .ma-c-portfolioItem__img {  top: -4em; }
 
   &:hover .ma-c-portfolioItem__title { bottom: -40%; }
@@ -26,32 +26,30 @@
 
 .ma-c-portfolioItem__img {
   @include clearfix();
-  transition: 0.5s;
   position: absolute;
   top: -10%;
-  opacity: 0.5;
+  min-width: 100%;
+  min-height: 130%;
   z-index: 0;
-  
+
+  background-color: color(primary);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 130%;
-  min-width: 100%;
-  
-  background-color: color(primary);
+  opacity: 0.5;
   box-shadow: inset 0 0 0 1000px rgba(color(primary, darker), 0.25);
+  transition: 0.5s;
 }
 
 .ma-c-portfolioItem__title,
 .ma-c-portfolioItem__descr {
-  transition: 0.5s;
   padding: spacing();
-  box-sizing: border-box;
   overflow: hidden;
-  
+
   color: color(mono, blank);
-  
+
   background-color: rgba(color(primary, dark), 0.8);
+  transition: 0.5s;
 }
 
 .ma-c-portfolioItem__title {
@@ -60,14 +58,14 @@
   width: 100%;
   height: auto;
   padding: spacing(half) spacing();
-  
+
   text-align: center;
 }
 
 .ma-c-portfolioItem__descr {
   position: absolute;
-  bottom: 100%;
   top: -100%;
+  bottom: 100%;
   width: 100%;
   padding: spacing();
 }

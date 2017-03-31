@@ -1,11 +1,11 @@
 
 .ma-n-homeLogo {
   display: flex;
-  flex-direction: column;
   padding: spacing() spacing() spacing(half);
+  flex-direction: column;
 
-  text-align: right;
   color: color(primary, lighter);
+  text-align: right;
 
   @include hovers() { color: color(primary, lighter); }
 }

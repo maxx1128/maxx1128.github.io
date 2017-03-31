@@ -4,15 +4,10 @@ $type-elements: map-get($typography-map, 'font-size');
 // ...and loop through them to establish their size and other base styles!
 @each $element, $val in $type-elements {
 
-  $main-font-size: type(font-size, #{$element});
-
-  $small-vw: strip-unit(spacing(half)) * 1vw;
-
-
   #{$element} {
     @include responsive-font-sizes($val);
     margin: type(margin, #{$element});
-    
+
     line-height: type(line-height, #{$element});
   }
 }
@@ -35,10 +30,6 @@ a {
 }
 
 ol,
-ul {
-  padding: 0 ($l-d-sidePadding * 1.5);
-}
+ul { padding: 0 ($l-d-side-padding * 1.5); }
 
-body {
-  font-family: type(font-family);
-}
+body { font-family: type(font-family); }

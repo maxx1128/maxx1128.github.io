@@ -1,8 +1,5 @@
-/*
 
-  Styles for containers to enforce common textures among container elements
-
-*/
+// Styles for containers to enforce common textures among container elements
 
 // Function for getting container-specific styles
 @function container($style, $type: 'base') {
@@ -25,4 +22,3 @@ $containers-map: (
     heavy: 0 0 spacing() color(mono, dark)
   )
 );
-

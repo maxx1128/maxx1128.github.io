@@ -125,6 +125,16 @@ linters:
             - align-items
             - align-self
             - justify-content
+            - grid-auto-flow
+            - grid-template-columns
+            - grid-auto-columns
+            - grid-column-start
+            - grid-column-end
+            - grid-template-rows
+            - grid-auto-rows
+            - grid-row-start
+            - grid-row-end
+            - 
             -
             - font
             - font-family
@@ -257,6 +267,18 @@ linters:
 
     PropertyCount:
         enabled: false
+
+    PropertySpelling:
+        extra_properties:
+            - grid-auto-flow
+            - grid-template-columns
+            - grid-auto-columns
+            - grid-column-start
+            - grid-column-end
+            - grid-template-rows
+            - grid-auto-rows
+            - grid-row-start
+            - grid-row-end
 
     QualifyingElement:
         allow_element_with_attribute: false

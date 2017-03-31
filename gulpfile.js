@@ -120,6 +120,7 @@ gulp.task('scss-lint', function() {
     '_sass/**/**/**/*.scss',
     '!_sass/_generic/_normalize.scss',
     '!_sass/_generic/_syntax.scss',
+    '!_sass/_elements/_icons.scss',
     '!_sass/_tools/_synapse.scss'
   ])
   .pipe(scsslint({

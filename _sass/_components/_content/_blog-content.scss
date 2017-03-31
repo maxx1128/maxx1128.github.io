@@ -18,9 +18,9 @@
 }
 
 .ma-c-blogContent__fullWidth {
-  max-width: calc(100% + (#{$l-d-sidePadding} * 2);
-  margin-right: $l-d-sidePadding * -1;
-  margin-left: $l-d-sidePadding * -1;
+  max-width: calc(100% + (#{$l-d-side-padding} * 2);
+  margin-right: $l-d-side-padding * -1;
+  margin-left: $l-d-side-padding * -1;
 }
 
 .ma-c-blogContent__imageGallery {
@@ -85,6 +85,4 @@ video {
 }
 
 // Embedded tweets
-.twitter-tweet {
-  margin: 0 auto spacing();
-}
+.twitter-tweet { margin: 0 auto spacing(); }

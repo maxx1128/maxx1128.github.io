@@ -5,9 +5,8 @@
 // The wrapper around each spacing title and measure
 .sg-spacingUnit {
   display: flex;
-  align-items: center;
-
   margin-top: spacing();
+  align-items: center;
 }
 
 // Title of each measure
@@ -27,21 +26,22 @@
 
 @each $label, $length in $spacing-map {
 
-  $length_label : '#{$length}';
+  $length-label: '#{$length}';
 
   .sg-spacingUnit__measure--#{$label} {
-    width: $length;
     position: relative;
+    width: $length;
 
-    &:after {
-      content: inspect($length_label);
+    &::after {
+      content: inspect($length-label);
+
       position: absolute;
-      width: 7rem;
       top: spacing(half);
       left: calc(100% + #{spacing(third)});
+      width: 7rem;
 
-      font-style: italic;
       font-size: type(font-size, small);
+      font-style: italic;
     }
   }
 }

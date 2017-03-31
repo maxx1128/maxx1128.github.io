@@ -1,7 +1,7 @@
 blockquote {
   @include contra-color(color(secondary, dark));
-  padding: spacing() $l-d-sidePadding;
-  margin: 0 0 spacing() 0;
+  padding: spacing() $l-d-side-padding;
+  margin: 0 0 spacing();
 
   p {
     @include responsive-font-sizes(type(font-size, h4));
