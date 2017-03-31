@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: blank
 title:  "Common Front-end Problems Solved with Flexbox"
 date:   2016-11-4
 categories: frontend tutorial

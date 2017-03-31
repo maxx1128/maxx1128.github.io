@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: blank
 title:  "Creating a Title Banner in Jekyll"
 date:   2016-10-26
 categories: jekyll front-end external
