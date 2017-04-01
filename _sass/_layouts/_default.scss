@@ -4,6 +4,7 @@ $l-d-sidebar-width: rem(280px);
 $l-d-side-padding: 5%;
 
 .ma-l-default__wrapper {
+  position: relative;
   max-width: 100vw;
   overflow-x: hidden;
 }
