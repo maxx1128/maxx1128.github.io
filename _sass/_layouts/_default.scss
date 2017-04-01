@@ -74,8 +74,8 @@ $l-d-side-padding: 5%;
 
 .ma-l-default__toggle {
   @include responsive-font-sizes(type(font-size, p));
-  position: fixed;
-  bottom: spacing(half);
+  position: absolute;
+  top: spacing(half);
   left: spacing(half);
   padding: spacing(half);
   z-index: 999;
