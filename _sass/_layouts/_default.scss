@@ -76,7 +76,7 @@ $l-d-side-padding: 5%;
   @include responsive-font-sizes(type(font-size, p));
   position: absolute;
   top: spacing(half);
-  left: spacing(half);
+  right: spacing(half);
   padding: spacing(half);
   z-index: 999;
 
