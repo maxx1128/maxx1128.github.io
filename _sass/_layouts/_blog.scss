@@ -14,18 +14,30 @@
     margin: 0 ((spacing(quart) / 2) * -1);
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(175px, auto);
+
+    @include larger-than(max-width) {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
   }
 
   .ma-l-blog__item {
     @include larger-than(sm) {
 
-      &:first-of-type { grid-column-end: span 3; }
+      &:first-of-type { grid-column-end: span 2; }
 
       &:nth-of-type(5n),
       &:nth-of-type(11n) { grid-column-end: span 2; }
 
-      &:nth-of-type(9n) { grid-row-end: span 2; }
+      &:nth-of-type(7n),
+      &:nth-of-type(9n) {
+        grid-column-end: span 1;
+        grid-row-end: span 2;
+      }
+    }
+
+    @include larger-than(rem(950px)) {
+      &:first-of-type { grid-column-end: span 3; }
     }
   }
 }
