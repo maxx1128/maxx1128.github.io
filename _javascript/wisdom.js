@@ -26,7 +26,7 @@ function ma_wisdom($, patternId) {
       'Info isn\'t hidden today, it\'s drowned in a sea of nonsense.',
       'There\'s no normal, just the accidental cultural moment we\'re born into.',
       'Can something be a "need" if we don\'t die without it?',
-      'A person\'s main task in life is to give birth to themself.',
+      'A person\'s main task in life is to give birth to themselves.',
       'Are we just dream figures in someone else\'s dream?',
       'Only when we let strangers in, can we find new ways to be ourselves.',
       'When humans are made into commodities, what can conversations be but trivial?',
@@ -35,7 +35,8 @@ function ma_wisdom($, patternId) {
       'The biggest chains are desires and ideals made to look like our own.',
       'Inside every cynical person is a disappointed idealist.',
       'To be is to be perceived.',
-      'The eternal happiness you most wish for is the only thing you can\'t have.'
+      'The eternal happiness you most wish for is the only thing you can\'t have.',
+      'To live is to suffer. To survive is to find some meaning in the suffering.'
     ],
     selected_wisdom = wisdoms[Math.floor(Math.random()*wisdoms.length)]
   ;
