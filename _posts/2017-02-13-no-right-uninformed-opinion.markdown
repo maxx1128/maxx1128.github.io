@@ -5,8 +5,6 @@ categories : politics
 excerpt    : Before you share an opinion on any topic, ask yourself the following questions.
 ---
 
-Before you share an opinion on any topic, ask yourself the following questions:
-
 1. **Have I invested enough research into this opinion?** Did I take the time to research relevant info by myself? Or did I hear something once with little support and abruptly agree with it? Is this an opinion I take seriously myself, or am I just following a herd?
 2. **Have I used reliable sources for my data?** Am I referencing sources with none or minimal bias? Did I check if there's any proven, verifiable conflict of interest that'd make me distrust this source? Do this source's fact justify their viewpoint, or does their viewpoint justify their facts? Am I checking these resources against other reliable ones? Am I holding this view just because someone who _seems_ reliable said it, and didn't check if they really are?
 3. **Did I look at any opposing arguments?** Have I looked at serious, reasonable counter-arguments to this viewpoint? Were the counter-arguments serious or resort to childish arguments like attacking the one making the argument instead? Am I willing to concede good points from the opposing side and moderate my position accordingly?

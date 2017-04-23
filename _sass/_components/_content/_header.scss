@@ -2,7 +2,7 @@
 .ma-c-header {
   padding: spacing() $l-d-side-padding;
 
-  background-image: url('/img/nav.jpg');
+  background-color: color(primary, lighter);
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(color(primary, lighter), 0.9);
@@ -23,5 +23,4 @@
 
   font-family: type(font-family);
   font-style: italic;
-  color: color(secondary, darker);
 }
