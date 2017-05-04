@@ -20,7 +20,10 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-family: type(font-family, header); }
+h6 {
+  font-family: type(font-family, header);
+  font-weight: type(font-weight, bold);
+}
 
 a {
   color: color(action);
@@ -32,4 +35,7 @@ a {
 ol,
 ul { padding: 0 ($l-d-side-padding * 1.5); }
 
-body { font-family: type(font-family); }
+body {
+  font-family: type(font-family);
+  font-weight: type(font-weight, light);
+}
