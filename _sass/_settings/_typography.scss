@@ -12,7 +12,7 @@
 
 @mixin responsive-font-sizes($main-font-size) {
 
-  $small-vw: strip-unit(spacing(half)) * 1vw;
+  $small-vw: strip-unit(spacing(third)) * 1vw;
 
   font-size: $main-font-size; // Fallback if responsive typography isn't supported by the browser
   font-size: calc(#{$main-font-size} + #{$small-vw});
