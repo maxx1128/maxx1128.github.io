@@ -77,19 +77,24 @@ $l-d-side-padding: 5%;
   position: absolute;
   top: spacing(half);
   right: spacing(half);
+  width: rem(32px);
+  height: rem(32px);
   padding: spacing(half);
   z-index: 999;
 
   line-height: 0;
 
+  transform: rotate(0deg);
   background-color: rgba(color(action), 0.8);
   border-radius: 100%;
   transition: 0.5s;
 
   cursor: pointer;
 
+  @include larger-than(md) { display: none; }
+
   .ma-l-default__wrapper--expanded & {
-    left: $l-d-sidebar-width + spacing(half);
+    transform: rotate(180deg);
 
     transition: 0.5s;
   }
