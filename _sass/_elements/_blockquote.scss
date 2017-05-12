@@ -5,7 +5,8 @@ blockquote {
 
   p {
     @include responsive-font-sizes(type(font-size, h4));
-    margin: 0;
+    max-width: breakpoint(max-width-pad);
+    margin: 0 auto;
 
     font-style: italic;
   }

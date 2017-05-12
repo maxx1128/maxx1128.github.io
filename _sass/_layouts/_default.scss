@@ -19,6 +19,11 @@ $l-d-side-padding: 5%;
 .ma-l-default__footer {
   @include contra-color(color(secondary, lighter));
   padding: spacing() $l-d-side-padding;
+
+  footer {
+    max-width: breakpoint(max-width-pad);
+    margin: 0 auto;
+  }
 }
 
 .ma-l-default__main {
@@ -37,9 +42,12 @@ $l-d-side-padding: 5%;
   padding: spacing() 0;
   flex: 1 1 auto;
 
-  > *:not(blockquote):not(ul):not(ol):not(iframe):not(video):not(.video):not(.cp_embed_wrapper):not(.highlight):not(.ma-c-blogContent__fullWidth) {
+  > *:not(blockquote):not(iframe):not(video):not(.video):not(.cp_embed_wrapper):not(.highlight):not(.ma-c-blogContent__fullWidth) {
+    max-width: breakpoint(lg);
     padding-right: $l-d-side-padding;
     padding-left: $l-d-side-padding;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

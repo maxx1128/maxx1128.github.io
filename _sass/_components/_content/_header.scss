@@ -8,6 +8,13 @@
   box-shadow: inset 0 0 0 1000px rgba(color(primary, lighter), 0.9);
 }
 
+.ma-c-header__container {
+  max-width: breakpoint(lg);
+  margin: 0 auto;
+
+  @include larger-than(max-width) { max-width: breakpoint(max-width-pad); }
+}
+
 .ma-c-header__title,
 .ma-c-header__tagline {
   display: block;

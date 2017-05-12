@@ -3,13 +3,15 @@
 {% assign bg_img = include.bg_img %}
 
 <header role="banner" class="ma-c-header" {% if bg_img %}style="background-image: url('{{ bg_img }}');"{% endif %}>
-  <h2 class="ma-c-header__title">
-    {{ title }}
-  </h2>
+  <div class="ma-c-header__container">
+    <h2 class="ma-c-header__title">
+      {{ title }}
+    </h2>
 
-  <h6 class="ma-c-header__tagline">
-    {% if tagline %}
-      {{ tagline }}
-    {% endif %}
-  </h6>  
+    <h6 class="ma-c-header__tagline">
+      {% if tagline %}
+        {{ tagline }}
+      {% endif %}
+    </h6>  
+  </div>
 </header>
