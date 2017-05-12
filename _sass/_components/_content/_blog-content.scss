@@ -19,8 +19,8 @@
 
 .ma-c-blogContent__fullWidth {
   max-width: calc(100% + (#{$l-d-side-padding} * 2);
-  margin-right: $l-d-side-padding * -1;
-  margin-left: $l-d-side-padding * -1;
+  padding-right: $l-d-side-padding;
+  padding-left: $l-d-side-padding;
 }
 
 .ma-c-blogContent__imageGallery {

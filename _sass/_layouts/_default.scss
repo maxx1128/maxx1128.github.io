@@ -42,10 +42,17 @@ $l-d-side-padding: 5%;
   padding: spacing() 0;
   flex: 1 1 auto;
 
-  > *:not(blockquote):not(iframe):not(video):not(.video):not(.cp_embed_wrapper):not(.highlight):not(.ma-c-blogContent__fullWidth) {
+  > *:not(blockquote):not(iframe):not(video):not(ol):not(ul):not(.video):not(.cp_embed_wrapper):not(.highlight):not(.ma-c-blogContent__fullWidth) {
     max-width: breakpoint(lg);
     padding-right: $l-d-side-padding;
     padding-left: $l-d-side-padding;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  ul,
+  ol {
+    max-width: breakpoint(lg);
     margin-right: auto;
     margin-left: auto;
   }
