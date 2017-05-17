@@ -33,7 +33,10 @@ a {
 }
 
 ol,
-ul { padding: 0 ($l-d-side-padding * 1.5); }
+ul {
+
+  li { margin-left: $l-d-side-padding; }
+}
 
 body {
   font-family: type(font-family);
