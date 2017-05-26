@@ -1,4 +1,4 @@
-blockquote {
+blockquote:not(.twitter-tweet) {
   @include contra-color(color(secondary, dark));
   padding: spacing() $l-d-side-padding;
   margin: 0 0 spacing();
@@ -10,4 +10,15 @@ blockquote {
 
     font-style: italic;
   }
+}
+
+blockquote.twitter-tweet {
+  margin: spacing() spacing(third);
+  padding: spacing();
+  
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee #ddd #bbb;
+  border-radius: container(border-radius, small);
+  box-shadow: container(box-shadow, light);
 }
