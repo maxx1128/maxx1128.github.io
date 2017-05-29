@@ -7,13 +7,30 @@
     {% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}
   </title>
 
+  <meta name="thumbnail" content="{% if page.featured-img %}{{ page.featured-img }}{% else %}/img/profile-dev.png{% endif %}" />
+  <meta property="og:image" content="{% if page.featured-img %}{{ page.featured-img }}{% else %}/img/profile-dev.png{% endif %}"/>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="p:domain_verify" content="0b12e07a4feaad3b7aa48fee8ecae8db"/>
+
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet"> 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="shortcut icon" href="/img/favicon.ico" />
 
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:site_name" content="maxwellantonucci.com" />
+  
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Maxwell_Dev">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:creator" content="@Maxwell_Dev">
 
   {% feed_meta %}
 </head>
