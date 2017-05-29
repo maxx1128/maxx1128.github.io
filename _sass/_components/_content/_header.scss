@@ -30,3 +30,9 @@
 
   font-family: type(font-family);
 }
+
+.ma-c-header__date {
+  @include responsive-font-sizes(type(font-size, small));
+
+  font-style: italic;
+}

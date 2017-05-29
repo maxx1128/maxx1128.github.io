@@ -35,10 +35,18 @@
 
 .ma-c-blogItem__title {
   @include responsive-font-sizes(type(font-size, h5));
-  margin-bottom: spacing(double);
+  margin-bottom: spacing(half);
 
   font-family: type(font-family, header);
   font-weight: type(font-weight, bold);
+}
+
+.ma-c-blogItem__date {
+  @include responsive-font-sizes(type(font-size, tiny));
+  margin-bottom: spacing(double);
+
+  font-style: italic;
+  font-weight: type(font-weight, light);
 }
 
 .ma-c-blogItem__descr {

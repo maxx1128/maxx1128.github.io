@@ -1,5 +1,6 @@
 {% assign classes = 'ma-c-blogItem__container ' | append: include.classes %}
 {% assign title = include.title | default: 'Post Title' %}
+{% assign date=  include.date | default: 'Date Here!' %}
 {% assign excerpt = include.excerpt %}
 {% assign url = include.url | default: 'javascript:void(0);' %}
 {% assign ext_url = include.ext_url %}
@@ -10,6 +11,9 @@
       
     <span class="ma-c-blogItem__title">
       {{ title }}
+    </span>
+    <span class="ma-c-blogItem__date">
+      {{ date | date: "%b %d, %Y" }}
     </span>
 
     <div class="ma-c-blogItem__descr">

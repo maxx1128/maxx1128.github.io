@@ -15,6 +15,12 @@
 
     a { @include responsive-font-sizes(type(font-size, small)); }
   }
+
+  code {
+    padding: 0 spacing(third);
+
+    background-color: color(mono, light);
+  }
 }
 
 .ma-c-blogContent__fullWidth {
