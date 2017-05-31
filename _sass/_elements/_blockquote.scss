@@ -1,7 +1,11 @@
 blockquote:not(.twitter-tweet) {
-  @include contra-color(color(secondary, dark));
+  width: 100%;
   padding: spacing() $l-d-side-padding;
-  margin: 0 0 spacing();
+  margin-bottom: spacing();
+
+  background-color: color(mono, light);
+  border-top: spacing(half) solid color(secondary, dark);
+  border-bottom: spacing(half) solid color(secondary, dark);
 
   p {
     @include responsive-font-sizes(type(font-size, h4));
@@ -9,6 +13,12 @@ blockquote:not(.twitter-tweet) {
     margin: 0 auto;
 
     font-style: italic;
+  }
+
+  @include larger-than(md) {
+    width: 45%;
+    margin: spacing() 0 spacing() spacing(double);
+    float: right;
   }
 }
 

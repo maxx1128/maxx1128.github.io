@@ -18,10 +18,10 @@ $l-d-side-padding: 5%;
 
 .ma-l-default__footer {
   @include contra-color(color(secondary, lighter));
-  padding: spacing() $l-d-side-padding;
 
   footer {
-    max-width: breakpoint(max-width-pad);
+    max-width: breakpoint(lg);
+    padding: spacing();
     margin: 0 auto;
   }
 }
