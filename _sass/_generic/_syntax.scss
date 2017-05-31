@@ -7,19 +7,16 @@
 */
 
 .highlight {
-  margin: spacing(double) 0;
-  padding: spacing(double) 5%;
   max-width: 100%;
+  padding: spacing(double);
+  margin: 0 0 spacing(double);
   overflow-x: scroll;
 
   text-align: left;
 
   background-color: color(mono, light);
 
-  pre {
-    max-width: breakpoint(max-width-pad);
-    margin: 0 auto;
-  }
+  pre { margin: 0; }
 
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error

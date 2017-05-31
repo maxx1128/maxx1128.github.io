@@ -1,6 +1,5 @@
 
 .ma-c-header {
-  padding: spacing() $l-d-side-padding;
 
   background-color: color(primary, lighter);
   background-position: center;
@@ -10,9 +9,8 @@
 
 .ma-c-header__container {
   max-width: breakpoint(lg);
+  padding: spacing();
   margin: 0 auto;
-
-  @include larger-than(max-width) { max-width: breakpoint(max-width-pad); }
 }
 
 .ma-c-header__title,

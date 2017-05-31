@@ -59,12 +59,12 @@ $typography-map: (
   ),
 
   line-height: (
-    h1: strip-unit(decimal-round(modular-scale(2), 2)),
-    h2: strip-unit(decimal-round(modular-scale(2), 2)),
-    h3: strip-unit(decimal-round(modular-scale(2), 2)),
-    h4: strip-unit(decimal-round(modular-scale(2), 2)),
-    h5: strip-unit(decimal-round(modular-scale(2), 2)),
-    h6: strip-unit(decimal-round(modular-scale(2), 2)),
+    h1: strip-unit(decimal-round(modular-scale(1), 2)),
+    h2: strip-unit(decimal-round(modular-scale(1), 2)),
+    h3: strip-unit(decimal-round(modular-scale(1), 2)),
+    h4: strip-unit(decimal-round(modular-scale(1), 2)),
+    h5: strip-unit(decimal-round(modular-scale(1), 2)),
+    h6: strip-unit(decimal-round(modular-scale(1), 2)),
     p: strip-unit(decimal-round(modular-scale(2), 2)),
     ol: strip-unit(decimal-round(modular-scale(2), 2)),
     ul: strip-unit(decimal-round(modular-scale(2), 2)),
@@ -79,7 +79,7 @@ $typography-map: (
     h4: spacing() 0 spacing(half),
     h5: spacing() 0 spacing(half),
     h6: spacing() 0 spacing(half),
-    p: 0 0 spacing() 0,
+    p: 0 0 spacing(double) 0,
     small: 0 0 spacing(half),
     tiny: 0 0 spacing(half)
   )

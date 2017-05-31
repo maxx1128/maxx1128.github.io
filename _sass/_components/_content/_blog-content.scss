@@ -1,6 +1,6 @@
 .ma-l-default__content {
 
-  img:not(.ma-c-blogContent__fullWidth) {
+  img {
     display: block;
     margin: auto;
     width: 100%;
@@ -21,12 +21,6 @@
 
     background-color: color(mono, light);
   }
-}
-
-.ma-c-blogContent__fullWidth {
-  max-width: calc(100% + (#{$l-d-side-padding} * 2);
-  padding-right: $l-d-side-padding;
-  padding-left: $l-d-side-padding;
 }
 
 .ma-c-blogContent__imageGallery {

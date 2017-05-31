@@ -32,12 +32,6 @@ a {
   @include hovers() { color: color(action, dark); }
 }
 
-ol,
-ul {
-
-  li { margin-left: $l-d-side-padding; }
-}
-
 body {
   font-family: type(font-family);
   font-weight: type(font-weight, light);
