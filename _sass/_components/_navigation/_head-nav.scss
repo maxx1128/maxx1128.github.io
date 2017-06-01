@@ -101,6 +101,10 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
   @include larger-than(md) { flex: 0 1 auto; }
 }
 
+.ma-n-headNav__link--active {
+  background-color: rgba(color(primary, lighter), 0.3);
+}
+
 .ma-n-headNav__icon {
   margin-right: spacing(third);
 }
