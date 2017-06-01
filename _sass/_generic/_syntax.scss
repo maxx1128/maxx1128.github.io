@@ -7,16 +7,40 @@
 */
 
 .highlight {
+  position: relative;
   max-width: 100%;
   padding: spacing(double);
   margin: 0 0 spacing(double);
-  overflow-x: scroll;
 
   text-align: left;
 
   background-color: color(mono, light);
 
-  pre { margin: 0; }
+  &::before,
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    background-color: color(mono, light);
+  }
+
+  &::before {
+    right: 100%;
+    left: -999999rem;
+  }
+
+  &::after {
+    right: -999999rem;
+    left: 100%;
+  }
+
+  pre {
+    margin: 0;
+    overflow-x: scroll;
+  }
 
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
