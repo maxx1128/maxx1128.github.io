@@ -5,15 +5,30 @@
 
   <body class="ma-l-default__wrapper">
 
-    <span class="ma-l-default__toggle js-offCanvas-toggle">
-      <i class="icon-menu"></i>
-    </span>
-
-    <aside role="complementary" class="ma-l-default__sidebar">
-      {% include nav.html %}
-    </aside>
-
     <main role="main" class="ma-l-default__main">
+      <div class="ma-l-default__nav">
+        <nav class="ma-n-headNav">
+          <div class="ma-n-headNav__home">
+            <div class="ma-n-headNav__title">
+              {{ site.title }}
+            </div>
+
+            <div class="ma-n-headNav__tagline">
+              {{ site.description }}
+            </div>
+          </div>
+
+          <div class="ma-n-headNav__links">
+            {% for menu in site.data.menu %}
+              <a href="{{ menu.link }}" class="ma-n-headNav__link">
+                <i class="ma-n-headNav__icon icon-menu-{{ menu.icon }}"></i>
+                {{ menu.name }}
+              </a>
+            {% endfor %}
+          </div>
+        </nav>
+      </div>
+
       <div class="ma-l-default__header">
         {% include components/header.html
           title = page.title

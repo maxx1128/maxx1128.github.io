@@ -1,5 +1,6 @@
 
 .ma-c-header {
+  text-align: center;
 
   background-color: color(primary, lighter);
   background-position: center;
@@ -9,7 +10,7 @@
 
 .ma-c-header__container {
   max-width: breakpoint(lg);
-  padding: spacing();
+  padding: spacing(double) spacing();
   margin: 0 auto;
 }
 
@@ -27,6 +28,7 @@
   padding-top: 3vmin;
 
   font-family: type(font-family);
+  font-weight: type(font-weight);
 }
 
 .ma-c-header__date {

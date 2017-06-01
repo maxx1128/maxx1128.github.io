@@ -55,7 +55,7 @@ $typography-map: (
   font-weight: (
     bold: 700,
     base: 400,
-    light: 300
+    light: 100
   ),
 
   line-height: (
@@ -73,12 +73,12 @@ $typography-map: (
   ),
 
   margin: (
-    h1: spacing() 0 spacing(),
-    h2: spacing() 0 spacing(),
-    h3: spacing() 0 spacing(),
-    h4: spacing() 0 spacing(half),
-    h5: spacing() 0 spacing(half),
-    h6: spacing() 0 spacing(half),
+    h1: spacing(triple) 0 spacing(),
+    h2: spacing(triple) 0 spacing(),
+    h3: spacing(triple) 0 spacing(),
+    h4: spacing(triple) 0 spacing(half),
+    h5: spacing(double) 0 spacing(half),
+    h6: spacing(double) 0 spacing(half),
     p: 0 0 spacing(double) 0,
     small: 0 0 spacing(half),
     tiny: 0 0 spacing(half)

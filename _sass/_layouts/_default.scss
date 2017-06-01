@@ -27,23 +27,22 @@ $l-d-side-padding: 5%;
 }
 
 .ma-l-default__main {
+  @include svg-background(color(mono, blank), tint(color(mono, light), 50%));
   display: flex;
   width: 100%;
   min-height: 100vh;
   flex-direction: column;
-
-  @include larger-than(md) {
-    width: calc(100% - #{$l-d-sidebar-width});
-    margin-left: $l-d-sidebar-width;
-  }
+  align-items: center;
 }
 
 .ma-l-default__content {
   max-width: breakpoint(lg);
   padding: spacing();
-  margin-right: auto;
-  margin-left: auto;
   flex: 1 1 auto;
+}
+
+.ma-l-default__nav {
+  width: 100%;
 }
 
 .ma-l-default__sidebar {
