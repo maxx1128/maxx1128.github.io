@@ -13,7 +13,8 @@
 '_tools/colors',
 '_tools/layout',
 '_tools/selectors',
-'_tools/synapse';
+'_tools/synapse',
+'_tools/typography';
 
 @import
 '_generic/normalize',
@@ -38,6 +39,7 @@
 @import
 '_components/_content/blog-item',
 '_components/_content/blog-content',
+'_components/_content/footer',
 '_components/_content/header',
 '_components/_content/resume',
 '_components/_content/portfolio-item',

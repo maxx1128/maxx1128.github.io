@@ -11,9 +11,9 @@
   figcaption { margin-bottom: spacing(); }
 
   figcaption {
-    @include responsive-font-sizes(type(font-size, small));
+    @include between-font-sizes(type(font-size, small));
 
-    a { @include responsive-font-sizes(type(font-size, small)); }
+    a { @include between-font-sizes(type(font-size, small)); }
   }
 
   code {
@@ -47,7 +47,7 @@
 }
 
 .ma-c-blogContent__figureCaption {
-  @include responsive-font-sizes(type(font-size, small));
+  @include between-font-sizes(type(font-size, small));
   margin-top: spacing(third);
 
   font-style: italic;

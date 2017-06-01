@@ -17,17 +17,15 @@ $l-d-side-padding: 5%;
 }
 
 .ma-l-default__footer {
-  @include contra-color(color(secondary, lighter));
+  @include svg-background(color(secondary, darker), tint(color(secondary, darker), 25%));
 
-  footer {
-    max-width: breakpoint(lg);
-    padding: spacing();
-    margin: 0 auto;
-  }
+  color: color(mono, blank);
+
+  box-shadow: container(box-shadow), inset 0 0 0 1000px rgba(color(secondary, darker), 0.875);
 }
 
 .ma-l-default__main {
-  @include svg-background(color(mono, blank), tint(color(mono, light), 50%));
+  @include svg-background(color(mono, blank), tint(color(mono, light), 65%));
   display: flex;
   width: 100%;
   min-height: 100vh;
@@ -37,76 +35,16 @@ $l-d-side-padding: 5%;
 
 .ma-l-default__content {
   // max-width: breakpoint(lg);
-  padding: spacing();
+  padding: spacing(double) spacing() spacing();
   flex: 1 1 auto;
 
-  &:not(.ma-l-default__content--fullWidth) {
-    max-width: breakpoint(lg);
-  }
+  &:not(.ma-l-default__content--fullWidth) { max-width: breakpoint(lg); }
 }
 
 .ma-l-default__nav { width: 100%; }
 
-.ma-l-default__sidebar {
-  @include svg-background();
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: $l-d-sidebar-width * -1;
-  display: flex;
-  width: $l-d-sidebar-width;
-  overflow-y: scroll;
-  z-index: z-index(overlay);
-  flex-direction: column;
-  justify-content: space-between;
-
-  box-shadow: container(box-shadow), inset 0 0 0 1000px rgba(color(primary, darker), 0.875);
-  transition: 0.5s;
-
-  @include larger-than(md) { left: 0; }
-
-  @include smaller-than(md) {
-    .ma-l-default__wrapper--expanded & {
-      left: 0;
-
-      transition: 0.5s;
-    }
-  }
-}
-
-.ma-l-default__sidebarBottom { padding: spacing(); }
-
-.ma-l-default__toggle {
-  @include responsive-font-sizes(type(font-size, p));
-  position: absolute;
-  top: spacing(half);
-  right: spacing(half);
-  width: rem(32px);
-  height: rem(32px);
-  padding: spacing(half);
-  z-index: 999;
-
-  line-height: 0;
-
-  transform: rotate(0deg);
-  background-color: rgba(color(action), 0.8);
-  border-radius: 100%;
-  transition: 0.5s;
-
-  cursor: pointer;
-
-  @include larger-than(md) { display: none; }
-
-  .ma-l-default__wrapper--expanded & {
-    transform: rotate(180deg);
-
-    transition: 0.5s;
-  }
-
-  @include larger-than(md) { display: none; }
-}
-
 .ma-l-default__sig {
+  @include between-font-sizes(type(font-size, h5));
   margin-top: spacing(double);
 
   font-style: italic;

@@ -32,7 +32,7 @@
 }
 
 .ma-c-header__date {
-  @include responsive-font-sizes(type(font-size, small));
+  @include between-font-sizes(type(font-size, small));
 
   font-style: italic;
 }

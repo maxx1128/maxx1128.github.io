@@ -34,7 +34,7 @@
 }
 
 .ma-c-resume__icon {
-  @include responsive-font-sizes(type(font-size, h1));
+  @include between-font-sizes(type(font-size, h1));
   margin-right: spacing(double);
 
   line-height: 0;

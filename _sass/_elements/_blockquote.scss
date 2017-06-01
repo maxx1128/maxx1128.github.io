@@ -4,11 +4,11 @@ blockquote:not(.twitter-tweet) {
   margin-bottom: spacing();
 
   background-color: color(mono, light);
-  border-top: spacing(half) solid color(secondary, dark);
-  border-bottom: spacing(half) solid color(secondary, dark);
+  border-top: spacing(third) solid color(primary);
+  border-bottom: spacing(third) solid color(primary);
 
   p {
-    @include responsive-font-sizes(type(font-size, h4));
+    @include between-font-sizes(type(font-size, h4));
     max-width: breakpoint(max-width-pad);
     margin: 0 auto;
 
@@ -19,6 +19,10 @@ blockquote:not(.twitter-tweet) {
     width: 45%;
     margin: spacing() 0 spacing() spacing(double);
     float: right;
+  }
+
+  @include larger-than(max-width) {
+    margin-right: (spacing(quad) * -1);
   }
 }
 

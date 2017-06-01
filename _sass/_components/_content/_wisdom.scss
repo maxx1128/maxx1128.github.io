@@ -1,14 +1,13 @@
 
 .ma-c-wisdom {
-  @include responsive-font-sizes(type(font-size, p));
+  @include between-font-sizes(type(font-size, p));
   font-style: italic;
   color: color(secondary, lighter);
-  text-align: right;
 
-  &::first-line { @include responsive-font-sizes(type(font-size, h5)); }
+  &::first-line { @include between-font-sizes(type(font-size, h5)); }
 
   &::first-letter {
-    @include responsive-font-sizes(type(font-size, h4));
+    @include between-font-sizes(type(font-size, h4));
     text-transform: uppercase;
   }
 }

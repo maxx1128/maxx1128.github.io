@@ -11,13 +11,13 @@
 }
 
 .ma-n-homeLogo__title {
-  @include responsive-font-sizes(type(font-size, h3));
+  @include between-font-sizes(type(font-size, h3));
   margin-bottom: spacing(half);
 
   font-family: type(font-family, header);
 }
 
 .ma-n-homeLogo__descr {
-  @include responsive-font-sizes(type(font-size, h6));
+  @include between-font-sizes(type(font-size, h6));
   font-style: italic;
 }

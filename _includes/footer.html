@@ -1,7 +1,23 @@
-<footer role="contentinfo">
-  <h6>
+<footer class="ma-c-footer" role="contentinfo">
+  
+  <div class="ma-c-footer__wisdom">
+    {% include components/wisdom.html %}
+  </div>
+
+  <div class="ma-c-footer__social">
+    <div class="ma-cp-socialIcons">
+      {% for social in site.data.social %}
+        {% include components/social_icon.html
+          url = social.url
+          icon = social.icon
+        %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <span class="ma-c-footer__copyright">
     Ⓒ Max Antonucci, 2017
-  </h6>
+  </span>
 
   {% include footer_links.html %}
 </footer>

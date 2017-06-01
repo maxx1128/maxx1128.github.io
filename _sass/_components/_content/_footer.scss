@@ -1,0 +1,21 @@
+.ma-c-footer {
+  display: flex;
+  max-width: breakpoint(lg);
+  padding: spacing(double) spacing() spacing();
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ma-c-footer__wisdom {
+  flex: 1 1 100%;
+  max-width: breakpoint(sm);
+  margin-bottom: spacing();
+}
+
+.ma-c-footer__social {
+  padding: spacing() 0;
+  margin-right: spacing(quad);
+  flex: 0 1 breakpoint(sm);
+}

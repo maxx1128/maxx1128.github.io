@@ -1,5 +1,3 @@
-// @include svg-background();
-
 $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
 
 .ma-n-headNav {
@@ -47,9 +45,9 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
 }
 
 .ma-n-headNav__title {
+  @include between-font-sizes(type(font-size, h4));
   margin-bottom: spacing(half);
 
-  font-size: type(font-size, h4);
   font-family: type(font-family, header);
   font-weight: type(font-weight, bold);
 }
@@ -101,10 +99,6 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
   @include larger-than(md) { flex: 0 1 auto; }
 }
 
-.ma-n-headNav__link--active {
-  background-color: rgba(color(primary, lighter), 0.3);
-}
+.ma-n-headNav__link--active { background-color: rgba(color(primary, lighter), 0.3); }
 
-.ma-n-headNav__icon {
-  margin-right: spacing(third);
-}
+.ma-n-headNav__icon { margin-right: spacing(third); }

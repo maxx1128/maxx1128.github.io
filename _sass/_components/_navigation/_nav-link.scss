@@ -2,7 +2,7 @@
 .ma-n-navLinks { margin: spacing(double) 0; }
 
 .ma-n-navLink {
-  @include responsive-font-sizes(type(font-size, h6));
+  @include between-font-sizes(type(font-size, h6));
   display: flex;
   padding: spacing(half) spacing();
   align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .ma-n-navLink__icon {
-  @include responsive-font-sizes(type(font-size, h5));
+  @include between-font-sizes(type(font-size, h5));
   margin-left: spacing(double);
   flex: 0 0 auto;
 }

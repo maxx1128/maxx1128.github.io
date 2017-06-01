@@ -5,7 +5,7 @@ $type-elements: map-get($typography-map, 'font-size');
 @each $element, $val in $type-elements {
 
   #{$element} {
-    @include responsive-font-sizes($val);
+    @include between-font-sizes($val);
     margin: type(margin, #{$element});
 
     line-height: type(line-height, #{$element});
@@ -30,6 +30,13 @@ a {
   text-decoration: none;
 
   @include hovers() { color: color(action, dark); }
+}
+
+ul,
+ol {
+  margin-bottom: spacing(double);
+
+  li { margin-bottom: spacing(half); }
 }
 
 body {
