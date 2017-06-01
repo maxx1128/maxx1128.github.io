@@ -34,7 +34,7 @@ $l-d-side-padding: 5%;
 }
 
 .ma-l-default__content {
-  // max-width: breakpoint(lg);
+  width: 100%;
   padding: spacing(double) spacing() spacing();
   flex: 1 1 auto;
 

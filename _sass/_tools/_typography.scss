@@ -22,8 +22,8 @@
 // Specific mixin for responsive font sizes with "between" mixin
 @mixin between-font-sizes($base-font-size) {
 
-  $small-font-size: $base-font-size * 0.9;
-  $large-font-size: $base-font-size * 1.15;
+  $small-font-size: $base-font-size * 1;
+  $large-font-size: $base-font-size * 1.2;
 
   @include between('font-size', $small-font-size, $large-font-size);
 }
