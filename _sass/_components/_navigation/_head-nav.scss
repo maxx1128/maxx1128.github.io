@@ -17,6 +17,9 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
 
 .ma-n-headNav__home {
   text-align: center;
+  color: color(mono, blank);
+
+  @include hovers() { color: color(mono, blank); }
 
   @include larger-than(md) {
     margin-right: rem(100px);

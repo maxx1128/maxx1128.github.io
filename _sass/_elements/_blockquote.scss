@@ -1,7 +1,7 @@
 blockquote:not(.twitter-tweet) {
   width: 100%;
   padding: spacing() $l-d-side-padding;
-  margin-bottom: spacing();
+  margin: 0 0 spacing(double) 0;
 
   background-color: color(mono, light);
   border-top: spacing(third) solid color(primary);
