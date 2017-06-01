@@ -39,6 +39,8 @@ $l-d-side-padding: 5%;
   flex: 1 1 auto;
 
   &:not(.ma-l-default__content--fullWidth) { max-width: breakpoint(lg); }
+
+  &.ma-l-default__content--fullWidth { max-width: breakpoint(max-width); }
 }
 
 .ma-l-default__nav { width: 100%; }

@@ -2,15 +2,21 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
 
 .ma-n-headNav {
   @include svg-background();
-  display: flex;
   padding: spacing();
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  
 
   color: color(mono, blank);
 
   box-shadow: container(box-shadow), inset 0 0 0 1000px rgba(color(primary, darker), 0.875);
+}
+
+.ma-n-headNav__container {
+  display: flex;
+  margin: 0 auto;
+  max-width: breakpoint(max-width);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   @include larger-than(md) { flex-direction: row; }
 }
