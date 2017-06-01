@@ -4,16 +4,11 @@
   {% include head.html %}
 
   <body class="ma-l-default__wrapper">
-
-    <span class="ma-l-default__toggle js-offCanvas-toggle">
-      <i class="icon-menu"></i>
-    </span>
-
-    <!-- <aside role="complementary" class="ma-l-default__sidebar">
-      {% include nav.html %}
-    </aside> -->
-
     <main role="main" class="ma-l-default__main">
+      <div class="ma-l-default__nav">
+        {% include nav.html %}
+      </div>
+
       <div class="ma-l-default__header">
         {% include components/header.html
           title = page.title

@@ -5,7 +5,7 @@ tagline: The story of my entire life, give or take a few details
 featured-img: /img/pages/about.jpg
 ---
 
-Hello, you've reached the About Page of Max Antonucci. I'm likely not here right now, so please read the following major info about myself and leave a issue or pull request after the footer:
+Hello, you've reached the About Page of Max Antonucci. I'm likely not here right now, so please read the following major info about myself and leave a issue or pull request after the footer.
 
 ### I'm a Coder
 

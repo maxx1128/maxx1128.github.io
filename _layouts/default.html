@@ -4,29 +4,9 @@
   {% include head.html %}
 
   <body class="ma-l-default__wrapper">
-
     <main role="main" class="ma-l-default__main">
       <div class="ma-l-default__nav">
-        <nav class="ma-n-headNav">
-          <div class="ma-n-headNav__home">
-            <div class="ma-n-headNav__title">
-              {{ site.title }}
-            </div>
-
-            <div class="ma-n-headNav__tagline">
-              {{ site.description }}
-            </div>
-          </div>
-
-          <div class="ma-n-headNav__links">
-            {% for menu in site.data.menu %}
-              <a href="{{ menu.link }}" class="ma-n-headNav__link">
-                <i class="ma-n-headNav__icon icon-menu-{{ menu.icon }}"></i>
-                {{ menu.name }}
-              </a>
-            {% endfor %}
-          </div>
-        </nav>
+        {% include nav.html %}
       </div>
 
       <div class="ma-l-default__header">
@@ -37,9 +17,9 @@
         %}
       </div>
 
-      <div class="ma-l-default__content" aria-label="Content">
+      <article class="ma-l-default__content {% if page.fullWidth %}ma-l-default__content--fullWidth{% endif %}" aria-label="Content">
         {{ content }}
-      </div>
+      </article>
 
       <div class="ma-l-default__footer">
         {% include footer.html %}

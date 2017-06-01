@@ -1,31 +1,25 @@
-{% include components/home_logo.html %}
+<input id="headNav-toggle" type="checkbox" class="ma-n-headNav__checkbox">
+<nav class="ma-n-headNav">
+  <label for="headNav-toggle" class="ma-n-headNav__toggle">
+    <i class="icon-menu"></i>
+  </label>
+  
+  <div class="ma-n-headNav__home">
+    <div class="ma-n-headNav__title">
+      {{ site.title }}
+    </div>
 
-<nav role="navigation" class="ma-n-navLinks">
-  {% for nav in site.data.menu %}
-    {% if nav.name == page.title or page.layout == "post" and nav.name == "Blog" %}
-      {% assign navClass = "ma-n-navLink--active" %}
-    {% else %}
-      {% assign navClass = "" %}
-    {% endif %}
-    
-    {% include components/nav_link.html
-      class = navClass
-      link = nav.link
-      label = nav.name
-      icon = nav.icon
-    %}
-  {% endfor %}
-</nav>
+    <div class="ma-n-headNav__tagline">
+      {{ site.description }}
+    </div>
+  </div>
 
-<div class="ma-l-default__sidebarBottom">
-  {% include components/wisdom.html %}
-
-  <div class="ma-cp-socialIcons">
-    {% for social in site.data.social %}
-      {% include components/social_icon.html
-        url = social.url
-        icon = social.icon
-      %}
+  <div class="ma-n-headNav__links">
+    {% for menu in site.data.menu %}
+      <a href="{{ menu.link }}" class="ma-n-headNav__link">
+        <i class="ma-n-headNav__icon icon-menu-{{ menu.icon }}"></i>
+        {{ menu.name }}
+      </a>
     {% endfor %}
   </div>
-</div>
+</nav>

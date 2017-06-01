@@ -1,5 +1,7 @@
 // @include svg-background();
 
+$checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
+
 .ma-n-headNav {
   @include svg-background();
   display: flex;
@@ -25,6 +27,25 @@
   }
 }
 
+.ma-n-headNav__checkbox { display: none; }
+
+.ma-n-headNav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: spacing();
+
+  cursor: pointer;
+  transition: 0.5s;
+
+  #{$checked-selector} & {
+    transform: rotate(360deg);
+    transition: 0.5s;
+  }
+
+  @include larger-than(md) { display: none; }
+}
+
 .ma-n-headNav__title {
   margin-bottom: spacing(half);
 
@@ -46,8 +67,22 @@
 
   @include larger-than(md) {
     margin-top: 0;
-    // flex-wrap: nowrap;
     justify-content: flex-end;
+  }
+
+  @include smaller-than(md) {
+    max-height: 0;
+    margin-top: 0;
+    overflow: hidden;
+
+    transition: 0.5s;
+
+    #{$checked-selector} & {
+      margin-top: spacing();
+      max-height: 10rem;
+
+      transition: 0.5s;
+    }
   }
 }
 
