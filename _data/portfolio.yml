@@ -1,3 +1,9 @@
+- name: Ace Attorney Lorem Ipsum Generator
+  date: 6/01/2017
+  image: ace-attorney-lorem-ipsum.png
+  description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Node.js Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
+  link: http://www.aceattorneyipsum.com/
+
 - name: Ruby Pokedex
   date: 1/8/2017
   image: pokedex.png
@@ -47,12 +53,6 @@
   image: hover-portfolio.png
   description: "I was inspired by a premium portfolio theme to make something similar. It combines absolute positioning with CSS backgrounds and transitions for a simple yet enjoyable hover effect. It's being used for this very portfolio page."
   link: http://codepen.io/max1128/pen/GZbRJY
-
-- name: Ace Attorney Lorem Ipsum Generator
-  date: 5/10/2016
-  image: ace-attorney-lorem-ipsum.png
-  description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
-  link: http://codepen.io/max1128/pen/qZQqLW
 
 - name: Step-Left Bar
   date: 4/27/2016

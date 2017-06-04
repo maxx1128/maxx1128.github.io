@@ -13,19 +13,13 @@ fullWidth: true
 
   {% for portfolio in site.data.portfolio %}
 
-  <a class="ma-c-portfolioItem ma-l-portfolio__item {% if portfolio.highlight %}ma-l-portfolio__item--highlight{% endif %}" href="{{ portfolio.link }}" target="_blank">
-    <div class="ma-c-portfolioItem__img" data-lazyload data-original="/img/portfolio/{{ portfolio.image | prepend: site.baseurl }}" style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"></div>
-    <div class="ma-c-portfolioItem__title">
-      <h4>
-        {{ portfolio.name }}
-      </h4>
-    </div>
-    <div class="ma-c-portfolioItem__descr">
-      <p>
-        {{ portfolio.description }}
-      </p>
-    </div>
-  </a>
+    {% include components/portfolio_item.html
+      name = portfolio.name
+      link = portfolio.link
+      highlight = portfolio.highlight
+      bg_img = portfolio.image
+      description = portfolio.description
+    %}
 
   {% endfor %}
 

@@ -1,15 +1,10 @@
-/**
-* Syntax highlighting styles
-*/
-
-/**
-* Set `margin-bottom` to maintain vertical rhythm
-*/
+// Syntax highlighting styles
+// Set `margin-bottom` to maintain vertical rhythm
 
 .highlight {
   position: relative;
   max-width: 100%;
-  padding: spacing(double);
+  padding: spacing(double) 0;
   margin: 0 0 spacing(double);
 
   text-align: left;

@@ -65,15 +65,15 @@ $typography-map: (
   ),
 
   margin: (
-    h1: spacing(triple) 0 spacing(),
-    h2: spacing(triple) 0 spacing(),
-    h3: spacing(triple) 0 spacing(),
-    h4: spacing(triple) 0 spacing(half),
-    h5: spacing(double) 0 spacing(half),
-    h6: spacing(double) 0 spacing(half),
+    h1: spacing(triple) 0 spacing(double),
+    h2: spacing(triple) 0 spacing(double),
+    h3: spacing(triple) 0 spacing(double),
+    h4: spacing(triple) 0 spacing(double),
+    h5: spacing(double) 0 spacing(double),
+    h6: spacing(double) 0 spacing(double),
     p: 0 0 spacing(double) 0,
-    small: 0 0 spacing(half),
-    tiny: 0 0 spacing(half)
+    small: 0 0 spacing(),
+    tiny: 0 0 spacing()
   )
 );
 
