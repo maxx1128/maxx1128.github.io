@@ -1,28 +1,31 @@
+
+$headers: h1, h2, h3, h4, h5, h6;
+
 // Get all the type elements whose size is being set...
 $type-elements: map-get($typography-map, 'font-size');
 
 // ...and loop through them to establish their size and other base styles!
+// Also creates the utility classes for giving other elements header styling (minus the margin)
 @each $element, $val in $type-elements {
 
-  #{$element} {
+  #{$element},
+  .h-type-#{$element} {
     @include between-font-sizes($val);
-    margin: type(margin, #{$element});
 
     line-height: type(line-height, #{$element});
   }
-}
 
+  @each $header in $headers {
+    @if ($element == $header) {
+      #{$element},
+      .h-type-#{$element} {
+        font-family: type(font-family, header);
+        font-weight: type(font-weight, bold);
+      }
+    }
+  }
 
-
-// Set the font families for base text and the headers
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: type(font-family, header);
-  font-weight: type(font-weight, bold);
+  #{$element} { margin: type(margin, #{$element}); }
 }
 
 a {
