@@ -60,12 +60,16 @@
 }
 
 .ma-c-blogContent__videoWrapper {
-  @include syn(md, 9, 0, (center-m));
 
   height: 0;
   overflow: hidden;
   padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
   position: relative;
+
+  @include larger-than(md) {
+    width: 75%;
+    margin: 0 auto;
+  }
 
   embed,
   object,
