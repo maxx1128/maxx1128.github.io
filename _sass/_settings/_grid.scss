@@ -17,17 +17,3 @@ $breakpoint-map: (
   lg: rem(900px),
   max-width: rem(1200px)
 );
-
-
-// Synapse configuration
-$synapse: (
-  columns: 12,
-  layouts: (
-        xs :  0,
-        sm :  breakpoint(sm),
-        md :  breakpoint(md),
-        lg :  breakpoint(lg)
-    ),
-
-  spaceUnits: (spacing(quart), spacing(half), spacing(), spacing(double), spacing(quad))
-);

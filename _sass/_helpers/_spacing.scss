@@ -1,0 +1,26 @@
+$spacing-props: (
+  'm': 'margin',
+  'p': 'padding'
+);
+
+
+@each $label, $value in $spacing-map {
+  @each $s-label, $s-prop in $spacing-props {
+
+    @if ($label == 'base') {
+      .h-#{$s-label} { #{$s-prop}: $value; }
+
+      .h-#{$s-label}-t { #{$s-prop}-top: $value; }
+      .h-#{$s-label}-r { #{$s-prop}-right: $value; }
+      .h-#{$s-label}-b { #{$s-prop}-bottom: $value; }
+      .h-#{$s-label}-l { #{$s-prop}-left: $value; }
+    } @else {
+      .h-#{$s-label}--#{$label}{ #{$s-prop}: $value; }
+
+      .h-#{$s-label}-t--#{$label} { #{$s-prop}-top: $value; }
+      .h-#{$s-label}-r--#{$label} { #{$s-prop}-right: $value; }
+      .h-#{$s-label}-b--#{$label} { #{$s-prop}-bottom: $value; }
+      .h-#{$s-label}-l--#{$label} { #{$s-prop}-left: $value; }
+    }  
+  }
+}
