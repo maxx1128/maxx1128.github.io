@@ -4,10 +4,8 @@
   font-style: italic;
   color: color(secondary, lighter);
 
-  &::first-line { @include between-font-sizes(type(font-size, h5)); }
-
   &::first-letter {
-    @include between-font-sizes(type(font-size, h4));
+    @include between-font-sizes(type(font-size, h5));
     text-transform: uppercase;
   }
 }

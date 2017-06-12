@@ -3,17 +3,13 @@
   @each $label, $value in $colors {
 
     @if ($label == 'base') {
-      .h-color-text--#{$palette} { color: $value; }
-      .h-color-textHover--#{$palette}:hover { color: $value; }
-
-      // .h-color-bg--#{$palette} { background-color: $value; }
-      // .h-color-border--#{$palette} { border-color: $value; }
+      .h-cl-txt--#{$palette} { color: $value; }
+      .h-cl-txtHvr--#{$palette}:hover { color: $value; }
+      .h-cl-bg--#{$palette} { background-color: $value; }
     } @else {
-      .h-color-text--#{$palette}-#{$label} { color: $value; }
-      .h-color-textHover--#{$palette}-#{$label}:hover { color: $value; }
-
-      // .h-color-bg--#{$palette}-#{$label} { background-color: $value; }
-      // .h-color-border--#{$palette}-#{$label} { border-color: $value; }
+      .h-cl-txt--#{$palette}-#{$label} { color: $value; }
+      .h-cl-txtHvr--#{$palette}-#{$label}:hover { color: $value; }
+      .h-cl-bg--#{$palette}-#{$label} { background-color: $value; }
     }
   }
 }

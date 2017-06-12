@@ -43,8 +43,9 @@ ol {
 }
 
 body {
+  color: color(mono, dark);
   font-family: type(font-family);
-  font-weight: type(font-weight, light);
+  font-weight: type(font-weight);
 }
 
 strong { font-weight: type(font-weight, bold); }

@@ -13,7 +13,8 @@ $containers-map: (
   border-radius: (
     small: spacing(half),
     base: spacing(),
-    large: spacing(double)
+    large: spacing(double),
+    full: 100%
   ),
 
   box-shadow: (

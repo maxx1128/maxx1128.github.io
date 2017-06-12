@@ -1,0 +1,18 @@
+
+@each $prop, $values in $containers-map {
+  @each $label, $value in $values {
+
+    @if ($label == 'base') {
+      .h-cntr--#{$prop} { #{$prop}: $value; }
+    }
+  }
+}
+
+@each $prop, $values in $containers-map {
+  @each $label, $value in $values {
+
+    @if ($label != 'base') {
+      .h-cntr--#{$prop}-#{$label} { #{$prop}: $value; }
+    }
+  }
+}

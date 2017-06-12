@@ -3,7 +3,6 @@ $spacing-props: (
   'p': 'padding'
 );
 
-
 @each $label, $value in $spacing-map {
   @each $s-label, $s-prop in $spacing-props {
 
@@ -14,7 +13,14 @@ $spacing-props: (
       .h-#{$s-label}-r { #{$s-prop}-right: $value; }
       .h-#{$s-label}-b { #{$s-prop}-bottom: $value; }
       .h-#{$s-label}-l { #{$s-prop}-left: $value; }
-    } @else {
+    } 
+  }
+}
+
+@each $label, $value in $spacing-map {
+  @each $s-label, $s-prop in $spacing-props {
+
+    @if ($label != 'base') {
       .h-#{$s-label}--#{$label}{ #{$s-prop}: $value; }
 
       .h-#{$s-label}-t--#{$label} { #{$s-prop}-top: $value; }

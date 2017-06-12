@@ -36,7 +36,8 @@ function ma_wisdom($, patternId) {
       'Inside every cynical person is a disappointed idealist.',
       'To be is to be perceived.',
       'The eternal happiness you most wish for is the only thing you can\'t have.',
-      'To live is to suffer. To survive is to find some meaning in the suffering.'
+      'To live is to suffer. To survive is to find some meaning in the suffering.',
+      'Does one need a happy life to have a meaningful life?'
     ],
     selected_wisdom = wisdoms[Math.floor(Math.random()*wisdoms.length)]
   ;
