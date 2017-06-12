@@ -101,13 +101,13 @@ gulp.task('sass', function () {
   return gulp
     .src(sassInput)
     .pipe(customPlumber('Error running Sass'))
-    // If in prod, will add sourcemaps to Sass
-    .pipe(p.if(prod, p.sourcemaps.init()))
+    // If not in prod, will add sourcemaps to Sass
+    .pipe(p.if(!prod, p.sourcemaps.init()))
     // Write Sass for either dev or prod
     .pipe(p.sass(sassOptions))
     // .pipe(p.uncss(unCSS_Settings))
-    .pipe(p.if(!prod, p.autoprefixer(autoprefixerOptions)))
-    .pipe(p.if(prod, p.sourcemaps.write()))
+    .pipe(p.if(prod, p.autoprefixer(autoprefixerOptions)))
+    .pipe(p.if(!prod, p.sourcemaps.write()))
     // Sends the Sass file to either the app or dist folder
     .pipe(gulp.dest(config.AssetsPath + 'css'))
     .pipe(p.notify({ message: 'Sass Processed!', onLast: true }))
