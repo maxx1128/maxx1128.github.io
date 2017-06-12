@@ -9,7 +9,7 @@ $type-elements: map-get($typography-map, 'font-size');
 @each $element, $val in $type-elements {
 
   #{$element},
-  .h-type-#{$element} {
+  .h-type--#{$element} {
     @include between-font-sizes($val);
 
     line-height: type(line-height, #{$element});
@@ -18,7 +18,7 @@ $type-elements: map-get($typography-map, 'font-size');
   @each $header in $headers {
     @if ($element == $header) {
       #{$element},
-      .h-type-#{$element} {
+      .h-type--#{$element} {
         font-family: type(font-family, header);
         font-weight: type(font-weight, bold);
       }

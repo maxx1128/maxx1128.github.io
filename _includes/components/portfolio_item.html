@@ -6,11 +6,14 @@
 {% assign description = include.description | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore officia voluptatibus repellendus libero quam maiores maxime amet ea quae sint ex, magnam vel quibusdam adipisci assumenda harum temporibus facilis reiciendis." %}
 
 <a class="ma-c-portfolioItem ma-l-portfolio__item {% if highlight %}ma-l-portfolio__item--highlight{% endif %}" href="{{ link }}" target="_blank">
-  <div class="ma-c-portfolioItem__img" data-lazyload data-original="/img/portfolio/{{ bg_img | prepend: site.baseurl }}" style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"></div>
-  <div class="ma-c-portfolioItem__title">
+  
+  <div class="ma-c-portfolioItem__img h-cl-bg--primary" data-lazyload data-original="/img/portfolio/{{ bg_img | prepend: site.baseurl }}" style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"></div>
+  
+  <div class="ma-c-portfolioItem__title h-p h-cl-txt--mono-blank h-type--h5 h-type--center">
     {{ name }}
   </div>
-  <div class="ma-c-portfolioItem__descr">
+  
+  <div class="ma-c-portfolioItem__descr h-p h-cl-txt--mono-blank">
     <p>
       {{ description }}
     </p>

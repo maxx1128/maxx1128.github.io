@@ -32,7 +32,6 @@
   min-height: 130%;
   z-index: 0;
 
-  background-color: color(primary);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,26 +42,17 @@
 
 .ma-c-portfolioItem__title,
 .ma-c-portfolioItem__descr {
-  padding: spacing();
   overflow: hidden;
-
-  color: color(mono, blank);
 
   background-color: rgba(color(primary, dark), 0.8);
   transition: 0.5s;
 }
 
 .ma-c-portfolioItem__title {
-  @include between-font-sizes(type(font-size, h4));
   position: absolute;
   bottom: 0;
   width: 100%;
   height: auto;
-  padding: spacing();
-
-  text-align: center;
-  font-weight: type(font-weight, bold);
-  font-family: type(font-family, header);
 }
 
 .ma-c-portfolioItem__descr {
@@ -70,5 +60,4 @@
   top: -100%;
   bottom: 100%;
   width: 100%;
-  padding: spacing();
 }
