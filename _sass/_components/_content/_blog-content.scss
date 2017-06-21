@@ -4,7 +4,6 @@
     display: block;
     margin: auto;
     width: 100%;
-    max-width: rem(480px);
   }
 
   iframe,
@@ -41,9 +40,7 @@
 }
 
 .ma-c-blogContent__figure {
-  margin: 0 0 spacing();
-
-  text-align: center;
+  margin: 0 0 spacing(double);
 }
 
 .ma-c-blogContent__figureCaption {
