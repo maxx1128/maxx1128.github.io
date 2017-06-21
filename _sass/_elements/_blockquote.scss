@@ -27,7 +27,7 @@ blockquote:not(.twitter-tweet) {
 }
 
 .twitter-tweet {
-  margin: spacing() auto;
+  margin: spacing() auto spacing(double) !important;
   padding: spacing();
   
   border-width: 1px;
