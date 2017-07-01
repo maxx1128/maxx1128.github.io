@@ -10,9 +10,9 @@
   figcaption { margin-bottom: spacing(); }
 
   figcaption {
-    @include between-font-sizes(type(font-size, small));
+    @include between-font-sizes(type(font-size, tiny));
 
-    a { @include between-font-sizes(type(font-size, small)); }
+    a { @include between-font-sizes(type(font-size, tiny)); }
   }
 
   code {

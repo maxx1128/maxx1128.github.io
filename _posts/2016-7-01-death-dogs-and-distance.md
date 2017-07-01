@@ -50,6 +50,6 @@ There was no longer any fear, uncertainty, or distance. There were lots of feeli
 
 Being a short distance from death is terrible, but a huge distance is worse. There's no terrible feelings, but no good ones either. When it comes to death, we shouldn't regret having to close that distance with others or with ourselves.
 
-Because avoiding death forever means avoiding life forever. Like a life with a loyal, quirky, and lovable dog that you will miss immensely buy will have no regrets about.
+Because avoiding death forever means avoiding life forever. Like a life with a loyal, quirky, and lovable dog that you will miss immensely but will have no regrets about.
 
 
