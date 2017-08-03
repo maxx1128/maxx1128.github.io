@@ -1,8 +1,11 @@
+'use strict';
+
 var gulp          = require('gulp');  
 var p             = require('gulp-load-plugins')();
 var gutil         = require('gulp-util');
 
 var browserSync   = require('browser-sync'),
+    babel         = require('gulp-babel'),
     fs            = require('fs'),
     del           = require('del'),
     runSequence   = require('run-sequence'),
@@ -65,9 +68,12 @@ gulp.task('browserSync', function() {
 
 gulp.task('scripts', function(){
 
-  gulp.src('_javascript/*.js')
+  gulp.src('_javascript/main.js')
   .pipe(customPlumber('Error running Scripts'))
   .pipe(p.include()).on('error', console.log)
+  .pipe(babel({
+    presets: ['es2015']
+  }))
   .pipe(p.uglify())
   .pipe(gulp.dest(config.AssetsPath + 'js'))
   .pipe(p.notify({ message: 'JS Uglified!', onLast: true }))

@@ -1,8 +1,11 @@
+'use strict';
+
 //=include ../_bower_components/jquery/dist/jquery.min.js
 //=include lazyload.js
 
 //=include offCanvasNav.js
 //=include wisdom.js
+//=include css-themes.js
 
 //=include sg_tabs.js
 
