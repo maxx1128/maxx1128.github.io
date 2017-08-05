@@ -7,18 +7,18 @@
   }
 
   iframe,
-  figcaption { margin-bottom: spacing(); }
+  figcaption { margin-bottom: var(--spacing-base); }
 
   figcaption {
-    @include between-font-sizes(type(font-size, tiny));
+    @include between-font-props(--type-font-size-tiny);
 
-    a { @include between-font-sizes(type(font-size, tiny)); }
+    a { @include between-font-props(--type-font-size-tiny); }
   }
 
   code {
-    padding: 0 spacing(third);
+    padding: 0 var(--spacing-third);
 
-    background-color: color(mono, light);
+    background-color: var(--color-mono-light);
   }
 }
 
@@ -28,24 +28,45 @@
   align-items: center;
   justify-content: center;
   
-  margin-right: spacing(half) * -1;
-  margin-left: spacing(half) * -1;
+  margin-right: calc(var(--spacing-half) * -1);
+  margin-left: calc(var(--spacing-half) * -1);
 
   img {
-    flex: 1 1 rem(300px);
-    
-    margin: spacing(half);
+    margin: var(--spacing-half);
     max-width: rem(99999px);
+    flex: 1 1 rem(300px);
   }
 }
 
 .ma-c-blogContent__figure {
-  margin: 0 0 spacing(double);
+  @include clearfix();
+  margin: 0 0 var(--spacing-double);
+}
+
+.ma-c-blogContent__figure--left,
+.ma-c-blogContent__figure--right {
+  @include larger-than(sm) { width: 50%; }
+  @include larger-than(md) { width: 33%; }
+  @include larger-than(lg) { width: 25%; }
+}
+
+.ma-c-blogContent__figure--left {
+  @include larger-than(sm) {
+    float: left;
+    margin: var(--spacing-base) var(--spacing-triple) var(--spacing-base) 0;
+  }
+}
+
+.ma-c-blogContent__figure--right {
+  @include larger-than(sm) {
+    float: right;
+    margin: var(--spacing-base) 0 var(--spacing-triple) var(--spacing-base);
+  }
 }
 
 .ma-c-blogContent__figureCaption {
-  @include between-font-sizes(type(font-size, small));
-  margin-top: spacing(third);
+  @include between-font-props(--type-font-size-small);
+  margin-top: var(--spacing-third);
 
   font-style: italic;
 }
@@ -53,7 +74,7 @@
 
 .ma-c-blogContent__video {
   @include clearfix();
-  margin: spacing() 0;
+  margin: var(--spacing-base) 0;
 }
 
 .ma-c-blogContent__videoWrapper {

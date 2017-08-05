@@ -1,13 +1,13 @@
 
 .ma-c-wisdom {
-  @include between-font-sizes(type(font-size, p));
+  @include between-font-props(--type-font-size-p);
   font-style: italic;
-  color: color(secondary, lighter);
+  color: var(--color-secondary-lighter);
 
-  &::first-line { @include between-font-sizes(type(font-size, p)); }
+  &::first-line { @include between-font-props(--type-font-size-p); }
 
   &::first-letter {
-    @include between-font-sizes(type(font-size, h5));
+    @include between-font-props(--type-font-size-h5);
     text-transform: uppercase;
   }
 }

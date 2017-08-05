@@ -1,14 +1,16 @@
 blockquote:not(.twitter-tweet) {
-  width: 100%;
-  padding: spacing() $l-d-side-padding;
-  margin: 0 0 spacing(double) 0;
+  --bq-width: 100%;
 
-  background-color: color(mono, light);
-  border-top: spacing(third) solid color(primary);
-  border-bottom: spacing(third) solid color(primary);
+  width: var(--bq-width);
+  padding: var(--spacing-base) 5%;
+  margin: 0 0 var(--spacing-double) 0;
+
+  background-color: var(--color-mono-light);
+  border-top: var(--spacing-third) solid var(--color-primary-base);
+  border-bottom: var(--spacing-third) solid var(--color-primary-base);
 
   p {
-    @include between-font-sizes(type(font-size, h4));
+    @include between-font-props(--type-font-size-h4);
     max-width: breakpoint(max-width-pad);
     margin: 0 auto;
 
@@ -16,23 +18,22 @@ blockquote:not(.twitter-tweet) {
   }
 
   @include larger-than(md) {
-    width: 45%;
-    margin: spacing() 0 spacing() spacing(double);
+    --bq-width: 45%;
+
+    margin: var(--spacing-base) 0 var(--spacing-base) var(--spacing-double);
     float: right;
   }
 
-  @include larger-than(max-width) {
-    margin-right: (spacing(quad) * -1);
-  }
+  @include larger-than(max-width) { margin-right: calc(var(--spacing-quad) * -1); }
 }
 
 .twitter-tweet {
-  margin: spacing() auto spacing(double) !important;
-  padding: spacing();
+  margin: var(--spacing-base) auto var(--spacing-double) !important;
+  padding: var(--spacing-base);
   
   border-width: 1px;
   border-style: solid;
   border-color: #eee #ddd #bbb;
-  border-radius: container(border-radius, small);
-  box-shadow: container(box-shadow, light);
+  border-radius: var(--container-border-radius-small);
+  box-shadow: var(--container-box-shadow-light);
 }

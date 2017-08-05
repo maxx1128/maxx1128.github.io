@@ -3,7 +3,7 @@
   max-width: 100%;
   padding: 0;
 
-  background-color: color(primary, lighter);
-  border: spacing(quart) solid color(primary, darker);
-  border-radius: 100%;
+  background-color: var(--color-primary-base);
+  border: var(--spacing-quart) solid var(--color-primary-darker);
+  border-radius: var(--container-border-radius-full);
 }

@@ -1,7 +1,7 @@
 .ma-c-footer {
   display: flex;
   max-width: breakpoint(lg);
-  padding: spacing();
+  padding: var(--spacing-base);
   margin: 0 auto;
   flex-wrap: wrap;
   align-items: center;
@@ -11,11 +11,11 @@
 .ma-c-footer__wisdom {
   flex: 1 1 100%;
   max-width: breakpoint(sm);
-  margin: spacing() 0;
+  margin: var(--spacing-base) 0;
 }
 
 .ma-c-footer__social {
-  padding: spacing() 0;
-  margin-right: spacing(quad);
+  padding: var(--spacing-base) 0;
+  margin-right: var(--spacing-quad);
   flex: 0 1 breakpoint(sm);
 }

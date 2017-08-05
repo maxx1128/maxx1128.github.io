@@ -11,7 +11,7 @@
 @supports (display: grid) {
   .ma-l-blog__wrapper {
     display: grid;
-    margin: 0 ((spacing(quart) / 2) * -1);
+    margin: 0 calc((var(--spacing-quart) / 2) * -1);
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-rows: minmax(175px, auto);

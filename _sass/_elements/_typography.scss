@@ -1,14 +1,18 @@
 // Get all the type elements whose size is being set...
-$type-elements: map-get($typography-map, 'font-size');
+$type-elements: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'ul', 'ol', 'small', 'tiny';
 
 // ...and loop through them to establish their size and other base styles!
-@each $element, $val in $type-elements {
+@each $element in $type-elements {
 
   #{$element} {
-    @include between-font-sizes($val);
-    margin: type(margin, #{$element});
+    --el-font-size: calc(var(--type-font-size-#{$element}) * 0.85);
 
-    line-height: type(line-height, #{$element});
+    margin: var(--type-margin-#{$element});
+    
+    font-size: var(--el-font-size);
+    line-height: var(--type-line-height-#{$element});
+
+    @include larger-than(md) { --el-font-size: var(--type-font-size-#{$element}); }
   }
 }
 
@@ -21,28 +25,26 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: type(font-family, header);
-  font-weight: type(font-weight, bold);
+  font-family: var(--type-font-family-header);
+  font-weight: var(--type-font-weight-bold);
 }
 
 a {
-  color: color(action);
+  --anchor-color: var(--color-action-base);
+  
+  color: var(--anchor-color);
   text-decoration: none;
 
-  @include hovers() { color: color(action, dark); }
+  @include hovers() { --anchor-color: var(--color-action-light); }
 }
 
-ul,
-ol {
-  margin-bottom: spacing(double);
-
-  li { margin-bottom: spacing(half); }
-}
 
 body {
-  font-family: type(font-family);
-  font-weight: type(font-weight);
-  color: color(mono, dark);
+  --font-weight: var(--type-font-weight-base);
+
+  font-family: var(--type-font-family-base);
+  font-weight: var(--font-weight);
+  color: var(--color-mono-darkest);
 }
 
-strong { font-weight: type(font-weight, bold); }
+strong { --font-weight: var(--type-font-weight-bold); }

@@ -1,8 +1,5 @@
 // The default layout for the blog
 
-$l-d-sidebar-width: rem(280px);
-$l-d-side-padding: 5%;
-
 .ma-l-default__wrapper {
   position: relative;
   max-width: 100vw;
@@ -17,25 +14,25 @@ $l-d-side-padding: 5%;
 }
 
 .ma-l-default__footer {
-  @include svg-background(color(secondary, darker), tint(color(secondary, darker), 25%));
+  color: var(--color-mono-blank);
 
-  color: color(mono, blank);
-
-  box-shadow: container(box-shadow), inset 0 0 0 1000px rgba(color(secondary, darker), 0.875);
+  background-color: var(--color-secondary-darker);
+  box-shadow: var(--container-box-shadow-base), inset 0 0 0 1000px var(--color-secondary-darker);
 }
 
 .ma-l-default__main {
-  @include svg-background(color(mono, blank), tint(color(mono, light), 65%));
   display: flex;
   width: 100%;
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
+
+  background-color: var(--color-mono-blank);
 }
 
 .ma-l-default__content {
   width: 100%;
-  padding: spacing(double) spacing() spacing();
+  padding: var(--spacing-double) var(--spacing-base) var(--spacing-base);
   flex: 1 1 auto;
 
   &:not(.ma-l-default__content--fullWidth) { max-width: breakpoint(lg); }
@@ -46,10 +43,10 @@ $l-d-side-padding: 5%;
 .ma-l-default__nav { width: 100%; }
 
 .ma-l-default__sig {
-  @include between-font-sizes(type(font-size, h5));
-  margin-top: spacing(double);
+  @include between-font-props(--type-font-size-h5);
+  margin-top: var(--spacing-double);
 
   font-style: italic;
-  font-weight: type(font-weight, bold);
+  font-weight: var(--type-font-weight-bold);
   text-align: right;
 }

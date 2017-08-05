@@ -3,11 +3,7 @@
 '_tools/calc';
 
 @import
-'_settings/spacing',
-'_settings/colors',
-'_settings/grid',
-'_settings/typography',
-'_settings/containers';
+'_settings/grid';
 
 @import
 '_tools/colors',
@@ -46,16 +42,7 @@
 
 @import
 '_components/_navigation/head-nav',
-'_components/_navigation/home-logo',
-'_components/_navigation/nav-link';
+'_components/_navigation/home-logo';
 
 @import
 '_components/_media/profile-img';
-
-@import
-'_styleguide/colors',
-'_styleguide/containers',
-'_styleguide/entry',
-'_styleguide/spacing',
-'_styleguide/table',
-'_styleguide/tabs';

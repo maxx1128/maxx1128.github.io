@@ -2,8 +2,4 @@
 * { box-sizing: border-box; }
 
 html,
-body {
-  box-sizing: border-box;
-
-  background-color: color(mono, blank);
-}
+body { background-color: var(--color-mono-blank); }

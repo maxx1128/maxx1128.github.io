@@ -2,12 +2,16 @@
 .ma-cp-socialIcons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .ma-cp-socialIcon {
-  @include between-font-sizes(type(font-size, p));
-  color: color(action, lighter);
+  --social-icon-color:  var(--color-action-light);
 
-  @include hovers() { color: color(action, light); }
+  margin-right: var(--spacing-double);
+
+  @include between-font-props(--type-font-size-h6);
+  color: var(--social-icon-color);
+
+  @include hovers() { --social-icon-color:  var(--color-action-lighter); }
 }

@@ -20,15 +20,15 @@ $home-content-width: rem(350px);
 
 .ma-l-home__image {
   width: 100%;
-  margin-right: spacing(double);
+  margin-right: var(--spacing-double);
   flex: 0 1 $home-img-width;
 
   animation: 5s logo-rotate ease-in-out infinite;
 
-  img { box-shadow: container(box-shadow); }
+  img { box-shadow: var(--container-box-shadow-base); }
 }
 
 .ma-l-home__content {
-  padding: spacing();
+  padding: var(--spacing-base);
   flex: 1 1 $home-content-width;
 }

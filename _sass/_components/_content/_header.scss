@@ -1,16 +1,17 @@
 
 .ma-c-header {
+  color: var(--color-mono-blank);
   text-align: center;
 
-  background-color: color(primary, lighter);
+  background-color: var(--color-primary-lighter);
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(color(primary, lighter), 0.9);
+  box-shadow: inset 0 0 0 1000px rgba(black, 0.75);
 }
 
 .ma-c-header__container {
   max-width: breakpoint(lg);
-  padding: spacing(double) spacing();
+  padding: var(--spacing-double) var(--spacing-base);
   margin: 0 auto;
 }
 
@@ -18,21 +19,21 @@
 .ma-c-header__tagline {
   display: block;
 
-  font-family: type(font-family, header);
+  font-family: var(--type-font-family-header);
 }
 
 .ma-c-header__title { margin-top: 0; }
 
 .ma-c-header__tagline {
-  padding-top: spacing(half);
+  padding-top: var(--spacing-half);
   padding-top: 3vmin;
 
-  font-family: type(font-family);
-  font-weight: type(font-weight);
+  font-family: var(--type-font-family-base);
+  font-weight: var(--type-font-weight-base);
 }
 
 .ma-c-header__date {
-  @include between-font-sizes(type(font-size, small));
+  @include between-font-props(--type-font-size-small);
 
   font-style: italic;
 }

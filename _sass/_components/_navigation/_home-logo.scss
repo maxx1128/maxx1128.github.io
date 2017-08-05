@@ -1,23 +1,23 @@
 
 .ma-n-homeLogo {
   display: flex;
-  padding: spacing() spacing() spacing(half);
+  padding: var(--spacing-base) var(--spacing-base) var(--spacing-half);
   flex-direction: column;
 
-  color: color(primary, lighter);
+  color: var(--color-primary-lighter);
   text-align: right;
 
-  @include hovers() { color: color(primary, lighter); }
+  @include hovers() { color: var(--color-primary-lighter); }
 }
 
 .ma-n-homeLogo__title {
-  @include between-font-sizes(type(font-size, h3));
-  margin-bottom: spacing(half);
+  @include between-font-props(--type-font-size-h3);
+  margin-bottom: var(--spacing-half);
 
-  font-family: type(font-family, header);
+  font-family: var(--type-font-family-header);
 }
 
 .ma-n-homeLogo__descr {
-  @include between-font-sizes(type(font-size, h6));
+  @include between-font-props(--type-font-size-h6);
   font-style: italic;
 }

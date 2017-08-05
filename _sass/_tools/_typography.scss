@@ -27,3 +27,11 @@
 
   @include between('font-size', $small-font-size, $large-font-size);
 }
+
+@mixin between-font-props($prop) {
+  --el-spec-font-size: calc(var(#{$prop}) * 0.9);
+
+  font-size: var(--el-spec-font-size);
+
+  @include larger-than(md) { --el-spec-font-size: var(#{$prop});}
+}
