@@ -9,12 +9,16 @@ blockquote:not(.twitter-tweet) {
   border-top: var(--spacing-third) solid var(--color-primary-base);
   border-bottom: var(--spacing-third) solid var(--color-primary-base);
 
+  box-shadow: var(--container-box-shadow-base);
+
   p {
-    @include between-font-props(--type-font-size-h4);
+    @include between-font-props(--type-font-size-h6);
     max-width: breakpoint(max-width-pad);
     margin: 0 auto;
 
     font-style: italic;
+    font-weight: var(--type-font-weight-semibold);
+    line-height: var(--type-line-height-small);
   }
 
   @include larger-than(md) {

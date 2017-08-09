@@ -19,5 +19,13 @@
     {% include components/wisdom.html %}
   </div>
 
+  <div class="ma-c-footer__schemes">
+    {% for poke in site.data.pokemon %}
+      <span class="js-update-css-scheme ma-c-footer__scheme" js-scheme="{{ poke }}">
+        <img src="/img/pokes/{{ poke }}.png" alt="{{ poke | capitalize }} color scheme">
+      </span>
+    {% endfor %}
+  </div>
+
   {% include footer_links.html %}
 </footer>

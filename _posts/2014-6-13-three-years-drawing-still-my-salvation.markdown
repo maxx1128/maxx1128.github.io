@@ -9,11 +9,11 @@ excerpt: After three years, I've had a major relapse. I'm once again drawing. Th
 
 After three years, I've had a major relapse. I'm once again drawing. That thing with actual pencil and paper.
 
+{% include image.html place="right" url="/img/posts/drawing-salvation/Gale.jpg" description="At school I frequently drew Gale Rogers, one of my favorite characters from a story I was writing." %}
+
 I’m actually thankful for this, because if I’d gone without drawing much longer, I would’ve probably snapped and gone (clinically) insane. I didn’t know this right away, but not drawing may have been one of my worst mistakes (and it’s a tough list to crack). It could’ve almost made me lose my whole identity.
 
 ### Drawing was my iPhone
-
-{% include image.html place="right" url="/img/posts/drawing-salvation/Gale.jpg" description="At school I frequently drew Gale Rogers, one of my favorite characters from a story I was writing." %}
 
 I should probably give some backstory here. In high school, drawing cartoons in my sketchbook was like how many use their iPhones today – obsessively and often to avoid talking with others. It was to the point where I was voted “Most Artistic” simply because I was drawing so much between classes (instead of actual artistic talent). That’s because my drawing had another thing in common with people using iPhones – just because you use it constantly doesn’t mean you know a lot about it. While I wasn’t “bad” at drawing, I knew it wouldn’t be my career (and I like my current digital path anyway).
 

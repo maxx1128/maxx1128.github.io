@@ -11,7 +11,24 @@
 .ma-c-footer__wisdom {
   flex: 1 1 100%;
   max-width: breakpoint(sm);
-  margin: var(--spacing-base) 0;
+  margin: var(--spacing-base) var(--spacing-base) var(--spacing-base) 0;
+}
+
+.ma-c-footer__schemes { flex: 0 1 auto; } 
+
+.ma-c-footer__scheme {
+  display: inline-block;
+  padding: var(--spacing-half);
+
+  border-radius: var(--container-border-radius-full);
+
+  cursor: pointer;
+
+  &:not(:first-child) { margin-left: var(--spacing-quart); }
+}
+
+.ma-c-footer__scheme--active {
+  background-color: var(--color-secondary-lighter);
 }
 
 .ma-c-footer__social {

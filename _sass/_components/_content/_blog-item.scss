@@ -1,6 +1,6 @@
 
 .ma-c-blogItem {
-  --blog-item-color: var(--color-mono-light);
+  --blog-item-color: var(--color-mono-lighter);
 
   // @include svg-background();
   display: flex;
@@ -24,7 +24,7 @@
   @include hovers() { --blog-item-color: var(--color-mono-blank); }
 
   .ma-c-blogItem__container:nth-of-type(even) & {
-    --blog-item-container-color: var(--color-mono-dark);
+    --blog-item-container-color: var(--color-mono-darker);
 
     color: var(--blog-item-container-color);
 

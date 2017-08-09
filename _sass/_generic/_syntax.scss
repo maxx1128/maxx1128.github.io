@@ -4,12 +4,12 @@
 .highlight {
   position: relative;
   max-width: 100%;
-  padding: var(--spacing-double) 0;
+  padding: var(--spacing-double) 8px;
   margin: 0 0 var(--spacing-double);
 
   text-align: left;
 
-  background-color: var(--color-mono-light);
+  background-color: var(--color-mono-lighter);
 
   &::before,
   &::after {
@@ -19,17 +19,17 @@
     top: 0;
     bottom: 0;
 
-    background-color: var(--color-mono-light);
+    background-color: var(--color-mono-lighter);
   }
 
   &::before {
-    right: 100%;
+    right: 99%;
     left: -999999rem;
   }
 
   &::after {
     right: -999999rem;
-    left: 100%;
+    left: 99%;
   }
 
   pre {

@@ -1,6 +1,8 @@
+'use strict';
+
 // Containerization for off-canvas nav functionality
 function ma_offCanvasNav($, patternId) {
-  
+
   var pattern;
 
   function init() {}

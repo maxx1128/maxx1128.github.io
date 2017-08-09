@@ -2,7 +2,7 @@
 .ma-c-wisdom {
   @include between-font-props(--type-font-size-p);
   font-style: italic;
-  color: var(--color-secondary-lighter);
+  color: var(--color-secondary-lightest);
 
   &::first-line { @include between-font-props(--type-font-size-p); }
 

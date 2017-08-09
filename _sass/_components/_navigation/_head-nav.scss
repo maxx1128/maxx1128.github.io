@@ -5,7 +5,7 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
   
   color: var(--color-mono-blank);
 
-  background-color: var(--color-primary-darker);
+  background-color: var(--color-primary-darkest);
   box-shadow: var(--container-box-shadow-base), inset 0 0 0 1000px var(--color-primary-darker);
 }
 
@@ -100,9 +100,9 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
   justify-content: center;
 
   font-size: var(--type-font-size-h6);
-  color: var(--color-action-light);
+  color: var(--color-action-lightest);
 
-  @include hovers() { color: var(--color-action-base); }
+  @include hovers() { color: var(--color-action-lightest); }
 
   @include larger-than(md) { flex: 0 1 auto; }
 }

@@ -74,7 +74,7 @@ gulp.task('scripts', function(){
   .pipe(babel({
     presets: ['es2015']
   }))
-  .pipe(p.uglify())
+  // .pipe(p.uglify())
   .pipe(gulp.dest(config.AssetsPath + 'js'))
   .pipe(p.notify({ message: 'JS Uglified!', onLast: true }))
   .pipe(browserSync.reload(bs_reload))

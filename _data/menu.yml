@@ -13,7 +13,3 @@
 - name: Blog
   link: '/blog/'
   icon: blog
-
-- name: Styleguide
-  link: '/styleguide/'
-  icon: styleguide
