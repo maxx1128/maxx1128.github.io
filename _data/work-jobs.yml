@@ -1,0 +1,87 @@
+- title: UI/UX Designer
+  stack:
+    - "Ruby on Rails"
+    - "Node"
+    - "Ember"
+    - "Gulp"
+    - "Webpack"
+    - "Jekyll"
+    - "Sass/CSS"
+  company: SeeClickFix
+  icon: wrench
+  start: February 2017
+  end: Present
+  description: "I develop and design the front-end components and frameworks for SeeClickFix's app and websites. This includes designing with mobile and user-experience in mind, maintaining and organizing the company's pattern library, conduct user research and analyze feedback, sketch new prototypes and patterns, and work with engineers for implementing these components properly into back-end apps built on Rails and Ember."
+
+- title: Interactive Developer
+  stack:
+    - "WordPress"
+    - "Node"
+    - "Angular"
+    - "Gulp"
+    - "Nunjucks"
+    - "Sass/CSS"
+  company: Alden Image
+  icon: interactive
+  start: May 2015
+  end: February 2017
+  description: "I've worked in development of the front-end for web applications and websites for clients using HTML5, Javascript, jQuery, CSS and SASS, WordPress, and other front-end tools such as Gulp.js. This includes SEO, Analytics, and Social Media Marketing. It also required keeping up to date on useful new technologies, libraries, frameworks, management tools, and recommending them into the team's workflow."
+
+- title: Web Development Intern
+  stack:
+    - "WordPress"
+    - "Node"
+    - "Grunt"
+    - "Sass/CSS"
+  company: Eric Mower and Associates
+  icon: html-sheet
+  start: February 2015
+  end: May 2015
+  description: "I help the team work on the front-end development of web projects for clients. This includes creating the framework, design and responsive grids for websites, and developing the functionality for Wordpress sites with HTML, CSS, Sass, Javascript, Breakpoint and Grunt.js."
+
+- title: Lead Tech and Innovation Producer
+  stack:
+    - "Drupal"
+    - "jQuery"
+    - "Angular"
+  company: The NewsHouse
+  icon: write
+  start: May 2014
+  end: May 2015
+  description: "For my senior year at Syracuse University, I'll be helping produce news and feature stories at the Newshouse online publication, focusing on finding digitally innovative ways to present and share them."
+
+- title: Social Media and Web Management Intern
+  stack:
+    - "WordPress"
+    - "HootSuite"
+    - "Facebook"
+    - "Twitter"
+  company: Medium Well
+  icon: laptop
+  start: June 2012
+  end: July 2015
+  description: "I worked to improve the social media and online presence of Medium Well, a small web design business in CT, and analyze and report on the online marketing and social media strategy of several local clients. I also wrote blog posts for its website on online marketing and other important topics, such as SEO and E-Commerce."
+
+- title: Chapter President
+  stack:
+    - "WordPress"
+    - "HootSuite"
+  company: "Society of Professional Journalists: Syracuse University"
+  icon: group
+  start: January 2014
+  end: February 2015
+  description: "Lead organizer in arranging on-campus events and publishing to the on-campus blog, both to promote informative and effective journalism in students."
+
+- title: Social Media and Web Management Intern
+  stack:
+    - "WordPress"
+    - "HootSuite"
+    - "Facebook"
+    - "Twitter"
+    - "Instagram"
+    - "Video Animation"
+  company: AmeriCares
+  icon: heart
+  start: June 2014
+  end: August 2014
+  description: "I'm helping to manage, organize, create, and strategically post new editorial content through AmeriCare's Twitter, Facebook, and Instagram accounts. I'm also working to maintain and expand its online presence by developing engaging content, examining new social media outlets and management tools, and helping to manage to the site's overall web presence with editorial content and website development."

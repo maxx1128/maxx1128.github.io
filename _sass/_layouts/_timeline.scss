@@ -1,0 +1,10 @@
+.ma-l-timeline__container {
+  display: flex;
+  margin: var(--spacing-double) calc(var(--spacing-base) * -1) 0;
+  flex-wrap: wrap;
+}
+
+.ma-l-timeline__item {
+  padding: 0 var(--spacing-base) var(--spacing-quart);
+  flex: rem(425px);
+}

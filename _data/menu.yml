@@ -2,14 +2,10 @@
   link: '/about/'
   icon: about
 
-- name: Portfolio
-  link: '/portfolio/'
-  icon: portfolio
-
-- name: Resume
-  link: '/resume/'
+- name: My Work
+  link: '/work/'
   icon: resume
 
-- name: Blog
+- name: My Blog
   link: '/blog/'
   icon: blog

@@ -1,6 +1,8 @@
 {% assign title = include.title | default: "Job Title" %}
+{% assign id = include.id %}
 {% assign icon = include.icon | default: "wrench" %}
 {% assign company = include.company | default: "Company" %}
+{% assign stack = include.stack %}
 {% assign start = include.start | default: "Start Time" %}
 {% assign end = include.end | default: "End Time" %}
 {% assign description = include.description | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate obcaecati perspiciatis debitis animi ratione optio tenetur excepturi, laboriosam rerum, totam eum cum. Fugit explicabo ducimus est vel ratione. Atque, quas." %}
@@ -8,20 +10,26 @@
 <div class="ma-c-resume__item">
 
   <div class="ma-c-resume__header">
-    <i class="ma-c-resume__icon icon-{{ icon }}"></i>
+    <i class="ma-c-resume__icon icon-{{ icon }}" data-a11y-toggle="resume-item-{{ id }}"></i>
 
     <div class="ma-c-resume__headerInfo">
-      <h4 class="ma-c-resume__title">
-        {{ title }}
-      </h4>
-
       <span class="ma-c-resume__meta">
-        At <strong>{{ company }}</strong> from {{ start }} to {{ end }}
+        <strong>{{ company }}</strong> from {{ start }} to {{ end }}
       </span>
+
+      <h5 class="ma-c-resume__title">
+        {{ title }}
+      </h5>
+
+      {% if stack %}
+        <p class="ma-c-resume__stack">
+          {% for item in stack %}{{ item }}{% if forloop.last != true %}, {% endif %}{% endfor %}
+        </p>
+      {% endif %}
     </div>
   </div>
 
-  <p>
+  <p class="ma-c-resume__descr" id="resume-item-{{ id }}">
     {{ description }}
   </p>
 </div>

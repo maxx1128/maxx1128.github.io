@@ -1,0 +1,57 @@
+---
+layout: default
+title: My Work
+tagline: All my past work in front-end web development and journalism that's worth sharing
+featured-img: /img/pages/resume.jpg
+fullWidth: true
+---
+
+<h4>
+  Where I've Worked
+</h4>
+
+<p>
+  My work started with a blend of journalism and development work early on before focusing exclusively on development. You can see more info about each by clicking on the icon next to it.
+</p>
+
+<div class="ma-l-timeline__container">
+  {% for job in site.data.work-jobs %}
+    <div class="ma-l-timeline__item">
+      {% include components/resume_item.html
+        title = job.title
+        id = forloop.index
+        stack = job.stack
+        icon = job.icon
+        company = job.company
+        start = job.start
+        end = job.end
+        description = job.description
+      %}
+    </div>
+  {% endfor %}
+</div>
+
+<h4>
+  Projects
+</h4>
+
+<ul>
+{% for project in site.data.work-projects %}
+  <li>
+    {{ project.name }}
+  </li>
+{% endfor %}
+</ul>
+
+<h4>
+  Journalism
+</h4>
+
+<ul>
+{% for writing in site.data.work-writing %}
+  <li>
+    {{ writing.name }}
+  </li>
+{% endfor %}
+</ul>
+
