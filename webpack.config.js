@@ -38,7 +38,7 @@ module.exports = {
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'autoprefixer-loader', 'sass-loader']
+          use: ['css-loader?url=false', 'autoprefixer-loader', 'sass-loader']
         })
       }
     ]

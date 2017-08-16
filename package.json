@@ -60,6 +60,7 @@
     "gulp-scss-lint": "^0.4.0",
     "gulp-uncss": "^1.0.5",
     "jquery": "^2.2.0",
+    "jquery-lazyload": "^1.9.7",
     "run-sequence": "^1.1.5",
     "sass-loader": "^6.0.6",
     "strip-loader": "^0.1.2",

@@ -1,5 +1,9 @@
+'use strict';
+
+let f = require('./functions.js');
+
 // Containerization for component tabs documentation
-function ma_wisdom($, patternId) {
+function ma_wisdom(patternId) {
   
   var 
     pattern,
@@ -53,28 +57,11 @@ function ma_wisdom($, patternId) {
     setEvents();
   }
   
-  return docReady;
+  return docReady();
 }
 
-
-var MA_WISDOM_EXT = {
-  
-  "init":function(){
-    $('.ma-c-wisdom').each(function() {
-
-      id = $(this).attr('id');
-
-      if ( id === undefined ) {
-        
-        var
-          id_num = 1 + Math.floor(Math.random() * 999999999),
-          id     = 'UNIQUE_ID_' + id_num
-        ;
-
-        $(this).attr('id', id);
-      }      
-
-      ma_wisdom(jQuery, id)();
-    });
+module.exports = {
+  activate: function() {
+    f.component_init('.ma-c-wisdom', ma_wisdom);
   }
-}
+};

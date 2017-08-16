@@ -82,30 +82,20 @@ module.exports = __webpack_require__(2);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-//=include ../_bower_components/jquery/dist/jquery.min.js
-//=include ../node_modules/a11y-toggle/a11y-toggle.js
-//=include lazyload.js
-
-//=include wisdom.js
-//=include css-themes.js
 
 
-function resizeIframe(obj) {
-  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-}
+let f = __webpack_require__(10);
+let a11y_toggle = __webpack_require__(8);
+let color_schemes = __webpack_require__(11);
+let wisdom = __webpack_require__(9);
 
-$(document).ready(function () {
-  $("[data-lazyload]").lazyload({
-    effect: "fadeIn"
-  });
+wisdom.activate();
 
-  $('.ma-c-blogContent a').attr('target', '_blank');
+color_schemes.firstCheck();
+color_schemes.updateTheme();
 
-  MA_WISDOM_EXT.init();
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+f.external_links('.ma-c-blogContent a');
+f.lazyloading('[data-lazyload]');
 
 /***/ }),
 /* 3 */
@@ -9927,6 +9917,675 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
+
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports) {
+
+(function () {
+  'use strict';
+
+  var internalId = 0;
+  var togglesMap = {};
+  var targetsMap = {};
+
+  function $ (selector, context) {
+    return Array.prototype.slice.call(
+      (context || document).querySelectorAll(selector)
+    );
+  }
+
+  function getClosestToggle (element) {
+    if (element.closest) {
+      return element.closest('[data-a11y-toggle]');
+    }
+
+    while (element) {
+      if (element.nodeType === 1 && element.hasAttribute('data-a11y-toggle')) {
+        return element;
+      }
+
+      element = element.parentNode;
+    }
+
+    return null;
+  }
+
+  function handleToggle (toggle) {
+    var target = toggle && targetsMap[toggle.getAttribute('aria-controls')];
+
+    if (!target) {
+      return false;
+    }
+
+    var toggles = togglesMap['#' + target.id];
+    var isExpanded = target.getAttribute('aria-hidden') === 'false';
+
+    target.setAttribute('aria-hidden', isExpanded);
+    toggles.forEach(function (toggle) {
+      toggle.setAttribute('aria-expanded', !isExpanded);
+    });
+  }
+
+  var initA11yToggle = function (context) {
+    togglesMap = $('[data-a11y-toggle]', context).reduce(function (acc, toggle) {
+      var selector = '#' + toggle.getAttribute('data-a11y-toggle');
+      acc[selector] = acc[selector] || [];
+      acc[selector].push(toggle);
+      return acc;
+    }, togglesMap);
+
+    var targets = Object.keys(togglesMap);
+    targets.length && $(targets).forEach(function (target) {
+      var toggles = togglesMap['#' + target.id];
+      var isExpanded = target.hasAttribute('data-a11y-toggle-open');
+      var labelledby = [];
+
+      toggles.forEach(function (toggle) {
+        toggle.id || toggle.setAttribute('id', 'a11y-toggle-' + internalId++);
+        toggle.setAttribute('aria-controls', target.id);
+        toggle.setAttribute('aria-expanded', isExpanded);
+        labelledby.push(toggle.id);
+      });
+
+      target.setAttribute('aria-hidden', !isExpanded);
+      target.hasAttribute('aria-labelledby') || target.setAttribute('aria-labelledby', labelledby.join(' '));
+
+      targetsMap[target.id] = target;
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initA11yToggle();
+  });
+
+  document.addEventListener('click', function (event) {
+    var toggle = getClosestToggle(event.target);
+    handleToggle(toggle);
+  });
+
+  document.addEventListener('keyup', function (event) {
+    if (event.which === 13 || event.which === 32) {
+      var toggle = getClosestToggle(event.target);
+      if (toggle && toggle.getAttribute('role') === 'button') {
+        handleToggle(toggle);
+      }
+    }
+  });
+
+  window && (window.a11yToggle = initA11yToggle);
+})();
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+let f = __webpack_require__(10);
+
+// Containerization for component tabs documentation
+function ma_wisdom(patternId) {
+
+  var pattern,
+      wisdoms = ['How different should legality and morality be?', 'If the sky\'s falling, what was holding it up in the first place?', 'If we could spy on two-dimensional beings, could four-dimensional beings spy on us?', 'It\'s only paranoia until it\'s justified.', 'A little bit of craziness helps you keep your sanity.', 'Listen and read, but never watch.', 'Work with your thoughts, not against them', 'Reimagine, don\'t Recreate.', 'Always remember the bigger picture.', 'Question every claim. Including this one.', 'Grow so much from failures, they become successes.', 'Live simply, cynically, and not too seriously.', 'Can we truly prove we\'re not brains in jars?', 'Those who aren\'t busy being reborn are busy dying.', 'All we have is our right to feel lost.', 'How do we examine our biases while still trusting our judgement?', 'Confusion equals Morality plus Humanity.', 'Nobody knows what\'s next, but everybody does it.', 'Death is only the end if you assume the story is about you.', 'Info isn\'t hidden today, it\'s drowned in a sea of nonsense.', 'There\'s no normal, just the accidental cultural moment we\'re born into.', 'Can something be a "need" if we don\'t die without it?', 'A person\'s main task in life is to give birth to themselves.', 'Are we just dream figures in someone else\'s dream?', 'Only when we let strangers in, can we find new ways to be ourselves.', 'When humans are made into commodities, what can conversations be but trivial?', 'A free person owes an explanation only to themselves', 'Force is camouflaged by consent, brought by methods of mass suggestion.', 'The biggest chains are desires and ideals made to look like our own.', 'Inside every cynical person is a disappointed idealist.', 'To be is to be perceived.', 'The eternal happiness you most wish for is the only thing you can\'t have.', 'To live is to suffer. To survive is to find some meaning in the suffering.'],
+      selected_wisdom = wisdoms[Math.floor(Math.random() * wisdoms.length)];
+
+  function init() {
+    pattern.text(selected_wisdom);
+  }
+
+  function setEvents() {}
+
+  function docReady() {
+    pattern = $("#" + patternId);
+    init();
+    setEvents();
+  }
+
+  return docReady();
+}
+
+module.exports = {
+  activate: function () {
+    f.component_init('.ma-c-wisdom', ma_wisdom);
+  }
+};
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+let lazyload = __webpack_require__(12);
+
+module.exports = {
+  component_init: function (selector, component_function) {
+    $(selector).each(function () {
+      let id = $(this).attr('id');
+
+      if (typeof id === typeof undefined && id !== false) {
+
+        id = Math.floor(Math.random() * 99999999999999999 + 1);
+        $(this).attr('id', id);
+      }
+
+      return component_function(id);
+    });
+  },
+
+  external_links: function (selector) {
+    $(selector).attr('target', '_blank');
+  },
+
+  lazyloading: function (selector) {
+    $(selector).lazyload({
+      effect: "fadeIn"
+    });
+  }
+};
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+// Large construction function, just add the base values and make more specific overrides optional?
+// Make all the essentials parameters, group all the optional overrides into an object that lists the property and the new value. Can loop through it and reassign them as needed.
+// Functions here for creating additional values?
+
+const css_props = function (color_primary, color_secondary, color_action, color_mono, spacing_base, lineHeight_base, fontFamily_base, fontFamily_header, fontFamily_mono, settings, overrides) {
+
+  let set = {
+    colLight: 0.35,
+    colLighter: 0.65,
+    colLightest: 0.9,
+    colDark: -0.35,
+    colDarker: -0.65,
+    colDarkest: -0.9,
+
+    spaceUnit: 'rem',
+
+    modularScale: 1.3
+  };
+
+  const colorLighten = function (hex, lum) {
+
+    // validate hex string
+    hex = String(hex).replace(/[^0-9a-f]/gi, '');
+    if (hex.length < 6) {
+      hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+    }
+    lum = lum || 0;
+
+    // convert to decimal and change luminosity
+    var rgb = "#",
+        c,
+        i;
+    for (i = 0; i < 3; i++) {
+      c = parseInt(hex.substr(i * 2, 2), 16);
+      c = Math.round(Math.min(Math.max(0, c + c * lum), 255)).toString(16);
+      rgb += ("00" + c).substr(c.length);
+    }
+
+    return rgb;
+  };
+
+  if (settings) {
+    Object.entries(settings).forEach(([key, value]) => set[key] = value);
+  }
+
+  let properties = {
+    '--color-primary-base': color_primary,
+    '--color-secondary-base': color_secondary,
+    '--color-action-base': color_action,
+    '--color-mono-base': color_mono,
+
+    '--color-primary-lightest': colorLighten(color_primary, set.colLightest),
+    '--color-primary-lighter': colorLighten(color_primary, set.colLighter),
+    '--color-primary-light': colorLighten(color_primary, set.colLight),
+    '--color-primary-dark': colorLighten(color_primary, set.colDark),
+    '--color-primary-darker': colorLighten(color_primary, set.colDarker),
+    '--color-primary-darkest': colorLighten(color_primary, set.colDarkest),
+    '--color-secondary-lightest': colorLighten(color_secondary, set.colLightest),
+    '--color-secondary-lighter': colorLighten(color_secondary, set.colLighter),
+    '--color-secondary-light': colorLighten(color_secondary, set.colLight),
+    '--color-secondary-dark': colorLighten(color_secondary, set.colDark),
+    '--color-secondary-darker': colorLighten(color_secondary, set.colDarker),
+    '--color-secondary-darkest': colorLighten(color_secondary, set.colDarkest),
+    '--color-action-lightest': colorLighten(color_action, set.colLightest),
+    '--color-action-lighter': colorLighten(color_action, set.colLighter),
+    '--color-action-light': colorLighten(color_action, set.colLight),
+    '--color-action-dark': colorLighten(color_action, set.colDark),
+    '--color-action-darker': colorLighten(color_action, set.colDarker),
+    '--color-action-darkest': colorLighten(color_action, set.colDarkest),
+    '--color-mono-blank': colorLighten(color_mono, set.colLightest),
+    '--color-mono-lighter': colorLighten(color_mono, set.colLighter),
+    '--color-mono-light': colorLighten(color_mono, set.colLight),
+    '--color-mono-dark': colorLighten(color_mono, set.colDark),
+    '--color-mono-darker': colorLighten(color_mono, set.colDarker),
+    '--color-mono-darkest': colorLighten(color_mono, set.colDarkest),
+
+    '--spacing-quad': spacing_base * 4 + set.spaceUnit,
+    '--spacing-triple': spacing_base * 3 + set.spaceUnit,
+    '--spacing-double': spacing_base * 2 + set.spaceUnit,
+    '--spacing-base': spacing_base + set.spaceUnit,
+    '--spacing-half': spacing_base * 0.5 + set.spaceUnit,
+    '--spacing-third': spacing_base * 0.33 + set.spaceUnit,
+    '--spacing-quart': spacing_base * 0.25 + set.spaceUnit,
+
+    '--type-font-family-base': fontFamily_base,
+    '--type-font-family-header': fontFamily_header,
+    '--type-font-family-mono': fontFamily_mono,
+
+    '--type-font-size-h1': spacing_base * Math.pow(set.modularScale, 6) + set.spaceUnit,
+    '--type-font-size-h2': spacing_base * Math.pow(set.modularScale, 5) + set.spaceUnit,
+    '--type-font-size-h3': spacing_base * Math.pow(set.modularScale, 4) + set.spaceUnit,
+    '--type-font-size-h4': spacing_base * Math.pow(set.modularScale, 3) + set.spaceUnit,
+    '--type-font-size-h5': spacing_base * Math.pow(set.modularScale, 2) + set.spaceUnit,
+    '--type-font-size-h6': spacing_base * Math.pow(set.modularScale, 1) + set.spaceUnit,
+    '--type-font-size-large': spacing_base * Math.pow(set.modularScale, 1) + set.spaceUnit,
+    '--type-font-size-p': spacing_base * Math.pow(set.modularScale, 0) + set.spaceUnit,
+    '--type-font-size-ol': spacing_base * Math.pow(set.modularScale, 0) + set.spaceUnit,
+    '--type-font-size-ul': spacing_base * Math.pow(set.modularScale, 0) + set.spaceUnit,
+    '--type-font-size-a': spacing_base * Math.pow(set.modularScale, 0) + set.spaceUnit,
+    '--type-font-size-small': spacing_base * Math.pow(set.modularScale, -1) + set.spaceUnit,
+    '--type-font-size-tiny': spacing_base * Math.pow(set.modularScale, -2) + set.spaceUnit,
+
+    '--type-font-weight-bold': 700,
+    '--type-font-weight-semibold': 600,
+    '--type-font-weight-base': 300,
+    '--type-font-weight-light': 100,
+
+    '--type-line-height-h1': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-h2': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-h3': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-h4': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-h5': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-h6': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-p': lineHeight_base * Math.pow(set.modularScale, 2),
+    '--type-line-height-ol': lineHeight_base * Math.pow(set.modularScale, 2),
+    '--type-line-height-ul': lineHeight_base * Math.pow(set.modularScale, 2),
+    '--type-line-height-small': lineHeight_base * Math.pow(set.modularScale, 1),
+    '--type-line-height-tiny': lineHeight_base * Math.pow(set.modularScale, 1),
+
+    '--type-margin-h1': spacing_base * 3 + set.spaceUnit + ' 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-h2': spacing_base * 3 + set.spaceUnit + ' 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-h3': spacing_base * 3 + set.spaceUnit + ' 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-h4': spacing_base * 2 + set.spaceUnit + ' 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-h5': spacing_base * 2 + set.spaceUnit + ' 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-h6': spacing_base * 2 + set.spaceUnit + ' 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-p': '0 0 ' + spacing_base + set.spaceUnit + ' 0',
+    '--type-margin-ul': '0 0 ' + spacing_base + set.spaceUnit + ' 0',
+    '--type-margin-ol': '0 0 ' + spacing_base + set.spaceUnit + ' 0',
+    '--type-margin-small': '0 0 ' + spacing_base + set.spaceUnit,
+    '--type-margin-tiny': '0 0 ' + spacing_base + set.spaceUnit,
+
+    '--z-layer-bottomless': -9999,
+    '--z-layer-base': 1,
+    '--z-layer-dropdown': 3000,
+    '--z-layer-overlay': 4000,
+    '--z-layer-modal': 4001,
+
+    '--container-border-radius-small': spacing_base * 0.5 + set.spaceUnit,
+    '--container-border-radius-base': spacing_base + set.spaceUnit,
+    '--container-border-radius-large': spacing_base * 2 + set.spaceUnit,
+    '--container-border-radius-full': '100%',
+
+    '--container-box-shadow-base': '0 0 ' + spacing_base * 0.5 + set.spaceUnit + ' ' + colorLighten(color_mono, set.colDark),
+    '--container-box-shadow-light': '0 0 ' + spacing_base * 0.25 + set.spaceUnit + ' ' + colorLighten(color_mono, set.colDark),
+    '--container-box-shadow-heavy': '0 0 ' + spacing_base + set.spaceUnit + ' ' + colorLighten(color_mono, set.colDark)
+  };
+
+  if (overrides) {
+    Object.entries(overrides).forEach(([key, value]) => properties[key] = value);
+  }
+
+  return properties;
+};
+
+/*
+color_primary, color_secondary, color_action, color_mono,
+spacing_base,
+fontFamily_base, fontFamily_header, fontFamily_mono,
+settings,
+overrides
+*/
+
+let themes = {
+  gallade: css_props('#5ab46a', '#7b8bac', '#eb7560', '#373737', 16.75 / 16, 18 / 16, 'Skia, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', null, { '--type-font-weight-base': 400,
+    '--color-mono-darkest': '#080401',
+    '--color-mono-lighter': '#a4b4cd',
+    '--color-mono-blank': '#eef' }),
+
+  typhlosion: css_props('#415a94', '#20416a', '#e24444', '#d5c573', 16.5 / 16, 1, 'Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Rockwell, Helvetica, Futura, Arial, sans-serif', 'Andale Mono, sans serif', {
+    modularScale: 1.28
+  }, {
+    '--color-mono-blank': '#fffff8'
+  }),
+
+  espeon: css_props('#b47bb4', '#4a73b4', '#e2507c', '#8c8c8c', 15.75 / 16, 18 / 16, 'Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Optima, Helvetica, Futura, Arial, sans-serif', 'Andale Mono, sans serif', {
+    modularScale: 1.275
+  }, {
+    '--type-font-weight-base': 400
+  }),
+
+  reshiram: css_props('#737b9c', '#4a4a6a', '#39b4f6', '#7373a5', 1, 16.5 / 16, 'Lucida Grande, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Lucida Fax, Helvetica, Futura, Arial, sans-serif', 'Lucida Console, Andale Mono, sans serif', {
+    modularScale: 1.3
+  }, {
+    '--color-mono-darkest': '#393941',
+    '--color-mono-blank': '#fff'
+  }),
+
+  porygonZ: css_props('#4a9cd5', '#ee5a62', '#b4944a', '#779', 18.5 / 16, 16.5 / 16, 'Avenir Book, Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', '"Raleway", Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', {
+    modularScale: 1.2444
+  }, {
+    '--color-mono-darkest': '#002',
+    '--color-mono-blank': '#eef'
+  })
+}; // Object of constructed themes here
+
+
+const addThemeProperties = themeObject => {
+  Object.entries(themeObject).forEach(([key, value]) => document.body.style.setProperty(key, value));
+};
+
+const updateSelectedTheme = theme => {
+  $('.js-update-css-scheme').removeClass('ma-c-footer__scheme--active');
+  $('.js-update-css-scheme[js-scheme="' + theme + '"]').addClass('ma-c-footer__scheme--active');
+};
+
+const checkTheme = () => {
+
+  let stored_theme = localStorage.storedTheme;
+
+  if (typeof stored_theme === 'string' || stored_theme instanceof String) {
+    addThemeProperties(themes[stored_theme]);
+    updateSelectedTheme(stored_theme);
+  } else {
+    addThemeProperties(themes['porygonZ']);
+    localStorage.storedTheme = 'porygonZ';
+    updateSelectedTheme('porygonZ');
+  }
+};
+
+module.exports = {
+  firstCheck: function () {
+    checkTheme();
+  },
+
+  updateTheme: function () {
+    $('.js-update-css-scheme').on('click', function () {
+      let newScheme = $(this).attr('js-scheme');
+
+      addThemeProperties(themes[newScheme]);
+      localStorage.storedTheme = newScheme;
+      updateSelectedTheme(newScheme);
+    });
+  }
+};
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*!
+ * Lazy Load - jQuery plugin for lazy loading images
+ *
+ * Copyright (c) 2007-2015 Mika Tuupola
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Project home:
+ *   http://www.appelsiini.net/projects/lazyload
+ *
+ * Version:  1.9.7
+ *
+ */
+
+(function($, window, document, undefined) {
+    var $window = $(window);
+
+    $.fn.lazyload = function(options) {
+        var elements = this;
+        var $container;
+        var settings = {
+            threshold       : 0,
+            failure_limit   : 0,
+            event           : "scroll",
+            effect          : "show",
+            container       : window,
+            data_attribute  : "original",
+            skip_invisible  : false,
+            appear          : null,
+            load            : null,
+            placeholder     : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+        };
+
+        function update() {
+            var counter = 0;
+
+            elements.each(function() {
+                var $this = $(this);
+                if (settings.skip_invisible && !$this.is(":visible")) {
+                    return;
+                }
+                if ($.abovethetop(this, settings) ||
+                    $.leftofbegin(this, settings)) {
+                        /* Nothing. */
+                } else if (!$.belowthefold(this, settings) &&
+                    !$.rightoffold(this, settings)) {
+                        $this.trigger("appear");
+                        /* if we found an image we'll load, reset the counter */
+                        counter = 0;
+                } else {
+                    if (++counter > settings.failure_limit) {
+                        return false;
+                    }
+                }
+            });
+
+        }
+
+        if(options) {
+            /* Maintain BC for a couple of versions. */
+            if (undefined !== options.failurelimit) {
+                options.failure_limit = options.failurelimit;
+                delete options.failurelimit;
+            }
+            if (undefined !== options.effectspeed) {
+                options.effect_speed = options.effectspeed;
+                delete options.effectspeed;
+            }
+
+            $.extend(settings, options);
+        }
+
+        /* Cache container as jQuery as object. */
+        $container = (settings.container === undefined ||
+                      settings.container === window) ? $window : $(settings.container);
+
+        /* Fire one scroll event per scroll. Not one scroll event per image. */
+        if (0 === settings.event.indexOf("scroll")) {
+            $container.bind(settings.event, function() {
+                return update();
+            });
+        }
+
+        this.each(function() {
+            var self = this;
+            var $self = $(self);
+
+            self.loaded = false;
+
+            /* If no src attribute given use data:uri. */
+            if ($self.attr("src") === undefined || $self.attr("src") === false) {
+                if ($self.is("img")) {
+                    $self.attr("src", settings.placeholder);
+                }
+            }
+
+            /* When appear is triggered load original image. */
+            $self.one("appear", function() {
+                if (!this.loaded) {
+                    if (settings.appear) {
+                        var elements_left = elements.length;
+                        settings.appear.call(self, elements_left, settings);
+                    }
+                    $("<img />")
+                        .bind("load", function() {
+
+                            var original = $self.attr("data-" + settings.data_attribute);
+                            $self.hide();
+                            if ($self.is("img")) {
+                                $self.attr("src", original);
+                            } else {
+                                $self.css("background-image", "url('" + original + "')");
+                            }
+                            $self[settings.effect](settings.effect_speed);
+
+                            self.loaded = true;
+
+                            /* Remove image from array so it is not looped next time. */
+                            var temp = $.grep(elements, function(element) {
+                                return !element.loaded;
+                            });
+                            elements = $(temp);
+
+                            if (settings.load) {
+                                var elements_left = elements.length;
+                                settings.load.call(self, elements_left, settings);
+                            }
+                        })
+                        .attr("src", $self.attr("data-" + settings.data_attribute));
+                }
+            });
+
+            /* When wanted event is triggered load original image */
+            /* by triggering appear.                              */
+            if (0 !== settings.event.indexOf("scroll")) {
+                $self.bind(settings.event, function() {
+                    if (!self.loaded) {
+                        $self.trigger("appear");
+                    }
+                });
+            }
+        });
+
+        /* Check if something appears when window is resized. */
+        $window.bind("resize", function() {
+            update();
+        });
+
+        /* With IOS5 force loading images when navigating with back button. */
+        /* Non optimal workaround. */
+        if ((/(?:iphone|ipod|ipad).*os 5/gi).test(navigator.appVersion)) {
+            $window.bind("pageshow", function(event) {
+                if (event.originalEvent && event.originalEvent.persisted) {
+                    elements.each(function() {
+                        $(this).trigger("appear");
+                    });
+                }
+            });
+        }
+
+        /* Force initial check if images should appear. */
+        $(document).ready(function() {
+            update();
+        });
+
+        return this;
+    };
+
+    /* Convenience methods in jQuery namespace.           */
+    /* Use as  $.belowthefold(element, {threshold : 100, container : window}) */
+
+    $.belowthefold = function(element, settings) {
+        var fold;
+
+        if (settings.container === undefined || settings.container === window) {
+            fold = (window.innerHeight ? window.innerHeight : $window.height()) + $window.scrollTop();
+        } else {
+            fold = $(settings.container).offset().top + $(settings.container).height();
+        }
+
+        return fold <= $(element).offset().top - settings.threshold;
+    };
+
+    $.rightoffold = function(element, settings) {
+        var fold;
+
+        if (settings.container === undefined || settings.container === window) {
+            fold = $window.width() + $window.scrollLeft();
+        } else {
+            fold = $(settings.container).offset().left + $(settings.container).width();
+        }
+
+        return fold <= $(element).offset().left - settings.threshold;
+    };
+
+    $.abovethetop = function(element, settings) {
+        var fold;
+
+        if (settings.container === undefined || settings.container === window) {
+            fold = $window.scrollTop();
+        } else {
+            fold = $(settings.container).offset().top;
+        }
+
+        return fold >= $(element).offset().top + settings.threshold  + $(element).height();
+    };
+
+    $.leftofbegin = function(element, settings) {
+        var fold;
+
+        if (settings.container === undefined || settings.container === window) {
+            fold = $window.scrollLeft();
+        } else {
+            fold = $(settings.container).offset().left;
+        }
+
+        return fold >= $(element).offset().left + settings.threshold + $(element).width();
+    };
+
+    $.inviewport = function(element, settings) {
+         return !$.rightoffold(element, settings) && !$.leftofbegin(element, settings) &&
+                !$.belowthefold(element, settings) && !$.abovethetop(element, settings);
+     };
+
+    /* Custom selectors for your convenience.   */
+    /* Use as $("img:below-the-fold").something() or */
+    /* $("img").filter(":below-the-fold").something() which is faster */
+
+    $.extend($.expr[":"], {
+        "below-the-fold" : function(a) { return $.belowthefold(a, {threshold : 0}); },
+        "above-the-top"  : function(a) { return !$.belowthefold(a, {threshold : 0}); },
+        "right-of-screen": function(a) { return $.rightoffold(a, {threshold : 0}); },
+        "left-of-screen" : function(a) { return !$.rightoffold(a, {threshold : 0}); },
+        "in-viewport"    : function(a) { return $.inviewport(a, {threshold : 0}); },
+        /* Maintain BC for couple of versions. */
+        "above-the-fold" : function(a) { return !$.belowthefold(a, {threshold : 0}); },
+        "right-of-fold"  : function(a) { return $.rightoffold(a, {threshold : 0}); },
+        "left-of-fold"   : function(a) { return !$.rightoffold(a, {threshold : 0}); }
+    });
+
+})(jQuery, window, document);
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ })
 /******/ ]);

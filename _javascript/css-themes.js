@@ -274,12 +274,21 @@ const checkTheme = () => {
   }
 };
 
-checkTheme();
+module.exports = {
+  firstCheck: function(){
+    checkTheme();
+  },
 
-$('.js-update-css-scheme').on('click', function(){
-  let newScheme = $(this).attr('js-scheme');
+  updateTheme: function(){
+    $('.js-update-css-scheme').on('click', function(){
+      let newScheme = $(this).attr('js-scheme');
 
-  addThemeProperties(themes[newScheme]);
-  localStorage.storedTheme = newScheme;
-  updateSelectedTheme(newScheme);
-});
+      addThemeProperties(themes[newScheme]);
+      localStorage.storedTheme = newScheme;
+      updateSelectedTheme(newScheme);
+    });
+  }
+};
+
+
+

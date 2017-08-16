@@ -1,27 +1,14 @@
 'use strict';
 
-//=include ../_bower_components/jquery/dist/jquery.min.js
-//=include lazyload.js
+let f = require('./functions.js');
+let a11y_toggle = require('a11y-toggle/a11y-toggle.js');
+let color_schemes = require('./css-themes.js');
+let wisdom = require('./wisdom.js');
 
-//=include offCanvasNav.js
-//=include wisdom.js
-//=include css-themes.js
+wisdom.activate();
 
-//=include sg_tabs.js
+color_schemes.firstCheck();
+color_schemes.updateTheme();
 
-function resizeIframe(obj) {
-  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-}
-
-$(document).ready(function(){
-  $("[data-lazyload]").lazyload({
-    effect : "fadeIn"
-  });
-
-  $('.ma-c-blogContent a').attr('target', '_blank');
-
-  MA_OFFCANVASNAV_EXT.init();
-  MA_WISDOM_EXT.init();
-
-  SG_TABS_EXT.init();
-});
+f.external_links('.ma-c-blogContent a');
+f.lazyloading('[data-lazyload]');
