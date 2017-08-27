@@ -2,15 +2,13 @@
 // Each resume item for my past jobs
 
 .ma-c-resume__item {
-  position: relative;
-  padding-bottom: var(--spacing-base);
-
-  @include larger-than(md) { padding-bottom: var(--spacing-double); }
+  display: flex;
+  margin-bottom: var(--spacing-half);
+  flex-direction: column;
 }
 
 .ma-c-resume__header {
   display: flex;
-  margin-bottom: var(--spacing-base);
   align-items: center;
 }
 
@@ -19,7 +17,37 @@
 .ma-c-resume__stack { color: var(--color-primary-darker); }
 
 .ma-c-resume__title,
-.ma-c-resume__stack { margin-top: var(--spacing-quart); }
+.ma-c-resume__stack { margin-top: 0; }
+
+.ma-c-resume__icon {
+  @include between-font-props(--type-font-size-h3);
+  margin-right: var(--spacing-base);
+
+  line-height: 0;
+  color: var(--color-action-base);
+
+  cursor: pointer;
+}
+
+.ma-c-resume__title { margin-bottom: var(--spacing-third); }
+
+.ma-c-resume__stack { margin: 0; }
+
+.ma-c-resume__expand {
+  padding-top: var(--spacing-quart);
+
+  text-align: center;
+  font-weight: var(--type-font-weight-bold);
+
+  transform: rotate(180deg);
+  cursor: pointer;
+  transition: transform 0.25s;
+
+  &[aria-expanded="true"] {
+    transform: rotate(0deg);
+    transition: transform 0.25s;
+  }
+}
 
 .ma-c-resume__descr {
   padding: var(--spacing-base);
@@ -28,22 +56,11 @@
   border-bottom: 2px solid var(--color-primary-dark);
 }
 
-.ma-c-resume__icon {
-  @include between-font-props(--type-font-size-h1);
-  margin-right: var(--spacing-double);
-
-  line-height: 0;
-  color: var(--color-action-base);
-
-  cursor: pointer;
-}
-
 .ma-c-resume__meta {
   color: var(--color-secondary-dark);
+  font-size: var(--type-font-size-tiny);
   font-weight: var(--type-line-height-light);
 }
 
 [aria-hidden='true'],
-[data-a11y-toggle]:not([aria-controls]) {
-  display: none;
-}
+[data-a11y-toggle]:not([aria-controls]) { display: none; }

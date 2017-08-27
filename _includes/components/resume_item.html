@@ -8,18 +8,17 @@
 {% assign description = include.description | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate obcaecati perspiciatis debitis animi ratione optio tenetur excepturi, laboriosam rerum, totam eum cum. Fugit explicabo ducimus est vel ratione. Atque, quas." %}
 
 <div class="ma-c-resume__item">
-
   <div class="ma-c-resume__header">
-    <i class="ma-c-resume__icon icon-{{ icon }}" data-a11y-toggle="resume-item-{{ id }}"></i>
+    <i class="ma-c-resume__icon icon-{{ icon }}"></i>
 
     <div class="ma-c-resume__headerInfo">
       <span class="ma-c-resume__meta">
         <strong>{{ company }}</strong> from {{ start }} to {{ end }}
       </span>
 
-      <h5 class="ma-c-resume__title">
+      <h6 class="ma-c-resume__title">
         {{ title }}
-      </h5>
+      </h6>
 
       {% if stack %}
         <p class="ma-c-resume__stack">
@@ -28,6 +27,8 @@
       {% endif %}
     </div>
   </div>
+
+  <div class="ma-c-resume__expand" data-a11y-toggle="resume-item-{{ id }}">^</div>
 
   <p class="ma-c-resume__descr" id="resume-item-{{ id }}">
     {{ description }}
