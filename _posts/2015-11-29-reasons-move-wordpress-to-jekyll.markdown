@@ -5,7 +5,7 @@ categories: web-development
 published: true
 featured-img: /img/posts/jekyll/jekyll-logo.png
 
-excerpt: Even though I remade my personal website twice in the last six months, I did it again with Jekyll.
+excerpt: "none"
 ---
 
 Even though I remade my personal website twice in the last six months, I did it again with Jekyll. Its benefits were too good to pass up.
@@ -18,7 +18,7 @@ Simply put, WordPress's worst weaknesses were Jekyll's best strengths. While I s
 
 ### How are WordPress and Jekyll Different?
 
-I can't count the number of articles I've read comparing WordPress and Jekyll, so I recommend reading some first. If I had to chose one, it'd be [this one](http://www.sitepoint.com/blogging-wordPress-or-jekyll/) by Hugo Giraudel. As with everything, explains it better than me.
+I can't count the number of articles I've read comparing WordPress and Jekyll, so I recommend reading some first. If I had to chose one, it'd be [this one](http://www.sitepoint.com/blogging-wordPress-or-jekyll/) by Hugo Giraudel. As with everything, he explains it better than me.
 
 The short version is Jekyll is static while WordPress is dynamic. Jekyll takes code, creates some webpages, and gives that as a site. When you visit a Jekyll site, you're reading pages made ahead of time. Whereas on a WordPress site, it stores important info like titles or post content in a database. The site pulls data from the database as you load the page, not ahead of time.
 
@@ -45,7 +45,7 @@ In terms of speed, it's hard to argue with Jekyll.
 
 If I have one complaint about WordPress, it's that **managing the MySQL database is a huge pain.** It's another login to record, another code structure and language to remember, and making backups and/or restoring it's either very confusing or time-consuming. Plus hacks can compromise the whole site, and the lengthy restoring process begins. Assuming someone remembers to back up their site. There are plugins to make all this easier, but the good ones often aren't free and the free ones often aren't good.
 
-As Giraudel also mentioned, Jekyll doesn't have these issues. There's no database to back up or risk with hacks. No new complex languages to sift through. There's HTML for the pages, Sass and CSS for the styles, and maybe some Javascript. There's small touches of YAML and Liquid for adding WordPress logic, like loops and custom fields, but they're easy to learn and manage. WordPress needs extra plugins or more complex PHP. Jekyll just needs another file or two..
+As Giraudel also mentioned, Jekyll doesn't have these issues. There's no database to back up or risk with hacks. No new complex languages to sift through. There's HTML for the pages, Sass and CSS for the styles, and maybe some Javascript. There's small touches of YAML and Liquid for adding WordPress logic, like loops and custom fields, but they're easy to learn and manage. WordPress needs extra plugins or more complex PHP. Jekyll just needs another file or two.
 
 For a personal site, this simplicity and ease of management is great. My own site is something I make in my free time, away from the stress of full-time work. The easier it is to control, backup and customize, the better. If it's too much like work, I'll be less likely to give it the work it needs.
 

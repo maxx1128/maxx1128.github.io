@@ -1,5 +1,5 @@
 {% assign title = include.title | default: "Page title here" %}
-{% assign tagline = include.tagline | default: "Page tagline here" %}
+{% assign tagline = include.tagline %}
 {% assign date = include.date %}
 {% assign bg_img = include.bg_img %}
 
@@ -9,7 +9,7 @@
       {{ title }}
     </h3>
 
-    {% if tagline %}
+    {% if tagline and tagline != "none" %}
       <h5 class="ma-c-header__tagline">
         {{ tagline }}
       </h5>

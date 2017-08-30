@@ -1,52 +1,47 @@
 - name: Ace Attorney Lorem Ipsum Generator
-  stack:
-    - "one"
-    - "two"
-    - "three"
   date: 6/01/2017
   image: ace-attorney-lorem-ipsum.png
   description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Node.js Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
   link: http://www.aceattorneyipsum.com/
 
 - name: Ruby Pokedex
-  stack:
-    - "one"
-    - "two"
-    - "three"
   date: 1/8/2017
   image: pokedex.png
-  highlight: true
   description: "My first official project with Ruby uses Sinatra and the Pokemon API to create a basic pokedex. It makes use of many basics, such as templating and partials, setting URL paths, using input data, navigating complex data through views, and got me started on Heroku. It still needs fine-tuning, but was my first big step forward with Ruby and the server-side of web development."
   link: https://maxx1128-pokedex.herokuapp.com/
 
 - name: '"What Eeveelution are You" Quiz'
-  stack:
-    - "one"
-    - "two"
-    - "three"
   date: 10/15/2015
   image: eeveelutions.png
   description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS.'
   link: http://maxwellantonucci.com/Which-Eeveelution-Are-You/
 
 - name: My Housing Matters
-  stack:
-    - "one"
-    - "two"
-    - "three"
   date: 05/03/2015
-  highlight: true
   image: housing-matters.png
-  description: 'In one of my final Newhouse classes, I was made the primary web developer as we edited and created the MyHousingMatters.com website. It focused on racial and economic disparities related to housing in Syracuse. My main jobs were helping make interactive content, changing styles, and editing the back-end functionality with custom fields and programming.'
+  description: 'In one of my final Newhouse classes, I was made the primary web developer as we edited and created the MyHousingMatters.com website. It focused on racial and economic disparities related to housing in Syracuse. My main jobs were helping make interactive content, changing styles, and editing the back-end functionality with custom fields.'
   link: http://myhousingmatters.com/
 
 - name: InternNation
-  stack:
-    - "one"
-    - "two"
-    - "three"
   date: 05/02/2015
-  highlight: true
   image: internation.png
   description: 'My main job as Web Development intern at Eric Mower + Associates was to remake the intern blog. The final product was a WordPress theme built for over 100 posts with Sass and Gulp.js, along with a few useful tools such as Isotope.js and Advanced Custom Fields. The front page also lets users search a grid of all the posts by the intern’s semester, the city they interned in, and what department they worked in. The final product came out just in time for me and the other Spring 2015 interns to get their posts up!'
   link: http://internation.mower.com/
+
+- name: The NewsHouse Couple’s Quiz
+  date: 02/13/2015
+  image: valentines-quiz.png
+  description: 'For Valentine’s Day I had the idea of an interactive quiz where couples could make and answer their own questions. It uses Bootstrap and Angular.js to help build out the styles, and is the first real project where I used a Gulp.js pre-processor for my front-end workflow.'
+  link: http://www.thenewshouse.com/nhstudent/student-projects/ValentinesDay2015/index.html
+
+- name: SUpernatural Syracuse
+  date: 12/06/2014
+  image: halloween-story.png
+  description: 'For Halloween I had an idea for an interactive “choose-your-own-adventure” story for the NewsHouse. It focuses on solving the mystery of an old disappearance and recent supernatural activity on campus. I did much of the writing and all the development.'
+  link: http://thenewshouse.com/nhstudent/student-projects/halloween2014/halloweenCYOA/index.html
+
+- name: THE General Body’s Demands
+  date: 12/05/2014
+  image: general-body.png
+  description: 'THE General Body’s protest at Syracuse University came with a long list of demands of the administration. I pulled a useful Github project and customized the styles to create an interactive breaking down the demands and how they’ve been responded to.'
+  link: http://www.thenewshouse.com/story/general-body-continues-advocacy-key-demands-despite-end-sit

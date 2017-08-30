@@ -38,6 +38,8 @@
   &:not(.ma-l-default__content--fullWidth) { max-width: breakpoint(lg); }
 
   &.ma-l-default__content--fullWidth { max-width: breakpoint(max-width); }
+
+  & > *:first-child { margin-top: 0; }
 }
 
 .ma-l-default__nav { width: 100%; }

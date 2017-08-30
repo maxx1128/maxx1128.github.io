@@ -25,6 +25,7 @@
 .ma-c-header__title { margin-top: 0; }
 
 .ma-c-header__tagline {
+  @include between-font-props(--type-font-size-p);
   padding-top: var(--spacing-half);
   padding-top: 3vmin;
 
