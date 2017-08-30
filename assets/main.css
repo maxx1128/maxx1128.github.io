@@ -795,25 +795,12 @@ textarea {
       -ms-flex: 1 1 18.75rem;
           flex: 1 1 18.75rem; }
 
-.ma-l-timeline__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: var(--spacing-double) calc(var(--spacing-base) * -1) 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.ma-l-timeline__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
-
 blockquote:not(.twitter-tweet) {
   --bq-width: 100%;
   width: var(--bq-width);
   padding: var(--spacing-base) 5%;
   margin: 0 0 var(--spacing-double) 0;
-  background-color: var(--color-mono-light);
+  background-color: var(--color-mono-lighter);
   border-top: var(--spacing-third) solid var(--color-primary-base);
   border-bottom: var(--spacing-third) solid var(--color-primary-base);
   box-shadow: var(--container-box-shadow-base); }

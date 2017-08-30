@@ -14,22 +14,18 @@ fullWidth: true
   My work started with a blend of journalism and development work early on before focusing exclusively on development. You can see more info about each by clicking on the icon next to it.
 </p>
 
-<div class="ma-l-timeline__container">
-  {% for job in site.data.work-jobs %}
-    <div class="ma-l-timeline__item">
-      {% include components/resume_item.html
-        title = job.title
-        id = forloop.index
-        stack = job.stack
-        icon = job.icon
-        company = job.company
-        start = job.start
-        end = job.end
-        description = job.description
-      %}
-    </div>
-  {% endfor %}
-</div>
+{% for job in site.data.work-jobs %}
+  {% include components/resume_item.html
+    title = job.title
+    id = forloop.index
+    stack = job.stack
+    icon = job.icon
+    company = job.company
+    start = job.start
+    end = job.end
+    description = job.description
+  %}
+{% endfor %}
 
 <h3>
   Projects I've Made
