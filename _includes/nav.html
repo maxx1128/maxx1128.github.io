@@ -17,7 +17,7 @@
 
     <div class="ma-n-headNav__links">
       {% for menu in site.data.menu %}
-        <a href="{{ menu.link }}" class="ma-n-headNav__link {% if menu.name == page.title or page.layout == 'post' and menu.name == 'Blog' %}ma-n-headNav__link--active{% endif %}">
+        <a href="{{ menu.link }}" class="ma-n-headNav__link {% if menu.name == page.title or page.layout == 'post' and menu.name == 'My Blog' %}ma-n-headNav__link--active{% endif %}">
           <i class="ma-n-headNav__icon icon-menu-{{ menu.icon }}"></i>
           {{ menu.name }}
         </a>

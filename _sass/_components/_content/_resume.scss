@@ -1,43 +1,79 @@
-
-// Each resume item for my past jobs
+$resume-expanded-border: 2px solid var(--color-primary-dark);
 
 .ma-c-resume__item {
-  position: relative;
-  padding-bottom: var(--spacing-triple);
-  padding-left: var(--spacing-double);
-
-  &::after {
-    content: '';
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: var(--spacing-third);
-
-    background: linear-gradient(to bottom, var(--color-secondary-light) 0%, var(--color-primary-light) 10%, var(--color-secondary-dark) 25%, var(--color-secondary-light) 100%);
-  }
-
-  &:first-of-type::after { border-top-left-radius: 75%; }
-  &:last-of-type::after { border-bottom-left-radius: 75%; }
+  display: flex;
+  margin-bottom: var(--spacing-half);
+  flex-direction: column;
 }
 
 .ma-c-resume__header {
   display: flex;
-  margin-bottom: var(--spacing-base);
+  padding: var(--spacing-half) var(--spacing-base);
   align-items: center;
+
+  cursor: pointer;
+
+  &:not([aria-expanded="true"]) {
+    @include hovers() { background-color: rgba(black, 0.1); }
+  }
+
+  &[aria-expanded="true"] { border-left: 3px solid var(--color-mono-light); }
 }
 
 .ma-c-resume__icon,
-.ma-c-resume__title {
-  color: var(--color-primary-dark);
-}
+.ma-c-resume__title,
+.ma-c-resume__stack { color: var(--color-primary-darker); }
+
+.ma-c-resume__title,
+.ma-c-resume__stack { margin-top: 0; }
 
 .ma-c-resume__icon {
-  @include between-font-props(--type-font-size-h1);
-  margin-right: var(--spacing-double);
+  @include between-font-props(--type-font-size-h3);
 
   line-height: 0;
+  color: var(--color-action-base);
 }
 
-.ma-c-resume__meta { color: var(--color-secondary-dark); }
+.ma-c-resume__title { margin-bottom: var(--spacing-third); }
+
+.ma-c-resume__icons {
+  display: flex;
+  margin-right: var(--spacing-base);
+  flex-direction: column;
+  align-items: center;
+}
+
+.ma-c-resume__stack { margin: 0; }
+
+.ma-c-resume__expand {
+  padding-top: var(--spacing-quart);
+  margin-left: auto;
+
+  text-align: center;
+  font-weight: var(--type-font-weight-bold);
+  font-size: var(--type-font-size-h5);
+
+  transform: rotate(180deg);
+  transition: transform 0.25s;
+
+  [aria-expanded="true"] & {
+    transform: rotate(0deg);
+    transition: transform 0.25s;
+  }
+}
+
+.ma-c-resume__descr {
+  padding: var(--spacing-half) var(--spacing-base) var(--spacing-base);
+  margin: 0;
+
+  border-bottom: $resume-expanded-border;
+}
+
+.ma-c-resume__meta {
+  color: var(--color-secondary-dark);
+  font-size: var(--type-font-size-tiny);
+  font-weight: var(--type-line-height-light);
+}
+
+[aria-hidden='true'],
+[data-a11y-toggle]:not([aria-controls]) { display: none; }

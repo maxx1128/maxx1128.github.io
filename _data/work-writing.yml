@@ -1,0 +1,54 @@
+- name: No Developer is an Island
+  date: 04/27/2015
+  image: developer-island.jpg
+  description: 'This was my actual blog post for the InternNation site I developed. It was a reflection on how web developers are so reliant on community and learning from others for most of our skills and success. Plus there were a few funny cartoons there too.'
+  link: http://internation.mower.com/no-developer-island/
+
+- name: Networking with Twitter
+  date: 08/12/2014
+  image: networking-twitter.png
+  description: 'For my AmeriCares’ internship I was asked to give a presentation to the other interns on the best Twitter practices. It includes creating a profile and dashboard, managing Hootsuite, and sharing engaging content.'
+  link: http://www.slideshare.net/MaxwellAntonucci/twitter-for-networking
+
+- name: Juice Jam 2014
+  date: 08/17/2014
+  image: juice-jam.jpeg
+  description: 'Juice Jam is a major party event at Syracuse, and I made a Storify to tell the story of the best moments through social media posts.'
+  link: https://storify.com/newshouse/juice-jam-2014
+
+- name: '#HealthCareHeroes'
+  date: 08/07/2014
+  highlight: true
+  image: healthcare-heroes.png
+  description: 'All AmeriCares interns have to publish a blog post on #HealthCareHeroes. I made mine an animated video exploring one of AmeriCares’ recent projects and what how it relates to helping others find quality care.'
+  link: https://vimeo.com/102849451
+
+- name: Recapping the Tech Curve
+  date: 03/29/2014
+  image: tech-curve.png
+  description: 'The Tech Curve was an event we, the Syracuse SPJ chapter, held at Newhouse for students. Its goal was to help students begin learning and mastering important technical skills and journalism with an informative panel. This blog post recaps all the major points.'
+  link: http://syracusespj.syr.edu/2014/03/29/recapping-tech-curve/
+
+- name: Conscience of Society
+  date: 03/27/2013
+  image: conscience-society.jpeg
+  description: 'Professor Alejandro Garcia is recognized for 35 years of teaching at SU, and is awarded the 2013 Daniel and Mary Lou Rubenstein Social Justice Award.'
+  link: http://dailyorange.com/2013/03/conscience-of-society-professor-alejandro-garcia-recognized-for-35-years-at-su-awarded-2013-daniel-and-mary-lou-rubenstein-social-justice-award/
+
+- name: With Open Arms
+  date: 02/27/2013
+  image: open-arms.png
+  description: An in-depth look at Hendricks Chapel at Syracuse and how it brings students from a multitude of faiths together.
+  link: http://dailyorange.com/2013/02/with-open-arms/
+
+- name: 'Stephen Barton, panel of experts open discussion on gun control'
+  date: 02/20/2013
+  image: barton.png
+  description: A major panel discussion at Syracuse University discussing gun control and it’s surrounding debate in America after the Newtown school shooting.
+  link: http://dailyorange.com/2013/02/stephen-barton-panel-of-experts-open-discussion-on-gun-control/
+
+- name: Such Great Heights
+  date: 08/28/2012
+  image: great-heights.jpeg
+  description: 'How a local Syracuse organization, On Point for College, helps bring potential students the extra resources they need for a fulfilling college education.'
+  link: http://dailyorange.com/2012/08/such-great-heights-local-organization-helps-students-reach-new-levels-of-achievement/

@@ -1,0 +1,11 @@
+{% assign name = include.name | default: "Item name!" %}
+{% assign link = include.link | default: "javascript:void(0);" %}
+{% assign bg_img = include.bg_img | default: "hover-portfolio.png" %}
+
+<a class="ma-c-writingItem" href="{{ link }}" target="_blank">
+  <div class="ma-c-writingItem__img" data-lazyload data-original="/img/portfolio/{{ bg_img | prepend: site.baseurl }}" style="background-image: url('{{ '/img/pages/lazyload-placeholder.jpg' | prepend: site.baseurl }}');"></div>
+  
+  <div class="ma-c-writingItem__title">
+    {{ name }}
+  </div>
+</a>
