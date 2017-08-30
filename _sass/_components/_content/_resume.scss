@@ -1,5 +1,4 @@
-
-// Each resume item for my past jobs
+$resume-expanded-border: 2px solid var(--color-primary-dark);
 
 .ma-c-resume__item {
   display: flex;
@@ -9,7 +8,16 @@
 
 .ma-c-resume__header {
   display: flex;
+  padding: var(--spacing-half) var(--spacing-base);
   align-items: center;
+
+  cursor: pointer;
+
+  &:not([aria-expanded="true"]) {
+    @include hovers() { background-color: rgba(black, 0.1); }
+  }
+
+  &[aria-expanded="true"] { border-left: 3px solid var(--color-mono-light); }
 }
 
 .ma-c-resume__icon,
@@ -21,39 +29,44 @@
 
 .ma-c-resume__icon {
   @include between-font-props(--type-font-size-h3);
-  margin-right: var(--spacing-base);
 
   line-height: 0;
   color: var(--color-action-base);
-
-  cursor: pointer;
 }
 
 .ma-c-resume__title { margin-bottom: var(--spacing-third); }
+
+.ma-c-resume__icons {
+  display: flex;
+  margin-right: var(--spacing-base);
+  flex-direction: column;
+  align-items: center;
+}
 
 .ma-c-resume__stack { margin: 0; }
 
 .ma-c-resume__expand {
   padding-top: var(--spacing-quart);
+  margin-left: auto;
 
   text-align: center;
   font-weight: var(--type-font-weight-bold);
+  font-size: var(--type-font-size-h4);
 
   transform: rotate(180deg);
-  cursor: pointer;
   transition: transform 0.25s;
 
-  &[aria-expanded="true"] {
+  [aria-expanded="true"] & {
     transform: rotate(0deg);
     transition: transform 0.25s;
   }
 }
 
 .ma-c-resume__descr {
-  padding: var(--spacing-base);
+  padding: var(--spacing-half) var(--spacing-base) var(--spacing-base);
   margin: 0;
 
-  border-bottom: 2px solid var(--color-primary-dark);
+  border-bottom: $resume-expanded-border;
 }
 
 .ma-c-resume__meta {

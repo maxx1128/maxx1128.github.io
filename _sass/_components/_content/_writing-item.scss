@@ -1,0 +1,25 @@
+$writing-item-image-size: rem(50px);
+
+.ma-c-writingItem {
+  display: flex;
+  margin-bottom: var(--spacing-base);
+  align-items: center;
+
+  @include hovers { text-decoration: underline; }
+}
+
+.ma-c-writingItem__img {
+  height: $writing-item-image-size;
+  margin-right: var(--spacing-half);
+  flex: 0 0 $writing-item-image-size;
+
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.ma-c-writingItem__title {
+  color: var(--color-mono-darkest);
+  font-size: var(--type-font-size-h6);
+  font-weight: var(--type-font-weight-bold);
+}

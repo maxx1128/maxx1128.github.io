@@ -6,9 +6,9 @@ featured-img: /img/pages/resume.jpg
 fullWidth: true
 ---
 
-<h4>
+<h3>
   Where I've Worked
-</h4>
+</h3>
 
 <p>
   My work started with a blend of journalism and development work early on before focusing exclusively on development. You can see more info about each by clicking on the icon next to it.
@@ -31,27 +31,40 @@ fullWidth: true
   {% endfor %}
 </div>
 
-<h4>
+<h3>
   Projects
-</h4>
+</h3>
 
-<ul>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam non, quod quas adipisci consequatur ea ratione quos explicabo, dicta doloremque blanditiis. Ea provident omnis, soluta tenetur sint repudiandae libero ex.
+</p>
+
+<div class="ma-l-projects__container">
 {% for project in site.data.work-projects %}
-  <li>
-    {{ project.name }}
-  </li>
+  <div class="ma-l-projects__item">
+    {% include components/portfolio_item.html
+      name = project.name
+      link = project.link
+      description = project.description
+      bg_img = project.image
+    %}
+  </div>
 {% endfor %}
-</ul>
+</div>
 
-<h4>
+
+<h3>
   Journalism
-</h4>
+</h3>
 
-<ul>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat illum odio perferendis quam officiis rerum cumque. Aliquid quis, delectus corporis magnam voluptates maxime, est iusto nihil atque modi nesciunt fuga.
+</p>
+
 {% for writing in site.data.work-writing %}
-  <li>
-    {{ writing.name }}
-  </li>
+  {% include components/writing_item.html
+    name = writing.name
+    link = writing.link
+    bg_img = writing.image
+  %}
 {% endfor %}
-</ul>
-

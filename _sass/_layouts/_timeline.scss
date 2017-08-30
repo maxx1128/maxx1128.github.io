@@ -4,7 +4,4 @@
   flex-wrap: wrap;
 }
 
-.ma-l-timeline__item {
-  padding: 0 var(--spacing-base) var(--spacing-quart);
-  flex: rem(425px);
-}
+.ma-l-timeline__item { flex: 1 1 100%; }

@@ -19,16 +19,6 @@
   description: "My first official project with Ruby uses Sinatra and the Pokemon API to create a basic pokedex. It makes use of many basics, such as templating and partials, setting URL paths, using input data, navigating complex data through views, and got me started on Heroku. It still needs fine-tuning, but was my first big step forward with Ruby and the server-side of web development."
   link: https://maxx1128-pokedex.herokuapp.com/
 
-- name: Sass Blueprint
-  stack:
-    - "one"
-    - "two"
-    - "three"
-  date: 11/1/2016
-  image: sass-blueprint.png
-  description: "This is the standard starting collection of Sass files I use for new projects. They have the my favorite basics set up, including BEM, the ITCSS file structure, variable maps, useful functions and mixins, and useful add ons."
-  link: https://github.com/maxx1128/Sass-Blueprint
-
 - name: '"What Eeveelution are You" Quiz'
   stack:
     - "one"

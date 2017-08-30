@@ -8,6 +8,7 @@
     "url": "https://github.com/maxx1128/Plately.git"
   },
   "scripts": {
+    "start": "jekyll serve --baseurl --incremental --drafts | webpack",
     "webpack": "webpack"
   },
   "bugs": {

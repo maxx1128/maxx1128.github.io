@@ -1,0 +1,10 @@
+.ma-l-projects__container {
+  display: flex;
+  margin: 0 calc(#{var(--spacing-half)} * -1);
+  flex-wrap: wrap;
+}
+
+.ma-l-projects__item {
+  margin: 0 var(--spacing-half) var(--spacing-half);
+  flex: 1 1 rem(300px);
+}
