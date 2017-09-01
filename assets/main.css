@@ -1402,13 +1402,10 @@ video {
   margin-top: 0; }
 
 .ma-c-resume__icon {
-  --el-spec-font-size: calc(var(--type-font-size-h3) * 0.9);
-  font-size: var(--el-spec-font-size);
+  width: 1.75rem;
+  height: auto;
   line-height: 0;
   color: var(--color-action-base); }
-  @media (min-width: 49.1875rem) {
-    .ma-c-resume__icon {
-      --el-spec-font-size: var(--type-font-size-h3); } }
 
 .ma-c-resume__title {
   margin-bottom: var(--spacing-third); }
@@ -1706,7 +1703,9 @@ video {
   border-bottom: calc(var(--spacing-quart) / 2) solid var(--color-primary-lighter); }
 
 .ma-n-headNav__icon {
-  margin-right: var(--spacing-third); }
+  width: var(--spacing-base);
+  height: auto;
+  margin-right: var(--spacing-half); }
 
 .ma-n-homeLogo {
   display: -webkit-box;

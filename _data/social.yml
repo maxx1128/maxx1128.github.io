@@ -12,8 +12,4 @@
 
 - name: Linkedin
   url: https://www.linkedin.com/in/maxwellantonucci
-  icon: linkedin
-
-- name: Pinterest
-  url: https://www.pinterest.com/maxwell1128/
-  icon: pinterest
+  icon: link

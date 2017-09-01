@@ -2,7 +2,7 @@
 <nav class="ma-n-headNav">
   <div class="ma-n-headNav__container">
     <label for="headNav-toggle" class="ma-n-headNav__toggle">
-      <i class="icon-menu"></i>
+      <i data-feather="menu"></i>
     </label>
     
     <a href="/" class="ma-n-headNav__home">
@@ -18,7 +18,7 @@
     <div class="ma-n-headNav__links">
       {% for menu in site.data.menu %}
         <a href="{{ menu.link }}" class="ma-n-headNav__link {% if menu.name == page.title or page.layout == 'post' and menu.name == 'My Blog' %}ma-n-headNav__link--active{% endif %}">
-          <i class="ma-n-headNav__icon icon-menu-{{ menu.icon }}"></i>
+          <i class="ma-n-headNav__icon" data-feather="{{ menu.icon }}"></i>
           {{ menu.name }}
         </a>
       {% endfor %}

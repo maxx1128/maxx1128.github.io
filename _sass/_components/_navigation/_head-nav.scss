@@ -111,4 +111,8 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
   border-bottom: calc(var(--spacing-quart) / 2) solid var(--color-primary-lighter);
 }
 
-.ma-n-headNav__icon { margin-right: var(--spacing-third); }
+.ma-n-headNav__icon {
+  width: var(--spacing-base);
+  height: auto;
+  margin-right: var(--spacing-half);
+}

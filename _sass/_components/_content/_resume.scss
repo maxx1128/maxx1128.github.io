@@ -28,7 +28,8 @@ $resume-expanded-border: 2px solid var(--color-primary-dark);
 .ma-c-resume__stack { margin-top: 0; }
 
 .ma-c-resume__icon {
-  @include between-font-props(--type-font-size-h3);
+  width: 1.75rem;
+  height: auto;
 
   line-height: 0;
   color: var(--color-action-base);
