@@ -17,6 +17,7 @@
   "keywords": [],
   "dependencies": {
     "a11y-toggle": "^2.1.0",
+    "feather-icons": "^3.2.2",
     "node-sass": "^4.5.3",
     "webpack": "^3.5.4",
     "webpack-stream": "^4.0.0"
