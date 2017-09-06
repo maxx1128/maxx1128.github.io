@@ -10499,7 +10499,7 @@ let themes = {
     '--color-mono-blank': '#fff'
   }),
 
-  porygonZ: css_props('#4a9cd5', '#ee5a62', '#b4944a', '#779', 18.5 / 16, 16.5 / 16, 'Avenir Book, Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', '"Raleway", Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', {
+  porygonZ: css_props('#4a9cd5', '#ee5a62', '#b4944a', '#779', 16.5 / 16, 19 / 16, 'Avenir Book, Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', '"Raleway", Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', {
     modularScale: 1.2444
   }, {
     '--color-mono-darkest': '#002',

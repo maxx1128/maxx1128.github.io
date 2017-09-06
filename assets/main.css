@@ -1066,6 +1066,7 @@ a {
 
 body {
   --font-weight: var(--type-font-weight-base);
+  font-size-adjust: 0.475;
   font-family: var(--type-font-family-base);
   font-weight: var(--font-weight);
   color: var(--color-mono-darkest); }
