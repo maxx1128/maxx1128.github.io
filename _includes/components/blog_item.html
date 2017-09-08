@@ -16,10 +16,12 @@
       {{ date | date: "%b %d, %Y" }}
     </span>
 
-    <div class="ma-c-blogItem__descr">
-      <p>
-        {{ excerpt }}
-      </p>
-    </div>
+    {% if excerpt != "none" %}
+      <div class="ma-c-blogItem__descr">
+        <p>
+          {{ excerpt }}
+        </p>
+      </div>
+    {% endif %}
   </a>
 </div>
