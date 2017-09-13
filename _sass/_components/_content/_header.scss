@@ -15,19 +15,16 @@
   margin: 0 auto;
 }
 
-.ma-c-header__title,
-.ma-c-header__tagline {
-  display: block;
+.ma-c-header__title {
+  margin-top: 0;
+  margin-bottom: var(--spacing-double);
 
-  font-family: var(--type-font-family-header);
+  line-height: 1.2;
 }
-
-.ma-c-header__title { margin-top: 0; }
 
 .ma-c-header__tagline {
   @include between-font-props(--type-font-size-p);
-  padding-top: var(--spacing-half);
-  padding-top: 3vmin;
+  margin: 0;
 
   font-family: var(--type-font-family-base);
   font-weight: var(--type-font-weight-base);

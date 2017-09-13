@@ -1,8 +1,9 @@
 ---
-title      : "The Curious Line between Solitude and Loneliness"
+title      : "The Line between Solitude and Loneliness"
 date       : 2017-09-03
 categories : personal
-excerpt    : "none"
+excerpt    : "We often have a choice in how loneliness affects us."
+hide_tagline : "true"
 
 featured-img: /img/posts/solitude-loneliness/featured.jpg
 ---

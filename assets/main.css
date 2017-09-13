@@ -1342,19 +1342,15 @@ video {
   padding: var(--spacing-double) var(--spacing-base);
   margin: 0 auto; }
 
-.ma-c-header__title,
-.ma-c-header__tagline {
-  display: block;
-  font-family: var(--type-font-family-header); }
-
 .ma-c-header__title {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: var(--spacing-double);
+  line-height: 1.2; }
 
 .ma-c-header__tagline {
   --el-spec-font-size: calc(var(--type-font-size-p) * 0.9);
   font-size: var(--el-spec-font-size);
-  padding-top: var(--spacing-half);
-  padding-top: 3vmin;
+  margin: 0;
   font-family: var(--type-font-family-base);
   font-weight: var(--type-font-weight-base); }
   @media (min-width: 49.1875rem) {

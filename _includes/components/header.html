@@ -1,5 +1,6 @@
 {% assign title = include.title | default: "Page title here" %}
 {% assign tagline = include.tagline %}
+{% assign hide_tagline = include.hide_tagline | default: "false" %}
 {% assign date = include.date %}
 {% assign bg_img = include.bg_img %}
 
@@ -9,16 +10,16 @@
       {{ title }}
     </h3>
 
-    {% if tagline and tagline != "none" %}
-      <h5 class="ma-c-header__tagline">
+    {% if hide_tagline == "false" %}
+      <h6 class="ma-c-header__tagline">
         {{ tagline }}
-      </h5>
+      </h6>
     {% endif %}
 
     {% if date %}
-      <small class="ma-c-header__date">
+      <tiny class="ma-c-header__date">
         Posted on {{ date | date: "%B %d, %Y" }}
-      </small>
+      </tiny>
     {% endif %}
   </div>
 </header>

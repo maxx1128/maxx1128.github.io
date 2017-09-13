@@ -5,7 +5,8 @@ categories: web-development
 published: true
 featured-img: /img/posts/jekyll/jekyll-logo.png
 
-excerpt: "none"
+excerpt: "Even though I remade my personal website twice in the last six months, I did it again with Jekyll. Its benefits were too good to pass up."
+show_excerpt: "false"
 ---
 
 Even though I remade my personal website twice in the last six months, I did it again with Jekyll. Its benefits were too good to pass up.
