@@ -1,3 +1,9 @@
+- name: EmberDex
+  date: 9/17/2017
+  image: emberdex.png
+  description: "This is an improvement on my last Pokedex built from Ruby. This time I used Ember, since I needed to get more familiar with the framework. It makes better use of the Pokemon API, despite it not being smoothly compatible with Ember's adapters. But combined with Ember Paper, overall it's a smoother, more stylish Pokedex with more functions and information to look through."
+  link: https://emberdex.herokuapp.com/
+
 - name: Ace Attorney Lorem Ipsum Generator
   date: 6/01/2017
   image: ace-attorney-lorem-ipsum.png
