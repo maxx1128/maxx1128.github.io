@@ -174,7 +174,7 @@ overrides
 let themes = {
   gallade: css_props(
     '#5ab46a', '#7b8bac', '#eb7560', '#373737',
-    (16.75/16),
+    (17.75/16),
     (18/16),
     'Skia, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     'Futura, Helvetica, Arial, sans-serif',
@@ -188,7 +188,7 @@ let themes = {
 
   typhlosion: css_props(
     '#415a94', '#20416a', '#e24444', '#d5c573',
-    (16.5/16),
+    (17.5/16),
     1,
     'Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     'Rockwell, Helvetica, Futura, Arial, sans-serif',
@@ -202,7 +202,7 @@ let themes = {
 
   espeon: css_props(
     '#b47bb4', '#4a73b4', '#e2507c', '#8c8c8c',
-    (15.75/16),
+    (17/16),
     (18/16),
     'Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     'Optima, Helvetica, Futura, Arial, sans-serif',
@@ -218,7 +218,7 @@ let themes = {
   reshiram: css_props(
     '#737b9c', '#4a4a6a', '#39b4f6', '#7373a5',
     1,
-    (16.5/16),
+    (17.5/16),
     'Lucida Grande, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     'Lucida Fax, Helvetica, Futura, Arial, sans-serif',
     'Lucida Console, Andale Mono, sans serif',
@@ -233,7 +233,7 @@ let themes = {
 
   porygonZ: css_props(
     '#4a9cd5', '#ee5a62', '#b4944a', '#779',
-    (16.5/16),
+    (17.5/16),
     (19/16),
     'Avenir Book, Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
     '"Raleway", Futura, Helvetica, Arial, sans-serif',

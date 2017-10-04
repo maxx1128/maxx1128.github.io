@@ -1,7 +1,5 @@
 'use strict';
 
-let lazyload = require('jquery-lazyload');
-
 module.exports = {
   component_init: function(selector, component_function){
     $(selector).each(function(){
@@ -19,11 +17,5 @@ module.exports = {
 
   external_links: function(selector) {
     $(selector).attr('target', '_blank');
-  },
-
-  lazyloading: function(selector) {
-    $(selector).lazyload({
-      effect : "fadeIn"
-    });
   }
 };

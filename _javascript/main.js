@@ -14,4 +14,3 @@ color_schemes.firstCheck();
 color_schemes.updateTheme();
 
 f.external_links('.ma-c-blogContent a');
-f.lazyloading('[data-lazyload]');
