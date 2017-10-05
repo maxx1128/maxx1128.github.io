@@ -1,7 +1,9 @@
 {% assign url = include.url | default: "javascript:void(0);" %}
 {% assign icon = include.icon | default: "twitter" %}
+{% assign alt_text = include.alt_text | default: "Social link" %}
 
 <a class="ma-cp-socialIcon" href="{{ url }}" target="_blank">
   <i data-feather="{{ icon }}"></i>
+  <span class="ma-screenReader">{{ alt_text }}</span>
 </a>
 

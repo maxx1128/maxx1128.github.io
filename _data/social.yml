@@ -1,15 +1,19 @@
 - name: Twitter
   url: http://www.twitter.com/Maxwell_Dev
   icon: twitter
+  text: Twitter social media link
 
 - name: Codepen
   url: http://codepen.io/max1128/
   icon: codepen
+  text: Codepen social media link
 
 - name: Github
   url: https://github.com/maxx1128
   icon: github
+  text: Github social media link
 
 - name: Linkedin
   url: https://www.linkedin.com/in/maxwellantonucci
   icon: link
+  text: LinkedIn social media link

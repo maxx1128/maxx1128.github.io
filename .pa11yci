@@ -1,0 +1,36 @@
+{
+  "urls": [
+    {
+      "url": "http://localhost:4000",
+      "hideElements": ""
+    },
+    {
+      "url": "http://localhost:4000/about/",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    },
+    {
+      "url": "http://localhost:4000/work/",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    },
+    {
+      "url": "http://localhost:4000/blog/",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    },
+    {
+      "url": "http://localhost:4000/2017/05/16/perfectly-unhappy-developer.html",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    },
+    {
+      "url": "http://localhost:4000/2016/11/28/birthday-adult-lessons.html",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    },
+    {
+      "url": "http://localhost:4000/2015/02/16/important-lesson-learned-canadian-ice-sculptures.html",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    },
+    {
+      "url": "http://localhost:4000/2017/05/29/structuring-tic-tac-toe-javascript.html",
+      "hideElements": ".ma-l-default__nav, .ma-c-footer"
+    }
+  ]
+}
