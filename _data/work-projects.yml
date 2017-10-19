@@ -1,3 +1,9 @@
+- name: SeeClickFix
+  date: 10/15/2017
+  image: seeclickfix.png
+  description: "My first big project for SeeClickFix was developing their new marketing site. While several people worked on the design, the front-end code with Jekyll was almost entirely done by me. It uses a few Material Web Components, Pa11y to test for accessibility, and the CSS was built on ITCSS and BEM. It was a major upgrade from the previous version, and was very fun to create!"
+  link: https://seeclickfix.com/
+
 - name: EmberDex
   date: 9/17/2017
   image: emberdex.png
