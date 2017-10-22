@@ -10061,7 +10061,7 @@ f.external_links('.ma-c-blogContent a');
 const css_props = function (color_primary, color_secondary, color_action, color_mono, spacing_base, lineHeight_base, fontFamily_base, fontFamily_header, fontFamily_mono, settings, overrides) {
 
   let set = {
-    colLight: 0.35,
+    colLight: 0.25,
     colLighter: 0.65,
     colLightest: 0.9,
     colDark: -0.35,
@@ -10217,35 +10217,35 @@ overrides
 */
 
 let themes = {
-  gallade: css_props('#5ab46a', '#7b8bac', '#eb7560', '#373737', 17.75 / 16, 18 / 16, 'Skia, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', null, { '--type-font-weight-base': 400,
+  gallade: css_props('#5ab46a', '#7b8bac', '#eb7560', '#373737', 18.25 / 16, 18 / 16, 'Skia, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', null, { '--type-font-weight-base': 400,
     '--color-mono-darkest': '#080401',
     '--color-mono-lighter': '#a4b4cd',
     '--color-mono-blank': '#eef' }),
 
-  typhlosion: css_props('#415a94', '#20416a', '#e24444', '#d5c573', 17.5 / 16, 1, 'Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Rockwell, Helvetica, Futura, Arial, sans-serif', 'Andale Mono, sans serif', {
+  typhlosion: css_props('#415a94', '#20416a', '#e24444', '#d5c573', 18 / 16, 1, 'Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Rockwell, Helvetica, Futura, Arial, sans-serif', 'Andale Mono, sans serif', {
     modularScale: 1.28
   }, {
     '--color-mono-blank': '#fffff8'
   }),
 
-  espeon: css_props('#b47bb4', '#4a73b4', '#e2507c', '#8c8c8c', 17 / 16, 18 / 16, 'Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Optima, Helvetica, Futura, Arial, sans-serif', 'Andale Mono, sans serif', {
+  espeon: css_props('#b47bb4', '#4a73b4', '#e2507c', '#8c8c8c', 17.5 / 16, 18 / 16, 'Avenir, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Optima, Helvetica, Futura, Arial, sans-serif', 'Andale Mono, sans serif', {
     modularScale: 1.275
   }, {
     '--type-font-weight-base': 400
   }),
 
-  reshiram: css_props('#737b9c', '#4a4a6a', '#39b4f6', '#7373a5', 1, 17.5 / 16, 'Lucida Grande, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Lucida Fax, Helvetica, Futura, Arial, sans-serif', 'Lucida Console, Andale Mono, sans serif', {
+  reshiram: css_props('#737b9c', '#4a4a6a', '#39b4f6', '#7373a5', 1, 18 / 16, 'Lucida Grande, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', 'Lucida Fax, Helvetica, Futura, Arial, sans-serif', 'Lucida Console, Andale Mono, sans serif', {
     modularScale: 1.3
   }, {
     '--color-mono-darkest': '#393941',
     '--color-mono-blank': '#fff'
   }),
 
-  porygonZ: css_props('#4a9cd5', '#ee5a62', '#b4944a', '#779', 17.5 / 16, 19 / 16, 'Avenir Book, Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', '"Raleway", Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', {
+  porygonZ: css_props('#4a9cd5', '#ee5a62', '#b4944a', '#779', 18 / 16, 19 / 16, 'Avenir Book, Calibri, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif', '"Raleway", Futura, Helvetica, Arial, sans-serif', 'Andale Mono, sans serif', {
     modularScale: 1.2444
   }, {
     '--color-mono-darkest': '#002',
-    '--color-mono-blank': '#eef'
+    '--color-mono-blank': '#fbfcf7'
   })
 }; // Object of constructed themes here
 

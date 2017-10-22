@@ -650,6 +650,8 @@ textarea {
     max-width: 56.25rem; }
   .ma-l-default__content.ma-l-default__content--fullWidth {
     max-width: 75rem; }
+  .ma-l-default__content.ma-c-blogContent {
+    max-width: 49.1875rem; }
   .ma-l-default__content > *:first-child {
     margin-top: 0; }
 
