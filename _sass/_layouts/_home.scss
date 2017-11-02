@@ -13,9 +13,12 @@ $home-content-width: rem(350px);
 
 .ma-l-home__wrapper {
   display: flex;
+  padding: var(--spacing-double) var(--spacing-base);
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+
+  max-width: breakpoint(lg);
 }
 
 .ma-l-home__image {

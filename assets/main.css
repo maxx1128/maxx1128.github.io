@@ -645,13 +645,10 @@ textarea {
   padding: var(--spacing-double) var(--spacing-base) var(--spacing-base);
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
-  .ma-l-default__content:not(.ma-l-default__content--fullWidth) {
-    max-width: 45.3125rem; }
+          flex: 1 1 auto;
+  max-width: 45.3125rem; }
   .ma-l-default__content.ma-l-default__content--fullWidth {
     max-width: 75rem; }
-  .ma-l-default__content.ma-c-blogContent {
-    max-width: 49.1875rem; }
   .ma-l-default__content > *:first-child {
     margin-top: 0; }
 
@@ -758,13 +755,15 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: var(--spacing-double) var(--spacing-base);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  max-width: 56.25rem; }
 
 .ma-l-home__image {
   width: 100%;

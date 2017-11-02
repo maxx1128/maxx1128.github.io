@@ -34,12 +34,9 @@
   width: 100%;
   padding: var(--spacing-double) var(--spacing-base) var(--spacing-base);
   flex: 1 1 auto;
-
-  &:not(.ma-l-default__content--fullWidth) { max-width: rem(725px); }
+  max-width: rem(725px);
 
   &.ma-l-default__content--fullWidth { max-width: breakpoint(max-width); }
-
-  &.ma-c-blogContent { max-width: breakpoint(md); }
 
   & > *:first-child { margin-top: 0; }
 }
