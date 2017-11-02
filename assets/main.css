@@ -647,7 +647,7 @@ textarea {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto; }
   .ma-l-default__content:not(.ma-l-default__content--fullWidth) {
-    max-width: 56.25rem; }
+    max-width: 45.3125rem; }
   .ma-l-default__content.ma-l-default__content--fullWidth {
     max-width: 75rem; }
   .ma-l-default__content.ma-c-blogContent {
