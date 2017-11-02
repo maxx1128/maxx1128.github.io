@@ -10267,9 +10267,9 @@ const checkTheme = () => {
     addThemeProperties(themes[stored_theme]);
     updateSelectedTheme(stored_theme);
   } else {
-    addThemeProperties(themes['porygonZ']);
-    localStorage.storedTheme = 'porygonZ';
-    updateSelectedTheme('porygonZ');
+    addThemeProperties(themes['gallade']);
+    localStorage.storedTheme = 'gallade';
+    updateSelectedTheme('gallade');
   }
 };
 
