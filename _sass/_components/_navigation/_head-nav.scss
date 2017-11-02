@@ -12,7 +12,7 @@ $checked-selector: '.ma-n-headNav__checkbox:checked + .ma-n-headNav';
 .ma-n-headNav__container {
   display: flex;
   margin: 0 auto;
-  max-width: breakpoint(max-width);
+  max-width: breakpoint(lg);
   flex-direction: column;
   align-items: center;
   justify-content: space-between;

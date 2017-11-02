@@ -1584,7 +1584,7 @@ video {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 56.25rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
