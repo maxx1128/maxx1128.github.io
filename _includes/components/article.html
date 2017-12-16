@@ -1,0 +1,43 @@
+{% assign title = include.title | default: "Post Title here" %}
+{% assign date = include.date | default: "2016-11-28" %}
+{% assign link = include.link %}
+{% assign external = include.external %}
+
+{% assign icon = include.icon | default: "edit-3" %}
+{% assign category = include.category | default: "post" %}
+{% assign content = include.content | markdownify %}
+
+<div class="max-flex max-flex-wrap max-flex-nowrap-md max-flex-align-start max-flex-justify-center  max-svg-children-h3 max-svg-children-h4">
+
+  <span class="ma-svg-bubble max-inline-block max-py-half max-text-center max-relative max-bg-contrast-primary-darker max-line-height-none max-svg-children-h2 max-flex-item max-flex-nogrow max-mr-oneHalf max-mt-half">
+  <i data-feather="{{ icon }}"></i>
+
+    <span class="max-screenreader">
+      {{ category | capitalize }}
+    </span>
+  </span>
+
+  <div class="max-flex-item">
+    <tiny class="max-color-primary-dark max-italic max-mb-none ">
+      {{ date | date: "%B %d, %Y" }}
+    </tiny>
+
+    {% if link %}
+      <h3 class="max-mt-none max-db-underline">
+        <a class="max-no-underline" {% if external == "true" %}target="_blank" rel="noopener"{% endif %} href="{{ link }}">
+          {{ title }}
+        </a>
+      </h3>
+    {% else %}
+      <h1 class="max-line-height-small max-pb-half max-db-underline">
+        {{ title }}
+      </h1>
+    {% endif %}
+  </div>
+</div>
+
+<article>
+  <div class="max-ml-svg-bubble-md max-pl-oneHalf-md max-mb-quad">
+    {{ content }}
+  </div>
+</article>

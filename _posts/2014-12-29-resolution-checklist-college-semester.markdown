@@ -16,7 +16,9 @@ With most coming grads, there’s death sprint to learn some last-minute skills.
 
 So the first part of my 2015 checklist are some skill loose ends to tie up. Going by my interests and what’s in demand, as well as this swell video I found, I’m aiming mostly for web development.
 
-{% include embed_video.html url="https://www.youtube.com/embed/zXqs6X0lzKI" %}
+<div class="max-iframe-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zXqs6X0lzKI" title="Must-know tech for web developers" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Improving jQuery and Javascript skills are first, which are what drive interactivity and general awesomeness on most web pages. There’s also Bootstrap, a popular framework that makes making web pages very fast and easy – it’s very widely used, so that’s obviously there too.
 

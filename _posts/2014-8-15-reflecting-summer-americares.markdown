@@ -10,7 +10,7 @@ Today marks the end of my time with [AmeriCares.](http://www.americares.org/) It
 
 So on my last day with AmeriCares, I can honestly say I’m extremely satisfied. 
 
-![''](/img/posts/reflecting-americares/quote.jpg)
+![](/img/posts/reflecting-americares/quote.jpg)
 
 Don’t get me wrong, there were plenty of challenges that varied in how much they made we want to kick something. If I may list them…
 
@@ -23,7 +23,7 @@ Sounds difficult (and borderline in several cases), but oddly enough, dealing wi
 
 Daily posting was a matter of just scheduling posts far enough in advance, and I’m already in the habit of scheduling at least a day in advance for my own accounts. This time, for many posts, it was often for days in advance, which wasn’t a major leap. Maybe a light skip, even though doing that in the office gets some odd looks.
 
-<img class="image__half" src="/img/posts/reflecting-americares/saturday.jpg">
+![The 2014 AmeriCares interns with the CEO](/img/posts/reflecting-americares/saturday.jpg)
 
 When a new trend popped up that AmeriCares should post about, solving the time issue was just about finding a tool that was quick, easy, but could still make an impressive photo so share. So I wound up finding QuotesCover, and used it for both #MalalaDay, #MandelaDay, and the recent passing of Robin Williams to great effect both times. Like using a slow-cooker to cook, it creates an illusion of working harder with a veil of resourcefulness.
 
@@ -34,15 +34,21 @@ The Ebola outbreak was a major global health story with legs, and on the second 
 
 Redesigning the health blog was a lot of work, but also an idea I pushed a lot on my own initiative. Finding a theme, editing the color and functions, making sure all the content transitioned smoothly, and keeping the look and feel consistent with the AmeriCares brand. The project slipped naturally into my workflow without overloading my mind with extra stress that couldn’t be handling with some extra-loud headphones music.
 
-{% include iframe.html iframe='<iframe src="http://healthblog.americares.org/" width="100%" height="300"></iframe>' %}
+<div class="max-iframe-wrapper">
+  <iframe src='http://healthblog.americares.org/' frameborder='no' style='width: 100%;' title="The AmeriCares HealthBlog"></iframe>
+</div>
 
 In some cases I was even a big resource of social media knowledge to others, mainly to the other interns when giving a “Twitter 101” presentation on how the social network can be a valuable tool for marketing yourself to potential jobs (aside from originally using Prezi instead of SlideShare, it was a reasonable success).
 
-{% include iframe.html iframe='<iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src="//www.slideshare.net/slideshow/embed_code/37925441" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>' %}
+<div class="max-iframe-wrapper">
+  <iframe style="border: 1px solid #CCC; border-width: 1px; margin-bottom: 5px; max-width: 100%;" src='//www.slideshare.net/slideshow/embed_code/37925441' frameborder='no' style='width: 100%;' title="Networking with Twitter"></iframe>
+</div>
 
 For other areas of the internship, such as every intern needing to make a blog post, it just seemed to happen on its own. I wound up doing an animation on one of the lesser-known garden projects AmeriCares supports in Japan, and thankfully it stayed true to the brand and has been received well for something filled with stick figures.
 
-{% include iframe.html iframe='<iframe src="//player.vimeo.com/video/102849451" width="500" height="281" allowfullscreen="allowfullscreen"></iframe>' %}
+<div class="max-iframe-wrapper">
+  <iframe src='//player.vimeo.com/video/102849451' frameborder='no' style='width: 100%;' title="HealthCare Heroes at AmeriCares"></iframe>
+</div>
 
 All my subtle bragging embellished with sarcasm now aside, the thing that keep striking me this last week or two is that none of this ever felt like work. It was all natural, enjoyable, yet still challenging, much like a good gym day where you can keep pushing yourself since you don’t get tired, only more energized and determined. With a blistering playlist that only plays the good songs to boot. You know the feeling.
 

@@ -1,7 +1,7 @@
 ---
 title:  "Think like a Glossary"
 date:   2015-6-08
-categories: productivity
+icon: cast
 
 excerpt: The more we need to learn, the less we need to memorize.
 ---

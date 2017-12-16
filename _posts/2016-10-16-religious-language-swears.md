@@ -23,6 +23,6 @@ Maybe it's a stretch to think mere words could sway us this much, but language s
 
 I like to wonder, if these types of curse words weren't used, how much would the world's religious views change? Would people today be more or less religious than they are now? My own guess is people would be less so, although I don't know how much. As much as language affects the world's religions, it's only one factor.
 
-Think about it: if some subtly referenced the zoo whenever they swore, the zoo would be much more important to them. They'd likely visit the zoo regularly, give money to their local zoos, ask their zoo for forgiveness after making mistakes, protest against businesses they think are anti-zoo, and say people who don't go to the zoo our bound for eternal suffering.
+Think about it: if some subtly referenced the zoo whenever they swore, the zoo would be much more important to them. They'd likely visit the zoo regularly, give money to their local zoos, ask their zoo for forgiveness after making mistakes, protest against businesses they think are anti-zoo, and say people who don't go to the zoo are bound for eternal suffering.
 
 It sounds crazy, but remember: don't underestimate the power of language. A few different words and, in a few decades, everyone could be part of the Sacred Church of Zoology.

@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
 
   {% include head.html %}
 
-  <body class="ma-l-default__wrapper">
-    <main role="main" class="ma-l-default__main">
-      <div class="ma-l-default__nav">
-        {% include nav.html %}
-      </div>
+  <body class="max-l-leftNav">
+    <div class="max-l-leftNav__top">
+      {% include components/top-nav.html %}
+    </div>
 
-      <div class="ma-l-default__header">
-        {% include components/header.html
-          title = page.title
-          tagline = page.tagline
-          bg_img = page.featured-img
-        %}
-      </div>
+    <div class="max-l-leftNav__nav">
+      {% include components/left-nav.html %}
+    </div>
 
-      <article class="ma-l-default__content {% if page.fullWidth %}ma-l-default__content--fullWidth{% endif %}" aria-label="Content">
-        {{ content }}
-      </article>
+    <main role="main" aria-label="Content" class="max-l-leftNav__content max-p-base max-px-oneHalf-md max-px-svg-bubble-lg max-maxWidth-lg max-mx-auto">
+      <h1 class="max-db-underline">
+        {{ page.title }}
+      </h1>
 
-      <div class="ma-l-default__footer">
-        {% include footer.html %}
-      </div>
-    </main role="main">
+      {{ content }}
+
+      {% include components/pagination.html %}
+    </main>
   </body>
+
+  {% include footer.html %}
 </html>

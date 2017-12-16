@@ -3,6 +3,7 @@ title        : "Making a Custom Lorem Ipsum Generator"
 date         : 2017-06-04
 categories   : programming javascript
 excerpt      : Fancy placeholder text generator is possible with just three JavaScript functions
+icon         : codepen
 featured-img : /img/posts/make-custom-lorem-ipsum-generator/featured.jpg
 ---
 

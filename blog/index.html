@@ -1,23 +1,26 @@
 ---
 layout: default
-title: My Blog
-tagline: We all have thoughts in our spare time. I keep mine here for safe-keeping.
-fullWidth: true
-featured-img: /img/pages/blog.jpg
+title: Blog
+nav_label: My Blog
 ---
 
-<div class="ma-l-blog__wrapper">
+{% for post in paginator.posts %}
+  {% assign content = post.content %}
+  
+  {% if post.external_url %}
+    {% assign url = post.external_url %}
+    {% assign external = "true" %}
+  {% else %}
+    {% assign url = post.url | prepend: site.baseurl %}
+    {% assign external = "false" %}
+  {% endif %}
 
-  {% for post in site.posts %}
-    {% include components/blog_item.html
-      classes = 'ma-l-blog__item ma-l-blog__item--flex'
-      title = post.title
-      date = post.date
-      excerpt = post.excerpt
-      url =  post.url
-      ext_url = post.external_url
-      bg_img = post.featured-img
-    %}
-  {% endfor %}
-
-</div>
+  {% include components/article.html
+    title = post.title
+    link = url
+    external = external
+    content = content
+    date = post.date
+    icon = post.icon
+  %}
+{% endfor %}

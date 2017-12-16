@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Me
-tagline: The story of my entire life, give or take a few details
+nav_label: About Me
 featured-img: /img/pages/about.jpg
 ---
 

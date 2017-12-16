@@ -1,0 +1,29 @@
+<nav role="navigation" class="max-full-height max-box-shadow-1">
+  <div class="max-full-height max-flex max-flex-column max-flex-justify-between max-inset-shadow-dark max-p-base max-bg-img-cover" style='background-image: url("{% if page.featured-img %}{{ page.featured-img }}{% elsif page.layout == "post" or page.nav_label == "My Blog" %}/img/pages/blog.jpg{% else %}/img/nav.jpg{% endif %}")'>
+    <div>
+      <h2>
+        {{ site.title }}
+      </h2>
+      <h6 class="max-color-mono-lighter max-border-t max-border-mono-light max-font-weight-base max-mr-triple-md max-pt-base">
+        {{ site.description }}
+      </h6>
+    </div>
+
+    <aside role="complementary" class="max-mt-double max-mt-triple-sm">
+      <div class="max-flex max-flex-wrap max-flex-nowrap-md">
+        {% for social in site.data.social %}
+          <a class="max-flex-item max-flex-nogrow max-color-mono-lighter max-no-underline max-mr-base" href="{{ social.url }}" target="_blank">
+            <i class="" data-feather="{{ social.icon }}"></i>
+            <span class="max-screenreader">
+              {{ social.text }}
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+
+      <div class="max-pt-half max-mt-half max-border-t max-border-mono-lightest">
+        <span class="max-c-wisdom max-italic max-color-primary-lightest max-font-weight-light"></span>
+      </div>
+    </aside>
+  </div>
+</nav>

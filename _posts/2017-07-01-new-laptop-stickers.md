@@ -3,6 +3,7 @@ title        : "New Laptop Stickers!"
 date         : 2017-07-01
 categories   : personal
 excerpt      : Another lovely tech perk is expressing identity through stickers.
+icon: image
 featured-img : /img/posts/laptop-stickers/featured.jpg
 ---
 
@@ -10,7 +11,7 @@ What time of the year is it? New laptop stickers!
 
 This is one developer cliche I embrace with pride. I love getting new stickers and putting them on my laptop, sketchbooks, notepads, boxing gloves, battering rams, and whatever else. I love them for the same reasons I love buttons - simple, fun, shares ideas, and are convenient drag-and-drop personality. Part of me sees the vanity and consumerism behind them, but that doesn't outweigh their benefits. Namely their being a testament to the dev quirks I love.
 
-{% include image.html url="/img/posts/laptop-stickers/stickers.jpg" description="What better way to express individuality than RedBubble stickers?" %}
+![What better way to express individuality than RedBubble stickers?](/img/posts/laptop-stickers/stickers.jpg)
 
 I aimed for these assorted stickers to send four total messages.
 

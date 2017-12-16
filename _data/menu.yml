@@ -1,11 +1,11 @@
+- name: Home
+  link: '/'
+
 - name: About Me
   link: '/about/'
-  icon: user
 
-- name: My Work
-  link: '/work/'
-  icon: briefcase
+- name: Resume
+  link: '/resume/'
 
 - name: My Blog
   link: '/blog/'
-  icon: edit-2

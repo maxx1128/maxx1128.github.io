@@ -3,6 +3,7 @@ title        : "Organizing a Smart Tic-Tac-Toe Game"
 date         : 2017-05-29
 categories   : programming javascript
 excerpt      : Using a favorite JavaScript pattern of mine to code a simple yet challenging game
+icon         : codepen
 featured-img : /img/posts/structuring-tic-tac-toe/featured.png
 ---
 

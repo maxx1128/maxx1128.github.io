@@ -24,7 +24,9 @@ If your time is valuable and you don't want to read this whole post, here's the 
 
 Blinkist's app is thankfully very simple. You can search through a library of hundreds of nonfiction books by category, new, trending, keywords, or custom collections. Finding new or related content is easy, so expect your "books to read" library to fill up fast. New books let you see a basic summary, people who'd find the book useful (such as philosophy nerds or marketing pros), and their different sections.
 
-{% include embed_video.html url="https://www.youtube.com/embed/SWO-Hedsr8E" %}
+<div class="max-iframe-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/SWO-Hedsr8E" title="Introduction to the Blinkist app" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The books are split into 10-20 minute-long summaries. Each section has a main point or lesson to it. You can highlight specific passages and review them later, so taking notes is easy. The book's last section is usually a quick review, action steps you can take, related titles, and a link to buy the whole book if you want more.
 

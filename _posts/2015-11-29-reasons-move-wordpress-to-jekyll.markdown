@@ -1,7 +1,7 @@
 ---
 title:  "Why I Switched to Jekyll"
 date:   2015-11-29 05:40:02 -0500
-categories: web-development
+icon: codepen
 published: true
 featured-img: /img/posts/jekyll/jekyll-logo.png
 
@@ -13,7 +13,7 @@ Even though I remade my personal website twice in the last six months, I did it 
 
 It wasn't an easy decision. My old WordPress sites each took weeks to develop. The styles, frameworks, loops, custom fields, and experience sucked up much of my free time. Why throw all this away for Jekyll?
 
-{% include image.html url="/img/posts/jekyll/jekyll-logo.png" description="Jekyll logo" %}
+![Jekyll logo](/img/posts/jekyll/jekyll-logo.png)
 
 Simply put, WordPress's worst weaknesses were Jekyll's best strengths. While I still love WordPress, it's not the best fit for a personal website. The transition was worth it.
 

@@ -1,9 +1,10 @@
 ---
 title      : "You Have no Right to an Uninformed Opinion"
 date       : 2017-02-13
-categories : politics
-excerpt    : Before you share an opinion on any topic, ask yourself the following questions.
+icon       : cast
 ---
+
+Before you share an opinion on any topic, ask yourself the following questions.
 
 1. **Have I invested enough research into this opinion?** Did I take the time to research relevant info by myself? Or did I hear something once with little support and abruptly agree with it? Is this an opinion I take seriously myself, or am I just following a herd?
 2. **Have I used reliable sources for my data?** Am I referencing sources with none or minimal bias? Did I check if there's any proven, verifiable conflict of interest that'd make me distrust this source? Do this source's fact justify their viewpoint, or does their viewpoint justify their facts? Am I checking these resources against other reliable ones? Am I holding this view just because someone who _seems_ reliable said it, and didn't check if they really are?

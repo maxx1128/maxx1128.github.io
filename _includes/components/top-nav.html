@@ -1,0 +1,7 @@
+<nav role="navigation" class="max-box-shadow-1 max-line-height-none max-bg-primary-darker">
+  {% for menu in site.data.menu %}
+    <a class="max-bg-contrast-primary-darker max-bg-contrast-primary-darkest-hover max-line-height-none max-inline-block max-no-underline max-font-size-small max-p-base {% if page.nav_label == menu.name or page.layout == 'post' and menu.name == 'My Blog' %}max-bg-contrast-primary-darkest{% endif %}" href="{{ menu.link }}">
+      {{ menu.name }}
+    </a>
+  {% endfor %}
+</nav>

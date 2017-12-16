@@ -41,7 +41,7 @@ If you have someone who can’t separate their facts from feelings, however, I�
 
 Lastly, of course in your search of interesting ideas, you’ll meet a lot of interesting people like the usual suspects on Waverly Avenue by Syracuse. Even if you take the arguments seriously, it’s nice to just appreciate who the person is and how their ideas relate to their unique identity. As you can see below, it can take something serious and help make it something more enjoyable.
 
-{% include image.html url="/img/posts/religious-outside-su/signs.jpg" description="This well-known picture actually did happen on Waverly Avenue in Syracuse as well. In almost the exact same spot I met the man I described at the start of this post." %}
+![This well-known picture actually did happen on Waverly Avenue in Syracuse as well. In almost the exact same spot I met the man I described at the start of this post.](/img/posts/religious-outside-su/signs.jpg)
 
 This well-known picture actually did happen on Waverly Avenue in Syracuse as well. In almost the exact same spot I met the man I described at the start of this post.
 

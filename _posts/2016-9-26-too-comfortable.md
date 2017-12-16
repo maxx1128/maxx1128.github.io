@@ -31,10 +31,12 @@ Are they satisfied with life or just unconcerned with it?
 
 For me, the motivation for coding in my spare time has been rooted in different anxieties. I'd make something new out of [fear I'd need it in the future](http://codepen.io/max1128/pen/xEOLmg). Out of sadness that I'd [never be as intuitive as characters I enjoy](http://codepen.io/max1128/pen/KgzrGA). Out of frustration that, no matter how cool I may make something, [someone else will make something better](http://codepen.io/max1128/pen/xEOLmg).
 
-<div class="video">
-  <div class="video-wrapper">
-    <p data-height="334" data-theme-id="0" data-slug-hash="xEOLmg" data-default-tab="result" data-user="max1128" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/max1128/pen/xEOLmg/">Hypnotic Spiral</a> by Maxwell Antonucci (<a href="http://codepen.io/max1128">@max1128</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="max-iframe-wrapper">
+    <div class="video">
+      <div class="video-wrapper">
+        <p data-height="334" data-theme-id="0" data-slug-hash="xEOLmg" data-default-tab="result" data-user="max1128" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/max1128/pen/xEOLmg/">Hypnotic Spiral</a> by Maxwell Antonucci (<a href="http://codepen.io/max1128">@max1128</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
     </div>
 </div>
 

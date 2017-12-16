@@ -11,11 +11,11 @@ There were many things in my semester abroad that intrigued or fascinated me, bu
 ### The Explosion that Makes Almost No Sense
 It started on a regular day in Florence, Italy, just taking a stroll, when I suddenly passed by a pile of ashes, metal parts, and dust next to the sidewalk. It was right where citizens usually park their bikes, so my first thought was somehow a bike caught fire and burned into the street.
 
-{% include image.html url="/img/posts/exploding-bike/1.jpg" description="Definitive diagnostic research from me staring for a couple moments concluded a bike probably exploded here." %}
+![Definitive diagnostic research from me staring for a couple moments concluded a bike probably exploded here.](/img/posts/exploding-bike/1.jpg)
 
 First I was upset I didn’t see the fire, I also realized there were lots of confusing clues around the explosion site. The biggest was from looking at the bikes lined up next to the one that blew up.
 
-{% include image.html url="/img/posts/exploding-bike/2.jpg" description="These are the bikes lucky enough to see the cool explosion, at extremely close range too." %}
+![These are the bikes lucky enough to see the cool explosion, at extremely close range too.](/img/posts/exploding-bike/2.jpg)
 
 All these bikes, while still technically standing, got burned pretty badly. Their seats were charred, the ground around them also burnt, and huge chunks of their bodies were disintegrated. This means the first bike’s explosion must’ve been so big it scalded all these too.
 
@@ -26,13 +26,13 @@ It gets even weirder with the direction of the explosion. In the many times we�
 
 Look closely at the ground in the next picture. There’s only damage in one direction, and it goes directly towards the other bikes. It barely even goes over the bike lane into the main street.
 
-{% include image.html url="/img/posts/exploding-bike/3.jpg" description="One theory: the explosion had a vendetta against all the other bikes." %}
+![One theory: the explosion had a vendetta against all the other bikes.](/img/posts/exploding-bike/3.jpg)
 
 I first thought that all the bikes simply caught on fire, but that wouldn’t explain why the bikes get progressively less burned as the move away from the destroyed one. The explosion is still my best theory.
 
 So this explosion, not only is it oddly powerful, it’s also oddly focused in one direction. And I mean only one direction. On the other side of the bike, the nearby car had no damage other than a melted bumper, despite being just a few away.
 
-{% include image.html url="/img/posts/exploding-bike/4.jpg" description="One would at least expect someone to be yelling over the damages, in Italy or in America." %}
+![One would at least expect someone to be yelling over the damages, in Italy or in America.](/img/posts/exploding-bike/4.jpg)
 
 For some added weirdness, notice that even though the ground isn’t scorched around this car, the trunk door and rear lights are badly damaged. This raises even more questions:
 

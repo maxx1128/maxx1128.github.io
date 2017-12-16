@@ -1,7 +1,7 @@
 ---
 title:  "My Eight Coding Laws"
 date:   2016-05-20
-categories: web-development philosophy
+icon : codepen
 featured-img: /img/posts/coding-commandments/featured.png
 excerpt: Having a firm, clear set of rules helps a lot in web development. These aim for modular, maintainable code at all times.
 ---

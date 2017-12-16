@@ -11,7 +11,9 @@ One of my favorite online articles is also one of the most painful for me to rea
 
 With that attention-getting line done with, here’s why. This article is [“Waiting for the 8th,”](http://www.washingtonpost.com/sf/national/2013/12/15/waiting-for-the-8th/) a Washington Post piece by Eli Saslow that takes a personal, insightful look at an impoverished family’s reliance on food stamps. It’s great since it does so much of what good journalism should: it gives a deeper understanding of a different culture, shatters common stereotypes (it’s amazing how much more caring those in poverty can be than others), and made me take a serious look at my own life with new perspective. To put it simply, the articles inspires a lot of empathy for those worse off than me, and I can’t resist revisiting it every now and then.
 
-<iframe src="http://www.washingtonpost.com/sf/national/2013/12/15/waiting-for-the-8th/" width="100%" height="500px"></iframe>
+<div class="max-iframe-wrapper">
+  <iframe src='http://www.washingtonpost.com/sf/national/2013/12/15/waiting-for-the-8th/' frameborder='no' style='width: 100%;' title="Waiting for the Eighth"></iframe>
+</div>
 
 However, it also makes me anxious. There are times when I just want to stop reading and do something else. To lose myself in Twitter or funny YouTube videos. To avoid the painful clarity the article brings.
 
@@ -43,7 +45,9 @@ There are times when [this understanding has really shown through.](http://sport
 
 It’s amazing how what I’ve read gave me (and helped me find elsewhere) even more empathy for different people. Certainly not how I’d feel learning about Islam from what’s on many broadcast channels…
 
-{% include embed_video.html url="https://www.youtube.com/embed/qVl3QrVVc0o" %}
+<div class="max-iframe-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/qVl3QrVVc0o" title="Montage of Fix News clips" frameborder="0" allowfullscreen></iframe>
+</div>
 
 I haven’t been completely successful, but I haven’t completely failed either. That counts for something, at the very least.
 
@@ -66,7 +70,7 @@ At this point in my life I know most of these points are complete crap. To debun
 4. **There are all kinds of paths to be happy,** we’re just assaulted with messages that make us think there are only a few – any other ones must then be “bad” by comparison.
 5. **We need people with different ideas to broaden our perspective of the world, even if we think those people are “below us.”** Otherwise our minds become stagnant and unchanging, unable to correct any ideas we fear could be wrong.
 
-![''](/img/posts/empathy-online/ck.jpg)
+![](/img/posts/empathy-online/ck.jpg)
 
 For me, this adds up to the biggest obstacle to empathy, from the internet or otherwise: We can know all the truths above and even accept them as values we should have, yet never live our lives by them. I’ve known them for a while and can still list countless examples of being closed off and frustrated over meaningless things I know shouldn’t affect me.
 
@@ -77,4 +81,6 @@ In the end, do we have a responsibility to overcome all this? To break through a
 
 I personally think so, and I’ll keep trying to get better at it somehow. That’s one [benefit of living a digital life](http://thenicestplaceontheinter.net/) – We can find tons of ways to win the struggle for empathy if we look in the right places online.  Every little step in actually finding them means more than I think.
 
-{% include iframe.html iframe='<iframe src="//player.vimeo.com/video/47605207" width="500" height="281" allowfullscreen="allowfullscreen"></iframe>' %}
+<div class="max-iframe-wrapper">
+  <iframe src='//player.vimeo.com/video/47605207' frameborder='no' style='width: 100%;' title="AmeriCares Starfish Story"></iframe>
+</div>

@@ -1,0 +1,25 @@
+{% if paginator.total_pages > 1 %}
+  <ul class="max-block max-list-style-none max-flex max-flex-justify-center max-mb-double">
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="max-color-mono-lightest max-no-underline">
+          <li class="max-flex-item max-bg-primary-darker max-box-shadow-1 max-bg-primary-darkest max-font-weight-bold max-box-shadow-2 max-bg-primary-darkest-hover max-flex-nogrow max-px-half max-py-quart max-mx-third max-my-none max-border-radius-small max-trans">
+            {{ page }}
+          </li>
+        </span>
+      {% elsif page == 1 %}
+        <a href="/blog/" class="max-color-mono-lightest max-color-mono-lighter-hover max-no-underline">
+          <li class="max-flex-item max-bg-primary-darker max-box-shadow-1 max-bg-primary-darkest-hover max-flex-nogrow max-px-half max-py-quart max-mx-third max-my-none max-border-radius-small max-trans">
+            {{ page }}
+          </li>
+        </a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="max-color-mono-lightest max-color-mono-lighter-hover max-no-underline">
+          <li class="max-flex-item max-bg-primary-darker max-box-shadow-1 max-bg-primary-darkest-hover max-flex-nogrow max-px-half max-py-quart max-mx-third max-my-none max-border-radius-small max-trans">
+            {{ page }}
+          </li>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endif %}

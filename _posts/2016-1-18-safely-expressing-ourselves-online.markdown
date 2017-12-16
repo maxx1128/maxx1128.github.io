@@ -19,7 +19,9 @@ Maybe not. This statement implies some expressions should always be questioned a
 
 George Carlin said people should be raised to question everything. Everything we accept without questioning gives someone a chance to exert control. Even things we were raised to accept, things we grow up loving or made to just accept as they are, deserve some skepticism.
 
-{% include embed_video.html url="https://www.youtube.com/embed/Uo-QIY7ys-k" %}
+<div class="max-iframe-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Uo-QIY7ys-k" title="George Carlin on questioning what we read." frameborder="0" allowfullscreen></iframe>
+</div>
 
 Let's bring this back to my original issue: the Internet creating a fear of self-expression. From my own reasoning it looks like there's no way around this. Fear of excessive criticism and consequence will always be there.
 

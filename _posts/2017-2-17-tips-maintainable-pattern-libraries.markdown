@@ -6,5 +6,6 @@ excerpt: It's easy to see why pattern libraries are useful, but tough to success
 
 featured-img: /img/posts/newhaven-io/bg.jpg
 
+icon: link
 external_url: http://newhaven.io/blog/tips-maintainable-pattern-libraries/
 ---

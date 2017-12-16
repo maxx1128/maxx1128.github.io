@@ -27,11 +27,19 @@ When we arrived at the park where said art was , I’d forgotten what it was lik
 
 Once we finally arrived at the somehow colder-still park, though, seeing all the ice sculptures on display made the trek worth the pain. I could describe how amazing they looked with the artists’ attention to detail and when they were backlit by colorful lights below the night sky – but thankfully my fingers weren’t so frozen that I couldn’t take pictures. I invite you to see the pics below and let them blow your mind.
 
-<div class="ma-c-blogContent__imageGallery">
-	<img alt="Ice sculpture of an eagle being formed by a hand making an eagle shadow." src="/img/posts/ice-sculptures/sculpture1.jpg">
-	<img alt="Ice sculpture of two children reaching up to pet a dragon." src="/img/posts/ice-sculptures/sculpture2.jpg">
-	<img alt="Ice sculpture of a woman holding an umbrella while dancing in the rain." src="/img/posts/ice-sculptures/sculpture3.jpg">
-	<img alt="Ice sculpture of an angel reaching out to the viewer." src="/img/posts/ice-sculptures/sculpture4.jpg">
+<div class="max-flex max-flex-wrap-sm max-flex-column max-flex-row-sm max-flex-justify-center max-flex-align-start">
+	<div class="max-flex-item max-flex-basis-6-sm max-px-half-sm">
+        <img alt="Ice sculpture of an eagle being formed by a hand making an eagle shadow." src="/img/posts/ice-sculptures/sculpture1.jpg">
+    </div>
+	<div class="max-flex-item max-flex-basis-6-sm max-px-half-sm">
+        <img alt="Ice sculpture of two children reaching up to pet a dragon." src="/img/posts/ice-sculptures/sculpture2.jpg">
+    </div>
+	<div class="max-flex-item max-flex-basis-6-sm max-px-half-sm">
+        <img alt="Ice sculpture of a woman holding an umbrella while dancing in the rain." src="/img/posts/ice-sculptures/sculpture3.jpg">
+    </div>
+	<div class="max-flex-item max-flex-basis-6-sm max-px-half-sm">
+        <img alt="Ice sculpture of an angel reaching out to the viewer." src="/img/posts/ice-sculptures/sculpture4.jpg">
+    </div>
 </div>
 
 ### What Ice Sculptures Have to do with Creativity

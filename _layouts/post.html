@@ -1,35 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
 
   {% include head.html %}
 
-  <body class="ma-l-default__wrapper">
-    <main role="main" class="ma-l-default__main">
-      <div class="ma-l-default__nav">
-        {% include nav.html %}
-      </div>
+  <body class="max-l-leftNav">
+    <div class="max-l-leftNav__top">
+      {% include components/top-nav.html %}
+    </div>
 
-      <div class="ma-l-default__header">
-        {% include components/header.html
-          title = page.title
-          tagline = page.excerpt
-          hide_tagline = page.hide_tagline
-          date = page.date
-          bg_img = page.featured-img
-        %}
-      </div>
+    <div class="max-l-leftNav__nav">
+      {% include components/left-nav.html %}
+    </div>
 
-      <article aria-label="article" class="ma-l-default__content ma-c-blogContent">
-        {{ content }}
-
-        <p class="ma-l-default__sig">
-          ~ Cheers, Max A
-        </p>
-      </article>
-
-      <div class="ma-l-default__footer">
-        {% include footer.html %}
-      </div>
+    <main role="main" aria-label="Content" class="max-l-leftNav__content max-p-base max-px-oneHalf-md max-px-svg-bubble-lg max-maxWidth-lg max-mx-auto">
+      {% include components/article.html
+        title = page.title
+        content = content
+        date = page.date
+        icon = page.icon
+      %}
     </main>
   </body>
+
+  {% include footer.html %}
 </html>

@@ -12,13 +12,13 @@ To me it never made sense to fear death. A book I read in middle school describe
 
 Whether or not there's pain doesn't affect this. The amount of pain I'd feel during death is equal to the amount of relief I'd feel from it. Plus pain isn't exclusive to death - I imagine I've got as much pain in my future as I do pleasure. And that's fine. If we didn't have pain, pleasure wouldn't exist. Likewise if we didn't have death, life wouldn't exist. The worse I'd feel about one, the better I'd feel about their counterpoint. It all equals a calm acceptance of death when it arrives.
 
-{% include image.html place="img__full rise" url="/img/posts/death-dogs-distance/trail.png" %}
+![](/img/posts/death-dogs-distance/trail.png)
 
 So I don't fear death. I fear when death is creeping into view but isn't quite there. When you can measure the final distance between you and death. A rush to do the things we now don't have time for. It throws questions of how we should act, how we should feel, if we did enough things right, if we did too many things wrong.
 
 We have no time to answer any of those questions that need an answer when the distance is so short. The panic and realization of death without the peace of mind and acceptance. All the pointless fear before the acceptance. A clawing uncertainty.
 
-{% include image.html place="image__half right perpetua" url="/img/posts/death-dogs-distance/forest.jpg" %}
+![](/img/posts/death-dogs-distance/forest.jpg)
 
 All those feelings sum up my last week. The last week we had with Jasper.
 
@@ -32,7 +32,7 @@ I could only ask myself: now what? There's no uncertainty or fear, so how do I f
 
 All I knew was I didn't want to feel the same as last time.
 
-{% include image.html place="ma-c-blogContent__image mayfair" url="/img/posts/death-dogs-distance/picture.jpg" %}
+![](/img/posts/death-dogs-distance/picture.jpg)
 
 This "last time" was when our other dog, Maya, passed away. It was several years ago. I was at school in Upstate New York, studying in the library. There was a phone call, the news, and an empty line. Then a stale feeling in my chest.
 
@@ -40,7 +40,7 @@ No collapse. No tearing up in public. No rush of good memories. Just a stale fee
 
 I hate the short distance between life and death in these times. But I hate something even more: the huge distance between my feelings and Maya's death. A distance I never managed to close.
 
-{% include image.html place="image__half right earlybird" url="/img/posts/death-dogs-distance/dogday.jpg" %}
+![](/img/posts/death-dogs-distance/dogday.jpg)
 
 I didn't want to feel that kind of distance again. So I held Jasper close, told him I loved him, kissed his forehead and let him lick my face one more time. The tears were coming but I couldn't break yet. We drove home, cleaned some things up, and I called some family with the news. Then I went into my room and broke. The collapse. The tears. The rush of memories. A lot more.
 

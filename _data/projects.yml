@@ -1,0 +1,35 @@
+- name: SeeClickFix
+  date: 10/15/2017
+  image: seeclickfix.png
+  description: "My first big project for SeeClickFix was developing their new marketing site. While several people worked on the design, the front-end code with Jekyll was almost entirely done by me. It uses a few Material Web Components, Pa11y to test for accessibility, and the CSS was built on ITCSS and BEM. It was a major upgrade from the previous version, and was very fun to create!"
+  link: https://seeclickfix.com/
+
+- name: EmberDex
+  date: 9/17/2017
+  image: emberdex.png
+  description: "This is an improvement on my last Pokedex built from Ruby. This time I used Ember, since I needed to get more familiar with the framework. It makes better use of the Pokemon API, despite it not being smoothly compatible with Ember's adapters. But combined with Ember Paper, overall it's a smoother, more stylish Pokedex with more functions and information to look through."
+  link: https://emberdex.herokuapp.com/
+
+- name: Ace Attorney Lorem Ipsum Generator
+  date: 6/01/2017
+  image: ace-attorney-lorem-ipsum.png
+  description: "I'm a huge fan of the Phoenix Wright series, but was upset to see there wasn't a Lorem Ipsum generator for it. So I found the WikiQuote page for the series, took the best lines I could find, and made a Node.js Lorem Ipsum generator with them. Now template sites can fill empty space with the voices of Wright, Edgeworth, Maya, and (most of) the whole cast."
+  link: http://www.aceattorneyipsum.com/
+
+- name: '"What Eeveelution are You" Quiz'
+  date: 10/15/2015
+  image: eeveelutions.png
+  description: 'I made this quiz to better understand the Angular framework, specifically its data-binding, Angular functions, and displaying the right views. Plus I used Flexbox to better control the responsiveness of certain elements with less CSS.'
+  link: http://maxwellantonucci.com/Which-Eeveelution-Are-You/
+
+- name: My Housing Matters
+  date: 05/03/2015
+  image: housing-matters.png
+  description: 'In one of my final Newhouse classes, I was made the primary web developer as we edited and created the MyHousingMatters.com website. It focused on racial and economic disparities related to housing in Syracuse. My main jobs were helping make interactive content, changing styles, and editing the back-end functionality with custom fields.'
+  link: http://myhousingmatters.com/
+
+- name: InternNation
+  date: 05/02/2015
+  image: internation.png
+  description: 'My main job as Web Development intern at Eric Mower + Associates was to remake the intern blog. The final product was a WordPress theme built for over 100 posts with Sass and Gulp.js, along with a few useful tools such as Isotope.js and Advanced Custom Fields. The front page also lets users search a grid of all the posts by the intern’s semester, the city they interned in, and what department they worked in. The final product came out just in time for me and the other Spring 2015 interns to get their posts up!'
+  link: http://internation.mower.com/
