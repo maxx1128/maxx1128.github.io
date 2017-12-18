@@ -4,17 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title}} - {% endif %}{{ site.title }}</title>
-  
-  <meta name="thumbnail" content="{% if page.featured-img %}{{ page.featured-img }}{% else %}/img/profile-dev.png{% endif %}" />
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="summary" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="p:domain_verify" content="0b12e07a4feaad3b7aa48fee8ecae8db"/>
-  <meta name="url" content="https://www.maxwellantonucci.com">
-  <meta name="author" content="Max Antonucci">
-
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet"> 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="shortcut icon" href="/img/favicon.ico" />
 
@@ -37,6 +30,4 @@
   <meta name="twitter:summary" content="{% if page.tagline %}{{ page.tagline }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="twitter:image" content="{% if page.featured-img %}{{ page.featured-img | prepend: site.url }}{% else %}{{ "/img/profile-dev.png" | prepend: site.url }}{% endif %}"/>
   <meta name="twitter:creator" content="@Maxwell_Dev">
-
-{% feed_meta %}
 </head>
