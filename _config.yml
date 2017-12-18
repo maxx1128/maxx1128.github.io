@@ -5,14 +5,13 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-gems: [jekyll-paginate]
-
 # Site settings
 title: Max Antonucci
 description: > # this means to ignore newlines until "baseurl:"
   Journalist turned front-end coder.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://maxwellantonucci.com" # the base hostname & protocol for your site
+lang: "en"
 
 paginate: 6
 paginate_path: "/blog/page:num/"
@@ -23,16 +22,15 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+
 # Build settings
 exclude:
   - README.md
   - CNAME
+  - vendor
 
-# Plugin settings
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap
+sass:
+  sass_dir: _sass
 
 # Sensible defaults
 defaults:
@@ -44,7 +42,7 @@ defaults:
       layout: "post"
       permalink: /:year/:month/:day/:title.html
 
-plugins_dir:
+plugins:
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate

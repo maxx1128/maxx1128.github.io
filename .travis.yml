@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+- 2.3
+branches:
+  only:
+  - master
+script:
+  - "bundle install"
+  - "bundle exec jekyll build"
