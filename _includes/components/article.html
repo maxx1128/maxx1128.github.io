@@ -2,6 +2,7 @@
 {% assign date = include.date | default: "2016-11-28" %}
 {% assign link = include.link %}
 {% assign external = include.external %}
+{% assign excerpt = include.excerpt %}
 
 {% assign icon = include.icon | default: "edit-3" %}
 {% assign category = include.category | default: "post" %}
@@ -38,6 +39,10 @@
 
 <article>
   <div class="max-ml-svg-bubble-md max-pl-oneHalf-md max-mb-quad">
-    {{ content }}
+    {% if external == "true" and excerpt %}
+      {{ excerpt }}
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
 </article>

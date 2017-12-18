@@ -1,5 +1,5 @@
 ---
-title      : "Outwitting our Horrible Inner Voices"
+title      : "Outwitting our Horrible Voices"
 date       : 2017-12-06
 icon       : cast
 excerpt    : "Despite being of a single mind, most people have inner voices pulling them different directions that we need to avoid."
@@ -15,10 +15,12 @@ That's what the horrible voice wants, to make acceptance of what it says normal.
 
 Lately I've recognized what my own horrible voice is like. It sounds nice enough, nudging me when it thinks I did something wrong. Pointing out even the smallest flaws in a passive-aggressive, overly-critical tone that seems encouraging. All it really wants is to wear down my self-esteem until I'm paralyzed with doubt. If I try to argue with it, it claims it's just trying to help and I need to be open to feedback.
 
+#### Let the Horrible Voice Just Exist
+
 Your horrible voice may be the same. It may be totally different. It may still sound so much like your own, you can't tell it apart. But I believe it exists in all of us. It knows exactly what buttons to push, what fears to poke with a stick, and how to break us.
 
 As terrible as I make this sound, this horrible voice is totally normal. There's no shame in acknowledging it exists and the weaknesses it reveals in our character. Trying to deny it only makes it stronger.
 
-Our true tests of strength lie in recognizing the voice and choosing not to listen. I treat my horrible voice like a passing breeze: it suddenly appears and tries to bother me. I squint my eyes, keep walking forward, and pick my thoughts back up where I left off. Eventually it passes, and I only register it slightly before life goes on.
+Our true tests of strength lie in recognizing the voice and choosing not to listen. I treat my horrible voice like a passing breeze: it suddenly appears and tries to bother me. I acknowledge it, laugh at myself, squint my eyes, keep walking forward, and pick my thoughts back up where I left off. Eventually it passes, and I only register it slightly before life goes on.
 
-The horrible voice simply exists there. Fighting it or denying it only makes it louder. Accepting it as it is without acknowledgment won't silence it, but can reduce it to hum in the background.
+The horrible voice simply exists there. Fighting it or denying it only makes it louder. Accepting it as it is with little acknowledgment won't silence it, but can reduce it to hum in the background.

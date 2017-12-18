@@ -1,11 +1,10 @@
 - title: Front-end Engineer
   stack:
     - "Ember"
-    - "Node"
+    - "Ruby on Rails"
     - "Gulp"
     - "Webpack"
     - "Jekyll"
-    - "Sass/CSS"
   company: SeeClickFix
   icon: heart
   start: February 2017

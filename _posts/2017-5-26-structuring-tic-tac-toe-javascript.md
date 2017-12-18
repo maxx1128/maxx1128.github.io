@@ -10,7 +10,6 @@ featured-img : /img/posts/structuring-tic-tac-toe/featured.png
 I recently had the pleasure of presenting at Bethel Middle School' yearly career day. It was the same fare as last year: explain front-end and back-end programming, describe my own job, show some examples, deal with students that were either too loud or too quiet, and make cryptic remarks how my sister was likely their English teacher.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thank you to everyone who volunteered at the BMS Career Fair, especially <a href="https://twitter.com/Maxwell_Dev">@Maxwell_Dev</a> ! :) <a href="https://t.co/wfgfZ1Hdzk">pic.twitter.com/wfgfZ1Hdzk</a></p>&mdash; Allison Antonucci (@AANT176) <a href="https://twitter.com/AANT176/status/865652104274128896">May 19, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Something I made specifically for this was a tic-tac-toe game written with JavaScript. My goal was more than the opponent randomly selecting open squares - it actively tries to block the player's wins and take its own. We played a couple rounds, I explained some of the code, showed them said code, got uncomprehending stares, felt a bizarre satisfaction, and repeated.
 
