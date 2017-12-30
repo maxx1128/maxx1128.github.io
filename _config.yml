@@ -8,7 +8,7 @@
 # Site settings
 title: Max Antonucci
 description: > # this means to ignore newlines until "baseurl:"
-  Journalist turned front-end coder.
+  Journalist turned full-time coder, part-time ponderer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://maxwellantonucci.com" # the base hostname & protocol for your site
 lang: "en"
