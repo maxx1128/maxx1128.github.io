@@ -39,7 +39,7 @@
 
 <article>
   <div class="max-ml-svg-bubble-md max-pl-oneHalf-md max-mb-quad">
-    {% if external == "true" and excerpt %}
+    {% if external == "true" and excerpt != "false" %}
       {{ excerpt }}
     {% else %}
       {{ content }}
