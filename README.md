@@ -1,10 +1,9 @@
-# Jekyll-Webpack
+# Personal Site
 
-My site uses Jekyll and Webpack - one for the site as a whole, the other for asset management and bundling.
+This is the uncompiled Jekyll code for my Personal Website. The components were built out with Pattern Lab, and you can see [the pattern library (called Puzzle Pieces) here.](http://maxwellantonucci.com/puzzle-pieces/)
 
 ## Setup Instructions
 
-1. Install npm dependencies with `npm install`
-2. Install gem dependencies `bundle install`
-3. Start serving with `npm start`
-4. Go to `localhost:4000` to see my site!
+1. Install gem dependencies `bundle install`
+2. Run Jekyll with `jekyll serve --incremental --watch`
+3. Go to `localhost:4000` to see my site!
