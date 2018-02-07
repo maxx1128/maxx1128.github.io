@@ -8,7 +8,7 @@ nav_label: Home
 
 Hey there, I'm Max Antonucci, a front-end developer living and working in New Haven, CT. I studied journalism in school for a love of writing. I switched to front-end development halfway through for a similar love of coding. I keep breathing because of my love of oxygen.
 
-I'm currently working at [SeeClickFix](http://seeclickfix.com/), an app for helping citizens work with local officials to fix their communities (most of which is fixing potholes). While my main focus is the front-end so sites can looks prettier and be easier to use, I'm studying frameworks like Ruby on Rails to hopefully be full-stack in a few years. After that are my plans for world domination, but one stack at a time.
+I'm currently working at [SeeClickFix](http://seeclickfix.com/), an app for helping citizens work with local officials to fix their communities (most of which is fixing potholes). My main focus is the front-end so sites can looks prettier and be easier to use. I'm also building on my JavaScript knowledge with Node and React. After are my plans for world domination, but one stack at a time.
 
 I’m a curious freethinker and passionate puzzle-solver. However I have a serious daydreaming habit and don’t have telekinetic powers. No one is perfect, after all.
 

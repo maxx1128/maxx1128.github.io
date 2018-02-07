@@ -21,13 +21,13 @@ My biggest focus now is still front-end development, for several reasons: combin
 * Front-end Architecture and Atomic Design for organized, scalable code. I'm a big fan of [PatternLab.io](http://patternlab.io/) for this.
 * Basic UI and UX design.
 
-A long-term career goal of mine is to grow past just the front-end and be a full-stack developer. My current job has me regularly learning Ruby with the Rails framework, and I try to learn more in my spare time.
+In some of my free time I'm building my JavaScript fundamentals with Node, Express, and React.
 
 ### I'm a Writer
 
 While coding is what ultimately stuck with me, I still enjoyed studying journalism. I wrote for the Daily Orange and did technical-focused features for The NewsHouse, as well as some data and visual reporting. My main thing was features on tough topics like religion and gun control, since I enjoy exploring hard topics most people like to avoid. As you can imagine, this helped my writing but not my social life. I later wrote opinion columns on traveling abroad and politics.
 
-Today my writing is sadly limited to my blog, though I'd like to write more serious articles someday.
+Today my writing is sadly limited to my blog, though I'd like to write serious articles again someday.
 
 ### I'm a Freethinker
 
@@ -43,7 +43,8 @@ These, and more, are the thoughts that keep me up at night. I'll send a press re
 
 1. **I enjoy boxing in the mornings.** It's better to get all that aggression out before any meetings. Punching bags don't have any chances to poison my lunch in the late morning after hitting them in the chest.
 2. **I'm obsessed with the Phoenix Wright Franchise.** Formal clothes aside, what's not to love about people who generate pure awesome from a mix of logic, murders, magic lie-detecting superpowers, inane legal systems, and yelling? Nothing.
-3. **I'm an active "Maker".** New Haven has MakeHaven, a "maker space" with lots of tools for making crafts for fun and profit. My current favorites are the sewing machines and the laser cutters. They also have button machines, but I've already made dozens with my own.
+3. **I'm a casual drawer.** I used to do lots of anime and caricature drawings, but it's been delegated to a casual hobby lately. Expect occasional doodles to pop up in my feeds.
+4. **I'm an active "Maker".** New Haven has MakeHaven, a "maker space" with lots of tools for making crafts for fun and profit. My current favorites are the sewing machines and the laser cutters. They also have button machines, but I've already made dozens with my own.
 
 ### A Summary of Me
 
